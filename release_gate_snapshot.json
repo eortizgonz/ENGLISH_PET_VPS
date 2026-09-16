@@ -1,0 +1,51 @@
+{
+  "version": "46.0",
+  "criteria": [
+    "ACADEMIC",
+    "DATABASE",
+    "SECURITY",
+    "MULTI_TENANT",
+    "PRIVACY",
+    "EMAIL",
+    "AUDIO",
+    "BACKUP_RESTORE",
+    "DEVICE_MATRIX",
+    "LOAD_TEST",
+    "PENTEST",
+    "PILOT"
+  ],
+  "checks": {
+    "ACADEMIC": false,
+    "DATABASE": false,
+    "SECURITY": false,
+    "MULTI_TENANT": true,
+    "PRIVACY": false,
+    "EMAIL": false,
+    "AUDIO": false,
+    "BACKUP_RESTORE": false,
+    "DEVICE_MATRIX": false,
+    "LOAD_TEST": false,
+    "PENTEST": false,
+    "PILOT": false
+  },
+  "critical_issues": 0,
+  "high_issues": 0,
+  "blocked": [
+    "ACADEMIC",
+    "DATABASE",
+    "SECURITY",
+    "PRIVACY",
+    "EMAIL",
+    "AUDIO",
+    "BACKUP_RESTORE",
+    "DEVICE_MATRIX",
+    "LOAD_TEST",
+    "PENTEST",
+    "PILOT"
+  ],
+  "internal_subcontrols": {
+    "production_backend_fastapi": false,
+    "postgres_runtime": false
+  },
+  "COMMERCIAL_RELEASE": "BLOCKED"
+}

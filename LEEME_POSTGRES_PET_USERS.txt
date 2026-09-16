@@ -1,0 +1,18 @@
+PET QUEST V46.30 - PostgreSQL PET
+
+Este paquete incluye el proyecto completo y el script validado de la tabla de autenticacion:
+  PET_PostgreSQL_pet_users_validated.sql
+
+Base esperada:
+  PET
+Usuario PostgreSQL configurado por el proyecto:
+  postgres
+
+Para una instalacion existente:
+1. Abrir pgAdmin.
+2. Seleccionar la base PET.
+3. Abrir Query Tool.
+4. Ejecutar PET_PostgreSQL_pet_users_validated.sql.
+5. Iniciar PET Quest con START_PET_QUEST_WINDOWS.bat.
+
+El script no usa DROP TABLE public.pet_users y esta pensado para conservar usuarios existentes.

@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json,re,subprocess,sys
+R=Path(__file__).resolve().parent
+v402=(R/'v40_2_exam_fidelity.js').read_text();v41=(R/'v41_academic_intelligence.js').read_text();api=(R/'api_server.py').read_text();qa=(R/'qa_v40_commercial.py').read_text();checks=[]
+def ck(n,c):checks.append((n,bool(c)))
+ck('Reading Part 6 open cloze', 'Parte 6 · Open cloze' in v402 and 'data-v402-rtext' in v402 and 'Escribe UNA palabra' in v402)
+ck('Reading 5/5/5/5/6/6', 'function readingPartMarks(){return {1:5,2:5,3:5,4:5,5:6,6:6}}' in v402)
+ck('Reading total 32', 'total=32' in v402)
+ck('Listening Part 3 gap fill', 'Part 3 · Gap fill' in v402 and len(re.findall(r"\['The |\['Students|\['Everyone|\['Lunch",v402))>=6)
+ck('Listening 7/6/6/6', '7 + 6 + 6 + 6 = 25' in v402)
+ck('Listening replay modes', 'strictTwoPlay' in v402 and 'sin límite' in v402 and 'strict&&n>=2' in v402)
+ck('No browser TTS in exact mock', 'new Audio(path)' in v402 and 'speakText(' not in v402)
+manifest=json.loads((R/'assets/audio/fidelity/audio_manifest.json').read_text())
+ck('Audio honesty gate', manifest.get('production_ready') is False and manifest.get('requires_human_studio') is True)
+ck('Writing error intelligence', all(x in v41 for x in ['Past Simple','Collocation','miniLesson','recurrence','mastery']))
+ck('Given writing example detected', 'very-fun' in v41 and 'past-go' in v41)
+ck('Speaking text does not fake pronunciation', 'Pronunciation, rhythm, stress, intonation, intelligibility and true interaction are NOT scored from text.' in v41)
+ck('Speaking human rubric preserved', all(x in v402 for x in ['Grammar & Vocabulary','Discourse Management','Pronunciation','Interactive Communication','Global Achievement']))
+ck('Speaking Part 3 pair simulator', 'Interactive pair simulator' in v41 and 'Negotiate an agreement' in v41)
+ck('Writing exact mock 45 min', 'Writing Exam · V41' in v41 and 'Part 1 obligatoria + UNA tarea de Part 2 · 45 minutos' in v41)
+ck('Speaking mock routes to exam', "skill==='speaking'&&window.PETQUEST_V17" in v41 and 'Speaking Exam Practice' in v41)
+ck('Speaking Part 3 exam is interactive', 'Discussion with simulated candidate' in v41 and 'Next partner turn' in v41)
+ck('QA readiness polling', '/api/ready' in qa and 'deadline=time.time()+30' in qa and 'time.sleep(.8)' not in qa)
+ck('Privacy lifecycle in current API', all(x in api for x in ['/api/privacy/export','/api/privacy/delete-request','/api/privacy/resolve','/api/privacy/rectify','/api/consents/revoke']))
+ck('Production SQLite blocked when Postgres required', 'REQUIRE_POSTGRES_PRODUCTION' in api and "DATABASE_ENGINE='sqlite'" in api and 'production_database_ok' in api)
+ck('V41 script cached', 'v41_academic_intelligence.js' in (R/'sw.js').read_text())
+for n,o in checks:print(('PASS' if o else 'FAIL'),n)
+print(f'{sum(o for _,o in checks)}/{len(checks)} PASS')
+sys.exit(0 if all(o for _,o in checks) else 1)

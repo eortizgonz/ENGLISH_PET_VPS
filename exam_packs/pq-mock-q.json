@@ -1,0 +1,1228 @@
+{
+  "version": "46.20",
+  "pack_id": "pq-mock-q",
+  "title": "PET Quest Full Mock Q",
+  "theme": "Sunnydale",
+  "status": "full_four_skill_content_complete_external_equivalence_pending",
+  "reading": [
+    {
+      "id": "pq-mock-q-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What must students do before using the study room?",
+      "options": [
+        "Reserve a computer",
+        "Collect a key from reception",
+        "Leave before the afternoon"
+      ],
+      "answer": 1,
+      "source_text": "Sunnydale Library: Students using the study room after 4 p.m. must collect a key from reception before entering.",
+      "source_label": "Sunnydale Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-q-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What has changed about the activity?",
+      "options": [
+        "Its day",
+        "Its price",
+        "Its location"
+      ],
+      "answer": 0,
+      "source_text": "Sunnydale Sports Centre: The book club has moved from Wednesday to Friday. Your booking is still valid.",
+      "source_label": "Sunnydale Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-q-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What can customers buy after 2 p.m.?",
+      "options": [
+        "Only hot meals",
+        "Snacks and drinks",
+        "Nothing at all"
+      ],
+      "answer": 1,
+      "source_text": "Cafe notice: Please order hot food before 2 p.m. Cold snacks and drinks are available until closing time.",
+      "source_label": "Sunnydale Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-q-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where did Lily leave the project folder?",
+      "options": [
+        "In the classroom",
+        "At reception",
+        "In the library"
+      ],
+      "answer": 1,
+      "source_text": "Message from Lily: I left your project folder with the receptionist because the classroom was locked.",
+      "source_label": "Sunnydale Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-q-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where will route 36 stop today?",
+      "options": [
+        "At the market",
+        "Outside the museum",
+        "At the sports centre"
+      ],
+      "answer": 1,
+      "source_text": "Bus notice: Route 36 will stop outside the museum today instead of the market because of roadworks.",
+      "source_label": "Sunnydale Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-q-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Daniel wants a free weekend activity and does not own special equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Sunnydale Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Sunnydale Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Sunnydale Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Sunnydale Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Sunnydale Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Sunnydale Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Sunnydale Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Sunnydale Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "A",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-q-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Ruby would like to practise English by speaking with people from another school.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Sunnydale Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Sunnydale Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Sunnydale Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Sunnydale Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Sunnydale Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Sunnydale Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Sunnydale Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Sunnydale Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "C",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-q-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Max enjoys writing and wants to meet members of the local community.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Sunnydale Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Sunnydale Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Sunnydale Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Sunnydale Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Sunnydale Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Sunnydale Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Sunnydale Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Sunnydale Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "D",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-q-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Maya is interested in video and design but cannot attend at weekends.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Sunnydale Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Sunnydale Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Sunnydale Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Sunnydale Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Sunnydale Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Sunnydale Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Sunnydale Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Sunnydale Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "B",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-q-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Leo wants an outdoor Sunday activity and already owns the necessary equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Sunnydale Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Sunnydale Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Sunnydale Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Sunnydale Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Sunnydale Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Sunnydale Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Sunnydale Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Sunnydale Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "E",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-q-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the project begin?",
+      "options": [
+        "A teacher ordered it",
+        "Students wanted a practical project",
+        "The school received new equipment",
+        "Families requested daily meetings"
+      ],
+      "answer": 1,
+      "passage": "At Sunnydale Academy, students recently created a new film club. The idea began after Max noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the community hall and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-q-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Where did the group borrow equipment from?",
+      "options": [
+        "community hall",
+        "a supermarket",
+        "a private company",
+        "the bus station"
+      ],
+      "answer": 0,
+      "passage": "At Sunnydale Academy, students recently created a new film club. The idea began after Max noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the community hall and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-q-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What changed about the meeting schedule?",
+      "options": [
+        "They stopped meeting completely",
+        "They met every day",
+        "They chose two longer weekly sessions",
+        "They moved all work online"
+      ],
+      "answer": 2,
+      "passage": "At Sunnydale Academy, students recently created a new film club. The idea began after Max noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the community hall and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-q-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What did teachers mainly provide?",
+      "options": [
+        "All project decisions",
+        "Safety guidance",
+        "Money for equipment",
+        "Friday reports"
+      ],
+      "answer": 1,
+      "passage": "At Sunnydale Academy, students recently created a new film club. The idea began after Max noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the community hall and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-q-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What happens every Friday?",
+      "options": [
+        "A short update is published",
+        "Younger pupils lead the group",
+        "Families collect materials",
+        "The project closes"
+      ],
+      "answer": 0,
+      "passage": "At Sunnydale Academy, students recently created a new film club. The idea began after Max noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the community hall and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-q-r4-1",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 1.",
+      "passage": "A group of students at Sunnydale School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "C",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-q-r4-2",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 2.",
+      "passage": "A group of students at Sunnydale School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "D",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-q-r4-3",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 3.",
+      "passage": "A group of students at Sunnydale School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "A",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-q-r4-4",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 4.",
+      "passage": "A group of students at Sunnydale School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "F",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-q-r4-5",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 5.",
+      "passage": "A group of students at Sunnydale School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "H",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-q-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our class decided to ___ a weekly podcast.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "bring"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We wanted everyone to ___ part, even students who were shy.",
+      "options": [
+        "make",
+        "take",
+        "do",
+        "get"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "The first meeting was ___ than we expected.",
+      "options": [
+        "busy",
+        "busier",
+        "busiest",
+        "more busy"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our teacher suggested ___ a clear plan before recording.",
+      "options": [
+        "write",
+        "to writing",
+        "writing",
+        "wrote"
+      ],
+      "answer": 2,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We learned how to work ___ a team and share jobs fairly.",
+      "options": [
+        "as",
+        "at",
+        "by",
+        "for"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "By the end of the month, the project had become very ___ with students.",
+      "options": [
+        "popular",
+        "ordinary",
+        "private",
+        "empty"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-q-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "My cousin has been interested ___ photography since she was ten.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-q-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "We arrived early ___ we could choose good seats.",
+      "answer": "so",
+      "focus": "linker",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-q-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "There were not ___ chairs for everyone at first.",
+      "answer": "enough",
+      "focus": "quantifier",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-q-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "The teacher asked us ___ bring our notebooks.",
+      "answer": "to",
+      "focus": "infinitive",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-q-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "I have never taken part ___ an event like this before.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-q-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "If the weather is good, we ___ meet outside tomorrow.",
+      "answer": "will",
+      "focus": "future",
+      "answer_words": 1
+    }
+  ],
+  "listening": [
+    {
+      "id": "pq-mock-q-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Maya and Ben meet?",
+      "options": [
+        "two twenty",
+        "half past one",
+        "six fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-113",
+      "transcript": "Maya: Are we still meeting at the school hall at two twenty? Ben: Not now. Let's meet at half past one because the buses run more often. Maya: Great. Then we can visit the museum.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-113.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Finn and Katie meet?",
+      "options": [
+        "quarter to four",
+        "six fifteen",
+        "seven forty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-114",
+      "transcript": "Finn: Are we still meeting at the music room at quarter to four? Katie: Not now. Let's meet at six fifteen because the teacher recommended it. Finn: Great. Then we can practise music.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-114.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Leo and Ruby meet?",
+      "options": [
+        "two twenty",
+        "eleven forty-five",
+        "quarter to four"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-115",
+      "transcript": "Leo: Are we still meeting at the school hall at two twenty? Ruby: Not now. Let's meet at eleven forty-five because the teacher recommended it. Leo: Great. Then we can play basketball.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-115.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Grace and Finn meet?",
+      "options": [
+        "ten thirty",
+        "five thirty",
+        "quarter to four"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-116",
+      "transcript": "Grace: Are we still meeting at the school hall at ten thirty? Finn: Not now. Let's meet at five thirty because it is cheaper. Grace: Great. Then we can study together.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-116.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Will and Olivia meet?",
+      "options": [
+        "nine fifteen",
+        "quarter to four",
+        "five thirty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-117",
+      "transcript": "Will: Are we still meeting at the science club at nine fifteen? Olivia: Not now. Let's meet at quarter to four because we already have the equipment. Will: Great. Then we can meet at the library.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-117.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Noah and Will meet?",
+      "options": [
+        "quarter to four",
+        "ten thirty",
+        "five thirty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-118",
+      "transcript": "Noah: Are we still meeting at the museum at quarter to four? Will: Not now. Let's meet at ten thirty because the weather should be better. Noah: Great. Then we can practise music.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-118.mp3"
+    },
+    {
+      "id": "pq-mock-q-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Will and Ella meet?",
+      "options": [
+        "two twenty",
+        "five thirty",
+        "nine fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-119",
+      "transcript": "Will: Are we still meeting at the museum at two twenty? Ella: Not now. Let's meet at five thirty because the other place is closed. Will: Great. Then we can prepare a class project.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-119.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "study together",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-097",
+      "transcript": "Noah: I thought we could study together at the science club. Maya: I'd rather have a picnic at the sports centre. It costs seven pounds twenty, but the buses run more often. Noah: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-097.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "watch a film",
+        "go cycling",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-098",
+      "transcript": "Grace: I thought we could watch a film at the cafe. Katie: I'd rather go cycling at the music room. It costs six pounds, but we already have the equipment. Grace: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-098.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "visit the museum",
+        "go cycling",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-099",
+      "transcript": "Leo: I thought we could visit the museum at the cinema. Isla: I'd rather go cycling at the park. It costs ten pounds, but it is cheaper. Leo: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-099.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "prepare a class project",
+        "buy a birthday present",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-100",
+      "transcript": "Olivia: I thought we could prepare a class project at the park. Tara: I'd rather buy a birthday present at the school hall. It costs ten pounds, but the weather should be better. Olivia: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-100.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "watch a film",
+        "visit the museum",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-101",
+      "transcript": "Will: I thought we could watch a film at the school hall. Finn: I'd rather visit the museum at the train station. It costs seven pounds twenty, but the buses run more often. Will: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-101.mp3"
+    },
+    {
+      "id": "pq-mock-q-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "visit the museum",
+        "play basketball",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-102",
+      "transcript": "Olivia: I thought we could visit the museum at the train station. Daniel: I'd rather play basketball at the sports centre. It costs six pounds, but we already have the equipment. Olivia: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-102.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The activity takes place on ___.",
+      "answer": "Saturday",
+      "accepted_answers": [
+        "Saturday"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The first activity begins at ___.",
+      "answer": "seven forty",
+      "accepted_answers": [
+        "seven forty"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The ticket costs ___.",
+      "answer": "eight pounds",
+      "accepted_answers": [
+        "eight pounds"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Students should bring a ___.",
+      "answer": "notebook",
+      "accepted_answers": [
+        "notebook"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "After the main activity, they will ___.",
+      "answer": "study together",
+      "accepted_answers": [
+        "study together"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Questions should be asked before ___.",
+      "answer": "Friday",
+      "accepted_answers": [
+        "Friday"
+      ],
+      "audio_id": "pqbank-p3-017",
+      "transcript": "Hello, I'm Ruby, and I'd like to tell you about our club meeting. It will take place at the library on Saturday. The first activity begins at seven forty, so please arrive about fifteen minutes earlier. The ticket costs eight pounds. You should bring a notebook and a bottle of water. After the main activity, we will study together. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What did Sam especially enjoy?",
+      "options": [
+        "have a picnic",
+        "prepare a class project",
+        "train station"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "How did Sam feel later?",
+      "options": [
+        "More confident",
+        "More worried",
+        "Completely bored"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Would Sam take part again?",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What would Sam like to do next time?",
+      "options": [
+        "prepare a class project",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Which place would Sam use instead?",
+      "options": [
+        "train station",
+        "the same place",
+        "the train station"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    },
+    {
+      "id": "pq-mock-q-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What is Sam's overall attitude?",
+      "options": [
+        "Mostly positive",
+        "Mostly negative",
+        "Completely uncertain"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-017",
+      "transcript": "Interviewer: Sam, what did you think about the birthday event? Sam: I enjoyed it, especially when we could have a picnic. Interviewer: Was anything difficult? Sam: At first, yes, because the other place is closed. But later I felt more confident. Interviewer: Would you take part again? Sam: Definitely, although next time I'd like to prepare a class project. Interviewer: And what would you change? Sam: I'd use the train station because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-017.mp3"
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "interaction": "email",
+      "prompt": "You received an email from your English-speaking friend Leo, who is thinking about joining a new activity. Write an email to Leo. Recommend an activity in Sunnydale, explain why it would suit them, and suggest when you could go together.",
+      "target_words": 100
+    },
+    {
+      "part": 2,
+      "interaction": "choice",
+      "options": [
+        {
+          "type": "article",
+          "prompt": "Write an article about a place or activity in Sunnydale that teenagers would enjoy. Explain what people can do there and why you recommend it."
+        },
+        {
+          "type": "story",
+          "prompt": "Your story must begin: \"As soon as we arrived in Sunnydale, I realised the plan had changed.\""
+        }
+      ],
+      "target_words": 100
+    }
+  ],
+  "speaking": {
+    "parts": [
+      {
+        "part": 1,
+        "type": "interview",
+        "prompts": [
+          "What do you usually do after school?",
+          "Tell us about a place you enjoy visiting.",
+          "What would you like to improve in your English?"
+        ]
+      },
+      {
+        "part": 2,
+        "type": "extended_turn_photo",
+        "prompt": "Describe a picture of young people taking part in a community garden in Sunnydale. Say what you can see, what the people are doing and how they might feel.",
+        "photo_asset_required": true
+      },
+      {
+        "part": 3,
+        "type": "collaborative_task",
+        "prompt": "Two students, Daniel and Sofia, want to organise a class activity in Sunnydale. Discuss these options: photography walk, basketball session, a picnic, a museum visit and a film afternoon. Make suggestions, respond, compare alternatives and agree on the best choice.",
+        "mode": "interactive_candidate_simulator"
+      },
+      {
+        "part": 4,
+        "type": "discussion",
+        "prompts": [
+          "Do you prefer activities with friends or with family? Why?",
+          "What makes a school activity successful?",
+          "Should young people try new activities even if they are difficult at first? Why?"
+        ]
+      }
+    ],
+    "part3_mode": "interactive_candidate_simulator",
+    "external_human_pair_validation_required": true
+  },
+  "authoring": {
+    "cefr_target": "B1",
+    "created_for": "PET Quest",
+    "content_originality": "distinct_form_content",
+    "external_academic_signoff": false,
+    "psychometric_equivalence_validated": false,
+    "studio_audio_ready": false,
+    "generated_audio_ready": true,
+    "generated_audio_source": "PET Audio Bank V46.18 synthetic multi-voice",
+    "generated_audio_count": 15,
+    "voice_simulation_ready": true,
+    "voice_simulation_version": "46.18",
+    "listening_exam_mode": "1.00x_max_2_plays",
+    "writing_tasks": 2,
+    "speaking_parts": 4
+  },
+  "license": "original-petquest-content"
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "generated_at": "",
+  "academic_review": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Independent academic sign-off pending"},
+  "email": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Transactional provider test pending"},
+  "backup_restore": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Off-site restore evidence pending"},
+  "legal": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Independent child privacy/legal review pending"},
+  "device_matrix": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Physical device matrix pending"},
+  "load_test": {"status":"BLOCKED","evidence_date":"","artifact":"","notes":"Staging/production load evidence pending"},
+  "pentest": {"status":"BLOCKED","evidence_date":"","artifact":"","critical_issues":0,"high_issues":0,"notes":"Independent pentest pending"},
+  "pilot": {"status":"BLOCKED","evidence_date":"","artifact":"","participants":0,"notes":"Real pilot pending"}
+}

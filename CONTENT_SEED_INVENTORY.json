@@ -1,0 +1,24 @@
+{
+  "expected_after_seed": {
+    "practice_bank_items": 8000,
+    "practice_schools": 5000,
+    "practice_adult": 3000,
+    "curriculum_lessons": 100,
+    "audio_assets": 877,
+    "school_audio_bank_items": 500,
+    "exam_packs": 40,
+    "exam_items": 2500,
+    "exam_items_by_skill": {
+      "reading": 1280,
+      "listening": 1000,
+      "writing": 80,
+      "speaking": 140
+    },
+    "master_content_tables": 7,
+    "total_postgres_tables": 49
+  },
+  "notes": [
+    "Transactional/user activity tables are intentionally empty until the app is used.",
+    "Audio binaries remain in assets/audio; PostgreSQL stores path, hash, transcript, question, answer and technical metadata."
+  ]
+}

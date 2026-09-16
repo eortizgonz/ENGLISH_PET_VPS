@@ -1,0 +1,18 @@
+name: PETQUEST_RELEASE_GATE
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  release-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Syntax
+        run: python -m py_compile api_server.py PETQUEST_RELEASE_GATE.py qa_security_v46.py qa_backup_restore_v46.py
+      - name: Unified release gate structure
+        run: python qa_v46_release_gate.py

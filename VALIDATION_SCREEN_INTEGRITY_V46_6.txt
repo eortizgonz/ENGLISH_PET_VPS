@@ -1,0 +1,46 @@
+PET QUEST V46.6 SCREEN INTEGRITY - FINAL VALIDATION
+
+ROOT CAUSE FIXED
+PASS - Kid/Nino mode no longer hides main.container.
+PASS - Only the replaced child section heading is hidden.
+PASS - Child mode has a main visibility failsafe.
+PASS - Adult mode remains unchanged.
+
+SCREEN / NAVIGATION INTEGRITY
+PASS - 172/172 Screen Integrity checks.
+PASS - Core routes registered and render functions present.
+PASS - Literal data-view navigation targets resolved.
+PASS - All indexed JavaScript files exist and pass node --check.
+PASS - Referenced local assets exist.
+PASS - No window.top function collision.
+
+RUNTIME / API
+PASS - Runtime HTTP QA.
+PASS - student / teacher / school / admin login.
+PASS - /api/me role verification.
+PASS - student snapshot and assignments.
+PASS - institutional endpoints smoke tested.
+PASS - release/production panels smoke tested for authorized roles.
+PASS - all packaged MP3 audio files served successfully.
+
+REGRESSION SUITES
+PASS - startup V46.6.
+PASS - student E2E.
+PASS - security.
+PASS - V43 mock bank.
+PASS - V41 academic.
+PASS - V44 psychometrics.
+PASS - backup/restore.
+
+LOAD SMOKE
+PASS - 500/500 requests, 50 workers.
+p50 ~67.75 ms; p95 ~1104.17 ms; max ~1855.92 ms in local container run.
+
+PWA
+PASS - cache petquest-v46-6.
+PASS - old caches removed on service-worker activation.
+PASS - query/version references 46.6.
+
+EXECUTION STATUS
+APPROVED for local execution, functional QA and staging.
+External commercial-production gates remain external: managed PostgreSQL runtime, real SMTP/domain/TLS, licensed human studio audio, independent pentest/legal review, physical device matrix, real pilot and external academic calibration.

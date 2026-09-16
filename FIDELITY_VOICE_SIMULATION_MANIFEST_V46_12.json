@@ -1,0 +1,512 @@
+{
+  "version": "46.12",
+  "synthetic": true,
+  "human_recording": false,
+  "targets": [
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_1",
+      "file": "assets/audio/fidelity/lp1_1.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "80374fa30ae20e82ec3a1ec2e266b6c61bbef4ab1d5691b9cad4af56f969950d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "9.552000",
+          "bit_rate": "192519"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_2",
+      "file": "assets/audio/fidelity/lp1_2.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "e357c71727db1a66e213d0001d29868c1a66748cf00762e81e9a5d1732ed4b0f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "6.264000",
+          "bit_rate": "192791"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_3",
+      "file": "assets/audio/fidelity/lp1_3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "21d25bdb78814b8bd0640c78938d25be593527410f60a01e39eb8abe6f61d3d9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.952000",
+          "bit_rate": "192833"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_4",
+      "file": "assets/audio/fidelity/lp1_4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "54031ebd88432b6a6f14562fc8e0afd51cde57ef2b73655afb1f8fad8f54b103",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.328000",
+          "bit_rate": "192930"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_5",
+      "file": "assets/audio/fidelity/lp1_5.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "bc8ad17565265854aef14d2f5593380075729561041e287e4b296c9c3b436932",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "6.912000",
+          "bit_rate": "192717"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_6",
+      "file": "assets/audio/fidelity/lp1_6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "5a4d05cb30b383a8c7f4cead5e149d53e64057801a59a7b4b1acfa855b7d2c1f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.064000",
+          "bit_rate": "192979"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 1,
+      "audio_id": "lp1_7",
+      "file": "assets/audio/fidelity/lp1_7.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "2477e891d30c531ea7376c022fccb3835a97c4cefb9fd082f4eaf444ede2059b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.136000",
+          "bit_rate": "192965"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_1",
+      "file": "assets/audio/fidelity/lp2_1.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "3f0ddc37bf0625ef4f33aaac06c346b4765541362a69edcbb0b523d84d6bdb8a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.680000",
+          "bit_rate": "192645"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_2",
+      "file": "assets/audio/fidelity/lp2_2.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "5aeeb16fbdd37ae8a1300d85ea1b4fde5bd16c2e2864cde8d33ef523eab871d9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.880000",
+          "bit_rate": "192843"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_3",
+      "file": "assets/audio/fidelity/lp2_3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "de21dba59f326b6b6203da183b0b9d7d8060132a4fdaf5b0ff3d55324401041e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "5.376000",
+          "bit_rate": "192922"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_4",
+      "file": "assets/audio/fidelity/lp2_4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "a02bae177d82c92617cb166d57214d5d5e485782df2f6d01f05e67872e902f85",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "4.944000",
+          "bit_rate": "193003"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_5",
+      "file": "assets/audio/fidelity/lp2_5.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "7bcf59151cf83a861f8854a0b3ef908ad94328a7bb674050c3c36a3e117c3867",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.080000",
+          "bit_rate": "192700"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 2,
+      "audio_id": "lp2_6",
+      "file": "assets/audio/fidelity/lp2_6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "b199dec4b94238e12c887cf01dee01b6b09e2ec23cfeff7dfdf289272aa9a918",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "6.480000",
+          "bit_rate": "192765"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 3,
+      "audio_id": "lp3_monologue",
+      "file": "assets/audio/fidelity/lp3_monologue.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Teacher",
+          "profile": "woman_a",
+          "voice": "en-uk-rp+f4"
+        }
+      ],
+      "sha256": "620bbc848ad388909b0a95fcafef75ababde1d6237abe80cf63f2e9d460b5329",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "17.904000",
+          "bit_rate": "192277"
+        }
+      }
+    },
+    {
+      "pack_id": "fidelity",
+      "part": 4,
+      "audio_id": "lp4_interview",
+      "file": "assets/audio/fidelity/lp4_interview.mp3",
+      "segments": 12,
+      "voices": [
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2"
+        },
+        {
+          "speaker": "Olivia",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1"
+        }
+      ],
+      "sha256": "5b0729dbf45ba45114941e5f888d6669761a7fd2976ed0403109d0a23b3a9410",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "41.400000",
+          "bit_rate": "192119"
+        }
+      }
+    }
+  ]
+}

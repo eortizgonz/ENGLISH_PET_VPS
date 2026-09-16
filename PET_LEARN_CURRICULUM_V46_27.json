@@ -1,0 +1,4617 @@
+{
+  "version": "46.27",
+  "name": "PET Learn",
+  "scope": "A2 to B1+",
+  "levels": [
+    "A2",
+    "A2+",
+    "B1-",
+    "B1",
+    "B1+"
+  ],
+  "lesson_count": 100,
+  "method": "explain -> guided check -> correction -> recheck -> targeted practice",
+  "items": [
+    {
+      "id": "learn-a2-01",
+      "level": "A2",
+      "order": 1,
+      "difficulty": 0.33,
+      "skill": "grammar",
+      "competency": "past_simple",
+      "title": "Past simple",
+      "objective": "Use past simple accurately for completed past events.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Use the past simple for finished actions at a finished time. Regular verbs usually end in -ed; common irregular verbs change form.",
+      "examples": [
+        "I visited my aunt last Saturday.",
+        "We went by train and arrived at noon."
+      ],
+      "strategy": "Look for a finished-time signal such as yesterday, last week, in 2024 or two days ago.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I go to the bank yesterday.",
+          "I went to the bank yesterday.",
+          "I have went to the bank yesterday."
+        ],
+        "answer": 1,
+        "explanation": "A finished time such as yesterday normally requires the past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best verb form: “Last night we ___ dinner at home.”",
+        "options": [
+          "have",
+          "had",
+          "have had"
+        ],
+        "answer": 1,
+        "explanation": "Last night is a finished past time, so “had” is correct."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "past_simple"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-02",
+      "level": "A2",
+      "order": 2,
+      "difficulty": 0.34,
+      "skill": "grammar",
+      "competency": "present_perfect",
+      "title": "Present perfect",
+      "objective": "Use present perfect for experience and unfinished time.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Use have/has + past participle for experiences, recent results and situations connected to now. Avoid a finished past-time marker with this form.",
+      "examples": [
+        "I have visited London twice.",
+        "She has already finished the report."
+      ],
+      "strategy": "Ask: is the time finished and named? If yes, past simple is often better. If the time is open or experience matters, present perfect may fit.",
+      "check": {
+        "prompt": "Which sentence is best?",
+        "options": [
+          "I have seen that film last Friday.",
+          "I saw that film last Friday.",
+          "I have saw that film last Friday."
+        ],
+        "answer": 1,
+        "explanation": "“Last Friday” is finished time, so use past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "I have never tried sushi.",
+          "I never tried sushi in my life yet.",
+          "I has never tried sushi."
+        ],
+        "answer": 0,
+        "explanation": "Experience up to now is naturally expressed with present perfect."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "present_perfect"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-03",
+      "level": "A2",
+      "order": 3,
+      "difficulty": 0.36,
+      "skill": "grammar",
+      "competency": "future_forms",
+      "title": "Future forms",
+      "objective": "Choose will, going to or present continuous appropriately.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Use will for instant decisions and predictions, going to for prior intentions or visible evidence, and present continuous for arranged future plans.",
+      "examples": [
+        "I’m meeting the dentist at 3 tomorrow.",
+        "Look at those clouds. It’s going to rain."
+      ],
+      "strategy": "Identify whether the speaker is deciding now, expressing an intention, or describing an arrangement.",
+      "check": {
+        "prompt": "Which is an arranged plan?",
+        "options": [
+          "I will see the dentist at 3 tomorrow.",
+          "I am seeing the dentist at 3 tomorrow.",
+          "I going to seeing the dentist at 3 tomorrow."
+        ],
+        "answer": 1,
+        "explanation": "A fixed appointment is naturally expressed with the present continuous."
+      },
+      "recheck": {
+        "prompt": "Complete: “The phone is ringing. I ___ answer it.”",
+        "options": [
+          "will",
+          "am going to",
+          "am answering yesterday"
+        ],
+        "answer": 0,
+        "explanation": "An instant decision at the moment of speaking commonly uses “will”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "future_forms"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-04",
+      "level": "A2",
+      "order": 4,
+      "difficulty": 0.37,
+      "skill": "grammar",
+      "competency": "comparatives",
+      "title": "Comparatives and superlatives",
+      "objective": "Compare people, places and options accurately.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Use comparative forms to compare two things and superlatives to identify one thing within a group. Watch irregular forms such as better/best.",
+      "examples": [
+        "This route is faster than the other one.",
+        "That was the most useful course I took this year."
+      ],
+      "strategy": "Check whether the sentence compares two items or one item against a whole group.",
+      "check": {
+        "prompt": "Choose the correct form.",
+        "options": [
+          "This train is more fast than the bus.",
+          "This train is faster than the bus.",
+          "This train is fastest than the bus."
+        ],
+        "answer": 1,
+        "explanation": "For short adjectives such as fast, use -er + than."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "It is the most cheap option.",
+          "It is the cheaper of all.",
+          "It is the cheapest option."
+        ],
+        "answer": 2,
+        "explanation": "“Cheapest” is the correct superlative form of “cheap”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "comparatives"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-05",
+      "level": "A2",
+      "order": 5,
+      "difficulty": 0.32,
+      "skill": "grammar",
+      "competency": "modals",
+      "title": "Modals",
+      "objective": "Use can, could, should, must and have to for meaning.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Modal verbs express ability, possibility, advice, obligation and permission. The meaning matters more than the form alone.",
+      "examples": [
+        "You should book an appointment.",
+        "Employees must wear their badges."
+      ],
+      "strategy": "Decide the function first: advice, rule, ability, request or possibility.",
+      "check": {
+        "prompt": "Which sentence gives advice?",
+        "options": [
+          "You should call the clinic.",
+          "You must be 18 to apply.",
+          "I can swim."
+        ],
+        "answer": 0,
+        "explanation": "“Should” commonly expresses advice."
+      },
+      "recheck": {
+        "prompt": "Which sentence expresses an external rule?",
+        "options": [
+          "You have to show your ticket.",
+          "You could show your ticket yesterday maybe.",
+          "You are show your ticket."
+        ],
+        "answer": 0,
+        "explanation": "“Have to” is commonly used for an external obligation or rule."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "modals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-06",
+      "level": "A2",
+      "order": 6,
+      "difficulty": 0.33,
+      "skill": "grammar",
+      "competency": "conditionals",
+      "title": "Conditionals",
+      "objective": "Use zero and first conditional patterns for real situations.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Use the zero conditional for general truths and the first conditional for realistic future conditions. In the first conditional, use present simple after if and will in the result clause.",
+      "examples": [
+        "If you heat ice, it melts.",
+        "If the bus is late, I will call you."
+      ],
+      "strategy": "Do not normally put “will” directly after if in a standard first conditional.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "If it will rain, we stay home.",
+          "If it rains, we will stay home.",
+          "If it rained, we will stay home yesterday."
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple, then will + base verb."
+      },
+      "recheck": {
+        "prompt": "Choose the general truth.",
+        "options": [
+          "If people do not sleep enough, they feel tired.",
+          "If people will not sleep, they felt tired.",
+          "If people slept, they are tired tomorrow."
+        ],
+        "answer": 0,
+        "explanation": "Zero conditional uses present simple in both clauses for general truths."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "conditionals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-07",
+      "level": "A2",
+      "order": 7,
+      "difficulty": 0.34,
+      "skill": "grammar",
+      "competency": "articles_prepositions",
+      "title": "Articles and prepositions",
+      "objective": "Use common articles and prepositions accurately.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Articles and prepositions are small words but frequent sources of error. Learn them in chunks: at work, on Monday, in the morning, go to the bank, an appointment.",
+      "examples": [
+        "I have an appointment at 10.",
+        "She works in a hospital."
+      ],
+      "strategy": "Store useful phrases as complete chunks instead of translating each small word separately.",
+      "check": {
+        "prompt": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday"
+        ],
+        "answer": 1,
+        "explanation": "Days of the week usually take “on”."
+      },
+      "recheck": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I have a appointment.",
+          "I have an appointment.",
+          "I have appointment an."
+        ],
+        "answer": 1,
+        "explanation": "Use “an” before a vowel sound such as the first sound in “appointment”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "articles_prepositions"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-08",
+      "level": "A2",
+      "order": 8,
+      "difficulty": 0.36,
+      "skill": "grammar",
+      "competency": "linkers",
+      "title": "Linkers",
+      "objective": "Connect ideas with because, although, however, so and therefore.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Linkers make relationships between ideas explicit. Choose a linker based on cause, contrast, result or addition.",
+      "examples": [
+        "The flat is small, but it is very bright.",
+        "I missed the bus, so I took a taxi."
+      ],
+      "strategy": "Before choosing a linker, label the relationship: reason, contrast, result or extra information.",
+      "check": {
+        "prompt": "Choose the best linker: “It was raining, ___ we stayed inside.”",
+        "options": [
+          "because",
+          "so",
+          "although"
+        ],
+        "answer": 1,
+        "explanation": "The second clause is the result, so “so” fits."
+      },
+      "recheck": {
+        "prompt": "Choose the best linker: “___ the hotel was expensive, it was very comfortable.”",
+        "options": [
+          "Although",
+          "Because of",
+          "So"
+        ],
+        "answer": 0,
+        "explanation": "“Although” introduces a contrast."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "linkers"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-09",
+      "level": "A2",
+      "order": 9,
+      "difficulty": 0.37,
+      "skill": "reading",
+      "competency": "gist",
+      "title": "Reading gist",
+      "objective": "Identify the main purpose or overall message quickly.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. For gist, do not stop at every unknown word. Read the title, opening, closing and repeated ideas to identify the writer’s overall purpose.",
+      "examples": [
+        "A notice may mainly warn, invite, explain or request.",
+        "A short article can contain many details but still have one central message."
+      ],
+      "strategy": "Ask: “Why was this text written?” before examining small details.",
+      "check": {
+        "prompt": "A message explains a change to opening hours and gives the new times. What is its main purpose?",
+        "options": [
+          "To complain about staff",
+          "To inform customers of a schedule change",
+          "To advertise a new product"
+        ],
+        "answer": 1,
+        "explanation": "The core purpose is to inform readers about changed opening hours."
+      },
+      "recheck": {
+        "prompt": "A blog post describes three ways to save money while travelling. What is the gist?",
+        "options": [
+          "Advice for cheaper travel",
+          "A story about a delayed flight",
+          "A hotel review"
+        ],
+        "answer": 0,
+        "explanation": "The repeated focus is advice on reducing travel costs."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-10",
+      "level": "A2",
+      "order": 10,
+      "difficulty": 0.32,
+      "skill": "reading",
+      "competency": "detail",
+      "title": "Reading detail",
+      "objective": "Locate exact factual information without being distracted.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Detail questions require precise matching between the question and the text. Similar words may appear in distractors, so verify the complete meaning.",
+      "examples": [
+        "A text may mention 8:30 and 9:00 but only one answers the question.",
+        "Names, prices and conditions often appear close together."
+      ],
+      "strategy": "Underline the exact information requested, then scan for evidence that matches all parts of it.",
+      "check": {
+        "prompt": "A notice says “Doors open at 18:30; the talk starts at 19:00.” When does the talk start?",
+        "options": [
+          "18:30",
+          "19:00",
+          "19:30"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for the talk start time, not the door-opening time."
+      },
+      "recheck": {
+        "prompt": "A shop offers free delivery only for orders over £40. Which order qualifies?",
+        "options": [
+          "£35",
+          "£40",
+          "£45"
+        ],
+        "answer": 2,
+        "explanation": "“Over £40” means more than £40, so £45 qualifies."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "detail"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-11",
+      "level": "A2",
+      "order": 11,
+      "difficulty": 0.33,
+      "skill": "reading",
+      "competency": "inference",
+      "title": "Reading inference",
+      "objective": "Infer meaning that is implied rather than directly stated.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Inference combines clues. The correct answer is supported by the text even when the exact words do not appear.",
+      "examples": [
+        "“I wish I had checked the timetable” implies regret.",
+        "“There were hardly any seats left” implies the place was busy."
+      ],
+      "strategy": "Choose the answer that is strongly supported by clues, not merely possible in real life.",
+      "check": {
+        "prompt": "“Maya looked at the long queue and checked her watch again.” What can we infer?",
+        "options": [
+          "She is probably worried about time.",
+          "She loves waiting in queues.",
+          "She has already arrived at home."
+        ],
+        "answer": 0,
+        "explanation": "Checking the time while facing a long queue suggests concern about delay."
+      },
+      "recheck": {
+        "prompt": "“I should have brought a jacket,” Tom said as the wind got stronger. How does he feel?",
+        "options": [
+          "He regrets not bringing one.",
+          "He is selling a jacket.",
+          "He thinks it is too hot."
+        ],
+        "answer": 0,
+        "explanation": "“Should have” signals regret about a past choice."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "inference"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-12",
+      "level": "A2",
+      "order": 12,
+      "difficulty": 0.34,
+      "skill": "reading",
+      "competency": "text_cohesion",
+      "title": "Text cohesion",
+      "objective": "Use reference words and logical links to reconstruct a text.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Cohesion depends on pronouns, reference words, time sequence and logical connectors. A sentence must connect naturally to what comes before and after it.",
+      "examples": [
+        "“This decision” must refer to a decision already mentioned.",
+        "“However” normally signals contrast with the previous idea."
+      ],
+      "strategy": "Check both sides of the gap. A sentence can fit grammatically but still break the logic.",
+      "check": {
+        "prompt": "Which sentence best follows “The train was cancelled.”?",
+        "options": [
+          "As a result, we took the bus.",
+          "For example, blue is my favourite colour.",
+          "However, yesterday is Monday."
+        ],
+        "answer": 0,
+        "explanation": "“As a result” logically links the cancellation to the alternative transport."
+      },
+      "recheck": {
+        "prompt": "Which word best completes the link? “The room was small. ___, it had everything we needed.”",
+        "options": [
+          "However",
+          "Because",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "“However” introduces the contrast between small size and usefulness."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "text_cohesion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-13",
+      "level": "A2",
+      "order": 13,
+      "difficulty": 0.36,
+      "skill": "listening",
+      "competency": "listening_gist",
+      "title": "Listening gist",
+      "objective": "Recognise the speaker’s main point on the first pass.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. For listening gist, focus on situation, purpose and outcome. Do not chase every individual word.",
+      "examples": [
+        "A speaker may mention several places but mainly be asking for directions.",
+        "A conversation can include a complaint and still end with an agreed solution."
+      ],
+      "strategy": "After the first listen, summarise the message in one short sentence.",
+      "check": {
+        "prompt": "A caller explains a problem with an online order and asks for a replacement. What is the main purpose?",
+        "options": [
+          "To book a holiday",
+          "To solve an order problem",
+          "To apply for a job"
+        ],
+        "answer": 1,
+        "explanation": "The central purpose is to resolve the order issue."
+      },
+      "recheck": {
+        "prompt": "Two friends compare restaurants and finally choose one. What is the main outcome?",
+        "options": [
+          "They make a restaurant decision.",
+          "They discuss school homework.",
+          "They cancel all plans."
+        ],
+        "answer": 0,
+        "explanation": "The conversation’s outcome is a choice of restaurant."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "listening_gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-14",
+      "level": "A2",
+      "order": 14,
+      "difficulty": 0.37,
+      "skill": "listening",
+      "competency": "numbers_times",
+      "title": "Numbers and times",
+      "objective": "Distinguish numbers, dates, prices and times accurately.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Numbers often sound similar and may be corrected. Listen for stress and context: fifteen/fifty, thirteen/thirty, 6:15/6:50.",
+      "examples": [
+        "The speaker may first say “Friday” and then correct it to “Thursday”.",
+        "Prices can include pounds and pence or whole amounts."
+      ],
+      "strategy": "Write the number mentally, then keep listening in case the speaker changes it.",
+      "check": {
+        "prompt": "You hear “The train leaves at six fifteen, not six fifty.” Which time is correct?",
+        "options": [
+          "6:15",
+          "6:50",
+          "7:15"
+        ],
+        "answer": 0,
+        "explanation": "The speaker explicitly corrects 6:50 to 6:15."
+      },
+      "recheck": {
+        "prompt": "You hear “It costs fourteen pounds, one-four, not forty.” What is the price?",
+        "options": [
+          "£14",
+          "£40",
+          "£44"
+        ],
+        "answer": 0,
+        "explanation": "The speaker clarifies that the intended number is fourteen."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "numbers_times"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-15",
+      "level": "A2",
+      "order": 15,
+      "difficulty": 0.32,
+      "skill": "listening",
+      "competency": "corrected_information",
+      "title": "Corrected information",
+      "objective": "Recognise when a speaker replaces earlier information.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. PET distractors often use information that is true for a moment but later corrected. The final confirmed information is usually what matters.",
+      "examples": [
+        "“Let’s meet at 7 — actually, make it 7:30.”",
+        "“I thought it was Tuesday, but it’s Wednesday.”"
+      ],
+      "strategy": "Do not answer as soon as you hear a familiar option. Wait for correction words such as actually, no, sorry, rather, instead or I mean.",
+      "check": {
+        "prompt": "You hear “Room 12 — sorry, I mean Room 21.” Which room is correct?",
+        "options": [
+          "12",
+          "21",
+          "Both"
+        ],
+        "answer": 1,
+        "explanation": "“Sorry, I mean” signals a correction; the final information is Room 21."
+      },
+      "recheck": {
+        "prompt": "You hear “We could go by bus. Actually, the train is quicker, so let’s take that.” What do they choose?",
+        "options": [
+          "Bus",
+          "Train",
+          "Taxi"
+        ],
+        "answer": 1,
+        "explanation": "The first suggestion is replaced by the final decision to take the train."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "corrected_information"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-16",
+      "level": "A2",
+      "order": 16,
+      "difficulty": 0.33,
+      "skill": "listening",
+      "competency": "attitude_opinion",
+      "title": "Attitude and opinion",
+      "objective": "Identify how a speaker feels or what they really think.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Attitude is often expressed through tone, evaluative words and contrast. Listen for positive, negative, uncertain or surprised reactions.",
+      "examples": [
+        "“It was better than I expected” is positive.",
+        "“I suppose it was okay” sounds less enthusiastic."
+      ],
+      "strategy": "Separate facts from evaluation. The question may ask what the speaker thinks, not what happened.",
+      "check": {
+        "prompt": "“The journey was long, but the hotel was absolutely worth it.” What is the speaker’s overall opinion of the hotel?",
+        "options": [
+          "Positive",
+          "Negative",
+          "No opinion"
+        ],
+        "answer": 0,
+        "explanation": "“Absolutely worth it” clearly expresses a positive view."
+      },
+      "recheck": {
+        "prompt": "“I expected more, to be honest.” What attitude does this show?",
+        "options": [
+          "Disappointment",
+          "Excitement",
+          "Certainty that it was perfect"
+        ],
+        "answer": 0,
+        "explanation": "The phrase signals that the experience did not meet expectations."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "attitude_opinion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-17",
+      "level": "A2",
+      "order": 17,
+      "difficulty": 0.34,
+      "skill": "writing",
+      "competency": "writing_email",
+      "title": "Writing Part 1 email",
+      "objective": "Answer every content point clearly and organise an email around 100 words.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. A strong B1 email addresses every bullet, uses an appropriate opening/closing and links ideas clearly. Content comes before decorative language.",
+      "examples": [
+        "Thanks for your message. I’d be happy to come on Saturday.",
+        "Could you tell me what time we should meet?"
+      ],
+      "strategy": "Before writing, turn each bullet into one sentence or mini-paragraph so no content point is forgotten.",
+      "check": {
+        "prompt": "Which plan is best before writing?",
+        "options": [
+          "Write immediately and hope all points appear.",
+          "Turn each task bullet into a content checkpoint.",
+          "Use difficult vocabulary even if it changes the meaning."
+        ],
+        "answer": 1,
+        "explanation": "Planning around the task bullets protects the Content score."
+      },
+      "recheck": {
+        "prompt": "Which sentence is most suitable in a friendly email?",
+        "options": [
+          "I am writing pursuant to statutory provisions.",
+          "Thanks for inviting me — I’d love to come.",
+          "Whereas the aforementioned event shall occur."
+        ],
+        "answer": 1,
+        "explanation": "A friendly B1 email should sound natural and appropriate for the relationship."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_email"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-18",
+      "level": "A2",
+      "order": 18,
+      "difficulty": 0.36,
+      "skill": "writing",
+      "competency": "writing_article_story",
+      "title": "Writing Part 2 article/story",
+      "objective": "Develop an article or story with clear organisation and B1 language.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. An article needs a clear reader focus and engaging organisation. A story needs a logical sequence, setting and development. Both need controlled language and linking.",
+      "examples": [
+        "One reason I enjoy travelling is that every trip teaches me something new.",
+        "Suddenly, the lights went out and everyone became quiet."
+      ],
+      "strategy": "Choose the task type you can develop most clearly. Plan beginning, middle and ending before writing.",
+      "check": {
+        "prompt": "Which feature is especially important in a story?",
+        "options": [
+          "A clear sequence of events",
+          "A bank account number",
+          "A list of unrelated grammar rules"
+        ],
+        "answer": 0,
+        "explanation": "A story needs a coherent sequence so the reader can follow what happens."
+      },
+      "recheck": {
+        "prompt": "Which opening suits an article?",
+        "options": [
+          "Have you ever wondered how to make weekends more interesting?",
+          "Dear Sir or Madam, invoice attached.",
+          "Once upon a statutory regulation."
+        ],
+        "answer": 0,
+        "explanation": "A direct question can engage the reader in an article."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_article_story"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-19",
+      "level": "A2",
+      "order": 19,
+      "difficulty": 0.37,
+      "skill": "speaking",
+      "competency": "speaking_extended",
+      "title": "Speaking Parts 1–2",
+      "objective": "Give developed personal answers and describe visual information clearly.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Avoid one-word answers. Build a B1 response with answer + reason + example/detail. In a picture task, describe what you can see without inventing an elaborate story.",
+      "examples": [
+        "I usually travel by bus because it is cheaper, and the stop is near my home.",
+        "In the picture, two people are sitting outside and they seem to be talking."
+      ],
+      "strategy": "Use the three-step pattern: answer, because, example/detail.",
+      "check": {
+        "prompt": "Which answer is better developed?",
+        "options": [
+          "Yes.",
+          "Yes, I do, because it saves time and I can use it on my way to work.",
+          "Maybe yes no."
+        ],
+        "answer": 1,
+        "explanation": "The second answer gives a clear response plus a reason and detail."
+      },
+      "recheck": {
+        "prompt": "When describing a picture, what is safest?",
+        "options": [
+          "Describe visible evidence clearly.",
+          "Invent names and life histories for everyone.",
+          "Stay silent if you do not know one word."
+        ],
+        "answer": 0,
+        "explanation": "The task rewards clear description; visible evidence is enough."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_extended"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2-20",
+      "level": "A2",
+      "order": 20,
+      "difficulty": 0.32,
+      "skill": "speaking",
+      "competency": "speaking_interaction",
+      "title": "Speaking Parts 3–4 interaction",
+      "objective": "Suggest, respond, justify, negotiate and reach decisions with a partner.",
+      "level_focus": "Build clear basic control with short, familiar language.",
+      "teach": "Start with short, familiar examples. Interactive Communication requires listening and responding, not delivering a prepared monologue. Use suggestions, reactions, reasons, alternatives and a final decision.",
+      "examples": [
+        "How about taking the train instead?",
+        "That could work, but it is more expensive. Maybe the bus is better because…"
+      ],
+      "strategy": "Aim for a chain: suggestion → response → reason → alternative → agreement or decision.",
+      "check": {
+        "prompt": "Which response best develops interaction?",
+        "options": [
+          "Cinema.",
+          "That’s a good idea, but it may be expensive. How about a picnic instead?",
+          "I memorised my answer yesterday."
+        ],
+        "answer": 1,
+        "explanation": "It responds to the partner, gives a reason and proposes an alternative."
+      },
+      "recheck": {
+        "prompt": "Which phrase helps reach a decision?",
+        "options": [
+          "So shall we choose the picnic, then?",
+          "I refuse to respond to your idea.",
+          "There are seven days in a week."
+        ],
+        "answer": 0,
+        "explanation": "The phrase invites the partner to confirm a shared decision."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_interaction"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-01",
+      "level": "A2+",
+      "order": 1,
+      "difficulty": 0.43,
+      "skill": "grammar",
+      "competency": "past_simple",
+      "title": "Past simple",
+      "objective": "Use past simple accurately for completed past events.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Use the past simple for finished actions at a finished time. Regular verbs usually end in -ed; common irregular verbs change form.",
+      "examples": [
+        "I visited my aunt last Saturday.",
+        "We went by train and arrived at noon."
+      ],
+      "strategy": "Look for a finished-time signal such as yesterday, last week, in 2024 or two days ago.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I go to the bank yesterday.",
+          "I went to the bank yesterday.",
+          "I have went to the bank yesterday."
+        ],
+        "answer": 1,
+        "explanation": "A finished time such as yesterday normally requires the past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best verb form: “Last night we ___ dinner at home.”",
+        "options": [
+          "have",
+          "had",
+          "have had"
+        ],
+        "answer": 1,
+        "explanation": "Last night is a finished past time, so “had” is correct."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "past_simple"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-02",
+      "level": "A2+",
+      "order": 2,
+      "difficulty": 0.44,
+      "skill": "grammar",
+      "competency": "present_perfect",
+      "title": "Present perfect",
+      "objective": "Use present perfect for experience and unfinished time.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Use have/has + past participle for experiences, recent results and situations connected to now. Avoid a finished past-time marker with this form.",
+      "examples": [
+        "I have visited London twice.",
+        "She has already finished the report."
+      ],
+      "strategy": "Ask: is the time finished and named? If yes, past simple is often better. If the time is open or experience matters, present perfect may fit.",
+      "check": {
+        "prompt": "Which sentence is best?",
+        "options": [
+          "I have seen that film last Friday.",
+          "I saw that film last Friday.",
+          "I have saw that film last Friday."
+        ],
+        "answer": 1,
+        "explanation": "“Last Friday” is finished time, so use past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "I have never tried sushi.",
+          "I never tried sushi in my life yet.",
+          "I has never tried sushi."
+        ],
+        "answer": 0,
+        "explanation": "Experience up to now is naturally expressed with present perfect."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "present_perfect"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-03",
+      "level": "A2+",
+      "order": 3,
+      "difficulty": 0.46,
+      "skill": "grammar",
+      "competency": "future_forms",
+      "title": "Future forms",
+      "objective": "Choose will, going to or present continuous appropriately.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Use will for instant decisions and predictions, going to for prior intentions or visible evidence, and present continuous for arranged future plans.",
+      "examples": [
+        "I’m meeting the dentist at 3 tomorrow.",
+        "Look at those clouds. It’s going to rain."
+      ],
+      "strategy": "Identify whether the speaker is deciding now, expressing an intention, or describing an arrangement.",
+      "check": {
+        "prompt": "Which is an arranged plan?",
+        "options": [
+          "I will see the dentist at 3 tomorrow.",
+          "I am seeing the dentist at 3 tomorrow.",
+          "I going to seeing the dentist at 3 tomorrow."
+        ],
+        "answer": 1,
+        "explanation": "A fixed appointment is naturally expressed with the present continuous."
+      },
+      "recheck": {
+        "prompt": "Complete: “The phone is ringing. I ___ answer it.”",
+        "options": [
+          "will",
+          "am going to",
+          "am answering yesterday"
+        ],
+        "answer": 0,
+        "explanation": "An instant decision at the moment of speaking commonly uses “will”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "future_forms"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-04",
+      "level": "A2+",
+      "order": 4,
+      "difficulty": 0.47,
+      "skill": "grammar",
+      "competency": "comparatives",
+      "title": "Comparatives and superlatives",
+      "objective": "Compare people, places and options accurately.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Use comparative forms to compare two things and superlatives to identify one thing within a group. Watch irregular forms such as better/best.",
+      "examples": [
+        "This route is faster than the other one.",
+        "That was the most useful course I took this year."
+      ],
+      "strategy": "Check whether the sentence compares two items or one item against a whole group.",
+      "check": {
+        "prompt": "Choose the correct form.",
+        "options": [
+          "This train is more fast than the bus.",
+          "This train is faster than the bus.",
+          "This train is fastest than the bus."
+        ],
+        "answer": 1,
+        "explanation": "For short adjectives such as fast, use -er + than."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "It is the most cheap option.",
+          "It is the cheaper of all.",
+          "It is the cheapest option."
+        ],
+        "answer": 2,
+        "explanation": "“Cheapest” is the correct superlative form of “cheap”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "comparatives"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-05",
+      "level": "A2+",
+      "order": 5,
+      "difficulty": 0.42,
+      "skill": "grammar",
+      "competency": "modals",
+      "title": "Modals",
+      "objective": "Use can, could, should, must and have to for meaning.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Modal verbs express ability, possibility, advice, obligation and permission. The meaning matters more than the form alone.",
+      "examples": [
+        "You should book an appointment.",
+        "Employees must wear their badges."
+      ],
+      "strategy": "Decide the function first: advice, rule, ability, request or possibility.",
+      "check": {
+        "prompt": "Which sentence gives advice?",
+        "options": [
+          "You should call the clinic.",
+          "You must be 18 to apply.",
+          "I can swim."
+        ],
+        "answer": 0,
+        "explanation": "“Should” commonly expresses advice."
+      },
+      "recheck": {
+        "prompt": "Which sentence expresses an external rule?",
+        "options": [
+          "You have to show your ticket.",
+          "You could show your ticket yesterday maybe.",
+          "You are show your ticket."
+        ],
+        "answer": 0,
+        "explanation": "“Have to” is commonly used for an external obligation or rule."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "modals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-06",
+      "level": "A2+",
+      "order": 6,
+      "difficulty": 0.43,
+      "skill": "grammar",
+      "competency": "conditionals",
+      "title": "Conditionals",
+      "objective": "Use zero and first conditional patterns for real situations.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Use the zero conditional for general truths and the first conditional for realistic future conditions. In the first conditional, use present simple after if and will in the result clause.",
+      "examples": [
+        "If you heat ice, it melts.",
+        "If the bus is late, I will call you."
+      ],
+      "strategy": "Do not normally put “will” directly after if in a standard first conditional.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "If it will rain, we stay home.",
+          "If it rains, we will stay home.",
+          "If it rained, we will stay home yesterday."
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple, then will + base verb."
+      },
+      "recheck": {
+        "prompt": "Choose the general truth.",
+        "options": [
+          "If people do not sleep enough, they feel tired.",
+          "If people will not sleep, they felt tired.",
+          "If people slept, they are tired tomorrow."
+        ],
+        "answer": 0,
+        "explanation": "Zero conditional uses present simple in both clauses for general truths."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "conditionals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-07",
+      "level": "A2+",
+      "order": 7,
+      "difficulty": 0.44,
+      "skill": "grammar",
+      "competency": "articles_prepositions",
+      "title": "Articles and prepositions",
+      "objective": "Use common articles and prepositions accurately.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Articles and prepositions are small words but frequent sources of error. Learn them in chunks: at work, on Monday, in the morning, go to the bank, an appointment.",
+      "examples": [
+        "I have an appointment at 10.",
+        "She works in a hospital."
+      ],
+      "strategy": "Store useful phrases as complete chunks instead of translating each small word separately.",
+      "check": {
+        "prompt": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday"
+        ],
+        "answer": 1,
+        "explanation": "Days of the week usually take “on”."
+      },
+      "recheck": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I have a appointment.",
+          "I have an appointment.",
+          "I have appointment an."
+        ],
+        "answer": 1,
+        "explanation": "Use “an” before a vowel sound such as the first sound in “appointment”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "articles_prepositions"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-08",
+      "level": "A2+",
+      "order": 8,
+      "difficulty": 0.46,
+      "skill": "grammar",
+      "competency": "linkers",
+      "title": "Linkers",
+      "objective": "Connect ideas with because, although, however, so and therefore.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Linkers make relationships between ideas explicit. Choose a linker based on cause, contrast, result or addition.",
+      "examples": [
+        "The flat is small, but it is very bright.",
+        "I missed the bus, so I took a taxi."
+      ],
+      "strategy": "Before choosing a linker, label the relationship: reason, contrast, result or extra information.",
+      "check": {
+        "prompt": "Choose the best linker: “It was raining, ___ we stayed inside.”",
+        "options": [
+          "because",
+          "so",
+          "although"
+        ],
+        "answer": 1,
+        "explanation": "The second clause is the result, so “so” fits."
+      },
+      "recheck": {
+        "prompt": "Choose the best linker: “___ the hotel was expensive, it was very comfortable.”",
+        "options": [
+          "Although",
+          "Because of",
+          "So"
+        ],
+        "answer": 0,
+        "explanation": "“Although” introduces a contrast."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "linkers"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-09",
+      "level": "A2+",
+      "order": 9,
+      "difficulty": 0.47,
+      "skill": "reading",
+      "competency": "gist",
+      "title": "Reading gist",
+      "objective": "Identify the main purpose or overall message quickly.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. For gist, do not stop at every unknown word. Read the title, opening, closing and repeated ideas to identify the writer’s overall purpose.",
+      "examples": [
+        "A notice may mainly warn, invite, explain or request.",
+        "A short article can contain many details but still have one central message."
+      ],
+      "strategy": "Ask: “Why was this text written?” before examining small details.",
+      "check": {
+        "prompt": "A message explains a change to opening hours and gives the new times. What is its main purpose?",
+        "options": [
+          "To complain about staff",
+          "To inform customers of a schedule change",
+          "To advertise a new product"
+        ],
+        "answer": 1,
+        "explanation": "The core purpose is to inform readers about changed opening hours."
+      },
+      "recheck": {
+        "prompt": "A blog post describes three ways to save money while travelling. What is the gist?",
+        "options": [
+          "Advice for cheaper travel",
+          "A story about a delayed flight",
+          "A hotel review"
+        ],
+        "answer": 0,
+        "explanation": "The repeated focus is advice on reducing travel costs."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-10",
+      "level": "A2+",
+      "order": 10,
+      "difficulty": 0.42,
+      "skill": "reading",
+      "competency": "detail",
+      "title": "Reading detail",
+      "objective": "Locate exact factual information without being distracted.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Detail questions require precise matching between the question and the text. Similar words may appear in distractors, so verify the complete meaning.",
+      "examples": [
+        "A text may mention 8:30 and 9:00 but only one answers the question.",
+        "Names, prices and conditions often appear close together."
+      ],
+      "strategy": "Underline the exact information requested, then scan for evidence that matches all parts of it.",
+      "check": {
+        "prompt": "A notice says “Doors open at 18:30; the talk starts at 19:00.” When does the talk start?",
+        "options": [
+          "18:30",
+          "19:00",
+          "19:30"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for the talk start time, not the door-opening time."
+      },
+      "recheck": {
+        "prompt": "A shop offers free delivery only for orders over £40. Which order qualifies?",
+        "options": [
+          "£35",
+          "£40",
+          "£45"
+        ],
+        "answer": 2,
+        "explanation": "“Over £40” means more than £40, so £45 qualifies."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "detail"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-11",
+      "level": "A2+",
+      "order": 11,
+      "difficulty": 0.43,
+      "skill": "reading",
+      "competency": "inference",
+      "title": "Reading inference",
+      "objective": "Infer meaning that is implied rather than directly stated.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Inference combines clues. The correct answer is supported by the text even when the exact words do not appear.",
+      "examples": [
+        "“I wish I had checked the timetable” implies regret.",
+        "“There were hardly any seats left” implies the place was busy."
+      ],
+      "strategy": "Choose the answer that is strongly supported by clues, not merely possible in real life.",
+      "check": {
+        "prompt": "“Maya looked at the long queue and checked her watch again.” What can we infer?",
+        "options": [
+          "She is probably worried about time.",
+          "She loves waiting in queues.",
+          "She has already arrived at home."
+        ],
+        "answer": 0,
+        "explanation": "Checking the time while facing a long queue suggests concern about delay."
+      },
+      "recheck": {
+        "prompt": "“I should have brought a jacket,” Tom said as the wind got stronger. How does he feel?",
+        "options": [
+          "He regrets not bringing one.",
+          "He is selling a jacket.",
+          "He thinks it is too hot."
+        ],
+        "answer": 0,
+        "explanation": "“Should have” signals regret about a past choice."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "inference"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-12",
+      "level": "A2+",
+      "order": 12,
+      "difficulty": 0.44,
+      "skill": "reading",
+      "competency": "text_cohesion",
+      "title": "Text cohesion",
+      "objective": "Use reference words and logical links to reconstruct a text.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Cohesion depends on pronouns, reference words, time sequence and logical connectors. A sentence must connect naturally to what comes before and after it.",
+      "examples": [
+        "“This decision” must refer to a decision already mentioned.",
+        "“However” normally signals contrast with the previous idea."
+      ],
+      "strategy": "Check both sides of the gap. A sentence can fit grammatically but still break the logic.",
+      "check": {
+        "prompt": "Which sentence best follows “The train was cancelled.”?",
+        "options": [
+          "As a result, we took the bus.",
+          "For example, blue is my favourite colour.",
+          "However, yesterday is Monday."
+        ],
+        "answer": 0,
+        "explanation": "“As a result” logically links the cancellation to the alternative transport."
+      },
+      "recheck": {
+        "prompt": "Which word best completes the link? “The room was small. ___, it had everything we needed.”",
+        "options": [
+          "However",
+          "Because",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "“However” introduces the contrast between small size and usefulness."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "text_cohesion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-13",
+      "level": "A2+",
+      "order": 13,
+      "difficulty": 0.46,
+      "skill": "listening",
+      "competency": "listening_gist",
+      "title": "Listening gist",
+      "objective": "Recognise the speaker’s main point on the first pass.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. For listening gist, focus on situation, purpose and outcome. Do not chase every individual word.",
+      "examples": [
+        "A speaker may mention several places but mainly be asking for directions.",
+        "A conversation can include a complaint and still end with an agreed solution."
+      ],
+      "strategy": "After the first listen, summarise the message in one short sentence.",
+      "check": {
+        "prompt": "A caller explains a problem with an online order and asks for a replacement. What is the main purpose?",
+        "options": [
+          "To book a holiday",
+          "To solve an order problem",
+          "To apply for a job"
+        ],
+        "answer": 1,
+        "explanation": "The central purpose is to resolve the order issue."
+      },
+      "recheck": {
+        "prompt": "Two friends compare restaurants and finally choose one. What is the main outcome?",
+        "options": [
+          "They make a restaurant decision.",
+          "They discuss school homework.",
+          "They cancel all plans."
+        ],
+        "answer": 0,
+        "explanation": "The conversation’s outcome is a choice of restaurant."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "listening_gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-14",
+      "level": "A2+",
+      "order": 14,
+      "difficulty": 0.47,
+      "skill": "listening",
+      "competency": "numbers_times",
+      "title": "Numbers and times",
+      "objective": "Distinguish numbers, dates, prices and times accurately.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Numbers often sound similar and may be corrected. Listen for stress and context: fifteen/fifty, thirteen/thirty, 6:15/6:50.",
+      "examples": [
+        "The speaker may first say “Friday” and then correct it to “Thursday”.",
+        "Prices can include pounds and pence or whole amounts."
+      ],
+      "strategy": "Write the number mentally, then keep listening in case the speaker changes it.",
+      "check": {
+        "prompt": "You hear “The train leaves at six fifteen, not six fifty.” Which time is correct?",
+        "options": [
+          "6:15",
+          "6:50",
+          "7:15"
+        ],
+        "answer": 0,
+        "explanation": "The speaker explicitly corrects 6:50 to 6:15."
+      },
+      "recheck": {
+        "prompt": "You hear “It costs fourteen pounds, one-four, not forty.” What is the price?",
+        "options": [
+          "£14",
+          "£40",
+          "£44"
+        ],
+        "answer": 0,
+        "explanation": "The speaker clarifies that the intended number is fourteen."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "numbers_times"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-15",
+      "level": "A2+",
+      "order": 15,
+      "difficulty": 0.42,
+      "skill": "listening",
+      "competency": "corrected_information",
+      "title": "Corrected information",
+      "objective": "Recognise when a speaker replaces earlier information.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. PET distractors often use information that is true for a moment but later corrected. The final confirmed information is usually what matters.",
+      "examples": [
+        "“Let’s meet at 7 — actually, make it 7:30.”",
+        "“I thought it was Tuesday, but it’s Wednesday.”"
+      ],
+      "strategy": "Do not answer as soon as you hear a familiar option. Wait for correction words such as actually, no, sorry, rather, instead or I mean.",
+      "check": {
+        "prompt": "You hear “Room 12 — sorry, I mean Room 21.” Which room is correct?",
+        "options": [
+          "12",
+          "21",
+          "Both"
+        ],
+        "answer": 1,
+        "explanation": "“Sorry, I mean” signals a correction; the final information is Room 21."
+      },
+      "recheck": {
+        "prompt": "You hear “We could go by bus. Actually, the train is quicker, so let’s take that.” What do they choose?",
+        "options": [
+          "Bus",
+          "Train",
+          "Taxi"
+        ],
+        "answer": 1,
+        "explanation": "The first suggestion is replaced by the final decision to take the train."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "corrected_information"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-16",
+      "level": "A2+",
+      "order": 16,
+      "difficulty": 0.43,
+      "skill": "listening",
+      "competency": "attitude_opinion",
+      "title": "Attitude and opinion",
+      "objective": "Identify how a speaker feels or what they really think.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Attitude is often expressed through tone, evaluative words and contrast. Listen for positive, negative, uncertain or surprised reactions.",
+      "examples": [
+        "“It was better than I expected” is positive.",
+        "“I suppose it was okay” sounds less enthusiastic."
+      ],
+      "strategy": "Separate facts from evaluation. The question may ask what the speaker thinks, not what happened.",
+      "check": {
+        "prompt": "“The journey was long, but the hotel was absolutely worth it.” What is the speaker’s overall opinion of the hotel?",
+        "options": [
+          "Positive",
+          "Negative",
+          "No opinion"
+        ],
+        "answer": 0,
+        "explanation": "“Absolutely worth it” clearly expresses a positive view."
+      },
+      "recheck": {
+        "prompt": "“I expected more, to be honest.” What attitude does this show?",
+        "options": [
+          "Disappointment",
+          "Excitement",
+          "Certainty that it was perfect"
+        ],
+        "answer": 0,
+        "explanation": "The phrase signals that the experience did not meet expectations."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "attitude_opinion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-17",
+      "level": "A2+",
+      "order": 17,
+      "difficulty": 0.44,
+      "skill": "writing",
+      "competency": "writing_email",
+      "title": "Writing Part 1 email",
+      "objective": "Answer every content point clearly and organise an email around 100 words.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. A strong B1 email addresses every bullet, uses an appropriate opening/closing and links ideas clearly. Content comes before decorative language.",
+      "examples": [
+        "Thanks for your message. I’d be happy to come on Saturday.",
+        "Could you tell me what time we should meet?"
+      ],
+      "strategy": "Before writing, turn each bullet into one sentence or mini-paragraph so no content point is forgotten.",
+      "check": {
+        "prompt": "Which plan is best before writing?",
+        "options": [
+          "Write immediately and hope all points appear.",
+          "Turn each task bullet into a content checkpoint.",
+          "Use difficult vocabulary even if it changes the meaning."
+        ],
+        "answer": 1,
+        "explanation": "Planning around the task bullets protects the Content score."
+      },
+      "recheck": {
+        "prompt": "Which sentence is most suitable in a friendly email?",
+        "options": [
+          "I am writing pursuant to statutory provisions.",
+          "Thanks for inviting me — I’d love to come.",
+          "Whereas the aforementioned event shall occur."
+        ],
+        "answer": 1,
+        "explanation": "A friendly B1 email should sound natural and appropriate for the relationship."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_email"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-18",
+      "level": "A2+",
+      "order": 18,
+      "difficulty": 0.46,
+      "skill": "writing",
+      "competency": "writing_article_story",
+      "title": "Writing Part 2 article/story",
+      "objective": "Develop an article or story with clear organisation and B1 language.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. An article needs a clear reader focus and engaging organisation. A story needs a logical sequence, setting and development. Both need controlled language and linking.",
+      "examples": [
+        "One reason I enjoy travelling is that every trip teaches me something new.",
+        "Suddenly, the lights went out and everyone became quiet."
+      ],
+      "strategy": "Choose the task type you can develop most clearly. Plan beginning, middle and ending before writing.",
+      "check": {
+        "prompt": "Which feature is especially important in a story?",
+        "options": [
+          "A clear sequence of events",
+          "A bank account number",
+          "A list of unrelated grammar rules"
+        ],
+        "answer": 0,
+        "explanation": "A story needs a coherent sequence so the reader can follow what happens."
+      },
+      "recheck": {
+        "prompt": "Which opening suits an article?",
+        "options": [
+          "Have you ever wondered how to make weekends more interesting?",
+          "Dear Sir or Madam, invoice attached.",
+          "Once upon a statutory regulation."
+        ],
+        "answer": 0,
+        "explanation": "A direct question can engage the reader in an article."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_article_story"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-19",
+      "level": "A2+",
+      "order": 19,
+      "difficulty": 0.47,
+      "skill": "speaking",
+      "competency": "speaking_extended",
+      "title": "Speaking Parts 1–2",
+      "objective": "Give developed personal answers and describe visual information clearly.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Avoid one-word answers. Build a B1 response with answer + reason + example/detail. In a picture task, describe what you can see without inventing an elaborate story.",
+      "examples": [
+        "I usually travel by bus because it is cheaper, and the stop is near my home.",
+        "In the picture, two people are sitting outside and they seem to be talking."
+      ],
+      "strategy": "Use the three-step pattern: answer, because, example/detail.",
+      "check": {
+        "prompt": "Which answer is better developed?",
+        "options": [
+          "Yes.",
+          "Yes, I do, because it saves time and I can use it on my way to work.",
+          "Maybe yes no."
+        ],
+        "answer": 1,
+        "explanation": "The second answer gives a clear response plus a reason and detail."
+      },
+      "recheck": {
+        "prompt": "When describing a picture, what is safest?",
+        "options": [
+          "Describe visible evidence clearly.",
+          "Invent names and life histories for everyone.",
+          "Stay silent if you do not know one word."
+        ],
+        "answer": 0,
+        "explanation": "The task rewards clear description; visible evidence is enough."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_extended"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-a2plus-20",
+      "level": "A2+",
+      "order": 20,
+      "difficulty": 0.42,
+      "skill": "speaking",
+      "competency": "speaking_interaction",
+      "title": "Speaking Parts 3–4 interaction",
+      "objective": "Suggest, respond, justify, negotiate and reach decisions with a partner.",
+      "level_focus": "Stabilise A2 and extend range before B1 tasks.",
+      "teach": "Use the same pattern in slightly wider everyday contexts. Interactive Communication requires listening and responding, not delivering a prepared monologue. Use suggestions, reactions, reasons, alternatives and a final decision.",
+      "examples": [
+        "How about taking the train instead?",
+        "That could work, but it is more expensive. Maybe the bus is better because…"
+      ],
+      "strategy": "Aim for a chain: suggestion → response → reason → alternative → agreement or decision.",
+      "check": {
+        "prompt": "Which response best develops interaction?",
+        "options": [
+          "Cinema.",
+          "That’s a good idea, but it may be expensive. How about a picnic instead?",
+          "I memorised my answer yesterday."
+        ],
+        "answer": 1,
+        "explanation": "It responds to the partner, gives a reason and proposes an alternative."
+      },
+      "recheck": {
+        "prompt": "Which phrase helps reach a decision?",
+        "options": [
+          "So shall we choose the picnic, then?",
+          "I refuse to respond to your idea.",
+          "There are seven days in a week."
+        ],
+        "answer": 0,
+        "explanation": "The phrase invites the partner to confirm a shared decision."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_interaction"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-01",
+      "level": "B1-",
+      "order": 1,
+      "difficulty": 0.53,
+      "skill": "grammar",
+      "competency": "past_simple",
+      "title": "Past simple",
+      "objective": "Use past simple accurately for completed past events.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Use the past simple for finished actions at a finished time. Regular verbs usually end in -ed; common irregular verbs change form.",
+      "examples": [
+        "I visited my aunt last Saturday.",
+        "We went by train and arrived at noon."
+      ],
+      "strategy": "Look for a finished-time signal such as yesterday, last week, in 2024 or two days ago.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I go to the bank yesterday.",
+          "I went to the bank yesterday.",
+          "I have went to the bank yesterday."
+        ],
+        "answer": 1,
+        "explanation": "A finished time such as yesterday normally requires the past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best verb form: “Last night we ___ dinner at home.”",
+        "options": [
+          "have",
+          "had",
+          "have had"
+        ],
+        "answer": 1,
+        "explanation": "Last night is a finished past time, so “had” is correct."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "past_simple"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-02",
+      "level": "B1-",
+      "order": 2,
+      "difficulty": 0.54,
+      "skill": "grammar",
+      "competency": "present_perfect",
+      "title": "Present perfect",
+      "objective": "Use present perfect for experience and unfinished time.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Use have/has + past participle for experiences, recent results and situations connected to now. Avoid a finished past-time marker with this form.",
+      "examples": [
+        "I have visited London twice.",
+        "She has already finished the report."
+      ],
+      "strategy": "Ask: is the time finished and named? If yes, past simple is often better. If the time is open or experience matters, present perfect may fit.",
+      "check": {
+        "prompt": "Which sentence is best?",
+        "options": [
+          "I have seen that film last Friday.",
+          "I saw that film last Friday.",
+          "I have saw that film last Friday."
+        ],
+        "answer": 1,
+        "explanation": "“Last Friday” is finished time, so use past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "I have never tried sushi.",
+          "I never tried sushi in my life yet.",
+          "I has never tried sushi."
+        ],
+        "answer": 0,
+        "explanation": "Experience up to now is naturally expressed with present perfect."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "present_perfect"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-03",
+      "level": "B1-",
+      "order": 3,
+      "difficulty": 0.56,
+      "skill": "grammar",
+      "competency": "future_forms",
+      "title": "Future forms",
+      "objective": "Choose will, going to or present continuous appropriately.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Use will for instant decisions and predictions, going to for prior intentions or visible evidence, and present continuous for arranged future plans.",
+      "examples": [
+        "I’m meeting the dentist at 3 tomorrow.",
+        "Look at those clouds. It’s going to rain."
+      ],
+      "strategy": "Identify whether the speaker is deciding now, expressing an intention, or describing an arrangement.",
+      "check": {
+        "prompt": "Which is an arranged plan?",
+        "options": [
+          "I will see the dentist at 3 tomorrow.",
+          "I am seeing the dentist at 3 tomorrow.",
+          "I going to seeing the dentist at 3 tomorrow."
+        ],
+        "answer": 1,
+        "explanation": "A fixed appointment is naturally expressed with the present continuous."
+      },
+      "recheck": {
+        "prompt": "Complete: “The phone is ringing. I ___ answer it.”",
+        "options": [
+          "will",
+          "am going to",
+          "am answering yesterday"
+        ],
+        "answer": 0,
+        "explanation": "An instant decision at the moment of speaking commonly uses “will”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "future_forms"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-04",
+      "level": "B1-",
+      "order": 4,
+      "difficulty": 0.57,
+      "skill": "grammar",
+      "competency": "comparatives",
+      "title": "Comparatives and superlatives",
+      "objective": "Compare people, places and options accurately.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Use comparative forms to compare two things and superlatives to identify one thing within a group. Watch irregular forms such as better/best.",
+      "examples": [
+        "This route is faster than the other one.",
+        "That was the most useful course I took this year."
+      ],
+      "strategy": "Check whether the sentence compares two items or one item against a whole group.",
+      "check": {
+        "prompt": "Choose the correct form.",
+        "options": [
+          "This train is more fast than the bus.",
+          "This train is faster than the bus.",
+          "This train is fastest than the bus."
+        ],
+        "answer": 1,
+        "explanation": "For short adjectives such as fast, use -er + than."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "It is the most cheap option.",
+          "It is the cheaper of all.",
+          "It is the cheapest option."
+        ],
+        "answer": 2,
+        "explanation": "“Cheapest” is the correct superlative form of “cheap”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "comparatives"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-05",
+      "level": "B1-",
+      "order": 5,
+      "difficulty": 0.52,
+      "skill": "grammar",
+      "competency": "modals",
+      "title": "Modals",
+      "objective": "Use can, could, should, must and have to for meaning.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Modal verbs express ability, possibility, advice, obligation and permission. The meaning matters more than the form alone.",
+      "examples": [
+        "You should book an appointment.",
+        "Employees must wear their badges."
+      ],
+      "strategy": "Decide the function first: advice, rule, ability, request or possibility.",
+      "check": {
+        "prompt": "Which sentence gives advice?",
+        "options": [
+          "You should call the clinic.",
+          "You must be 18 to apply.",
+          "I can swim."
+        ],
+        "answer": 0,
+        "explanation": "“Should” commonly expresses advice."
+      },
+      "recheck": {
+        "prompt": "Which sentence expresses an external rule?",
+        "options": [
+          "You have to show your ticket.",
+          "You could show your ticket yesterday maybe.",
+          "You are show your ticket."
+        ],
+        "answer": 0,
+        "explanation": "“Have to” is commonly used for an external obligation or rule."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "modals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-06",
+      "level": "B1-",
+      "order": 6,
+      "difficulty": 0.53,
+      "skill": "grammar",
+      "competency": "conditionals",
+      "title": "Conditionals",
+      "objective": "Use zero and first conditional patterns for real situations.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Use the zero conditional for general truths and the first conditional for realistic future conditions. In the first conditional, use present simple after if and will in the result clause.",
+      "examples": [
+        "If you heat ice, it melts.",
+        "If the bus is late, I will call you."
+      ],
+      "strategy": "Do not normally put “will” directly after if in a standard first conditional.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "If it will rain, we stay home.",
+          "If it rains, we will stay home.",
+          "If it rained, we will stay home yesterday."
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple, then will + base verb."
+      },
+      "recheck": {
+        "prompt": "Choose the general truth.",
+        "options": [
+          "If people do not sleep enough, they feel tired.",
+          "If people will not sleep, they felt tired.",
+          "If people slept, they are tired tomorrow."
+        ],
+        "answer": 0,
+        "explanation": "Zero conditional uses present simple in both clauses for general truths."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "conditionals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-07",
+      "level": "B1-",
+      "order": 7,
+      "difficulty": 0.54,
+      "skill": "grammar",
+      "competency": "articles_prepositions",
+      "title": "Articles and prepositions",
+      "objective": "Use common articles and prepositions accurately.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Articles and prepositions are small words but frequent sources of error. Learn them in chunks: at work, on Monday, in the morning, go to the bank, an appointment.",
+      "examples": [
+        "I have an appointment at 10.",
+        "She works in a hospital."
+      ],
+      "strategy": "Store useful phrases as complete chunks instead of translating each small word separately.",
+      "check": {
+        "prompt": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday"
+        ],
+        "answer": 1,
+        "explanation": "Days of the week usually take “on”."
+      },
+      "recheck": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I have a appointment.",
+          "I have an appointment.",
+          "I have appointment an."
+        ],
+        "answer": 1,
+        "explanation": "Use “an” before a vowel sound such as the first sound in “appointment”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "articles_prepositions"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-08",
+      "level": "B1-",
+      "order": 8,
+      "difficulty": 0.56,
+      "skill": "grammar",
+      "competency": "linkers",
+      "title": "Linkers",
+      "objective": "Connect ideas with because, although, however, so and therefore.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Linkers make relationships between ideas explicit. Choose a linker based on cause, contrast, result or addition.",
+      "examples": [
+        "The flat is small, but it is very bright.",
+        "I missed the bus, so I took a taxi."
+      ],
+      "strategy": "Before choosing a linker, label the relationship: reason, contrast, result or extra information.",
+      "check": {
+        "prompt": "Choose the best linker: “It was raining, ___ we stayed inside.”",
+        "options": [
+          "because",
+          "so",
+          "although"
+        ],
+        "answer": 1,
+        "explanation": "The second clause is the result, so “so” fits."
+      },
+      "recheck": {
+        "prompt": "Choose the best linker: “___ the hotel was expensive, it was very comfortable.”",
+        "options": [
+          "Although",
+          "Because of",
+          "So"
+        ],
+        "answer": 0,
+        "explanation": "“Although” introduces a contrast."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "linkers"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-09",
+      "level": "B1-",
+      "order": 9,
+      "difficulty": 0.57,
+      "skill": "reading",
+      "competency": "gist",
+      "title": "Reading gist",
+      "objective": "Identify the main purpose or overall message quickly.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. For gist, do not stop at every unknown word. Read the title, opening, closing and repeated ideas to identify the writer’s overall purpose.",
+      "examples": [
+        "A notice may mainly warn, invite, explain or request.",
+        "A short article can contain many details but still have one central message."
+      ],
+      "strategy": "Ask: “Why was this text written?” before examining small details.",
+      "check": {
+        "prompt": "A message explains a change to opening hours and gives the new times. What is its main purpose?",
+        "options": [
+          "To complain about staff",
+          "To inform customers of a schedule change",
+          "To advertise a new product"
+        ],
+        "answer": 1,
+        "explanation": "The core purpose is to inform readers about changed opening hours."
+      },
+      "recheck": {
+        "prompt": "A blog post describes three ways to save money while travelling. What is the gist?",
+        "options": [
+          "Advice for cheaper travel",
+          "A story about a delayed flight",
+          "A hotel review"
+        ],
+        "answer": 0,
+        "explanation": "The repeated focus is advice on reducing travel costs."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-10",
+      "level": "B1-",
+      "order": 10,
+      "difficulty": 0.52,
+      "skill": "reading",
+      "competency": "detail",
+      "title": "Reading detail",
+      "objective": "Locate exact factual information without being distracted.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Detail questions require precise matching between the question and the text. Similar words may appear in distractors, so verify the complete meaning.",
+      "examples": [
+        "A text may mention 8:30 and 9:00 but only one answers the question.",
+        "Names, prices and conditions often appear close together."
+      ],
+      "strategy": "Underline the exact information requested, then scan for evidence that matches all parts of it.",
+      "check": {
+        "prompt": "A notice says “Doors open at 18:30; the talk starts at 19:00.” When does the talk start?",
+        "options": [
+          "18:30",
+          "19:00",
+          "19:30"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for the talk start time, not the door-opening time."
+      },
+      "recheck": {
+        "prompt": "A shop offers free delivery only for orders over £40. Which order qualifies?",
+        "options": [
+          "£35",
+          "£40",
+          "£45"
+        ],
+        "answer": 2,
+        "explanation": "“Over £40” means more than £40, so £45 qualifies."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "detail"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-11",
+      "level": "B1-",
+      "order": 11,
+      "difficulty": 0.53,
+      "skill": "reading",
+      "competency": "inference",
+      "title": "Reading inference",
+      "objective": "Infer meaning that is implied rather than directly stated.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Inference combines clues. The correct answer is supported by the text even when the exact words do not appear.",
+      "examples": [
+        "“I wish I had checked the timetable” implies regret.",
+        "“There were hardly any seats left” implies the place was busy."
+      ],
+      "strategy": "Choose the answer that is strongly supported by clues, not merely possible in real life.",
+      "check": {
+        "prompt": "“Maya looked at the long queue and checked her watch again.” What can we infer?",
+        "options": [
+          "She is probably worried about time.",
+          "She loves waiting in queues.",
+          "She has already arrived at home."
+        ],
+        "answer": 0,
+        "explanation": "Checking the time while facing a long queue suggests concern about delay."
+      },
+      "recheck": {
+        "prompt": "“I should have brought a jacket,” Tom said as the wind got stronger. How does he feel?",
+        "options": [
+          "He regrets not bringing one.",
+          "He is selling a jacket.",
+          "He thinks it is too hot."
+        ],
+        "answer": 0,
+        "explanation": "“Should have” signals regret about a past choice."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "inference"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-12",
+      "level": "B1-",
+      "order": 12,
+      "difficulty": 0.54,
+      "skill": "reading",
+      "competency": "text_cohesion",
+      "title": "Text cohesion",
+      "objective": "Use reference words and logical links to reconstruct a text.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Cohesion depends on pronouns, reference words, time sequence and logical connectors. A sentence must connect naturally to what comes before and after it.",
+      "examples": [
+        "“This decision” must refer to a decision already mentioned.",
+        "“However” normally signals contrast with the previous idea."
+      ],
+      "strategy": "Check both sides of the gap. A sentence can fit grammatically but still break the logic.",
+      "check": {
+        "prompt": "Which sentence best follows “The train was cancelled.”?",
+        "options": [
+          "As a result, we took the bus.",
+          "For example, blue is my favourite colour.",
+          "However, yesterday is Monday."
+        ],
+        "answer": 0,
+        "explanation": "“As a result” logically links the cancellation to the alternative transport."
+      },
+      "recheck": {
+        "prompt": "Which word best completes the link? “The room was small. ___, it had everything we needed.”",
+        "options": [
+          "However",
+          "Because",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "“However” introduces the contrast between small size and usefulness."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "text_cohesion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-13",
+      "level": "B1-",
+      "order": 13,
+      "difficulty": 0.56,
+      "skill": "listening",
+      "competency": "listening_gist",
+      "title": "Listening gist",
+      "objective": "Recognise the speaker’s main point on the first pass.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. For listening gist, focus on situation, purpose and outcome. Do not chase every individual word.",
+      "examples": [
+        "A speaker may mention several places but mainly be asking for directions.",
+        "A conversation can include a complaint and still end with an agreed solution."
+      ],
+      "strategy": "After the first listen, summarise the message in one short sentence.",
+      "check": {
+        "prompt": "A caller explains a problem with an online order and asks for a replacement. What is the main purpose?",
+        "options": [
+          "To book a holiday",
+          "To solve an order problem",
+          "To apply for a job"
+        ],
+        "answer": 1,
+        "explanation": "The central purpose is to resolve the order issue."
+      },
+      "recheck": {
+        "prompt": "Two friends compare restaurants and finally choose one. What is the main outcome?",
+        "options": [
+          "They make a restaurant decision.",
+          "They discuss school homework.",
+          "They cancel all plans."
+        ],
+        "answer": 0,
+        "explanation": "The conversation’s outcome is a choice of restaurant."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "listening_gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-14",
+      "level": "B1-",
+      "order": 14,
+      "difficulty": 0.57,
+      "skill": "listening",
+      "competency": "numbers_times",
+      "title": "Numbers and times",
+      "objective": "Distinguish numbers, dates, prices and times accurately.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Numbers often sound similar and may be corrected. Listen for stress and context: fifteen/fifty, thirteen/thirty, 6:15/6:50.",
+      "examples": [
+        "The speaker may first say “Friday” and then correct it to “Thursday”.",
+        "Prices can include pounds and pence or whole amounts."
+      ],
+      "strategy": "Write the number mentally, then keep listening in case the speaker changes it.",
+      "check": {
+        "prompt": "You hear “The train leaves at six fifteen, not six fifty.” Which time is correct?",
+        "options": [
+          "6:15",
+          "6:50",
+          "7:15"
+        ],
+        "answer": 0,
+        "explanation": "The speaker explicitly corrects 6:50 to 6:15."
+      },
+      "recheck": {
+        "prompt": "You hear “It costs fourteen pounds, one-four, not forty.” What is the price?",
+        "options": [
+          "£14",
+          "£40",
+          "£44"
+        ],
+        "answer": 0,
+        "explanation": "The speaker clarifies that the intended number is fourteen."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "numbers_times"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-15",
+      "level": "B1-",
+      "order": 15,
+      "difficulty": 0.52,
+      "skill": "listening",
+      "competency": "corrected_information",
+      "title": "Corrected information",
+      "objective": "Recognise when a speaker replaces earlier information.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. PET distractors often use information that is true for a moment but later corrected. The final confirmed information is usually what matters.",
+      "examples": [
+        "“Let’s meet at 7 — actually, make it 7:30.”",
+        "“I thought it was Tuesday, but it’s Wednesday.”"
+      ],
+      "strategy": "Do not answer as soon as you hear a familiar option. Wait for correction words such as actually, no, sorry, rather, instead or I mean.",
+      "check": {
+        "prompt": "You hear “Room 12 — sorry, I mean Room 21.” Which room is correct?",
+        "options": [
+          "12",
+          "21",
+          "Both"
+        ],
+        "answer": 1,
+        "explanation": "“Sorry, I mean” signals a correction; the final information is Room 21."
+      },
+      "recheck": {
+        "prompt": "You hear “We could go by bus. Actually, the train is quicker, so let’s take that.” What do they choose?",
+        "options": [
+          "Bus",
+          "Train",
+          "Taxi"
+        ],
+        "answer": 1,
+        "explanation": "The first suggestion is replaced by the final decision to take the train."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "corrected_information"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-16",
+      "level": "B1-",
+      "order": 16,
+      "difficulty": 0.53,
+      "skill": "listening",
+      "competency": "attitude_opinion",
+      "title": "Attitude and opinion",
+      "objective": "Identify how a speaker feels or what they really think.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Attitude is often expressed through tone, evaluative words and contrast. Listen for positive, negative, uncertain or surprised reactions.",
+      "examples": [
+        "“It was better than I expected” is positive.",
+        "“I suppose it was okay” sounds less enthusiastic."
+      ],
+      "strategy": "Separate facts from evaluation. The question may ask what the speaker thinks, not what happened.",
+      "check": {
+        "prompt": "“The journey was long, but the hotel was absolutely worth it.” What is the speaker’s overall opinion of the hotel?",
+        "options": [
+          "Positive",
+          "Negative",
+          "No opinion"
+        ],
+        "answer": 0,
+        "explanation": "“Absolutely worth it” clearly expresses a positive view."
+      },
+      "recheck": {
+        "prompt": "“I expected more, to be honest.” What attitude does this show?",
+        "options": [
+          "Disappointment",
+          "Excitement",
+          "Certainty that it was perfect"
+        ],
+        "answer": 0,
+        "explanation": "The phrase signals that the experience did not meet expectations."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "attitude_opinion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-17",
+      "level": "B1-",
+      "order": 17,
+      "difficulty": 0.54,
+      "skill": "writing",
+      "competency": "writing_email",
+      "title": "Writing Part 1 email",
+      "objective": "Answer every content point clearly and organise an email around 100 words.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. A strong B1 email addresses every bullet, uses an appropriate opening/closing and links ideas clearly. Content comes before decorative language.",
+      "examples": [
+        "Thanks for your message. I’d be happy to come on Saturday.",
+        "Could you tell me what time we should meet?"
+      ],
+      "strategy": "Before writing, turn each bullet into one sentence or mini-paragraph so no content point is forgotten.",
+      "check": {
+        "prompt": "Which plan is best before writing?",
+        "options": [
+          "Write immediately and hope all points appear.",
+          "Turn each task bullet into a content checkpoint.",
+          "Use difficult vocabulary even if it changes the meaning."
+        ],
+        "answer": 1,
+        "explanation": "Planning around the task bullets protects the Content score."
+      },
+      "recheck": {
+        "prompt": "Which sentence is most suitable in a friendly email?",
+        "options": [
+          "I am writing pursuant to statutory provisions.",
+          "Thanks for inviting me — I’d love to come.",
+          "Whereas the aforementioned event shall occur."
+        ],
+        "answer": 1,
+        "explanation": "A friendly B1 email should sound natural and appropriate for the relationship."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_email"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-18",
+      "level": "B1-",
+      "order": 18,
+      "difficulty": 0.56,
+      "skill": "writing",
+      "competency": "writing_article_story",
+      "title": "Writing Part 2 article/story",
+      "objective": "Develop an article or story with clear organisation and B1 language.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. An article needs a clear reader focus and engaging organisation. A story needs a logical sequence, setting and development. Both need controlled language and linking.",
+      "examples": [
+        "One reason I enjoy travelling is that every trip teaches me something new.",
+        "Suddenly, the lights went out and everyone became quiet."
+      ],
+      "strategy": "Choose the task type you can develop most clearly. Plan beginning, middle and ending before writing.",
+      "check": {
+        "prompt": "Which feature is especially important in a story?",
+        "options": [
+          "A clear sequence of events",
+          "A bank account number",
+          "A list of unrelated grammar rules"
+        ],
+        "answer": 0,
+        "explanation": "A story needs a coherent sequence so the reader can follow what happens."
+      },
+      "recheck": {
+        "prompt": "Which opening suits an article?",
+        "options": [
+          "Have you ever wondered how to make weekends more interesting?",
+          "Dear Sir or Madam, invoice attached.",
+          "Once upon a statutory regulation."
+        ],
+        "answer": 0,
+        "explanation": "A direct question can engage the reader in an article."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_article_story"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-19",
+      "level": "B1-",
+      "order": 19,
+      "difficulty": 0.57,
+      "skill": "speaking",
+      "competency": "speaking_extended",
+      "title": "Speaking Parts 1–2",
+      "objective": "Give developed personal answers and describe visual information clearly.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Avoid one-word answers. Build a B1 response with answer + reason + example/detail. In a picture task, describe what you can see without inventing an elaborate story.",
+      "examples": [
+        "I usually travel by bus because it is cheaper, and the stop is near my home.",
+        "In the picture, two people are sitting outside and they seem to be talking."
+      ],
+      "strategy": "Use the three-step pattern: answer, because, example/detail.",
+      "check": {
+        "prompt": "Which answer is better developed?",
+        "options": [
+          "Yes.",
+          "Yes, I do, because it saves time and I can use it on my way to work.",
+          "Maybe yes no."
+        ],
+        "answer": 1,
+        "explanation": "The second answer gives a clear response plus a reason and detail."
+      },
+      "recheck": {
+        "prompt": "When describing a picture, what is safest?",
+        "options": [
+          "Describe visible evidence clearly.",
+          "Invent names and life histories for everyone.",
+          "Stay silent if you do not know one word."
+        ],
+        "answer": 0,
+        "explanation": "The task rewards clear description; visible evidence is enough."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_extended"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1minus-20",
+      "level": "B1-",
+      "order": 20,
+      "difficulty": 0.52,
+      "skill": "speaking",
+      "competency": "speaking_interaction",
+      "title": "Speaking Parts 3–4 interaction",
+      "objective": "Suggest, respond, justify, negotiate and reach decisions with a partner.",
+      "level_focus": "Bridge into B1 with guided exam-style thinking.",
+      "teach": "Now notice distractors and explain why one option is better. Interactive Communication requires listening and responding, not delivering a prepared monologue. Use suggestions, reactions, reasons, alternatives and a final decision.",
+      "examples": [
+        "How about taking the train instead?",
+        "That could work, but it is more expensive. Maybe the bus is better because…"
+      ],
+      "strategy": "Aim for a chain: suggestion → response → reason → alternative → agreement or decision.",
+      "check": {
+        "prompt": "Which response best develops interaction?",
+        "options": [
+          "Cinema.",
+          "That’s a good idea, but it may be expensive. How about a picnic instead?",
+          "I memorised my answer yesterday."
+        ],
+        "answer": 1,
+        "explanation": "It responds to the partner, gives a reason and proposes an alternative."
+      },
+      "recheck": {
+        "prompt": "Which phrase helps reach a decision?",
+        "options": [
+          "So shall we choose the picnic, then?",
+          "I refuse to respond to your idea.",
+          "There are seven days in a week."
+        ],
+        "answer": 0,
+        "explanation": "The phrase invites the partner to confirm a shared decision."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_interaction"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-01",
+      "level": "B1",
+      "order": 1,
+      "difficulty": 0.63,
+      "skill": "grammar",
+      "competency": "past_simple",
+      "title": "Past simple",
+      "objective": "Use past simple accurately for completed past events.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Use the past simple for finished actions at a finished time. Regular verbs usually end in -ed; common irregular verbs change form.",
+      "examples": [
+        "I visited my aunt last Saturday.",
+        "We went by train and arrived at noon."
+      ],
+      "strategy": "Look for a finished-time signal such as yesterday, last week, in 2024 or two days ago.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I go to the bank yesterday.",
+          "I went to the bank yesterday.",
+          "I have went to the bank yesterday."
+        ],
+        "answer": 1,
+        "explanation": "A finished time such as yesterday normally requires the past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best verb form: “Last night we ___ dinner at home.”",
+        "options": [
+          "have",
+          "had",
+          "have had"
+        ],
+        "answer": 1,
+        "explanation": "Last night is a finished past time, so “had” is correct."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "past_simple"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-02",
+      "level": "B1",
+      "order": 2,
+      "difficulty": 0.64,
+      "skill": "grammar",
+      "competency": "present_perfect",
+      "title": "Present perfect",
+      "objective": "Use present perfect for experience and unfinished time.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Use have/has + past participle for experiences, recent results and situations connected to now. Avoid a finished past-time marker with this form.",
+      "examples": [
+        "I have visited London twice.",
+        "She has already finished the report."
+      ],
+      "strategy": "Ask: is the time finished and named? If yes, past simple is often better. If the time is open or experience matters, present perfect may fit.",
+      "check": {
+        "prompt": "Which sentence is best?",
+        "options": [
+          "I have seen that film last Friday.",
+          "I saw that film last Friday.",
+          "I have saw that film last Friday."
+        ],
+        "answer": 1,
+        "explanation": "“Last Friday” is finished time, so use past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "I have never tried sushi.",
+          "I never tried sushi in my life yet.",
+          "I has never tried sushi."
+        ],
+        "answer": 0,
+        "explanation": "Experience up to now is naturally expressed with present perfect."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "present_perfect"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-03",
+      "level": "B1",
+      "order": 3,
+      "difficulty": 0.66,
+      "skill": "grammar",
+      "competency": "future_forms",
+      "title": "Future forms",
+      "objective": "Choose will, going to or present continuous appropriately.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Use will for instant decisions and predictions, going to for prior intentions or visible evidence, and present continuous for arranged future plans.",
+      "examples": [
+        "I’m meeting the dentist at 3 tomorrow.",
+        "Look at those clouds. It’s going to rain."
+      ],
+      "strategy": "Identify whether the speaker is deciding now, expressing an intention, or describing an arrangement.",
+      "check": {
+        "prompt": "Which is an arranged plan?",
+        "options": [
+          "I will see the dentist at 3 tomorrow.",
+          "I am seeing the dentist at 3 tomorrow.",
+          "I going to seeing the dentist at 3 tomorrow."
+        ],
+        "answer": 1,
+        "explanation": "A fixed appointment is naturally expressed with the present continuous."
+      },
+      "recheck": {
+        "prompt": "Complete: “The phone is ringing. I ___ answer it.”",
+        "options": [
+          "will",
+          "am going to",
+          "am answering yesterday"
+        ],
+        "answer": 0,
+        "explanation": "An instant decision at the moment of speaking commonly uses “will”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "future_forms"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-04",
+      "level": "B1",
+      "order": 4,
+      "difficulty": 0.67,
+      "skill": "grammar",
+      "competency": "comparatives",
+      "title": "Comparatives and superlatives",
+      "objective": "Compare people, places and options accurately.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Use comparative forms to compare two things and superlatives to identify one thing within a group. Watch irregular forms such as better/best.",
+      "examples": [
+        "This route is faster than the other one.",
+        "That was the most useful course I took this year."
+      ],
+      "strategy": "Check whether the sentence compares two items or one item against a whole group.",
+      "check": {
+        "prompt": "Choose the correct form.",
+        "options": [
+          "This train is more fast than the bus.",
+          "This train is faster than the bus.",
+          "This train is fastest than the bus."
+        ],
+        "answer": 1,
+        "explanation": "For short adjectives such as fast, use -er + than."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "It is the most cheap option.",
+          "It is the cheaper of all.",
+          "It is the cheapest option."
+        ],
+        "answer": 2,
+        "explanation": "“Cheapest” is the correct superlative form of “cheap”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "comparatives"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-05",
+      "level": "B1",
+      "order": 5,
+      "difficulty": 0.62,
+      "skill": "grammar",
+      "competency": "modals",
+      "title": "Modals",
+      "objective": "Use can, could, should, must and have to for meaning.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Modal verbs express ability, possibility, advice, obligation and permission. The meaning matters more than the form alone.",
+      "examples": [
+        "You should book an appointment.",
+        "Employees must wear their badges."
+      ],
+      "strategy": "Decide the function first: advice, rule, ability, request or possibility.",
+      "check": {
+        "prompt": "Which sentence gives advice?",
+        "options": [
+          "You should call the clinic.",
+          "You must be 18 to apply.",
+          "I can swim."
+        ],
+        "answer": 0,
+        "explanation": "“Should” commonly expresses advice."
+      },
+      "recheck": {
+        "prompt": "Which sentence expresses an external rule?",
+        "options": [
+          "You have to show your ticket.",
+          "You could show your ticket yesterday maybe.",
+          "You are show your ticket."
+        ],
+        "answer": 0,
+        "explanation": "“Have to” is commonly used for an external obligation or rule."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "modals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-06",
+      "level": "B1",
+      "order": 6,
+      "difficulty": 0.63,
+      "skill": "grammar",
+      "competency": "conditionals",
+      "title": "Conditionals",
+      "objective": "Use zero and first conditional patterns for real situations.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Use the zero conditional for general truths and the first conditional for realistic future conditions. In the first conditional, use present simple after if and will in the result clause.",
+      "examples": [
+        "If you heat ice, it melts.",
+        "If the bus is late, I will call you."
+      ],
+      "strategy": "Do not normally put “will” directly after if in a standard first conditional.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "If it will rain, we stay home.",
+          "If it rains, we will stay home.",
+          "If it rained, we will stay home yesterday."
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple, then will + base verb."
+      },
+      "recheck": {
+        "prompt": "Choose the general truth.",
+        "options": [
+          "If people do not sleep enough, they feel tired.",
+          "If people will not sleep, they felt tired.",
+          "If people slept, they are tired tomorrow."
+        ],
+        "answer": 0,
+        "explanation": "Zero conditional uses present simple in both clauses for general truths."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "conditionals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-07",
+      "level": "B1",
+      "order": 7,
+      "difficulty": 0.64,
+      "skill": "grammar",
+      "competency": "articles_prepositions",
+      "title": "Articles and prepositions",
+      "objective": "Use common articles and prepositions accurately.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Articles and prepositions are small words but frequent sources of error. Learn them in chunks: at work, on Monday, in the morning, go to the bank, an appointment.",
+      "examples": [
+        "I have an appointment at 10.",
+        "She works in a hospital."
+      ],
+      "strategy": "Store useful phrases as complete chunks instead of translating each small word separately.",
+      "check": {
+        "prompt": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday"
+        ],
+        "answer": 1,
+        "explanation": "Days of the week usually take “on”."
+      },
+      "recheck": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I have a appointment.",
+          "I have an appointment.",
+          "I have appointment an."
+        ],
+        "answer": 1,
+        "explanation": "Use “an” before a vowel sound such as the first sound in “appointment”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "articles_prepositions"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-08",
+      "level": "B1",
+      "order": 8,
+      "difficulty": 0.66,
+      "skill": "grammar",
+      "competency": "linkers",
+      "title": "Linkers",
+      "objective": "Connect ideas with because, although, however, so and therefore.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Linkers make relationships between ideas explicit. Choose a linker based on cause, contrast, result or addition.",
+      "examples": [
+        "The flat is small, but it is very bright.",
+        "I missed the bus, so I took a taxi."
+      ],
+      "strategy": "Before choosing a linker, label the relationship: reason, contrast, result or extra information.",
+      "check": {
+        "prompt": "Choose the best linker: “It was raining, ___ we stayed inside.”",
+        "options": [
+          "because",
+          "so",
+          "although"
+        ],
+        "answer": 1,
+        "explanation": "The second clause is the result, so “so” fits."
+      },
+      "recheck": {
+        "prompt": "Choose the best linker: “___ the hotel was expensive, it was very comfortable.”",
+        "options": [
+          "Although",
+          "Because of",
+          "So"
+        ],
+        "answer": 0,
+        "explanation": "“Although” introduces a contrast."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "linkers"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-09",
+      "level": "B1",
+      "order": 9,
+      "difficulty": 0.67,
+      "skill": "reading",
+      "competency": "gist",
+      "title": "Reading gist",
+      "objective": "Identify the main purpose or overall message quickly.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. For gist, do not stop at every unknown word. Read the title, opening, closing and repeated ideas to identify the writer’s overall purpose.",
+      "examples": [
+        "A notice may mainly warn, invite, explain or request.",
+        "A short article can contain many details but still have one central message."
+      ],
+      "strategy": "Ask: “Why was this text written?” before examining small details.",
+      "check": {
+        "prompt": "A message explains a change to opening hours and gives the new times. What is its main purpose?",
+        "options": [
+          "To complain about staff",
+          "To inform customers of a schedule change",
+          "To advertise a new product"
+        ],
+        "answer": 1,
+        "explanation": "The core purpose is to inform readers about changed opening hours."
+      },
+      "recheck": {
+        "prompt": "A blog post describes three ways to save money while travelling. What is the gist?",
+        "options": [
+          "Advice for cheaper travel",
+          "A story about a delayed flight",
+          "A hotel review"
+        ],
+        "answer": 0,
+        "explanation": "The repeated focus is advice on reducing travel costs."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-10",
+      "level": "B1",
+      "order": 10,
+      "difficulty": 0.62,
+      "skill": "reading",
+      "competency": "detail",
+      "title": "Reading detail",
+      "objective": "Locate exact factual information without being distracted.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Detail questions require precise matching between the question and the text. Similar words may appear in distractors, so verify the complete meaning.",
+      "examples": [
+        "A text may mention 8:30 and 9:00 but only one answers the question.",
+        "Names, prices and conditions often appear close together."
+      ],
+      "strategy": "Underline the exact information requested, then scan for evidence that matches all parts of it.",
+      "check": {
+        "prompt": "A notice says “Doors open at 18:30; the talk starts at 19:00.” When does the talk start?",
+        "options": [
+          "18:30",
+          "19:00",
+          "19:30"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for the talk start time, not the door-opening time."
+      },
+      "recheck": {
+        "prompt": "A shop offers free delivery only for orders over £40. Which order qualifies?",
+        "options": [
+          "£35",
+          "£40",
+          "£45"
+        ],
+        "answer": 2,
+        "explanation": "“Over £40” means more than £40, so £45 qualifies."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "detail"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-11",
+      "level": "B1",
+      "order": 11,
+      "difficulty": 0.63,
+      "skill": "reading",
+      "competency": "inference",
+      "title": "Reading inference",
+      "objective": "Infer meaning that is implied rather than directly stated.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Inference combines clues. The correct answer is supported by the text even when the exact words do not appear.",
+      "examples": [
+        "“I wish I had checked the timetable” implies regret.",
+        "“There were hardly any seats left” implies the place was busy."
+      ],
+      "strategy": "Choose the answer that is strongly supported by clues, not merely possible in real life.",
+      "check": {
+        "prompt": "“Maya looked at the long queue and checked her watch again.” What can we infer?",
+        "options": [
+          "She is probably worried about time.",
+          "She loves waiting in queues.",
+          "She has already arrived at home."
+        ],
+        "answer": 0,
+        "explanation": "Checking the time while facing a long queue suggests concern about delay."
+      },
+      "recheck": {
+        "prompt": "“I should have brought a jacket,” Tom said as the wind got stronger. How does he feel?",
+        "options": [
+          "He regrets not bringing one.",
+          "He is selling a jacket.",
+          "He thinks it is too hot."
+        ],
+        "answer": 0,
+        "explanation": "“Should have” signals regret about a past choice."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "inference"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-12",
+      "level": "B1",
+      "order": 12,
+      "difficulty": 0.64,
+      "skill": "reading",
+      "competency": "text_cohesion",
+      "title": "Text cohesion",
+      "objective": "Use reference words and logical links to reconstruct a text.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Cohesion depends on pronouns, reference words, time sequence and logical connectors. A sentence must connect naturally to what comes before and after it.",
+      "examples": [
+        "“This decision” must refer to a decision already mentioned.",
+        "“However” normally signals contrast with the previous idea."
+      ],
+      "strategy": "Check both sides of the gap. A sentence can fit grammatically but still break the logic.",
+      "check": {
+        "prompt": "Which sentence best follows “The train was cancelled.”?",
+        "options": [
+          "As a result, we took the bus.",
+          "For example, blue is my favourite colour.",
+          "However, yesterday is Monday."
+        ],
+        "answer": 0,
+        "explanation": "“As a result” logically links the cancellation to the alternative transport."
+      },
+      "recheck": {
+        "prompt": "Which word best completes the link? “The room was small. ___, it had everything we needed.”",
+        "options": [
+          "However",
+          "Because",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "“However” introduces the contrast between small size and usefulness."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "text_cohesion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-13",
+      "level": "B1",
+      "order": 13,
+      "difficulty": 0.66,
+      "skill": "listening",
+      "competency": "listening_gist",
+      "title": "Listening gist",
+      "objective": "Recognise the speaker’s main point on the first pass.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. For listening gist, focus on situation, purpose and outcome. Do not chase every individual word.",
+      "examples": [
+        "A speaker may mention several places but mainly be asking for directions.",
+        "A conversation can include a complaint and still end with an agreed solution."
+      ],
+      "strategy": "After the first listen, summarise the message in one short sentence.",
+      "check": {
+        "prompt": "A caller explains a problem with an online order and asks for a replacement. What is the main purpose?",
+        "options": [
+          "To book a holiday",
+          "To solve an order problem",
+          "To apply for a job"
+        ],
+        "answer": 1,
+        "explanation": "The central purpose is to resolve the order issue."
+      },
+      "recheck": {
+        "prompt": "Two friends compare restaurants and finally choose one. What is the main outcome?",
+        "options": [
+          "They make a restaurant decision.",
+          "They discuss school homework.",
+          "They cancel all plans."
+        ],
+        "answer": 0,
+        "explanation": "The conversation’s outcome is a choice of restaurant."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "listening_gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-14",
+      "level": "B1",
+      "order": 14,
+      "difficulty": 0.67,
+      "skill": "listening",
+      "competency": "numbers_times",
+      "title": "Numbers and times",
+      "objective": "Distinguish numbers, dates, prices and times accurately.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Numbers often sound similar and may be corrected. Listen for stress and context: fifteen/fifty, thirteen/thirty, 6:15/6:50.",
+      "examples": [
+        "The speaker may first say “Friday” and then correct it to “Thursday”.",
+        "Prices can include pounds and pence or whole amounts."
+      ],
+      "strategy": "Write the number mentally, then keep listening in case the speaker changes it.",
+      "check": {
+        "prompt": "You hear “The train leaves at six fifteen, not six fifty.” Which time is correct?",
+        "options": [
+          "6:15",
+          "6:50",
+          "7:15"
+        ],
+        "answer": 0,
+        "explanation": "The speaker explicitly corrects 6:50 to 6:15."
+      },
+      "recheck": {
+        "prompt": "You hear “It costs fourteen pounds, one-four, not forty.” What is the price?",
+        "options": [
+          "£14",
+          "£40",
+          "£44"
+        ],
+        "answer": 0,
+        "explanation": "The speaker clarifies that the intended number is fourteen."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "numbers_times"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-15",
+      "level": "B1",
+      "order": 15,
+      "difficulty": 0.62,
+      "skill": "listening",
+      "competency": "corrected_information",
+      "title": "Corrected information",
+      "objective": "Recognise when a speaker replaces earlier information.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. PET distractors often use information that is true for a moment but later corrected. The final confirmed information is usually what matters.",
+      "examples": [
+        "“Let’s meet at 7 — actually, make it 7:30.”",
+        "“I thought it was Tuesday, but it’s Wednesday.”"
+      ],
+      "strategy": "Do not answer as soon as you hear a familiar option. Wait for correction words such as actually, no, sorry, rather, instead or I mean.",
+      "check": {
+        "prompt": "You hear “Room 12 — sorry, I mean Room 21.” Which room is correct?",
+        "options": [
+          "12",
+          "21",
+          "Both"
+        ],
+        "answer": 1,
+        "explanation": "“Sorry, I mean” signals a correction; the final information is Room 21."
+      },
+      "recheck": {
+        "prompt": "You hear “We could go by bus. Actually, the train is quicker, so let’s take that.” What do they choose?",
+        "options": [
+          "Bus",
+          "Train",
+          "Taxi"
+        ],
+        "answer": 1,
+        "explanation": "The first suggestion is replaced by the final decision to take the train."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "corrected_information"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-16",
+      "level": "B1",
+      "order": 16,
+      "difficulty": 0.63,
+      "skill": "listening",
+      "competency": "attitude_opinion",
+      "title": "Attitude and opinion",
+      "objective": "Identify how a speaker feels or what they really think.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Attitude is often expressed through tone, evaluative words and contrast. Listen for positive, negative, uncertain or surprised reactions.",
+      "examples": [
+        "“It was better than I expected” is positive.",
+        "“I suppose it was okay” sounds less enthusiastic."
+      ],
+      "strategy": "Separate facts from evaluation. The question may ask what the speaker thinks, not what happened.",
+      "check": {
+        "prompt": "“The journey was long, but the hotel was absolutely worth it.” What is the speaker’s overall opinion of the hotel?",
+        "options": [
+          "Positive",
+          "Negative",
+          "No opinion"
+        ],
+        "answer": 0,
+        "explanation": "“Absolutely worth it” clearly expresses a positive view."
+      },
+      "recheck": {
+        "prompt": "“I expected more, to be honest.” What attitude does this show?",
+        "options": [
+          "Disappointment",
+          "Excitement",
+          "Certainty that it was perfect"
+        ],
+        "answer": 0,
+        "explanation": "The phrase signals that the experience did not meet expectations."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "attitude_opinion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-17",
+      "level": "B1",
+      "order": 17,
+      "difficulty": 0.64,
+      "skill": "writing",
+      "competency": "writing_email",
+      "title": "Writing Part 1 email",
+      "objective": "Answer every content point clearly and organise an email around 100 words.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. A strong B1 email addresses every bullet, uses an appropriate opening/closing and links ideas clearly. Content comes before decorative language.",
+      "examples": [
+        "Thanks for your message. I’d be happy to come on Saturday.",
+        "Could you tell me what time we should meet?"
+      ],
+      "strategy": "Before writing, turn each bullet into one sentence or mini-paragraph so no content point is forgotten.",
+      "check": {
+        "prompt": "Which plan is best before writing?",
+        "options": [
+          "Write immediately and hope all points appear.",
+          "Turn each task bullet into a content checkpoint.",
+          "Use difficult vocabulary even if it changes the meaning."
+        ],
+        "answer": 1,
+        "explanation": "Planning around the task bullets protects the Content score."
+      },
+      "recheck": {
+        "prompt": "Which sentence is most suitable in a friendly email?",
+        "options": [
+          "I am writing pursuant to statutory provisions.",
+          "Thanks for inviting me — I’d love to come.",
+          "Whereas the aforementioned event shall occur."
+        ],
+        "answer": 1,
+        "explanation": "A friendly B1 email should sound natural and appropriate for the relationship."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_email"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-18",
+      "level": "B1",
+      "order": 18,
+      "difficulty": 0.66,
+      "skill": "writing",
+      "competency": "writing_article_story",
+      "title": "Writing Part 2 article/story",
+      "objective": "Develop an article or story with clear organisation and B1 language.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. An article needs a clear reader focus and engaging organisation. A story needs a logical sequence, setting and development. Both need controlled language and linking.",
+      "examples": [
+        "One reason I enjoy travelling is that every trip teaches me something new.",
+        "Suddenly, the lights went out and everyone became quiet."
+      ],
+      "strategy": "Choose the task type you can develop most clearly. Plan beginning, middle and ending before writing.",
+      "check": {
+        "prompt": "Which feature is especially important in a story?",
+        "options": [
+          "A clear sequence of events",
+          "A bank account number",
+          "A list of unrelated grammar rules"
+        ],
+        "answer": 0,
+        "explanation": "A story needs a coherent sequence so the reader can follow what happens."
+      },
+      "recheck": {
+        "prompt": "Which opening suits an article?",
+        "options": [
+          "Have you ever wondered how to make weekends more interesting?",
+          "Dear Sir or Madam, invoice attached.",
+          "Once upon a statutory regulation."
+        ],
+        "answer": 0,
+        "explanation": "A direct question can engage the reader in an article."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_article_story"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-19",
+      "level": "B1",
+      "order": 19,
+      "difficulty": 0.67,
+      "skill": "speaking",
+      "competency": "speaking_extended",
+      "title": "Speaking Parts 1–2",
+      "objective": "Give developed personal answers and describe visual information clearly.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Avoid one-word answers. Build a B1 response with answer + reason + example/detail. In a picture task, describe what you can see without inventing an elaborate story.",
+      "examples": [
+        "I usually travel by bus because it is cheaper, and the stop is near my home.",
+        "In the picture, two people are sitting outside and they seem to be talking."
+      ],
+      "strategy": "Use the three-step pattern: answer, because, example/detail.",
+      "check": {
+        "prompt": "Which answer is better developed?",
+        "options": [
+          "Yes.",
+          "Yes, I do, because it saves time and I can use it on my way to work.",
+          "Maybe yes no."
+        ],
+        "answer": 1,
+        "explanation": "The second answer gives a clear response plus a reason and detail."
+      },
+      "recheck": {
+        "prompt": "When describing a picture, what is safest?",
+        "options": [
+          "Describe visible evidence clearly.",
+          "Invent names and life histories for everyone.",
+          "Stay silent if you do not know one word."
+        ],
+        "answer": 0,
+        "explanation": "The task rewards clear description; visible evidence is enough."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_extended"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1-20",
+      "level": "B1",
+      "order": 20,
+      "difficulty": 0.62,
+      "skill": "speaking",
+      "competency": "speaking_interaction",
+      "title": "Speaking Parts 3–4 interaction",
+      "objective": "Suggest, respond, justify, negotiate and reach decisions with a partner.",
+      "level_focus": "Perform core B1 tasks with increasing independence.",
+      "teach": "Apply the pattern independently in exam-style contexts. Interactive Communication requires listening and responding, not delivering a prepared monologue. Use suggestions, reactions, reasons, alternatives and a final decision.",
+      "examples": [
+        "How about taking the train instead?",
+        "That could work, but it is more expensive. Maybe the bus is better because…"
+      ],
+      "strategy": "Aim for a chain: suggestion → response → reason → alternative → agreement or decision.",
+      "check": {
+        "prompt": "Which response best develops interaction?",
+        "options": [
+          "Cinema.",
+          "That’s a good idea, but it may be expensive. How about a picnic instead?",
+          "I memorised my answer yesterday."
+        ],
+        "answer": 1,
+        "explanation": "It responds to the partner, gives a reason and proposes an alternative."
+      },
+      "recheck": {
+        "prompt": "Which phrase helps reach a decision?",
+        "options": [
+          "So shall we choose the picnic, then?",
+          "I refuse to respond to your idea.",
+          "There are seven days in a week."
+        ],
+        "answer": 0,
+        "explanation": "The phrase invites the partner to confirm a shared decision."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_interaction"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-01",
+      "level": "B1+",
+      "order": 1,
+      "difficulty": 0.73,
+      "skill": "grammar",
+      "competency": "past_simple",
+      "title": "Past simple",
+      "objective": "Use past simple accurately for completed past events.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Use the past simple for finished actions at a finished time. Regular verbs usually end in -ed; common irregular verbs change form.",
+      "examples": [
+        "I visited my aunt last Saturday.",
+        "We went by train and arrived at noon."
+      ],
+      "strategy": "Look for a finished-time signal such as yesterday, last week, in 2024 or two days ago.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I go to the bank yesterday.",
+          "I went to the bank yesterday.",
+          "I have went to the bank yesterday."
+        ],
+        "answer": 1,
+        "explanation": "A finished time such as yesterday normally requires the past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best verb form: “Last night we ___ dinner at home.”",
+        "options": [
+          "have",
+          "had",
+          "have had"
+        ],
+        "answer": 1,
+        "explanation": "Last night is a finished past time, so “had” is correct."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "past_simple"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-02",
+      "level": "B1+",
+      "order": 2,
+      "difficulty": 0.74,
+      "skill": "grammar",
+      "competency": "present_perfect",
+      "title": "Present perfect",
+      "objective": "Use present perfect for experience and unfinished time.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Use have/has + past participle for experiences, recent results and situations connected to now. Avoid a finished past-time marker with this form.",
+      "examples": [
+        "I have visited London twice.",
+        "She has already finished the report."
+      ],
+      "strategy": "Ask: is the time finished and named? If yes, past simple is often better. If the time is open or experience matters, present perfect may fit.",
+      "check": {
+        "prompt": "Which sentence is best?",
+        "options": [
+          "I have seen that film last Friday.",
+          "I saw that film last Friday.",
+          "I have saw that film last Friday."
+        ],
+        "answer": 1,
+        "explanation": "“Last Friday” is finished time, so use past simple."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "I have never tried sushi.",
+          "I never tried sushi in my life yet.",
+          "I has never tried sushi."
+        ],
+        "answer": 0,
+        "explanation": "Experience up to now is naturally expressed with present perfect."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "present_perfect"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-03",
+      "level": "B1+",
+      "order": 3,
+      "difficulty": 0.76,
+      "skill": "grammar",
+      "competency": "future_forms",
+      "title": "Future forms",
+      "objective": "Choose will, going to or present continuous appropriately.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Use will for instant decisions and predictions, going to for prior intentions or visible evidence, and present continuous for arranged future plans.",
+      "examples": [
+        "I’m meeting the dentist at 3 tomorrow.",
+        "Look at those clouds. It’s going to rain."
+      ],
+      "strategy": "Identify whether the speaker is deciding now, expressing an intention, or describing an arrangement.",
+      "check": {
+        "prompt": "Which is an arranged plan?",
+        "options": [
+          "I will see the dentist at 3 tomorrow.",
+          "I am seeing the dentist at 3 tomorrow.",
+          "I going to seeing the dentist at 3 tomorrow."
+        ],
+        "answer": 1,
+        "explanation": "A fixed appointment is naturally expressed with the present continuous."
+      },
+      "recheck": {
+        "prompt": "Complete: “The phone is ringing. I ___ answer it.”",
+        "options": [
+          "will",
+          "am going to",
+          "am answering yesterday"
+        ],
+        "answer": 0,
+        "explanation": "An instant decision at the moment of speaking commonly uses “will”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "future_forms"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-04",
+      "level": "B1+",
+      "order": 4,
+      "difficulty": 0.77,
+      "skill": "grammar",
+      "competency": "comparatives",
+      "title": "Comparatives and superlatives",
+      "objective": "Compare people, places and options accurately.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Use comparative forms to compare two things and superlatives to identify one thing within a group. Watch irregular forms such as better/best.",
+      "examples": [
+        "This route is faster than the other one.",
+        "That was the most useful course I took this year."
+      ],
+      "strategy": "Check whether the sentence compares two items or one item against a whole group.",
+      "check": {
+        "prompt": "Choose the correct form.",
+        "options": [
+          "This train is more fast than the bus.",
+          "This train is faster than the bus.",
+          "This train is fastest than the bus."
+        ],
+        "answer": 1,
+        "explanation": "For short adjectives such as fast, use -er + than."
+      },
+      "recheck": {
+        "prompt": "Choose the best sentence.",
+        "options": [
+          "It is the most cheap option.",
+          "It is the cheaper of all.",
+          "It is the cheapest option."
+        ],
+        "answer": 2,
+        "explanation": "“Cheapest” is the correct superlative form of “cheap”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "comparatives"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-05",
+      "level": "B1+",
+      "order": 5,
+      "difficulty": 0.72,
+      "skill": "grammar",
+      "competency": "modals",
+      "title": "Modals",
+      "objective": "Use can, could, should, must and have to for meaning.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Modal verbs express ability, possibility, advice, obligation and permission. The meaning matters more than the form alone.",
+      "examples": [
+        "You should book an appointment.",
+        "Employees must wear their badges."
+      ],
+      "strategy": "Decide the function first: advice, rule, ability, request or possibility.",
+      "check": {
+        "prompt": "Which sentence gives advice?",
+        "options": [
+          "You should call the clinic.",
+          "You must be 18 to apply.",
+          "I can swim."
+        ],
+        "answer": 0,
+        "explanation": "“Should” commonly expresses advice."
+      },
+      "recheck": {
+        "prompt": "Which sentence expresses an external rule?",
+        "options": [
+          "You have to show your ticket.",
+          "You could show your ticket yesterday maybe.",
+          "You are show your ticket."
+        ],
+        "answer": 0,
+        "explanation": "“Have to” is commonly used for an external obligation or rule."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "modals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-06",
+      "level": "B1+",
+      "order": 6,
+      "difficulty": 0.73,
+      "skill": "grammar",
+      "competency": "conditionals",
+      "title": "Conditionals",
+      "objective": "Use zero and first conditional patterns for real situations.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Use the zero conditional for general truths and the first conditional for realistic future conditions. In the first conditional, use present simple after if and will in the result clause.",
+      "examples": [
+        "If you heat ice, it melts.",
+        "If the bus is late, I will call you."
+      ],
+      "strategy": "Do not normally put “will” directly after if in a standard first conditional.",
+      "check": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "If it will rain, we stay home.",
+          "If it rains, we will stay home.",
+          "If it rained, we will stay home yesterday."
+        ],
+        "answer": 1,
+        "explanation": "First conditional: if + present simple, then will + base verb."
+      },
+      "recheck": {
+        "prompt": "Choose the general truth.",
+        "options": [
+          "If people do not sleep enough, they feel tired.",
+          "If people will not sleep, they felt tired.",
+          "If people slept, they are tired tomorrow."
+        ],
+        "answer": 0,
+        "explanation": "Zero conditional uses present simple in both clauses for general truths."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "conditionals"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-07",
+      "level": "B1+",
+      "order": 7,
+      "difficulty": 0.74,
+      "skill": "grammar",
+      "competency": "articles_prepositions",
+      "title": "Articles and prepositions",
+      "objective": "Use common articles and prepositions accurately.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Articles and prepositions are small words but frequent sources of error. Learn them in chunks: at work, on Monday, in the morning, go to the bank, an appointment.",
+      "examples": [
+        "I have an appointment at 10.",
+        "She works in a hospital."
+      ],
+      "strategy": "Store useful phrases as complete chunks instead of translating each small word separately.",
+      "check": {
+        "prompt": "Choose the correct phrase.",
+        "options": [
+          "at Monday",
+          "on Monday",
+          "in Monday"
+        ],
+        "answer": 1,
+        "explanation": "Days of the week usually take “on”."
+      },
+      "recheck": {
+        "prompt": "Choose the correct sentence.",
+        "options": [
+          "I have a appointment.",
+          "I have an appointment.",
+          "I have appointment an."
+        ],
+        "answer": 1,
+        "explanation": "Use “an” before a vowel sound such as the first sound in “appointment”."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "articles_prepositions"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-08",
+      "level": "B1+",
+      "order": 8,
+      "difficulty": 0.76,
+      "skill": "grammar",
+      "competency": "linkers",
+      "title": "Linkers",
+      "objective": "Connect ideas with because, although, however, so and therefore.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Linkers make relationships between ideas explicit. Choose a linker based on cause, contrast, result or addition.",
+      "examples": [
+        "The flat is small, but it is very bright.",
+        "I missed the bus, so I took a taxi."
+      ],
+      "strategy": "Before choosing a linker, label the relationship: reason, contrast, result or extra information.",
+      "check": {
+        "prompt": "Choose the best linker: “It was raining, ___ we stayed inside.”",
+        "options": [
+          "because",
+          "so",
+          "although"
+        ],
+        "answer": 1,
+        "explanation": "The second clause is the result, so “so” fits."
+      },
+      "recheck": {
+        "prompt": "Choose the best linker: “___ the hotel was expensive, it was very comfortable.”",
+        "options": [
+          "Although",
+          "Because of",
+          "So"
+        ],
+        "answer": 0,
+        "explanation": "“Although” introduces a contrast."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "linkers"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-09",
+      "level": "B1+",
+      "order": 9,
+      "difficulty": 0.77,
+      "skill": "reading",
+      "competency": "gist",
+      "title": "Reading gist",
+      "objective": "Identify the main purpose or overall message quickly.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. For gist, do not stop at every unknown word. Read the title, opening, closing and repeated ideas to identify the writer’s overall purpose.",
+      "examples": [
+        "A notice may mainly warn, invite, explain or request.",
+        "A short article can contain many details but still have one central message."
+      ],
+      "strategy": "Ask: “Why was this text written?” before examining small details.",
+      "check": {
+        "prompt": "A message explains a change to opening hours and gives the new times. What is its main purpose?",
+        "options": [
+          "To complain about staff",
+          "To inform customers of a schedule change",
+          "To advertise a new product"
+        ],
+        "answer": 1,
+        "explanation": "The core purpose is to inform readers about changed opening hours."
+      },
+      "recheck": {
+        "prompt": "A blog post describes three ways to save money while travelling. What is the gist?",
+        "options": [
+          "Advice for cheaper travel",
+          "A story about a delayed flight",
+          "A hotel review"
+        ],
+        "answer": 0,
+        "explanation": "The repeated focus is advice on reducing travel costs."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-10",
+      "level": "B1+",
+      "order": 10,
+      "difficulty": 0.72,
+      "skill": "reading",
+      "competency": "detail",
+      "title": "Reading detail",
+      "objective": "Locate exact factual information without being distracted.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Detail questions require precise matching between the question and the text. Similar words may appear in distractors, so verify the complete meaning.",
+      "examples": [
+        "A text may mention 8:30 and 9:00 but only one answers the question.",
+        "Names, prices and conditions often appear close together."
+      ],
+      "strategy": "Underline the exact information requested, then scan for evidence that matches all parts of it.",
+      "check": {
+        "prompt": "A notice says “Doors open at 18:30; the talk starts at 19:00.” When does the talk start?",
+        "options": [
+          "18:30",
+          "19:00",
+          "19:30"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for the talk start time, not the door-opening time."
+      },
+      "recheck": {
+        "prompt": "A shop offers free delivery only for orders over £40. Which order qualifies?",
+        "options": [
+          "£35",
+          "£40",
+          "£45"
+        ],
+        "answer": 2,
+        "explanation": "“Over £40” means more than £40, so £45 qualifies."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "detail"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-11",
+      "level": "B1+",
+      "order": 11,
+      "difficulty": 0.73,
+      "skill": "reading",
+      "competency": "inference",
+      "title": "Reading inference",
+      "objective": "Infer meaning that is implied rather than directly stated.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Inference combines clues. The correct answer is supported by the text even when the exact words do not appear.",
+      "examples": [
+        "“I wish I had checked the timetable” implies regret.",
+        "“There were hardly any seats left” implies the place was busy."
+      ],
+      "strategy": "Choose the answer that is strongly supported by clues, not merely possible in real life.",
+      "check": {
+        "prompt": "“Maya looked at the long queue and checked her watch again.” What can we infer?",
+        "options": [
+          "She is probably worried about time.",
+          "She loves waiting in queues.",
+          "She has already arrived at home."
+        ],
+        "answer": 0,
+        "explanation": "Checking the time while facing a long queue suggests concern about delay."
+      },
+      "recheck": {
+        "prompt": "“I should have brought a jacket,” Tom said as the wind got stronger. How does he feel?",
+        "options": [
+          "He regrets not bringing one.",
+          "He is selling a jacket.",
+          "He thinks it is too hot."
+        ],
+        "answer": 0,
+        "explanation": "“Should have” signals regret about a past choice."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "inference"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-12",
+      "level": "B1+",
+      "order": 12,
+      "difficulty": 0.74,
+      "skill": "reading",
+      "competency": "text_cohesion",
+      "title": "Text cohesion",
+      "objective": "Use reference words and logical links to reconstruct a text.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Cohesion depends on pronouns, reference words, time sequence and logical connectors. A sentence must connect naturally to what comes before and after it.",
+      "examples": [
+        "“This decision” must refer to a decision already mentioned.",
+        "“However” normally signals contrast with the previous idea."
+      ],
+      "strategy": "Check both sides of the gap. A sentence can fit grammatically but still break the logic.",
+      "check": {
+        "prompt": "Which sentence best follows “The train was cancelled.”?",
+        "options": [
+          "As a result, we took the bus.",
+          "For example, blue is my favourite colour.",
+          "However, yesterday is Monday."
+        ],
+        "answer": 0,
+        "explanation": "“As a result” logically links the cancellation to the alternative transport."
+      },
+      "recheck": {
+        "prompt": "Which word best completes the link? “The room was small. ___, it had everything we needed.”",
+        "options": [
+          "However",
+          "Because",
+          "First"
+        ],
+        "answer": 0,
+        "explanation": "“However” introduces the contrast between small size and usefulness."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "text_cohesion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-13",
+      "level": "B1+",
+      "order": 13,
+      "difficulty": 0.76,
+      "skill": "listening",
+      "competency": "listening_gist",
+      "title": "Listening gist",
+      "objective": "Recognise the speaker’s main point on the first pass.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. For listening gist, focus on situation, purpose and outcome. Do not chase every individual word.",
+      "examples": [
+        "A speaker may mention several places but mainly be asking for directions.",
+        "A conversation can include a complaint and still end with an agreed solution."
+      ],
+      "strategy": "After the first listen, summarise the message in one short sentence.",
+      "check": {
+        "prompt": "A caller explains a problem with an online order and asks for a replacement. What is the main purpose?",
+        "options": [
+          "To book a holiday",
+          "To solve an order problem",
+          "To apply for a job"
+        ],
+        "answer": 1,
+        "explanation": "The central purpose is to resolve the order issue."
+      },
+      "recheck": {
+        "prompt": "Two friends compare restaurants and finally choose one. What is the main outcome?",
+        "options": [
+          "They make a restaurant decision.",
+          "They discuss school homework.",
+          "They cancel all plans."
+        ],
+        "answer": 0,
+        "explanation": "The conversation’s outcome is a choice of restaurant."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "listening_gist"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-14",
+      "level": "B1+",
+      "order": 14,
+      "difficulty": 0.77,
+      "skill": "listening",
+      "competency": "numbers_times",
+      "title": "Numbers and times",
+      "objective": "Distinguish numbers, dates, prices and times accurately.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Numbers often sound similar and may be corrected. Listen for stress and context: fifteen/fifty, thirteen/thirty, 6:15/6:50.",
+      "examples": [
+        "The speaker may first say “Friday” and then correct it to “Thursday”.",
+        "Prices can include pounds and pence or whole amounts."
+      ],
+      "strategy": "Write the number mentally, then keep listening in case the speaker changes it.",
+      "check": {
+        "prompt": "You hear “The train leaves at six fifteen, not six fifty.” Which time is correct?",
+        "options": [
+          "6:15",
+          "6:50",
+          "7:15"
+        ],
+        "answer": 0,
+        "explanation": "The speaker explicitly corrects 6:50 to 6:15."
+      },
+      "recheck": {
+        "prompt": "You hear “It costs fourteen pounds, one-four, not forty.” What is the price?",
+        "options": [
+          "£14",
+          "£40",
+          "£44"
+        ],
+        "answer": 0,
+        "explanation": "The speaker clarifies that the intended number is fourteen."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "numbers_times"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-15",
+      "level": "B1+",
+      "order": 15,
+      "difficulty": 0.72,
+      "skill": "listening",
+      "competency": "corrected_information",
+      "title": "Corrected information",
+      "objective": "Recognise when a speaker replaces earlier information.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. PET distractors often use information that is true for a moment but later corrected. The final confirmed information is usually what matters.",
+      "examples": [
+        "“Let’s meet at 7 — actually, make it 7:30.”",
+        "“I thought it was Tuesday, but it’s Wednesday.”"
+      ],
+      "strategy": "Do not answer as soon as you hear a familiar option. Wait for correction words such as actually, no, sorry, rather, instead or I mean.",
+      "check": {
+        "prompt": "You hear “Room 12 — sorry, I mean Room 21.” Which room is correct?",
+        "options": [
+          "12",
+          "21",
+          "Both"
+        ],
+        "answer": 1,
+        "explanation": "“Sorry, I mean” signals a correction; the final information is Room 21."
+      },
+      "recheck": {
+        "prompt": "You hear “We could go by bus. Actually, the train is quicker, so let’s take that.” What do they choose?",
+        "options": [
+          "Bus",
+          "Train",
+          "Taxi"
+        ],
+        "answer": 1,
+        "explanation": "The first suggestion is replaced by the final decision to take the train."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "corrected_information"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-16",
+      "level": "B1+",
+      "order": 16,
+      "difficulty": 0.73,
+      "skill": "listening",
+      "competency": "attitude_opinion",
+      "title": "Attitude and opinion",
+      "objective": "Identify how a speaker feels or what they really think.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Attitude is often expressed through tone, evaluative words and contrast. Listen for positive, negative, uncertain or surprised reactions.",
+      "examples": [
+        "“It was better than I expected” is positive.",
+        "“I suppose it was okay” sounds less enthusiastic."
+      ],
+      "strategy": "Separate facts from evaluation. The question may ask what the speaker thinks, not what happened.",
+      "check": {
+        "prompt": "“The journey was long, but the hotel was absolutely worth it.” What is the speaker’s overall opinion of the hotel?",
+        "options": [
+          "Positive",
+          "Negative",
+          "No opinion"
+        ],
+        "answer": 0,
+        "explanation": "“Absolutely worth it” clearly expresses a positive view."
+      },
+      "recheck": {
+        "prompt": "“I expected more, to be honest.” What attitude does this show?",
+        "options": [
+          "Disappointment",
+          "Excitement",
+          "Certainty that it was perfect"
+        ],
+        "answer": 0,
+        "explanation": "The phrase signals that the experience did not meet expectations."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "attitude_opinion"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-17",
+      "level": "B1+",
+      "order": 17,
+      "difficulty": 0.74,
+      "skill": "writing",
+      "competency": "writing_email",
+      "title": "Writing Part 1 email",
+      "objective": "Answer every content point clearly and organise an email around 100 words.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. A strong B1 email addresses every bullet, uses an appropriate opening/closing and links ideas clearly. Content comes before decorative language.",
+      "examples": [
+        "Thanks for your message. I’d be happy to come on Saturday.",
+        "Could you tell me what time we should meet?"
+      ],
+      "strategy": "Before writing, turn each bullet into one sentence or mini-paragraph so no content point is forgotten.",
+      "check": {
+        "prompt": "Which plan is best before writing?",
+        "options": [
+          "Write immediately and hope all points appear.",
+          "Turn each task bullet into a content checkpoint.",
+          "Use difficult vocabulary even if it changes the meaning."
+        ],
+        "answer": 1,
+        "explanation": "Planning around the task bullets protects the Content score."
+      },
+      "recheck": {
+        "prompt": "Which sentence is most suitable in a friendly email?",
+        "options": [
+          "I am writing pursuant to statutory provisions.",
+          "Thanks for inviting me — I’d love to come.",
+          "Whereas the aforementioned event shall occur."
+        ],
+        "answer": 1,
+        "explanation": "A friendly B1 email should sound natural and appropriate for the relationship."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_email"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-18",
+      "level": "B1+",
+      "order": 18,
+      "difficulty": 0.76,
+      "skill": "writing",
+      "competency": "writing_article_story",
+      "title": "Writing Part 2 article/story",
+      "objective": "Develop an article or story with clear organisation and B1 language.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. An article needs a clear reader focus and engaging organisation. A story needs a logical sequence, setting and development. Both need controlled language and linking.",
+      "examples": [
+        "One reason I enjoy travelling is that every trip teaches me something new.",
+        "Suddenly, the lights went out and everyone became quiet."
+      ],
+      "strategy": "Choose the task type you can develop most clearly. Plan beginning, middle and ending before writing.",
+      "check": {
+        "prompt": "Which feature is especially important in a story?",
+        "options": [
+          "A clear sequence of events",
+          "A bank account number",
+          "A list of unrelated grammar rules"
+        ],
+        "answer": 0,
+        "explanation": "A story needs a coherent sequence so the reader can follow what happens."
+      },
+      "recheck": {
+        "prompt": "Which opening suits an article?",
+        "options": [
+          "Have you ever wondered how to make weekends more interesting?",
+          "Dear Sir or Madam, invoice attached.",
+          "Once upon a statutory regulation."
+        ],
+        "answer": 0,
+        "explanation": "A direct question can engage the reader in an article."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "writing_article_story"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-19",
+      "level": "B1+",
+      "order": 19,
+      "difficulty": 0.77,
+      "skill": "speaking",
+      "competency": "speaking_extended",
+      "title": "Speaking Parts 1–2",
+      "objective": "Give developed personal answers and describe visual information clearly.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Avoid one-word answers. Build a B1 response with answer + reason + example/detail. In a picture task, describe what you can see without inventing an elaborate story.",
+      "examples": [
+        "I usually travel by bus because it is cheaper, and the stop is near my home.",
+        "In the picture, two people are sitting outside and they seem to be talking."
+      ],
+      "strategy": "Use the three-step pattern: answer, because, example/detail.",
+      "check": {
+        "prompt": "Which answer is better developed?",
+        "options": [
+          "Yes.",
+          "Yes, I do, because it saves time and I can use it on my way to work.",
+          "Maybe yes no."
+        ],
+        "answer": 1,
+        "explanation": "The second answer gives a clear response plus a reason and detail."
+      },
+      "recheck": {
+        "prompt": "When describing a picture, what is safest?",
+        "options": [
+          "Describe visible evidence clearly.",
+          "Invent names and life histories for everyone.",
+          "Stay silent if you do not know one word."
+        ],
+        "answer": 0,
+        "explanation": "The task rewards clear description; visible evidence is enough."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_extended"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    },
+    {
+      "id": "learn-b1plus-20",
+      "level": "B1+",
+      "order": 20,
+      "difficulty": 0.72,
+      "skill": "speaking",
+      "competency": "speaking_interaction",
+      "title": "Speaking Parts 3–4 interaction",
+      "objective": "Suggest, respond, justify, negotiate and reach decisions with a partner.",
+      "level_focus": "Consolidate B1 and prepare for stronger, more flexible performance.",
+      "teach": "Use the pattern flexibly, accurately and under mild time pressure. Interactive Communication requires listening and responding, not delivering a prepared monologue. Use suggestions, reactions, reasons, alternatives and a final decision.",
+      "examples": [
+        "How about taking the train instead?",
+        "That could work, but it is more expensive. Maybe the bus is better because…"
+      ],
+      "strategy": "Aim for a chain: suggestion → response → reason → alternative → agreement or decision.",
+      "check": {
+        "prompt": "Which response best develops interaction?",
+        "options": [
+          "Cinema.",
+          "That’s a good idea, but it may be expensive. How about a picnic instead?",
+          "I memorised my answer yesterday."
+        ],
+        "answer": 1,
+        "explanation": "It responds to the partner, gives a reason and proposes an alternative."
+      },
+      "recheck": {
+        "prompt": "Which phrase helps reach a decision?",
+        "options": [
+          "So shall we choose the picnic, then?",
+          "I refuse to respond to your idea.",
+          "There are seven days in a week."
+        ],
+        "answer": 0,
+        "explanation": "The phrase invites the partner to confirm a shared decision."
+      },
+      "practice_filter": {
+        "field": "competency",
+        "value": "speaking_interaction"
+      },
+      "mastery": {
+        "lesson_recheck_required": true,
+        "practice_accuracy_target": 80,
+        "minimum_practice_items": 5
+      }
+    }
+  ],
+  "academic_note": "Original PET Quest teaching content. CEFR/PET preparation support; not official Cambridge material."
+}

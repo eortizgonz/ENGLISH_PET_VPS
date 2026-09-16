@@ -1,0 +1,38 @@
+services:
+  petquest:
+    build: .
+    restart: unless-stopped
+    environment:
+      PETQUEST_ENV: production
+      PETQUEST_DEV_MODE: "0"
+      PETQUEST_HOST: 0.0.0.0
+      PORT: 8080
+      PETQUEST_PUBLIC_BASE_URL: https://petquest.example.com
+      PETQUEST_SQLITE_PATH: /data/petquest.db
+      PETQUEST_BACKUP_DIR: /data/backups
+      PETQUEST_SMTP_HOST: ${PETQUEST_SMTP_HOST}
+      PETQUEST_SMTP_PORT: ${PETQUEST_SMTP_PORT:-587}
+      PETQUEST_SMTP_USER: ${PETQUEST_SMTP_USER}
+      PETQUEST_SMTP_PASSWORD: ${PETQUEST_SMTP_PASSWORD}
+      PETQUEST_SMTP_FROM: ${PETQUEST_SMTP_FROM}
+      PETQUEST_SMTP_TLS: ${PETQUEST_SMTP_TLS:-1}
+    volumes:
+      - petquest_data:/data
+    expose:
+      - "8080"
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - petquest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+volumes:
+  petquest_data:
+  caddy_data:
+  caddy_config:

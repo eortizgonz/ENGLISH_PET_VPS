@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.git/
+.gitignore
+.vscode/
+.idea/
+.env
+*.log
+petquest.db
+backups/
+release_evidence/
+*.zip

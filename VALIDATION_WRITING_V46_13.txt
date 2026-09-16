@@ -1,0 +1,25 @@
+PET Quest V46.13 Writing Mastery validation
+
+PASS Startup 9/9
+PASS Writing mastery persistence 10/10
+PASS Screen integrity 178/178
+PASS Student E2E 75/75
+PASS Academic V41 regression 20/20
+PASS User isolation 11/11
+PASS Security 8/8
+PASS Full persistence 45/45
+PASS UI action integrity: orphan buttons 0, unaddressed fields 0
+PASS JavaScript syntax: 48 files
+PASS Python compile: 106 files
+
+Writing V46.13 contract:
+- Content 0-5
+- Communicative Achievement 0-5
+- Organisation 0-5
+- Language 0-5
+- Total 0-20
+- criterion explanations
+- gap to target 18/20
+- 4 immediate corrective exercises
+- remediation attempts persisted per authenticated user
+- re-evaluation stored as a separate Writing attempt

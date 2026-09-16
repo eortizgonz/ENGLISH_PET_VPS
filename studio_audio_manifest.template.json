@@ -1,0 +1,19 @@
+{
+  "version": "41.0",
+  "recording_type": "human_studio",
+  "production_ready": false,
+  "rights_cleared": false,
+  "academic_qa_signed_off": false,
+  "primary_accent": "British English",
+  "speaker_mix": ["teen_female", "teen_male", "adult_female", "adult_male"],
+  "requirements": [
+    "natural connected speech",
+    "mixed male/female voices",
+    "teen/adult speaker variety",
+    "multi-speaker dialogue where task requires it",
+    "moderate contextual ambience where pedagogically appropriate",
+    "natural reductions, stress, rhythm and intonation",
+    "linguistic distractors aligned to B1 task design"
+  ],
+  "files": []
+}

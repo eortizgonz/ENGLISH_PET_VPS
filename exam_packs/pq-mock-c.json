@@ -1,0 +1,3910 @@
+{
+  "pack_id": "pq-mock-c",
+  "title": "PET Quest Full Mock C",
+  "version": "46.20",
+  "license": "original-petquest-content",
+  "status": "blocked_for_item_revision",
+  "theme": "Greenfield",
+  "authoring": {
+    "cefr_target": "B1",
+    "created_for": "PET Quest",
+    "content_originality": "distinct_form_content",
+    "external_academic_signoff": false,
+    "psychometric_equivalence_validated": false,
+    "studio_audio_ready": false,
+    "generated_audio_ready": true,
+    "generated_audio_source": "PET Audio Bank V46.18 synthetic multi-voice",
+    "generated_audio_count": 15,
+    "voice_simulation_ready": true,
+    "voice_simulation_version": "46.18",
+    "listening_exam_mode": "1.00x_max_2_plays",
+    "writing_tasks": 2,
+    "speaking_parts": 4
+  },
+  "reading": [
+    {
+      "id": "pq-mock-c-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What must students do if they use the study room after 4 p.m.?",
+      "options": [
+        "Book it online",
+        "Get a key from reception",
+        "Leave before reception closes"
+      ],
+      "answer": 1,
+      "source_text": "Students using the study room after 4 p.m. must collect a key from reception.",
+      "source_label": "PET Quest Full Mock C Library",
+      "focus": "short-message",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 1,
+        "item": "pq-mock-c-r1-1",
+        "cefr_target": "B1",
+        "target_skill": "short message comprehension",
+        "correct_answer": "Get a key from reception",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Why will the club meet in Room 12?",
+      "options": [
+        "The usual room is unavailable",
+        "More students are attending",
+        "A new experiment needs more space"
+      ],
+      "answer": 0,
+      "source_text": "Friday meeting moved to Room 12 because the laboratory is being cleaned.",
+      "source_label": "Science Club",
+      "focus": "short-message",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 1,
+        "item": "pq-mock-c-r1-2",
+        "cefr_target": "B1",
+        "target_skill": "short message comprehension",
+        "correct_answer": "The usual room is unavailable",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What do students need to bring?",
+      "options": [
+        "Lunch",
+        "A drink",
+        "Money for the coach"
+      ],
+      "answer": 0,
+      "source_text": "Bring a packed lunch. Drinks will be provided on the coach.",
+      "source_label": "School Trip",
+      "focus": "short-message",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 1,
+        "item": "pq-mock-c-r1-3",
+        "cefr_target": "B1",
+        "target_skill": "short message comprehension",
+        "correct_answer": "Lunch",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What is unavailable this afternoon?",
+      "options": [
+        "The gym",
+        "The swimming pool",
+        "The courts"
+      ],
+      "answer": 1,
+      "source_text": "Pool closed 2–4 p.m. today. Gym and courts remain open as usual.",
+      "source_label": "Sports Centre",
+      "focus": "short-message",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 1,
+        "item": "pq-mock-c-r1-4",
+        "cefr_target": "B1",
+        "target_skill": "short message comprehension",
+        "correct_answer": "The swimming pool",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "When can Ben meet?",
+      "options": [
+        "5:00",
+        "5:15",
+        "5:30"
+      ],
+      "answer": 2,
+      "source_text": "I can meet at 5:30, not 5. I have football practice until quarter past five.",
+      "source_label": "Message from Ben",
+      "focus": "short-message",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 1,
+        "item": "pq-mock-c-r1-5",
+        "cefr_target": "B1",
+        "target_skill": "short message comprehension",
+        "correct_answer": "5:30",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Ana wants a free outdoor activity at the weekend and does not own special equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Community Garden",
+          "text": "Saturday morning outdoor volunteering; tools provided; free."
+        },
+        {
+          "key": "B",
+          "title": "Digital Drawing",
+          "text": "Tuesday after school; use tablets to create illustrations; beginners welcome."
+        },
+        {
+          "key": "C",
+          "title": "Conversation Café",
+          "text": "Wednesday evening; practise English informally with teenagers from other schools."
+        },
+        {
+          "key": "D",
+          "title": "Young Reporters",
+          "text": "Thursday afternoon; write short news stories and interview local people."
+        },
+        {
+          "key": "E",
+          "title": "Family Cycle",
+          "text": "Sunday morning guided bike ride; bring your own bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Film Lab",
+          "text": "Friday evening; learn small telescope and editing skills; small fee."
+        },
+        {
+          "key": "G",
+          "title": "Chess Online",
+          "text": "Monday and Thursday online games; intermediate players only."
+        },
+        {
+          "key": "H",
+          "title": "Animal Helpers",
+          "text": "Saturday afternoon; help at a rescue centre; minimum age 14."
+        }
+      ],
+      "answer": "A",
+      "focus": "matching-needs",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 2,
+        "item": "pq-mock-c-r2-1",
+        "cefr_target": "B1",
+        "target_skill": "matching specific needs to texts",
+        "correct_answer": "A",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.99); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Tom enjoys art and wants to learn to create pictures on a computer after school.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Community Garden",
+          "text": "Saturday morning outdoor volunteering; tools provided; free."
+        },
+        {
+          "key": "B",
+          "title": "Digital Drawing",
+          "text": "Tuesday after school; use tablets to create illustrations; beginners welcome."
+        },
+        {
+          "key": "C",
+          "title": "Conversation Café",
+          "text": "Wednesday evening; practise English informally with teenagers from other schools."
+        },
+        {
+          "key": "D",
+          "title": "Young Reporters",
+          "text": "Thursday afternoon; write short news stories and interview local people."
+        },
+        {
+          "key": "E",
+          "title": "Family Cycle",
+          "text": "Sunday morning guided bike ride; bring your own bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Film Lab",
+          "text": "Friday evening; learn small telescope and editing skills; small fee."
+        },
+        {
+          "key": "G",
+          "title": "Chess Online",
+          "text": "Monday and Thursday online games; intermediate players only."
+        },
+        {
+          "key": "H",
+          "title": "Animal Helpers",
+          "text": "Saturday afternoon; help at a rescue centre; minimum age 14."
+        }
+      ],
+      "answer": "B",
+      "focus": "matching-needs",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 2,
+        "item": "pq-mock-c-r2-2",
+        "cefr_target": "B1",
+        "target_skill": "matching specific needs to texts",
+        "correct_answer": "B",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.99); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Leila wants to improve spoken English and meet students from other schools.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Community Garden",
+          "text": "Saturday morning outdoor volunteering; tools provided; free."
+        },
+        {
+          "key": "B",
+          "title": "Digital Drawing",
+          "text": "Tuesday after school; use tablets to create illustrations; beginners welcome."
+        },
+        {
+          "key": "C",
+          "title": "Conversation Café",
+          "text": "Wednesday evening; practise English informally with teenagers from other schools."
+        },
+        {
+          "key": "D",
+          "title": "Young Reporters",
+          "text": "Thursday afternoon; write short news stories and interview local people."
+        },
+        {
+          "key": "E",
+          "title": "Family Cycle",
+          "text": "Sunday morning guided bike ride; bring your own bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Film Lab",
+          "text": "Friday evening; learn small telescope and editing skills; small fee."
+        },
+        {
+          "key": "G",
+          "title": "Chess Online",
+          "text": "Monday and Thursday online games; intermediate players only."
+        },
+        {
+          "key": "H",
+          "title": "Animal Helpers",
+          "text": "Saturday afternoon; help at a rescue centre; minimum age 14."
+        }
+      ],
+      "answer": "C",
+      "focus": "matching-needs",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 2,
+        "item": "pq-mock-c-r2-3",
+        "cefr_target": "B1",
+        "target_skill": "matching specific needs to texts",
+        "correct_answer": "C",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.99); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Max hopes to become a journalist and wants practice asking people questions.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Community Garden",
+          "text": "Saturday morning outdoor volunteering; tools provided; free."
+        },
+        {
+          "key": "B",
+          "title": "Digital Drawing",
+          "text": "Tuesday after school; use tablets to create illustrations; beginners welcome."
+        },
+        {
+          "key": "C",
+          "title": "Conversation Café",
+          "text": "Wednesday evening; practise English informally with teenagers from other schools."
+        },
+        {
+          "key": "D",
+          "title": "Young Reporters",
+          "text": "Thursday afternoon; write short news stories and interview local people."
+        },
+        {
+          "key": "E",
+          "title": "Family Cycle",
+          "text": "Sunday morning guided bike ride; bring your own bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Film Lab",
+          "text": "Friday evening; learn small telescope and editing skills; small fee."
+        },
+        {
+          "key": "G",
+          "title": "Chess Online",
+          "text": "Monday and Thursday online games; intermediate players only."
+        },
+        {
+          "key": "H",
+          "title": "Animal Helpers",
+          "text": "Saturday afternoon; help at a rescue centre; minimum age 14."
+        }
+      ],
+      "answer": "D",
+      "focus": "matching-needs",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 2,
+        "item": "pq-mock-c-r2-4",
+        "cefr_target": "B1",
+        "target_skill": "matching specific needs to texts",
+        "correct_answer": "D",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.99); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Sofia wants a Sunday activity she can do with her father, and they both have bikes.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Community Garden",
+          "text": "Saturday morning outdoor volunteering; tools provided; free."
+        },
+        {
+          "key": "B",
+          "title": "Digital Drawing",
+          "text": "Tuesday after school; use tablets to create illustrations; beginners welcome."
+        },
+        {
+          "key": "C",
+          "title": "Conversation Café",
+          "text": "Wednesday evening; practise English informally with teenagers from other schools."
+        },
+        {
+          "key": "D",
+          "title": "Young Reporters",
+          "text": "Thursday afternoon; write short news stories and interview local people."
+        },
+        {
+          "key": "E",
+          "title": "Family Cycle",
+          "text": "Sunday morning guided bike ride; bring your own bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Film Lab",
+          "text": "Friday evening; learn small telescope and editing skills; small fee."
+        },
+        {
+          "key": "G",
+          "title": "Chess Online",
+          "text": "Monday and Thursday online games; intermediate players only."
+        },
+        {
+          "key": "H",
+          "title": "Animal Helpers",
+          "text": "Saturday afternoon; help at a rescue centre; minimum age 14."
+        }
+      ],
+      "answer": "E",
+      "focus": "matching-needs",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 2,
+        "item": "pq-mock-c-r2-5",
+        "cefr_target": "B1",
+        "target_skill": "matching specific needs to texts",
+        "correct_answer": "E",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.99); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Why did students first suggest the peer-learning zone?",
+      "options": [
+        "They needed a place for sports",
+        "A survey showed demand for a calm area",
+        "Teachers wanted a new classroom",
+        "Families donated books"
+      ],
+      "answer": 1,
+      "passage": "At Westfield Academy, students recently designed a peer-learning zone in the school science building. The idea began when a class survey showed that many students wanted somewhere calm to read or talk during breaks. Instead of buying new furniture, the group repaired old benches and used large plant pots donated by families. At first they planned to ban phones completely, but after discussion they decided that students could use them for reading or schoolwork. Teachers were surprised by how quickly younger and older students began sharing the space. The project team now checks the area every Friday and plans to add a small weatherproof book box next term.",
+      "focus": "detail",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 3,
+        "item": "pq-mock-c-r3-1",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension",
+        "correct_answer": "A survey showed demand for a calm area",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.86); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "How did the group keep costs down?",
+      "options": [
+        "They repaired existing benches",
+        "They charged students",
+        "They sold old books",
+        "They removed all plants"
+      ],
+      "answer": 0,
+      "passage": "At Westfield Academy, students recently designed a peer-learning zone in the school science building. The idea began when a class survey showed that many students wanted somewhere calm to read or talk during breaks. Instead of buying new furniture, the group repaired old benches and used large plant pots donated by families. At first they planned to ban phones completely, but after discussion they decided that students could use them for reading or schoolwork. Teachers were surprised by how quickly younger and older students began sharing the space. The project team now checks the area every Friday and plans to add a small weatherproof book box next term.",
+      "focus": "inference",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 3,
+        "item": "pq-mock-c-r3-2",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension",
+        "correct_answer": "They repaired existing benches",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.06); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What decision changed after discussion?",
+      "options": [
+        "Where the area would be",
+        "Who could use it",
+        "The rule about phones",
+        "When breaks would happen"
+      ],
+      "answer": 2,
+      "passage": "At Westfield Academy, students recently designed a peer-learning zone in the school science building. The idea began when a class survey showed that many students wanted somewhere calm to read or talk during breaks. Instead of buying new furniture, the group repaired old benches and used large plant pots donated by families. At first they planned to ban phones completely, but after discussion they decided that students could use them for reading or schoolwork. Teachers were surprised by how quickly younger and older students began sharing the space. The project team now checks the area every Friday and plans to add a small weatherproof book box next term.",
+      "focus": "detail",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 3,
+        "item": "pq-mock-c-r3-3",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension",
+        "correct_answer": "The rule about phones",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.88); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What surprised teachers?",
+      "options": [
+        "The cost of the project",
+        "How different age groups used it together",
+        "The number of phones used",
+        "How often it rained"
+      ],
+      "answer": 1,
+      "passage": "At Westfield Academy, students recently designed a peer-learning zone in the school science building. The idea began when a class survey showed that many students wanted somewhere calm to read or talk during breaks. Instead of buying new furniture, the group repaired old benches and used large plant pots donated by families. At first they planned to ban phones completely, but after discussion they decided that students could use them for reading or schoolwork. Teachers were surprised by how quickly younger and older students began sharing the space. The project team now checks the area every Friday and plans to add a small weatherproof book box next term.",
+      "focus": "inference",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 3,
+        "item": "pq-mock-c-r3-4",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension",
+        "correct_answer": "How different age groups used it together",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.88); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What is planned for next term?",
+      "options": [
+        "A second science building",
+        "A covered book box",
+        "New sports equipment",
+        "A school survey"
+      ],
+      "answer": 1,
+      "passage": "At Westfield Academy, students recently designed a peer-learning zone in the school science building. The idea began when a class survey showed that many students wanted somewhere calm to read or talk during breaks. Instead of buying new furniture, the group repaired old benches and used large plant pots donated by families. At first they planned to ban phones completely, but after discussion they decided that students could use them for reading or schoolwork. Teachers were surprised by how quickly younger and older students began sharing the space. The project team now checks the area every Friday and plans to add a small weatherproof book box next term.",
+      "focus": "future-detail",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 3,
+        "item": "pq-mock-c-r3-5",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension",
+        "correct_answer": "A covered book box",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.85); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r4-1",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 1.",
+      "passage": "A group of students decided to organise a one-day technology fair. [1] They began by asking classmates what they would most like to see. [2] Next, the organisers contacted local volunteers who could demonstrate simple projects. [3] The team then created a timetable so that popular activities would not all happen at once. [4] On the day, more families arrived than expected, but the student guides helped visitors find each room. [5] Afterwards, the organisers collected feedback and wrote down changes for next year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One engineer agreed to show how a small robot follows a line."
+        },
+        {
+          "key": "B",
+          "text": "The final poster was printed in three different colours."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should include."
+        },
+        {
+          "key": "D",
+          "text": "This showed that coding and robotics were the two most popular topics."
+        },
+        {
+          "key": "E",
+          "text": "The school canteen usually closes at three o’clock."
+        },
+        {
+          "key": "F",
+          "text": "This reduced long queues and gave visitors more choice."
+        },
+        {
+          "key": "G",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "H",
+          "text": "This was useful when the entrance became especially busy."
+        }
+      ],
+      "answer": "C",
+      "focus": "cohesion",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 4,
+        "item": "pq-mock-c-r4-1",
+        "cefr_target": "B1",
+        "target_skill": "text cohesion and global coherence",
+        "correct_answer": "C",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r4-2",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 2.",
+      "passage": "A group of students decided to organise a one-day technology fair. [1] They began by asking classmates what they would most like to see. [2] Next, the organisers contacted local volunteers who could demonstrate simple projects. [3] The team then created a timetable so that popular activities would not all happen at once. [4] On the day, more families arrived than expected, but the student guides helped visitors find each room. [5] Afterwards, the organisers collected feedback and wrote down changes for next year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One engineer agreed to show how a small robot follows a line."
+        },
+        {
+          "key": "B",
+          "text": "The final poster was printed in three different colours."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should include."
+        },
+        {
+          "key": "D",
+          "text": "This showed that coding and robotics were the two most popular topics."
+        },
+        {
+          "key": "E",
+          "text": "The school canteen usually closes at three o’clock."
+        },
+        {
+          "key": "F",
+          "text": "This reduced long queues and gave visitors more choice."
+        },
+        {
+          "key": "G",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "H",
+          "text": "This was useful when the entrance became especially busy."
+        }
+      ],
+      "answer": "D",
+      "focus": "cohesion",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 4,
+        "item": "pq-mock-c-r4-2",
+        "cefr_target": "B1",
+        "target_skill": "text cohesion and global coherence",
+        "correct_answer": "D",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r4-3",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 3.",
+      "passage": "A group of students decided to organise a one-day technology fair. [1] They began by asking classmates what they would most like to see. [2] Next, the organisers contacted local volunteers who could demonstrate simple projects. [3] The team then created a timetable so that popular activities would not all happen at once. [4] On the day, more families arrived than expected, but the student guides helped visitors find each room. [5] Afterwards, the organisers collected feedback and wrote down changes for next year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One engineer agreed to show how a small robot follows a line."
+        },
+        {
+          "key": "B",
+          "text": "The final poster was printed in three different colours."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should include."
+        },
+        {
+          "key": "D",
+          "text": "This showed that coding and robotics were the two most popular topics."
+        },
+        {
+          "key": "E",
+          "text": "The school canteen usually closes at three o’clock."
+        },
+        {
+          "key": "F",
+          "text": "This reduced long queues and gave visitors more choice."
+        },
+        {
+          "key": "G",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "H",
+          "text": "This was useful when the entrance became especially busy."
+        }
+      ],
+      "answer": "A",
+      "focus": "cohesion",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 4,
+        "item": "pq-mock-c-r4-3",
+        "cefr_target": "B1",
+        "target_skill": "text cohesion and global coherence",
+        "correct_answer": "A",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r4-4",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 4.",
+      "passage": "A group of students decided to organise a one-day technology fair. [1] They began by asking classmates what they would most like to see. [2] Next, the organisers contacted local volunteers who could demonstrate simple projects. [3] The team then created a timetable so that popular activities would not all happen at once. [4] On the day, more families arrived than expected, but the student guides helped visitors find each room. [5] Afterwards, the organisers collected feedback and wrote down changes for next year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One engineer agreed to show how a small robot follows a line."
+        },
+        {
+          "key": "B",
+          "text": "The final poster was printed in three different colours."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should include."
+        },
+        {
+          "key": "D",
+          "text": "This showed that coding and robotics were the two most popular topics."
+        },
+        {
+          "key": "E",
+          "text": "The school canteen usually closes at three o’clock."
+        },
+        {
+          "key": "F",
+          "text": "This reduced long queues and gave visitors more choice."
+        },
+        {
+          "key": "G",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "H",
+          "text": "This was useful when the entrance became especially busy."
+        }
+      ],
+      "answer": "F",
+      "focus": "cohesion",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 4,
+        "item": "pq-mock-c-r4-4",
+        "cefr_target": "B1",
+        "target_skill": "text cohesion and global coherence",
+        "correct_answer": "F",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "H",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r4-5",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 5.",
+      "passage": "A group of students decided to organise a one-day technology fair. [1] They began by asking classmates what they would most like to see. [2] Next, the organisers contacted local volunteers who could demonstrate simple projects. [3] The team then created a timetable so that popular activities would not all happen at once. [4] On the day, more families arrived than expected, but the student guides helped visitors find each room. [5] Afterwards, the organisers collected feedback and wrote down changes for next year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One engineer agreed to show how a small robot follows a line."
+        },
+        {
+          "key": "B",
+          "text": "The final poster was printed in three different colours."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should include."
+        },
+        {
+          "key": "D",
+          "text": "This showed that coding and robotics were the two most popular topics."
+        },
+        {
+          "key": "E",
+          "text": "The school canteen usually closes at three o’clock."
+        },
+        {
+          "key": "F",
+          "text": "This reduced long queues and gave visitors more choice."
+        },
+        {
+          "key": "G",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "H",
+          "text": "This was useful when the entrance became especially busy."
+        }
+      ],
+      "answer": "H",
+      "focus": "cohesion",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 4,
+        "item": "pq-mock-c-r4-5",
+        "cefr_target": "B1",
+        "target_skill": "text cohesion and global coherence",
+        "correct_answer": "H",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "E",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "F",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "G",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our class decided to ___ a weekly lunchtime podcast.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "bring"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-1",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "make",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We wanted each episode to be short ___ students could listen during a break.",
+      "options": [
+        "so",
+        "but",
+        "unless",
+        "although"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-2",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "so",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Everyone was asked to ___ an idea for a topic.",
+      "options": [
+        "suggest",
+        "invite",
+        "promise",
+        "refuse"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-3",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "suggest",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We soon learned that speaking clearly was just as ___ as choosing an interesting subject.",
+      "options": [
+        "important",
+        "possible",
+        "ready",
+        "famous"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-4",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "important",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "After recording, we listened carefully ___ any parts that were difficult to understand.",
+      "options": [
+        "for",
+        "at",
+        "on",
+        "by"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-5",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "for",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our teacher says the podcast has ___ more confident speakers of us.",
+      "options": [
+        "made",
+        "done",
+        "given",
+        "put"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 5,
+        "item": "pq-mock-c-r5-6",
+        "cefr_target": "B1",
+        "target_skill": "lexico-grammatical cloze",
+        "correct_answer": "made",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "D",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production.",
+          "Sentence is unnatural/incorrect: “has made more confident speakers of us”; target should be rewritten (e.g. “has made us more confident speakers”)."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "My cousin has been interested ___ astronomy since she was ten.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-1",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "in",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.89); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Last year she bought ___ second-hand small telescope with her savings.",
+      "answer": "a",
+      "focus": "article",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-2",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "a",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.86); B/C are shallow-template variants of an earlier form and require independent rewriting for production.",
+          "Unnatural adjective order: “second-hand small telescope”; rewrite as “small second-hand telescope”."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "She takes it everywhere, ___ she can practise whenever she has time.",
+      "answer": "so",
+      "focus": "linker",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-3",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "so",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "There are not ___ astronomy clubs near our home.",
+      "answer": "many",
+      "focus": "quantifier",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-4",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "many",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.86); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "She found one online ___ meets every other Saturday.",
+      "answer": "which",
+      "focus": "relative-pronoun",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-5",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "which",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 1.00); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    },
+    {
+      "id": "pq-mock-c-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "She hopes to study physics ___ university one day.",
+      "answer": "at",
+      "focus": "preposition",
+      "answer_words": 1,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Reading",
+        "part": 6,
+        "item": "pq-mock-c-r6-6",
+        "cefr_target": "B1",
+        "target_skill": "open cloze grammar and cohesion",
+        "correct_answer": "at",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Reading originality insufficient (aligned similarity 0.88); B/C are shallow-template variants of an earlier form and require independent rewriting for production."
+        ],
+        "audit_version": "46.28",
+        "originality_vs_prior_forms": "FAIL"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "pq-mock-c-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Tara and Ruby meet?",
+      "options": [
+        "ten thirty",
+        "half past one",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-015",
+      "transcript": "Tara: Are we still meeting at the school hall at ten thirty? Ruby: Not now. Let's meet at half past one because we need more time to prepare. Tara: Great. Then we can prepare a class project.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-015.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-1",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "half past one",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Noah and Sam meet?",
+      "options": [
+        "ten thirty",
+        "quarter to four",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-016",
+      "transcript": "Noah: Are we still meeting at the music room at ten thirty? Sam: Not now. Let's meet at quarter to four because it will be less crowded. Noah: Great. Then we can prepare a class project.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-016.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-2",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "quarter to four",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Peter and Tara meet?",
+      "options": [
+        "eleven forty-five",
+        "quarter to four",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-017",
+      "transcript": "Peter: Are we still meeting at the swimming pool at eleven forty-five? Tara: Not now. Let's meet at quarter to four because the teacher recommended it. Peter: Great. Then we can watch a film.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-017.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-3",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "quarter to four",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Grace and Ruby meet?",
+      "options": [
+        "nine fifteen",
+        "quarter to four",
+        "six fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-018",
+      "transcript": "Grace: Are we still meeting at the science club at nine fifteen? Ruby: Not now. Let's meet at quarter to four because we already have the equipment. Grace: Great. Then we can watch a film.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-018.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-4",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "quarter to four",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Amy and Finn meet?",
+      "options": [
+        "half past one",
+        "nine fifteen",
+        "ten thirty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-019",
+      "transcript": "Amy: Are we still meeting at the science club at half past one? Finn: Not now. Let's meet at nine fifteen because the other place is closed. Amy: Great. Then we can prepare a class project.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-019.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-5",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "nine fifteen",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Noah and Olivia meet?",
+      "options": [
+        "seven forty",
+        "eleven forty-five",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-020",
+      "transcript": "Noah: Are we still meeting at the shopping centre at seven forty? Olivia: Not now. Let's meet at eleven forty-five because the other place is closed. Noah: Great. Then we can buy a birthday present.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-020.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-6",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "eleven forty-five",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Harry and Peter meet?",
+      "options": [
+        "five thirty",
+        "ten thirty",
+        "seven forty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-021",
+      "transcript": "Harry: Are we still meeting at the school hall at five thirty? Peter: Not now. Let's meet at ten thirty because we can invite more friends. Harry: Great. Then we can have a picnic.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-021.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 1,
+        "item": "pq-mock-c-l1-7",
+        "cefr_target": "B1",
+        "target_skill": "specific information and corrected information",
+        "correct_answer": "ten thirty",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "PLAUSIBLE"
+          },
+          {
+            "option": "C",
+            "plausibility": "PLAUSIBLE"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "buy a birthday present",
+        "watch a film",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-013",
+      "transcript": "Ruby: I thought we could buy a birthday present at the park. Ben: I'd rather watch a film at the sports centre. It costs eight pounds, but the buses run more often. Ruby: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-013.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-1",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "watch a film",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "study together",
+        "go cycling",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-014",
+      "transcript": "Harry: I thought we could study together at the swimming pool. Maya: I'd rather go cycling at the cafe. It costs six pounds, but the weather should be better. Harry: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-014.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-2",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "go cycling",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "watch a film",
+        "practise music",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-015",
+      "transcript": "Chloe: I thought we could watch a film at the cinema. Maya: I'd rather practise music at the park. It costs eight pounds, but we need more time to prepare. Chloe: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-015.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-3",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "practise music",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "play basketball",
+        "study together",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-016",
+      "transcript": "Harry: I thought we could play basketball at the library. Olivia: I'd rather study together at the science club. It costs six pounds, but the other place is closed. Harry: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-016.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-4",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "study together",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "go swimming",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-017",
+      "transcript": "Jack: I thought we could go swimming at the library. Maya: I'd rather have a picnic at the swimming pool. It costs five pounds fifty, but it will be less crowded. Jack: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-017.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-5",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "have a picnic",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "play basketball",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-018",
+      "transcript": "Tara: I thought we could play basketball at the library. Grace: I'd rather have a picnic at the cafe. It costs four pounds, but it is cheaper. Tara: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-018.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 2,
+        "item": "pq-mock-c-l2-6",
+        "cefr_target": "B1",
+        "target_skill": "detailed comprehension and decision",
+        "correct_answer": "have a picnic",
+        "distractors": [
+          {
+            "option": "A",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Listening Part 2 transcript is mechanically templated and contains implausible activity/location combinations; naturalness and distractor quality are below production standard.",
+          "Answer-position bias: every Part 2 item in this mock uses option B as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The activity takes place on ___.",
+      "answer": "Saturday",
+      "accepted_answers": [
+        "Saturday"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-1",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "Saturday",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The first activity begins at ___.",
+      "answer": "eleven forty-five",
+      "accepted_answers": [
+        "eleven forty-five"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-2",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "eleven forty-five",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The ticket costs ___.",
+      "answer": "ten pounds",
+      "accepted_answers": [
+        "ten pounds"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-3",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "ten pounds",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Students should bring a ___.",
+      "answer": "notebook",
+      "accepted_answers": [
+        "notebook"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-4",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "notebook",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "After the main activity, they will ___.",
+      "answer": "watch a film",
+      "accepted_answers": [
+        "watch a film"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-5",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "watch a film",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Questions should be asked before ___.",
+      "answer": "Friday",
+      "accepted_answers": [
+        "Friday"
+      ],
+      "audio_id": "pqbank-p3-003",
+      "transcript": "Hello, I'm Sam, and I'd like to tell you about our sports day. It will take place at the science club on Saturday. The first activity begins at eleven forty-five, so please arrive about fifteen minutes earlier. The ticket costs ten pounds. You should bring a notebook and a bottle of water. After the main activity, we will watch a film. We changed the original plan because the weather should be better. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 3,
+        "item": "pq-mock-c-l3-6",
+        "cefr_target": "B1",
+        "target_skill": "specific information and spelling",
+        "correct_answer": "Friday",
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "PASS"
+        },
+        "final_status": "APPROVED_INTERNAL_QA",
+        "production_eligible": true,
+        "external_academic_signoff": false,
+        "reasons": [
+          "No blocking issue found in the two internal audit passes."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What did Will especially enjoy?",
+      "options": [
+        "meet at the library",
+        "join a photography club",
+        "park"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-1",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "meet at the library",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "How did Will feel later?",
+      "options": [
+        "More confident",
+        "More worried",
+        "Completely bored"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-2",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "More confident",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Would Will take part again?",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-3",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "Yes",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What would Will like to do next time?",
+      "options": [
+        "join a photography club",
+        "meet at the library",
+        "stay at home"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-4",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "join a photography club",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Which place would Will use instead?",
+      "options": [
+        "park",
+        "the same place",
+        "the train station"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-5",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "park",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    },
+    {
+      "id": "pq-mock-c-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What is Will's overall attitude?",
+      "options": [
+        "Mostly positive",
+        "Mostly negative",
+        "Completely uncertain"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-003",
+      "transcript": "Interviewer: Will, what did you think about the community event? Will: I enjoyed it, especially when we could meet at the library. Interviewer: Was anything difficult? Will: At first, yes, because it will be less crowded. But later I felt more confident. Interviewer: Would you take part again? Will: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Will: I'd use the park because the other place is closed. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-003.mp3",
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Listening",
+        "part": 4,
+        "item": "pq-mock-c-l4-6",
+        "cefr_target": "B1",
+        "target_skill": "attitude, opinion and detail",
+        "correct_answer": "Mostly positive",
+        "distractors": [
+          {
+            "option": "B",
+            "plausibility": "REVIEW_REQUIRED"
+          },
+          {
+            "option": "C",
+            "plausibility": "REVIEW_REQUIRED"
+          }
+        ],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "YES",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Interview contains semantically weak or illogical causal statements, so the spoken discourse is not natural enough for a production PET mock.",
+          "Answer-position bias: every Part 4 item in this mock uses option A as the key."
+        ],
+        "audit_version": "46.28",
+        "accent": "British-predominant synthetic profile",
+        "audio_speed": "natural/1.00x exam",
+        "audio_asset_present": true
+      }
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "interaction": "email",
+      "prompt": "You received an email from your English-speaking friend Sam, who is thinking about joining a new activity. Write an email to Sam. Recommend an activity in Greenfield, explain why it would suit them, and suggest when you could go together.",
+      "target_words": 100,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Writing",
+        "part": 1,
+        "item": "pq-mock-c-w1",
+        "cefr_target": "B1",
+        "target_skill": "communicative writing task",
+        "correct_answer": null,
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "N/A",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Part 1 lacks the full email stimulus/notes interaction expected for strict exam fidelity; current task is a summarized instruction rather than a complete input email with response points.",
+          "Cross-mock Writing originality insufficient (aligned similarity 0.94); task is a name/location/template variation and requires an independent prompt."
+        ],
+        "audit_version": "46.28",
+        "genre_fit": "FAIL",
+        "word_target": "about 100 words"
+      }
+    },
+    {
+      "part": 2,
+      "interaction": "choice",
+      "options": [
+        {
+          "type": "article",
+          "prompt": "Write an article about a place or activity in Greenfield that teenagers would enjoy. Explain what people can do there and why you recommend it."
+        },
+        {
+          "type": "story",
+          "prompt": "Your story must begin: \"As soon as we arrived in Greenfield, I realised the plan had changed.\""
+        }
+      ],
+      "target_words": 100,
+      "audit_v46_28": {
+        "mock": "C",
+        "skill": "Writing",
+        "part": 2,
+        "item": "pq-mock-c-w2",
+        "cefr_target": "B1",
+        "target_skill": "communicative writing task",
+        "correct_answer": null,
+        "distractors": [],
+        "ambiguity": "NONE",
+        "grammar_level": "B1",
+        "vocabulary_level": "B1",
+        "cultural_dependency": "NONE",
+        "answer_supported_by_source": "N/A",
+        "reviewer_1": {
+          "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+          "status": "PASS"
+        },
+        "reviewer_2": {
+          "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+          "status": "FAIL"
+        },
+        "final_status": "REJECTED_FOR_REVISION",
+        "production_eligible": false,
+        "external_academic_signoff": false,
+        "reasons": [
+          "Cross-mock Writing originality insufficient (aligned similarity 0.55); task is a name/location/template variation and requires an independent prompt."
+        ],
+        "audit_version": "46.28",
+        "genre_fit": "PASS",
+        "word_target": "about 100 words"
+      }
+    }
+  ],
+  "speaking": {
+    "parts": [
+      {
+        "part": 1,
+        "type": "interview",
+        "prompts": [
+          "What do you usually do after school?",
+          "Tell us about a place you enjoy visiting.",
+          "What would you like to improve in your English?"
+        ],
+        "audit_v46_28": {
+          "mock": "C",
+          "skill": "Speaking",
+          "part": 1,
+          "item": "pq-mock-c-s1",
+          "cefr_target": "B1",
+          "target_skill": "personal interview responses",
+          "correct_answer": null,
+          "distractors": [],
+          "ambiguity": "NONE",
+          "grammar_level": "B1",
+          "vocabulary_level": "B1",
+          "cultural_dependency": "NONE",
+          "answer_supported_by_source": "N/A",
+          "reviewer_1": {
+            "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+            "status": "PASS"
+          },
+          "reviewer_2": {
+            "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+            "status": "FAIL"
+          },
+          "final_status": "REJECTED_FOR_REVISION",
+          "production_eligible": false,
+          "external_academic_signoff": false,
+          "reasons": [
+            "Cross-mock Speaking originality insufficient (similarity 1.00); duplicated or shallow-template set."
+          ],
+          "audit_version": "46.28",
+          "human_pair_validation_required": true
+        }
+      },
+      {
+        "part": 2,
+        "type": "extended_turn_photo",
+        "prompt": "Describe a picture of young people taking part in a film club in Greenfield. Say what you can see, what the people are doing and how they might feel.",
+        "photo_asset_required": true,
+        "audit_v46_28": {
+          "mock": "C",
+          "skill": "Speaking",
+          "part": 2,
+          "item": "pq-mock-c-s2",
+          "cefr_target": "B1",
+          "target_skill": "extended turn describing a photograph",
+          "correct_answer": null,
+          "distractors": [],
+          "ambiguity": "NONE",
+          "grammar_level": "B1",
+          "vocabulary_level": "B1",
+          "cultural_dependency": "NONE",
+          "answer_supported_by_source": "N/A",
+          "reviewer_1": {
+            "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+            "status": "FAIL"
+          },
+          "reviewer_2": {
+            "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+            "status": "PASS"
+          },
+          "final_status": "REJECTED_FOR_REVISION",
+          "production_eligible": false,
+          "external_academic_signoff": false,
+          "reasons": [
+            "Part 2 requires a reviewed photo stimulus but no concrete photo_asset is attached."
+          ],
+          "audit_version": "46.28",
+          "human_pair_validation_required": true
+        }
+      },
+      {
+        "part": 3,
+        "type": "collaborative_task",
+        "prompt": "Two students, Noah and Tara, want to organise a class activity in Greenfield. Discuss these options: book club, community garden, a picnic, a museum visit and a film afternoon. Make suggestions, respond, compare alternatives and agree on the best choice.",
+        "mode": "interactive_candidate_simulator",
+        "audit_v46_28": {
+          "mock": "C",
+          "skill": "Speaking",
+          "part": 3,
+          "item": "pq-mock-c-s3",
+          "cefr_target": "B1",
+          "target_skill": "collaborative interaction and negotiation",
+          "correct_answer": null,
+          "distractors": [],
+          "ambiguity": "NONE",
+          "grammar_level": "B1",
+          "vocabulary_level": "B1",
+          "cultural_dependency": "NONE",
+          "answer_supported_by_source": "N/A",
+          "reviewer_1": {
+            "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+            "status": "PASS"
+          },
+          "reviewer_2": {
+            "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+            "status": "FAIL"
+          },
+          "final_status": "REJECTED_FOR_REVISION",
+          "production_eligible": false,
+          "external_academic_signoff": false,
+          "reasons": [
+            "Part 3 production mock needs reviewed visual stimulus/options; current task only supplies a text list to the simulator."
+          ],
+          "audit_version": "46.28",
+          "human_pair_validation_required": true
+        }
+      },
+      {
+        "part": 4,
+        "type": "discussion",
+        "prompts": [
+          "Do you prefer activities with friends or with family? Why?",
+          "What makes a school activity successful?",
+          "Should young people try new activities even if they are difficult at first? Why?"
+        ],
+        "audit_v46_28": {
+          "mock": "C",
+          "skill": "Speaking",
+          "part": 4,
+          "item": "pq-mock-c-s4",
+          "cefr_target": "B1",
+          "target_skill": "extended discussion",
+          "correct_answer": null,
+          "distractors": [],
+          "ambiguity": "NONE",
+          "grammar_level": "B1",
+          "vocabulary_level": "B1",
+          "cultural_dependency": "NONE",
+          "answer_supported_by_source": "N/A",
+          "reviewer_1": {
+            "type": "INTERNAL_STRUCTURE_KEY_REVIEW",
+            "status": "PASS"
+          },
+          "reviewer_2": {
+            "type": "INTERNAL_CONTENT_ADVERSARIAL_REVIEW",
+            "status": "FAIL"
+          },
+          "final_status": "REJECTED_FOR_REVISION",
+          "production_eligible": false,
+          "external_academic_signoff": false,
+          "reasons": [
+            "Cross-mock Speaking originality insufficient (similarity 1.00); duplicated or shallow-template set."
+          ],
+          "audit_version": "46.28",
+          "human_pair_validation_required": true
+        }
+      }
+    ],
+    "part3_mode": "interactive_candidate_simulator",
+    "external_human_pair_validation_required": true
+  },
+  "audit_v46_28": {
+    "audit_scope": "all Reading + all Listening + both Writing tasks + all 4 Speaking parts",
+    "records": 63,
+    "approved_internal_qa": 13,
+    "rejected_for_revision": 50,
+    "production_gate": {
+      "allowed": false,
+      "reason": "All audited elements must be APPROVED_INTERNAL_QA before production mock activation."
+    },
+    "reviewers_are_human": false,
+    "external_academic_signoff": false,
+    "audit_version": "46.28"
+  }
+}

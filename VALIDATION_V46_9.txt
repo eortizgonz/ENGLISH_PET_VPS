@@ -1,0 +1,35 @@
+PET Quest V46.9 FULL DATA INTEGRITY VALIDATION
+Date: 2026-09-02
+
+PASS Startup 9/9
+PASS Auth Session 15/15
+PASS Security 8/8
+PASS Screen Integrity 174/174
+PASS Student E2E 73/73
+PASS Academic Fidelity 20/20
+PASS Psychometrics 14/14
+PASS Full Persistence 45/45
+PASS Privacy Purge
+PASS Tenant Isolation
+PASS Backup/Restore
+PASS Runtime HTTP
+PASS Exam Packs A/B/C structural validator
+PASS Python compile 91 files
+PASS JavaScript syntax 46 files
+PASS Frontend literal API parity: 52 called, 0 missing
+PASS Load smoke 500/500 at 50 workers
+
+New persistence tables:
+- learning_events
+- recovery_checks
+- planning_scenarios
+
+Critical fixes:
+- Account name now syncs to users.name; authorization role is read-only.
+- V8/V9 API gaps implemented.
+- Decision/Budget/Portfolio runs persist inputs/results.
+- Unscored Speaking/Writing evidence does not lower preparation score.
+- Privacy deletion purges educational evidence across new/current tables.
+- Foreign key check: PASS.
+
+Commercial external gates remain separate and are not falsely marked PASS.

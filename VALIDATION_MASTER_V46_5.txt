@@ -1,0 +1,50 @@
+PET QUEST B1 FOR SCHOOLS V46.5 MASTER - VALIDATION SUMMARY
+Date: 2026-08-28
+
+RUNTIME / STARTUP
+PASS - V46.5 startup QA: 9/9
+PASS - JavaScript syntax: all project JS parsed with node --check
+PASS - Python compile: api and QA modules compile
+PASS - window.top collision removed
+PASS - Dockerfile launches api_server.py
+PASS - PWA cache bumped to petquest-v46-5
+PASS - Chromium CDP load: 0 Runtime.exceptionThrown
+PASS - Chromium log: 0 error/warning entries during full initial load
+
+SECURITY
+PASS - qa_security_v46.py: 8/8
+PASS - protected API requires authentication
+PASS - invalid login rejected
+PASS - X-Frame-Options DENY
+PASS - nosniff
+PASS - CSP present
+PASS - Permissions-Policy present
+PASS - Referrer-Policy present
+PASS - version header 46.5
+
+STUDENT JOURNEY
+PASS - qa_student_end_to_end_v46_2.py: 72/72
+PASS - Reading/Listening banks answerable
+PASS - Writing two-part completion
+PASS - Speaking completion
+PASS - assignment completion persistence
+PASS - snapshot sync/readback
+PASS - click-action coverage
+
+ACADEMIC / EXAM
+PASS - V41 academic fidelity: 20/20
+PASS - V43 Mock Bank QA
+PASS - V44 psychometrics UI/code: 14/14
+PASS - V46 unified release gate code QA
+PASS - base item pack validator
+PASS - V43 multiple mock structural validator (warnings only for external sign-off/studio audio)
+
+AUDIO
+PASS - packaged reference MP3 assets present for exact-mock QA
+BLOCKED FOR PREMIUM COMMERCIAL RELEASE - studio human recordings, rights clearance and academic audio sign-off remain external requirements.
+
+OPERATING STATUS
+LOCAL: OPERATIVE
+QA: OPERATIVE
+STAGING: OPERATIVE with environment configuration
+COMMERCIAL PRODUCTION: NOT falsely marked approved; external infrastructure/evidence gates remain open.

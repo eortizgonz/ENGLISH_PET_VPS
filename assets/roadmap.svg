@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="t d">
+<title id="t">Mapa futuro de aprendizaje PET Quest</title><desc id="d">Camino ilustrado con Reading, Listening, Writing, Speaking y Castillo PET.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#edf7ff"/><stop offset="1" stop-color="#fff4df"/></linearGradient></defs>
+<rect width="760" height="360" rx="32" fill="url(#g)"/>
+<path d="M80 282 C180 220 170 128 278 154 S390 292 478 210 S565 70 674 92" fill="none" stroke="#7777df" stroke-width="18" stroke-linecap="round" stroke-dasharray="1 28"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<g transform="translate(88 278)"><circle r="45" fill="#dff3e5"/><text y="10" font-size="36">📖</text><text y="70" font-size="18" font-weight="700">Reading</text></g>
+<g transform="translate(230 155)"><circle r="45" fill="#e1edff"/><text y="10" font-size="36">🎧</text><text y="70" font-size="18" font-weight="700">Listening</text></g>
+<g transform="translate(382 254)"><circle r="45" fill="#fff0d8"/><text y="10" font-size="36">✍️</text><text y="70" font-size="18" font-weight="700">Writing</text></g>
+<g transform="translate(520 182)"><circle r="45" fill="#f3e5ff"/><text y="10" font-size="36">🎙️</text><text y="70" font-size="18" font-weight="700">Speaking</text></g>
+<g transform="translate(665 86)"><circle r="52" fill="#ffe7a8"/><text y="10" font-size="40">🏰</text><text y="78" font-size="18" font-weight="700">Meta PET</text></g>
+</g>
+<circle cx="48" cy="55" r="18" fill="#fff" opacity=".8"/><circle cx="705" cy="300" r="25" fill="#fff" opacity=".7"/>
+</svg>

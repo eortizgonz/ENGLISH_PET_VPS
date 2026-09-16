@@ -1,0 +1,14 @@
+PET Quest V46.12 VALIDATION
+Startup: 9/9 PASS
+Auth/session: 15/15 PASS
+Security: 8/8 PASS
+Student E2E: 74/74 PASS
+Full persistence/readback: 45/45 PASS
+User isolation: 11/11 PASS
+UI actions: 334 buttons, 104 fields, 0 orphan active buttons, 0 unaddressed editable fields
+Audio: 60/60 files generated; audio QA 434/434 PASS
+Audio spec: MP3, 48kHz, mono, >=160kbps (target 192kbps), no decode errors
+Measured peak: approx -1.8 to -1.7 dBFS, no clipping
+Voice type: synthetic multi-profile simulation; NOT human studio recording
+Progress: per authenticated user via /api/my-preparation + top-bar percentage badge
+Foreign keys: PASS

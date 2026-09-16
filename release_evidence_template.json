@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "generated_at": "",
+  "device_matrix": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  },
+  "load_test": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  },
+  "pentest": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "critical_issues": 0,
+    "high_issues": 0,
+    "notes": ""
+  },
+  "pilot": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "participants": 0,
+    "notes": ""
+  },
+  "academic_review": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  },
+  "email": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  },
+  "backup_restore": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  },
+  "legal": {
+    "status": "BLOCKED",
+    "evidence_date": "",
+    "artifact": "",
+    "notes": ""
+  }
+}

@@ -1,0 +1,22 @@
+PET QUEST V46.16 - READINESS CALIBRATION LAB VALIDATION
+=======================================================
+
+New calibration QA: 15/15 PASS
+Startup: 9/9 PASS
+Screen integrity: 186/186 PASS
+Student E2E: 78/78 PASS
+Writing Mastery: 10/10 PASS
+Speaking AI: 40/40 PASS
+Part 3 AI Candidate: 24/24 PASS
+Persistence: 45/45 PASS
+User isolation: 11/11 PASS
+Academic fidelity: 20/20 PASS
+Psychometric structural QA: 14/14 PASS
+Backup/restore: PASS
+
+SCIENTIFIC HONESTY GATE
+- PET Quest Readiness remains a preparation index while probability_enabled=false.
+- Teacher mocks are excluded from the scientific probability model.
+- Train/holdout split is by student identity to prevent leakage.
+- Probability publication requires >=300 unique external students, >=75 passes, >=75 fails, >=50 holdout, AUC>=0.70, Brier<=0.20, ECE<=0.10, sensitivity>=65%, specificity>=65%, and independent psychometric review APPROVED.
+- Software QA cannot satisfy the independent external-review gate.

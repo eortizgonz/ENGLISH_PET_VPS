@@ -1,0 +1,2 @@
+participant_id,role,age_band,first_mission_without_adult,identified_next_action,critical_navigation_errors,satisfaction_1_5,critical_privacy_incidents,notes
+P001,student,10-12,true,true,0,5,0,

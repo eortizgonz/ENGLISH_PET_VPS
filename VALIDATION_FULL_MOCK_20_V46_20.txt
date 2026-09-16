@@ -1,0 +1,273 @@
+PASS index version 46.20 
+PASS 20 mock packs 20
+PASS index totals {'reading_questions': 640, 'listening_questions': 500, 'writing_tasks': 40, 'speaking_parts': 80}
+PASS pq-mock-a file exists 
+PASS pq-mock-a reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-a reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-a listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-a listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-a writing 2 
+PASS pq-mock-a speaking 4 
+PASS pq-mock-a external signoff false 
+PASS pq-mock-a psychometric equivalence false 
+PASS pq-mock-a 15 unique recordings 15
+PASS pq-mock-a audio files exist 0
+PASS pq-mock-b file exists 
+PASS pq-mock-b reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-b reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-b listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-b listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-b writing 2 
+PASS pq-mock-b speaking 4 
+PASS pq-mock-b external signoff false 
+PASS pq-mock-b psychometric equivalence false 
+PASS pq-mock-b 15 unique recordings 15
+PASS pq-mock-b audio files exist 0
+PASS pq-mock-c file exists 
+PASS pq-mock-c reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-c reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-c listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-c listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-c writing 2 
+PASS pq-mock-c speaking 4 
+PASS pq-mock-c external signoff false 
+PASS pq-mock-c psychometric equivalence false 
+PASS pq-mock-c 15 unique recordings 15
+PASS pq-mock-c audio files exist 0
+PASS pq-mock-d file exists 
+PASS pq-mock-d reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-d reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-d listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-d listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-d writing 2 
+PASS pq-mock-d speaking 4 
+PASS pq-mock-d external signoff false 
+PASS pq-mock-d psychometric equivalence false 
+PASS pq-mock-d 15 unique recordings 15
+PASS pq-mock-d audio files exist 0
+PASS pq-mock-e file exists 
+PASS pq-mock-e reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-e reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-e listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-e listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-e writing 2 
+PASS pq-mock-e speaking 4 
+PASS pq-mock-e external signoff false 
+PASS pq-mock-e psychometric equivalence false 
+PASS pq-mock-e 15 unique recordings 15
+PASS pq-mock-e audio files exist 0
+PASS pq-mock-f file exists 
+PASS pq-mock-f reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-f reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-f listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-f listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-f writing 2 
+PASS pq-mock-f speaking 4 
+PASS pq-mock-f external signoff false 
+PASS pq-mock-f psychometric equivalence false 
+PASS pq-mock-f 15 unique recordings 15
+PASS pq-mock-f audio files exist 0
+PASS pq-mock-g file exists 
+PASS pq-mock-g reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-g reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-g listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-g listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-g writing 2 
+PASS pq-mock-g speaking 4 
+PASS pq-mock-g external signoff false 
+PASS pq-mock-g psychometric equivalence false 
+PASS pq-mock-g 15 unique recordings 15
+PASS pq-mock-g audio files exist 0
+PASS pq-mock-h file exists 
+PASS pq-mock-h reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-h reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-h listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-h listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-h writing 2 
+PASS pq-mock-h speaking 4 
+PASS pq-mock-h external signoff false 
+PASS pq-mock-h psychometric equivalence false 
+PASS pq-mock-h 15 unique recordings 15
+PASS pq-mock-h audio files exist 0
+PASS pq-mock-i file exists 
+PASS pq-mock-i reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-i reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-i listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-i listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-i writing 2 
+PASS pq-mock-i speaking 4 
+PASS pq-mock-i external signoff false 
+PASS pq-mock-i psychometric equivalence false 
+PASS pq-mock-i 15 unique recordings 15
+PASS pq-mock-i audio files exist 0
+PASS pq-mock-j file exists 
+PASS pq-mock-j reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-j reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-j listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-j listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-j writing 2 
+PASS pq-mock-j speaking 4 
+PASS pq-mock-j external signoff false 
+PASS pq-mock-j psychometric equivalence false 
+PASS pq-mock-j 15 unique recordings 15
+PASS pq-mock-j audio files exist 0
+PASS pq-mock-k file exists 
+PASS pq-mock-k reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-k reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-k listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-k listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-k writing 2 
+PASS pq-mock-k speaking 4 
+PASS pq-mock-k external signoff false 
+PASS pq-mock-k psychometric equivalence false 
+PASS pq-mock-k 15 unique recordings 15
+PASS pq-mock-k audio files exist 0
+PASS pq-mock-l file exists 
+PASS pq-mock-l reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-l reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-l listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-l listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-l writing 2 
+PASS pq-mock-l speaking 4 
+PASS pq-mock-l external signoff false 
+PASS pq-mock-l psychometric equivalence false 
+PASS pq-mock-l 15 unique recordings 15
+PASS pq-mock-l audio files exist 0
+PASS pq-mock-m file exists 
+PASS pq-mock-m reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-m reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-m listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-m listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-m writing 2 
+PASS pq-mock-m speaking 4 
+PASS pq-mock-m external signoff false 
+PASS pq-mock-m psychometric equivalence false 
+PASS pq-mock-m 15 unique recordings 15
+PASS pq-mock-m audio files exist 0
+PASS pq-mock-n file exists 
+PASS pq-mock-n reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-n reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-n listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-n listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-n writing 2 
+PASS pq-mock-n speaking 4 
+PASS pq-mock-n external signoff false 
+PASS pq-mock-n psychometric equivalence false 
+PASS pq-mock-n 15 unique recordings 15
+PASS pq-mock-n audio files exist 0
+PASS pq-mock-o file exists 
+PASS pq-mock-o reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-o reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-o listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-o listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-o writing 2 
+PASS pq-mock-o speaking 4 
+PASS pq-mock-o external signoff false 
+PASS pq-mock-o psychometric equivalence false 
+PASS pq-mock-o 15 unique recordings 15
+PASS pq-mock-o audio files exist 0
+PASS pq-mock-p file exists 
+PASS pq-mock-p reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-p reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-p listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-p listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-p writing 2 
+PASS pq-mock-p speaking 4 
+PASS pq-mock-p external signoff false 
+PASS pq-mock-p psychometric equivalence false 
+PASS pq-mock-p 15 unique recordings 15
+PASS pq-mock-p audio files exist 0
+PASS pq-mock-q file exists 
+PASS pq-mock-q reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-q reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-q listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-q listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-q writing 2 
+PASS pq-mock-q speaking 4 
+PASS pq-mock-q external signoff false 
+PASS pq-mock-q psychometric equivalence false 
+PASS pq-mock-q 15 unique recordings 15
+PASS pq-mock-q audio files exist 0
+PASS pq-mock-r file exists 
+PASS pq-mock-r reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-r reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-r listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-r listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-r writing 2 
+PASS pq-mock-r speaking 4 
+PASS pq-mock-r external signoff false 
+PASS pq-mock-r psychometric equivalence false 
+PASS pq-mock-r 15 unique recordings 15
+PASS pq-mock-r audio files exist 0
+PASS pq-mock-s file exists 
+PASS pq-mock-s reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-s reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-s listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-s listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-s writing 2 
+PASS pq-mock-s speaking 4 
+PASS pq-mock-s external signoff false 
+PASS pq-mock-s psychometric equivalence false 
+PASS pq-mock-s 15 unique recordings 15
+PASS pq-mock-s audio files exist 0
+PASS pq-mock-t file exists 
+PASS pq-mock-t reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-t reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-t listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-t listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-t writing 2 
+PASS pq-mock-t speaking 4 
+PASS pq-mock-t external signoff false 
+PASS pq-mock-t psychometric equivalence false 
+PASS pq-mock-t 15 unique recordings 15
+PASS pq-mock-t audio files exist 0
+PASS 1140 item IDs globally unique 1140/1140
+PASS 300 listening recordings globally unique 300/300
+PASS 20 full form payloads distinct 20
+PASS 20 source-content forms distinct 20
+PASS pq-mock-a L3 shared recording {'pqbank-p3-001'}
+PASS pq-mock-a L4 shared recording {'pqbank-p4-001'}
+PASS pq-mock-b L3 shared recording {'pqbank-p3-002'}
+PASS pq-mock-b L4 shared recording {'pqbank-p4-002'}
+PASS pq-mock-c L3 shared recording {'pqbank-p3-003'}
+PASS pq-mock-c L4 shared recording {'pqbank-p4-003'}
+PASS pq-mock-d L3 shared recording {'pqbank-p3-004'}
+PASS pq-mock-d L4 shared recording {'pqbank-p4-004'}
+PASS pq-mock-e L3 shared recording {'pqbank-p3-005'}
+PASS pq-mock-e L4 shared recording {'pqbank-p4-005'}
+PASS pq-mock-f L3 shared recording {'pqbank-p3-006'}
+PASS pq-mock-f L4 shared recording {'pqbank-p4-006'}
+PASS pq-mock-g L3 shared recording {'pqbank-p3-007'}
+PASS pq-mock-g L4 shared recording {'pqbank-p4-007'}
+PASS pq-mock-h L3 shared recording {'pqbank-p3-008'}
+PASS pq-mock-h L4 shared recording {'pqbank-p4-008'}
+PASS pq-mock-i L3 shared recording {'pqbank-p3-009'}
+PASS pq-mock-i L4 shared recording {'pqbank-p4-009'}
+PASS pq-mock-j L3 shared recording {'pqbank-p3-010'}
+PASS pq-mock-j L4 shared recording {'pqbank-p4-010'}
+PASS pq-mock-k L3 shared recording {'pqbank-p3-011'}
+PASS pq-mock-k L4 shared recording {'pqbank-p4-011'}
+PASS pq-mock-l L3 shared recording {'pqbank-p3-012'}
+PASS pq-mock-l L4 shared recording {'pqbank-p4-012'}
+PASS pq-mock-m L3 shared recording {'pqbank-p3-013'}
+PASS pq-mock-m L4 shared recording {'pqbank-p4-013'}
+PASS pq-mock-n L3 shared recording {'pqbank-p3-014'}
+PASS pq-mock-n L4 shared recording {'pqbank-p4-014'}
+PASS pq-mock-o L3 shared recording {'pqbank-p3-015'}
+PASS pq-mock-o L4 shared recording {'pqbank-p4-015'}
+PASS pq-mock-p L3 shared recording {'pqbank-p3-016'}
+PASS pq-mock-p L4 shared recording {'pqbank-p4-016'}
+PASS pq-mock-q L3 shared recording {'pqbank-p3-017'}
+PASS pq-mock-q L4 shared recording {'pqbank-p4-017'}
+PASS pq-mock-r L3 shared recording {'pqbank-p3-018'}
+PASS pq-mock-r L4 shared recording {'pqbank-p4-018'}
+PASS pq-mock-s L3 shared recording {'pqbank-p3-019'}
+PASS pq-mock-s L4 shared recording {'pqbank-p4-019'}
+PASS pq-mock-t L3 shared recording {'pqbank-p3-020'}
+PASS pq-mock-t L4 shared recording {'pqbank-p4-020'}
+PASS bank advertises 20 Full Mocks 
+PASS generic listening buttons 
+PASS writing paper integrated 
+PASS speaking paper integrated 
+PASS v46.20 script loaded 
+RESULT 272/272 PASS

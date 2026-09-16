@@ -1,0 +1,41 @@
+{
+  "version": "46.26",
+  "profiles": {
+    "schools": {
+      "label": "B1 Preliminary for Schools",
+      "mock_index": "exam_packs/index.json",
+      "practice_bank": "PRACTICE_BANK_V46_21.json"
+    },
+    "adult": {
+      "label": "B1 Preliminary – Adult",
+      "mock_index": "exam_packs/adult_index.json",
+      "practice_bank": "PRACTICE_BANK_ADULT_V46_26.json",
+      "topics": [
+        "work",
+        "travel",
+        "banking",
+        "housing",
+        "shopping",
+        "transport",
+        "appointments",
+        "technology",
+        "healthcare",
+        "restaurants",
+        "relationships",
+        "community",
+        "holidays",
+        "services",
+        "employment"
+      ]
+    }
+  },
+  "adult_totals": {
+    "full_mocks": 20,
+    "reading": 640,
+    "listening": 500,
+    "writing": 40,
+    "speaking_parts": 80,
+    "mock_audio_recordings": 300,
+    "practice_activities": 3000
+  }
+}

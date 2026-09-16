@@ -1,0 +1,20 @@
+PET QUEST V46.15 — PART 3 AI CANDIDATE
+
+STATUS: FUNCTIONAL QA VALIDATED
+
+Part 3 AI Candidate................. 24/24 PASS
+Speaking AI Examiner regression..... 40/40 PASS
+Student end-to-end.................. 77/77 PASS
+Academic regression................. 20/20 PASS
+Writing Mastery..................... 10/10 PASS
+Full persistence.................... 45/45 PASS
+User isolation...................... 11/11 PASS
+Security............................ 8/8 PASS
+Startup............................. 9/9 PASS
+Screen integrity.................... 184/184 PASS
+Foreign key integrity............... PASS
+
+Interaction functions:
+suggestion, agreement, disagreement, justification, turn-taking, negotiation, final decision.
+
+Automatic practice evaluation only; not an official Cambridge score.

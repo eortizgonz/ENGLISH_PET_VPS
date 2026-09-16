@@ -1,0 +1,12 @@
+PET Quest V46.25 Full Integrity Validation
+- UI: 392 buttons / 122 fields / 0 orphan / 0 unaddressed
+- Persistence: 45/45 PASS
+- User isolation: 11/11 PASS
+- Student E2E: 85/85 PASS
+- Startup: 10/10 PASS
+- Security: 8/8 PASS
+- Full integrity contract: 17/17 PASS
+- Audio Bank: 28/28 PASS
+- Audio 500 deep: 500/500 hashes/specs + 500/500 decodes PASS; peak sample max -1.9 dBFS
+- Legacy/fidelity voice simulation: 434/434 PASS
+- Synthetic voices remain synthetic; human-studio provenance is not claimed.

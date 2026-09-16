@@ -1,0 +1,1282 @@
+{
+  "pack_id": "pq-adult-p",
+  "title": "PET Quest B1 Preliminary Adult Mock P",
+  "version": "46.26",
+  "license": "PET Quest original content",
+  "status": "adult_four_skill_content_complete_external_equivalence_pending",
+  "theme": "Remote Work",
+  "exam_profile": "adult",
+  "authoring": {
+    "original": true,
+    "school_age_context": false,
+    "adult_topic": "work"
+  },
+  "reading": [
+    {
+      "id": "pq-adult-p-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where should passengers for London go?",
+      "options": [
+        "Platform 3",
+        "Platform 6",
+        "The ticket office"
+      ],
+      "answer": 1,
+      "source_text": "Newcastle CENTRAL STATION: Platform 3 is closed after 18:00. Trains to London leave from platform 6.",
+      "source_label": "Station notice",
+      "focus": "short-message",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What must the customer bring?",
+      "options": [
+        "A printed statement",
+        "Photo ID",
+        "Cash"
+      ],
+      "answer": 1,
+      "source_text": "BANK MESSAGE: Your appointment is at 9:30 on Thursday. Please bring photo ID; no printed statement is required.",
+      "source_label": "Bank message",
+      "focus": "short-message",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What should the resident do if the flat is empty?",
+      "options": [
+        "Leave the door open",
+        "Call the building manager",
+        "Cancel the repair"
+      ],
+      "answer": 1,
+      "source_text": "FLAT 2B: The plumber will arrive between 11:00 and 13:00 tomorrow. If nobody is home, call the building manager.",
+      "source_label": "Housing notice",
+      "focus": "short-message",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What should diners do if they will arrive late?",
+      "options": [
+        "Order online",
+        "Phone the restaurant",
+        "Book a new table next week"
+      ],
+      "answer": 1,
+      "source_text": "RIVERSIDE RESTAURANT: Tables booked after 7 p.m. are held for 15 minutes. Please phone us if you are delayed.",
+      "source_label": "Restaurant notice",
+      "focus": "short-message",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "How will the team meet on Friday?",
+      "options": [
+        "Online",
+        "In a meeting room",
+        "By telephone only"
+      ],
+      "answer": 0,
+      "source_text": "OFFICE UPDATE: Friday’s team meeting will be online, not in Room 25. Use the link in your calendar invitation.",
+      "source_label": "Work update",
+      "focus": "short-message",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Leila wants free help improving a CV before applying for a new job.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Neighbourhood Café 16",
+          "text": "quiet tables, affordable lunches and community noticeboard."
+        },
+        {
+          "key": "B",
+          "title": "City Library 16",
+          "text": "quiet workspace, free Wi-Fi and printing; open until 8 p.m."
+        },
+        {
+          "key": "C",
+          "title": "Community Workshop 16",
+          "text": "Saturday repair sessions for household items; tools supplied."
+        },
+        {
+          "key": "D",
+          "title": "Travel Advice Centre 16",
+          "text": "help with rail passes, routes and accessible travel planning."
+        },
+        {
+          "key": "E",
+          "title": "Digital Skills Hub 16",
+          "text": "evening sessions on online banking, video calls and secure passwords."
+        },
+        {
+          "key": "F",
+          "title": "Food Market 16",
+          "text": "local produce, ready meals and weekend tasting events."
+        },
+        {
+          "key": "G",
+          "title": "Fitness Centre 16",
+          "text": "early-morning classes, swimming and flexible monthly membership."
+        },
+        {
+          "key": "H",
+          "title": "Career Desk 16",
+          "text": "CV review, interview practice and local vacancy information."
+        }
+      ],
+      "answer": "H",
+      "focus": "matching-needs",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "James needs advice about train routes for a short trip and wants to compare travel passes.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Neighbourhood Café 16",
+          "text": "quiet tables, affordable lunches and community noticeboard."
+        },
+        {
+          "key": "B",
+          "title": "City Library 16",
+          "text": "quiet workspace, free Wi-Fi and printing; open until 8 p.m."
+        },
+        {
+          "key": "C",
+          "title": "Community Workshop 16",
+          "text": "Saturday repair sessions for household items; tools supplied."
+        },
+        {
+          "key": "D",
+          "title": "Travel Advice Centre 16",
+          "text": "help with rail passes, routes and accessible travel planning."
+        },
+        {
+          "key": "E",
+          "title": "Digital Skills Hub 16",
+          "text": "evening sessions on online banking, video calls and secure passwords."
+        },
+        {
+          "key": "F",
+          "title": "Food Market 16",
+          "text": "local produce, ready meals and weekend tasting events."
+        },
+        {
+          "key": "G",
+          "title": "Fitness Centre 16",
+          "text": "early-morning classes, swimming and flexible monthly membership."
+        },
+        {
+          "key": "H",
+          "title": "Career Desk 16",
+          "text": "CV review, interview practice and local vacancy information."
+        }
+      ],
+      "answer": "D",
+      "focus": "matching-needs",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Nina wants to learn safer ways to use online banking and passwords after work.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Neighbourhood Café 16",
+          "text": "quiet tables, affordable lunches and community noticeboard."
+        },
+        {
+          "key": "B",
+          "title": "City Library 16",
+          "text": "quiet workspace, free Wi-Fi and printing; open until 8 p.m."
+        },
+        {
+          "key": "C",
+          "title": "Community Workshop 16",
+          "text": "Saturday repair sessions for household items; tools supplied."
+        },
+        {
+          "key": "D",
+          "title": "Travel Advice Centre 16",
+          "text": "help with rail passes, routes and accessible travel planning."
+        },
+        {
+          "key": "E",
+          "title": "Digital Skills Hub 16",
+          "text": "evening sessions on online banking, video calls and secure passwords."
+        },
+        {
+          "key": "F",
+          "title": "Food Market 16",
+          "text": "local produce, ready meals and weekend tasting events."
+        },
+        {
+          "key": "G",
+          "title": "Fitness Centre 16",
+          "text": "early-morning classes, swimming and flexible monthly membership."
+        },
+        {
+          "key": "H",
+          "title": "Career Desk 16",
+          "text": "CV review, interview practice and local vacancy information."
+        }
+      ],
+      "answer": "E",
+      "focus": "matching-needs",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Omar needs somewhere quiet in the evening to work on a laptop and print two documents.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Neighbourhood Café 16",
+          "text": "quiet tables, affordable lunches and community noticeboard."
+        },
+        {
+          "key": "B",
+          "title": "City Library 16",
+          "text": "quiet workspace, free Wi-Fi and printing; open until 8 p.m."
+        },
+        {
+          "key": "C",
+          "title": "Community Workshop 16",
+          "text": "Saturday repair sessions for household items; tools supplied."
+        },
+        {
+          "key": "D",
+          "title": "Travel Advice Centre 16",
+          "text": "help with rail passes, routes and accessible travel planning."
+        },
+        {
+          "key": "E",
+          "title": "Digital Skills Hub 16",
+          "text": "evening sessions on online banking, video calls and secure passwords."
+        },
+        {
+          "key": "F",
+          "title": "Food Market 16",
+          "text": "local produce, ready meals and weekend tasting events."
+        },
+        {
+          "key": "G",
+          "title": "Fitness Centre 16",
+          "text": "early-morning classes, swimming and flexible monthly membership."
+        },
+        {
+          "key": "H",
+          "title": "Career Desk 16",
+          "text": "CV review, interview practice and local vacancy information."
+        }
+      ],
+      "answer": "B",
+      "focus": "matching-needs",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Helen has a broken desk lamp and would prefer to repair it instead of buying a new one.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Neighbourhood Café 16",
+          "text": "quiet tables, affordable lunches and community noticeboard."
+        },
+        {
+          "key": "B",
+          "title": "City Library 16",
+          "text": "quiet workspace, free Wi-Fi and printing; open until 8 p.m."
+        },
+        {
+          "key": "C",
+          "title": "Community Workshop 16",
+          "text": "Saturday repair sessions for household items; tools supplied."
+        },
+        {
+          "key": "D",
+          "title": "Travel Advice Centre 16",
+          "text": "help with rail passes, routes and accessible travel planning."
+        },
+        {
+          "key": "E",
+          "title": "Digital Skills Hub 16",
+          "text": "evening sessions on online banking, video calls and secure passwords."
+        },
+        {
+          "key": "F",
+          "title": "Food Market 16",
+          "text": "local produce, ready meals and weekend tasting events."
+        },
+        {
+          "key": "G",
+          "title": "Fitness Centre 16",
+          "text": "early-morning classes, swimming and flexible monthly membership."
+        },
+        {
+          "key": "H",
+          "title": "Career Desk 16",
+          "text": "CV review, interview practice and local vacancy information."
+        }
+      ],
+      "answer": "C",
+      "focus": "matching-needs",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the new job initially appeal to Aisha?",
+      "options": [
+        "It offered a much higher salary",
+        "It reduced travelling time",
+        "It included free housing",
+        "It involved community work"
+      ],
+      "answer": 1,
+      "passage": "Aisha moved to Newcastle last year after accepting a position with a small design company. At first, the main attraction was the shorter commute: the new office was only twenty minutes from the flat. However, the biggest change was not professional. Aisha joined a local community kitchen that prepares evening meals for older residents twice a month. The first session felt unfamiliar because everyone else seemed to know one another, but the coordinator gave each new volunteer a simple task and introduced them to the team. After several months, Aisha began organising the shopping list and contacting local businesses for donated ingredients. The role required more planning than expected, yet it also improved confidence when speaking to strangers. One local café later offered to supply bread every Friday, which reduced the group’s costs. Aisha still enjoys the job in design, but says the community work has made the city feel like home. The experience also changed future plans: instead of moving again soon, Aisha now wants to stay in Newcastle and take a short evening course in project management.",
+      "focus": "reading-detail-inference",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "How did Aisha feel at the first kitchen session?",
+      "options": [
+        "Immediately confident",
+        "Uncertain in a new group",
+        "Bored by the tasks",
+        "Annoyed with the coordinator"
+      ],
+      "answer": 1,
+      "passage": "Aisha moved to Newcastle last year after accepting a position with a small design company. At first, the main attraction was the shorter commute: the new office was only twenty minutes from the flat. However, the biggest change was not professional. Aisha joined a local community kitchen that prepares evening meals for older residents twice a month. The first session felt unfamiliar because everyone else seemed to know one another, but the coordinator gave each new volunteer a simple task and introduced them to the team. After several months, Aisha began organising the shopping list and contacting local businesses for donated ingredients. The role required more planning than expected, yet it also improved confidence when speaking to strangers. One local café later offered to supply bread every Friday, which reduced the group’s costs. Aisha still enjoys the job in design, but says the community work has made the city feel like home. The experience also changed future plans: instead of moving again soon, Aisha now wants to stay in Newcastle and take a short evening course in project management.",
+      "focus": "reading-detail-inference",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What responsibility did Aisha later take on?",
+      "options": [
+        "Cooking every meal alone",
+        "Managing the shopping list",
+        "Driving residents home",
+        "Teaching a design class"
+      ],
+      "answer": 1,
+      "passage": "Aisha moved to Newcastle last year after accepting a position with a small design company. At first, the main attraction was the shorter commute: the new office was only twenty minutes from the flat. However, the biggest change was not professional. Aisha joined a local community kitchen that prepares evening meals for older residents twice a month. The first session felt unfamiliar because everyone else seemed to know one another, but the coordinator gave each new volunteer a simple task and introduced them to the team. After several months, Aisha began organising the shopping list and contacting local businesses for donated ingredients. The role required more planning than expected, yet it also improved confidence when speaking to strangers. One local café later offered to supply bread every Friday, which reduced the group’s costs. Aisha still enjoys the job in design, but says the community work has made the city feel like home. The experience also changed future plans: instead of moving again soon, Aisha now wants to stay in Newcastle and take a short evening course in project management.",
+      "focus": "reading-detail-inference",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What was the result of contacting local businesses?",
+      "options": [
+        "A café began donating bread",
+        "The group changed buildings",
+        "More volunteers left",
+        "The meals became more expensive"
+      ],
+      "answer": 0,
+      "passage": "Aisha moved to Newcastle last year after accepting a position with a small design company. At first, the main attraction was the shorter commute: the new office was only twenty minutes from the flat. However, the biggest change was not professional. Aisha joined a local community kitchen that prepares evening meals for older residents twice a month. The first session felt unfamiliar because everyone else seemed to know one another, but the coordinator gave each new volunteer a simple task and introduced them to the team. After several months, Aisha began organising the shopping list and contacting local businesses for donated ingredients. The role required more planning than expected, yet it also improved confidence when speaking to strangers. One local café later offered to supply bread every Friday, which reduced the group’s costs. Aisha still enjoys the job in design, but says the community work has made the city feel like home. The experience also changed future plans: instead of moving again soon, Aisha now wants to stay in Newcastle and take a short evening course in project management.",
+      "focus": "reading-detail-inference",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What does Aisha plan to do next?",
+      "options": [
+        "Leave the city soon",
+        "Change career completely",
+        "Study project management in the evening",
+        "Stop volunteering"
+      ],
+      "answer": 2,
+      "passage": "Aisha moved to Newcastle last year after accepting a position with a small design company. At first, the main attraction was the shorter commute: the new office was only twenty minutes from the flat. However, the biggest change was not professional. Aisha joined a local community kitchen that prepares evening meals for older residents twice a month. The first session felt unfamiliar because everyone else seemed to know one another, but the coordinator gave each new volunteer a simple task and introduced them to the team. After several months, Aisha began organising the shopping list and contacting local businesses for donated ingredients. The role required more planning than expected, yet it also improved confidence when speaking to strangers. One local café later offered to supply bread every Friday, which reduced the group’s costs. Aisha still enjoys the job in design, but says the community work has made the city feel like home. The experience also changed future plans: instead of moving again soon, Aisha now wants to stay in Newcastle and take a short evening course in project management.",
+      "focus": "reading-detail-inference",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r4-1",
+      "part": 4,
+      "interaction": "matching",
+      "prompt": "Choose the sentence for gap 1.",
+      "options": [
+        {
+          "key": "A",
+          "text": "This may mean checking official websites, asking a provider questions or reading recent customer information."
+        },
+        {
+          "key": "B",
+          "text": "Otherwise, an attractive headline price can hide conditions that matter later."
+        },
+        {
+          "key": "C",
+          "text": "This is particularly helpful when several decisions have to be made during the same week."
+        },
+        {
+          "key": "D",
+          "text": "For example, an email can record the agreed time, price and person responsible."
+        },
+        {
+          "key": "E",
+          "text": "They also give you a chance to notice problems before they become expensive."
+        },
+        {
+          "key": "F",
+          "text": "Some people prefer to decide without checking any details."
+        },
+        {
+          "key": "G",
+          "text": "A long technical document is always the best starting point."
+        },
+        {
+          "key": "H",
+          "text": "The cheapest choice is therefore automatically the safest."
+        }
+      ],
+      "answer": "A",
+      "passage": "When adults make a change connected with work, the first step is often gathering reliable information. [1] It is also useful to compare more than one option rather than accepting the first offer. [2] A simple written list can make costs, dates and responsibilities easier to see. [3] If another person is involved, confirming the final arrangement in writing prevents misunderstandings. [4] Small practical checks may seem slow at the beginning, but they usually save time later. [5] For that reason, good planning is less about doing everything immediately and more about making each next step clear.",
+      "focus": "gapped-text-cohesion",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r4-2",
+      "part": 4,
+      "interaction": "matching",
+      "prompt": "Choose the sentence for gap 2.",
+      "options": [
+        {
+          "key": "A",
+          "text": "This may mean checking official websites, asking a provider questions or reading recent customer information."
+        },
+        {
+          "key": "B",
+          "text": "Otherwise, an attractive headline price can hide conditions that matter later."
+        },
+        {
+          "key": "C",
+          "text": "This is particularly helpful when several decisions have to be made during the same week."
+        },
+        {
+          "key": "D",
+          "text": "For example, an email can record the agreed time, price and person responsible."
+        },
+        {
+          "key": "E",
+          "text": "They also give you a chance to notice problems before they become expensive."
+        },
+        {
+          "key": "F",
+          "text": "Some people prefer to decide without checking any details."
+        },
+        {
+          "key": "G",
+          "text": "A long technical document is always the best starting point."
+        },
+        {
+          "key": "H",
+          "text": "The cheapest choice is therefore automatically the safest."
+        }
+      ],
+      "answer": "B",
+      "passage": "When adults make a change connected with work, the first step is often gathering reliable information. [1] It is also useful to compare more than one option rather than accepting the first offer. [2] A simple written list can make costs, dates and responsibilities easier to see. [3] If another person is involved, confirming the final arrangement in writing prevents misunderstandings. [4] Small practical checks may seem slow at the beginning, but they usually save time later. [5] For that reason, good planning is less about doing everything immediately and more about making each next step clear.",
+      "focus": "gapped-text-cohesion",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r4-3",
+      "part": 4,
+      "interaction": "matching",
+      "prompt": "Choose the sentence for gap 3.",
+      "options": [
+        {
+          "key": "A",
+          "text": "This may mean checking official websites, asking a provider questions or reading recent customer information."
+        },
+        {
+          "key": "B",
+          "text": "Otherwise, an attractive headline price can hide conditions that matter later."
+        },
+        {
+          "key": "C",
+          "text": "This is particularly helpful when several decisions have to be made during the same week."
+        },
+        {
+          "key": "D",
+          "text": "For example, an email can record the agreed time, price and person responsible."
+        },
+        {
+          "key": "E",
+          "text": "They also give you a chance to notice problems before they become expensive."
+        },
+        {
+          "key": "F",
+          "text": "Some people prefer to decide without checking any details."
+        },
+        {
+          "key": "G",
+          "text": "A long technical document is always the best starting point."
+        },
+        {
+          "key": "H",
+          "text": "The cheapest choice is therefore automatically the safest."
+        }
+      ],
+      "answer": "C",
+      "passage": "When adults make a change connected with work, the first step is often gathering reliable information. [1] It is also useful to compare more than one option rather than accepting the first offer. [2] A simple written list can make costs, dates and responsibilities easier to see. [3] If another person is involved, confirming the final arrangement in writing prevents misunderstandings. [4] Small practical checks may seem slow at the beginning, but they usually save time later. [5] For that reason, good planning is less about doing everything immediately and more about making each next step clear.",
+      "focus": "gapped-text-cohesion",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r4-4",
+      "part": 4,
+      "interaction": "matching",
+      "prompt": "Choose the sentence for gap 4.",
+      "options": [
+        {
+          "key": "A",
+          "text": "This may mean checking official websites, asking a provider questions or reading recent customer information."
+        },
+        {
+          "key": "B",
+          "text": "Otherwise, an attractive headline price can hide conditions that matter later."
+        },
+        {
+          "key": "C",
+          "text": "This is particularly helpful when several decisions have to be made during the same week."
+        },
+        {
+          "key": "D",
+          "text": "For example, an email can record the agreed time, price and person responsible."
+        },
+        {
+          "key": "E",
+          "text": "They also give you a chance to notice problems before they become expensive."
+        },
+        {
+          "key": "F",
+          "text": "Some people prefer to decide without checking any details."
+        },
+        {
+          "key": "G",
+          "text": "A long technical document is always the best starting point."
+        },
+        {
+          "key": "H",
+          "text": "The cheapest choice is therefore automatically the safest."
+        }
+      ],
+      "answer": "D",
+      "passage": "When adults make a change connected with work, the first step is often gathering reliable information. [1] It is also useful to compare more than one option rather than accepting the first offer. [2] A simple written list can make costs, dates and responsibilities easier to see. [3] If another person is involved, confirming the final arrangement in writing prevents misunderstandings. [4] Small practical checks may seem slow at the beginning, but they usually save time later. [5] For that reason, good planning is less about doing everything immediately and more about making each next step clear.",
+      "focus": "gapped-text-cohesion",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r4-5",
+      "part": 4,
+      "interaction": "matching",
+      "prompt": "Choose the sentence for gap 5.",
+      "options": [
+        {
+          "key": "A",
+          "text": "This may mean checking official websites, asking a provider questions or reading recent customer information."
+        },
+        {
+          "key": "B",
+          "text": "Otherwise, an attractive headline price can hide conditions that matter later."
+        },
+        {
+          "key": "C",
+          "text": "This is particularly helpful when several decisions have to be made during the same week."
+        },
+        {
+          "key": "D",
+          "text": "For example, an email can record the agreed time, price and person responsible."
+        },
+        {
+          "key": "E",
+          "text": "They also give you a chance to notice problems before they become expensive."
+        },
+        {
+          "key": "F",
+          "text": "Some people prefer to decide without checking any details."
+        },
+        {
+          "key": "G",
+          "text": "A long technical document is always the best starting point."
+        },
+        {
+          "key": "H",
+          "text": "The cheapest choice is therefore automatically the safest."
+        }
+      ],
+      "answer": "E",
+      "passage": "When adults make a change connected with work, the first step is often gathering reliable information. [1] It is also useful to compare more than one option rather than accepting the first offer. [2] A simple written list can make costs, dates and responsibilities easier to see. [3] If another person is involved, confirming the final arrangement in writing prevents misunderstandings. [4] Small practical checks may seem slow at the beginning, but they usually save time later. [5] For that reason, good planning is less about doing everything immediately and more about making each next step clear.",
+      "focus": "gapped-text-cohesion",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Before signing the rental agreement, Maya ___ the conditions carefully.",
+      "options": [
+        "read",
+        "looked",
+        "watched",
+        "saw"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "The train was delayed, ___ we arrived after the office had closed.",
+      "options": [
+        "so",
+        "although",
+        "because",
+        "unless"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "I have worked from home ___ last September.",
+      "options": [
+        "since",
+        "for",
+        "during",
+        "by"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Could you ___ me know whether the appointment is still available?",
+      "options": [
+        "let",
+        "make",
+        "give",
+        "put"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "The new banking app is much easier to use ___ the old one.",
+      "options": [
+        "than",
+        "that",
+        "then",
+        "as"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We decided to eat at home ___ going to the restaurant.",
+      "options": [
+        "instead of",
+        "because of",
+        "according to",
+        "except for"
+      ],
+      "answer": 0,
+      "focus": "cloze-grammar-lexis",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "I am writing ___ confirm my appointment for Tuesday.",
+      "answer": "to",
+      "focus": "open-cloze",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "There is a supermarket ___ the end of our street.",
+      "answer": "at",
+      "focus": "open-cloze",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "We have lived here ___ three years.",
+      "answer": "for",
+      "focus": "open-cloze",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "The bus was full, ___ we waited for the next one.",
+      "answer": "so",
+      "focus": "open-cloze",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "She asked me ___ I could work on Friday.",
+      "answer": "if",
+      "focus": "open-cloze",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "This is the café ___ we first met.",
+      "answer": "where",
+      "focus": "open-cloze",
+      "profile": "adult"
+    }
+  ],
+  "listening": [
+    {
+      "id": "pq-adult-p-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time is the medical appointment?",
+      "options": [
+        "9:15",
+        "10:15",
+        "10:45"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l1-1",
+      "transcript": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "focus": "corrected time",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-1.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Which platform should the passenger use?",
+      "options": [
+        "2",
+        "4",
+        "7"
+      ],
+      "answer": 2,
+      "audio_id": "pq-adult-p-l1-2",
+      "transcript": "Announcement: The Newcastle service will not leave from platform two today. Please go to platform seven.",
+      "focus": "corrected information",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-2.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "How much is the transfer fee?",
+      "options": [
+        "£1.50",
+        "£2.50",
+        "£5.00"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l1-3",
+      "transcript": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "focus": "numbers",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-3.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "When is the restaurant booking?",
+      "options": [
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l1-4",
+      "transcript": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "focus": "day/date",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-4.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What needs repairing?",
+      "options": [
+        "The heating",
+        "The kitchen tap",
+        "The front door"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l1-5",
+      "transcript": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "focus": "detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-5.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where will the work meeting take place?",
+      "options": [
+        "Room 8",
+        "Online",
+        "The café"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l1-6",
+      "transcript": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "focus": "place correction",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-6.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "When will the parcel arrive?",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday"
+      ],
+      "answer": 2,
+      "audio_id": "pq-adult-p-l1-7",
+      "transcript": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "focus": "corrected date",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-7.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the speaker change jobs?",
+      "options": [
+        "For a shorter commute",
+        "For a higher title",
+        "To work abroad"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l2-1",
+      "transcript": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-1.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What was the main problem at the hotel?",
+      "options": [
+        "The room was noisy",
+        "Breakfast was expensive",
+        "The staff were unfriendly"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l2-2",
+      "transcript": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-2.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the customer call technical support?",
+      "options": [
+        "The screen was broken",
+        "A password reset failed",
+        "The internet was slow"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l2-3",
+      "transcript": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-3.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What advice did the nurse give?",
+      "options": [
+        "Rest and drink water",
+        "Book a flight",
+        "Buy new glasses"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l2-4",
+      "transcript": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-4.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What does the speaker like about the community event?",
+      "options": [
+        "It is free and local",
+        "It finishes very late",
+        "It is only for families"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l2-5",
+      "transcript": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-5.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the customer choose this repair company?",
+      "options": [
+        "It was the cheapest",
+        "It could come quickly",
+        "A friend owns it"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l2-6",
+      "transcript": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "focus": "adult listening detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-6.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "What time does the workshop start?",
+      "answer": "9:30",
+      "accepted_answers": [
+        "9:30",
+        "9.30"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Which entrance should participants use?",
+      "answer": "side",
+      "accepted_answers": [
+        "side",
+        "side"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "What type of tickets are discussed in the morning?",
+      "answer": "rail",
+      "accepted_answers": [
+        "rail",
+        "rail"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "What topic is covered after lunch?",
+      "answer": "insurance",
+      "accepted_answers": [
+        "insurance",
+        "insurance"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "What device can participants bring?",
+      "answer": "phone",
+      "accepted_answers": [
+        "phone",
+        "phone"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "What time does the workshop finish?",
+      "answer": "4:15",
+      "accepted_answers": [
+        "4:15",
+        "4.15"
+      ],
+      "audio_id": "pq-adult-p-l3-shared",
+      "transcript": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "focus": "monologue detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Why did Aisha reduce working days?",
+      "options": [
+        "To travel abroad",
+        "For family time and study",
+        "Because the office closed"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What happened to the expected financial difference?",
+      "options": [
+        "It was smaller than expected",
+        "It doubled",
+        "It disappeared completely"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "How has Aisha changed at work?",
+      "options": [
+        "Less focused",
+        "More focused",
+        "More often late"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What does Aisha say about recommending the arrangement?",
+      "options": [
+        "It suits everyone",
+        "It depends on individual circumstances",
+        "Only managers should do it"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What is the future career plan?",
+      "options": [
+        "Stop working",
+        "Apply for more responsibility",
+        "Return to the previous employer"
+      ],
+      "answer": 1,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    },
+    {
+      "id": "pq-adult-p-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What would Aisha prefer to keep?",
+      "options": [
+        "One weekday free",
+        "A company car",
+        "A longer commute"
+      ],
+      "answer": 0,
+      "audio_id": "pq-adult-p-l4-shared",
+      "transcript": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "focus": "interview opinion detail",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "profile": "adult"
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "interaction": "email",
+      "prompt": "You received an email from an English-speaking friend who is planning to spend a weekend in Newcastle. Write an email recommending one practical activity or place, explain why it is suitable, and suggest when you could meet.",
+      "target_words": 100,
+      "profile": "adult"
+    },
+    {
+      "part": 2,
+      "interaction": "choice",
+      "options": [
+        {
+          "type": "article",
+          "prompt": "Write an article about one useful way adults can make everyday work easier. Give practical examples and explain why your idea helps."
+        },
+        {
+          "type": "story",
+          "prompt": "Your story must begin: “By the time I checked my phone again, the plan had completely changed.”"
+        }
+      ],
+      "target_words": 100,
+      "profile": "adult"
+    }
+  ],
+  "speaking": {
+    "parts": [
+      {
+        "part": 1,
+        "type": "interview",
+        "prompts": [
+          "What do you usually do on a normal working or weekday morning?",
+          "Tell us about a journey you make regularly.",
+          "What kind of technology do you use most in everyday life?"
+        ],
+        "profile": "adult"
+      },
+      {
+        "part": 2,
+        "type": "extended_turn_photo",
+        "prompt": "Describe a picture of adults using a public service in Newcastle, such as a station, café, clinic or office. Say what you can see, what the people are doing and how they might feel.",
+        "photo_asset_required": true,
+        "profile": "adult"
+      },
+      {
+        "part": 3,
+        "type": "collaborative_task",
+        "prompt": "Two adults have one free Saturday and want to do something useful and enjoyable. Discuss these options: visit a market, take a short train trip, attend a community event, try a new restaurant, or do a practical workshop. Make suggestions, respond, compare alternatives and agree on the best choice.",
+        "mode": "interactive_candidate_simulator",
+        "profile": "adult"
+      },
+      {
+        "part": 4,
+        "type": "discussion",
+        "prompts": [
+          "What makes a neighbourhood a good place to live?",
+          "Do people rely too much on technology for everyday services? Why?",
+          "Is it better to plan holidays carefully or leave some decisions until you arrive? Why?"
+        ],
+        "profile": "adult"
+      }
+    ],
+    "part3_mode": "interactive_candidate_simulator",
+    "external_human_pair_validation_required": true,
+    "profile": "adult"
+  }
+}

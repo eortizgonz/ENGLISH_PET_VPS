@@ -1,0 +1,29 @@
+PET Quest V46.26 — Adult Profile validation
+
+Adult profile contract: 66/66 PASS
+Adult audio: 300/300 file-format checks PASS; 40/40 distributed full-decode sample PASS
+Startup: 10/10 PASS
+Security: 8/8 PASS
+For Schools Full Mocks regression: 272/272 PASS
+Child Experience regression: 30/30 PASS
+Practice Bank / B1 Matrix regression: 18/18 PASS
+Pedagogical diagnostic regression: 25/25 PASS
+Speaking AI regression: 40/40 PASS
+Part 3 AI Candidate regression: 24/24 PASS
+Audio Bank regression: 28/28 PASS
+User isolation: 11/11 PASS
+Student end-to-end journey: 86/86 PASS
+
+Adult bank totals:
+- 20 Full Mocks
+- 640 Reading questions
+- 500 Listening questions
+- 40 Writing tasks
+- 80 Speaking parts
+- 300 adult mock recordings
+- 3,000 adult Practice Bank activities
+
+Content contamination audit: 0 matches for school-trip, school-courtyard, science-club, teenager, classroom, homework and student patterns in Adult mock/practice payloads.
+
+External psychometric equivalence: NOT claimed / pending external evidence.
+Adult audio: synthetic voice simulation, not human studio recordings.

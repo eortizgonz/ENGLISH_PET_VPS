@@ -1,0 +1,24 @@
+PET Quest V46.7 - Auth Session Validation
+
+Static/session QA: 15/15 PASS
+Screen integrity regression: 172/172 PASS
+Student E2E regression: 72/72 PASS
+Security regression: 8/8 PASS
+Runtime HTTP QA: PASS
+
+Runtime authentication cycle reproduced:
+1. GET /api/me without token -> 401 unauthorized
+2. POST /api/login with valid student credentials -> 200 + token + expires_at
+3. GET /api/me with Bearer token -> 200
+4. POST /api/logout with Bearer token -> 200 {ok:true}
+5. Reuse logged-out token on /api/me -> 401 unauthorized
+
+Implemented behavior:
+- Login is mandatory before protected app screens.
+- Valid token is restored from localStorage and revalidated via /api/me.
+- Session expiration is persisted and checked at startup.
+- Any protected API 401 clears local auth and redirects to login.
+- Global Cerrar sesion button appears for authenticated users.
+- Logout invalidates backend session and clears all known local token keys.
+- Pressing Enter in password field submits login.
+- Demo credentials remain limited to development/test UI.

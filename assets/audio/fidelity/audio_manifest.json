@@ -1,0 +1,43 @@
+{
+  "version": "46.12",
+  "copyright": "Original PET Quest practice scripts/audio. Not Cambridge material.",
+  "quality": "Reference prerecorded audio for functional testing only. Commercial exam-fidelity release requires licensed studio-recorded natural human voices and QA sign-off.",
+  "files": [
+    "lp1_1.mp3",
+    "lp1_2.mp3",
+    "lp1_3.mp3",
+    "lp1_4.mp3",
+    "lp1_5.mp3",
+    "lp1_6.mp3",
+    "lp1_7.mp3",
+    "lp2_1.mp3",
+    "lp2_2.mp3",
+    "lp2_3.mp3",
+    "lp2_4.mp3",
+    "lp2_5.mp3",
+    "lp2_6.mp3",
+    "lp3_monologue.mp3",
+    "lp4_interview.mp3"
+  ],
+  "recording_type": "synthetic_multivoice_reference",
+  "production_ready": false,
+  "requires_human_studio": true,
+  "required_profiles": [
+    "British English primary",
+    "mixed male/female",
+    "teen/adult mix",
+    "natural connected speech",
+    "multi-speaker dialogue",
+    "moderate contextual ambience where pedagogically appropriate"
+  ],
+  "mastering": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bitrate_kbps": 192,
+    "loudness_target_lufs": -16,
+    "true_peak_target_dbfs": -1.5,
+    "unlimited_replay_default": true,
+    "strict_two_play_optional": true
+  },
+  "voice_simulation_ready": true
+}

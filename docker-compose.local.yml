@@ -1,0 +1,18 @@
+services:
+  petquest:
+    build: .
+    environment:
+      PETQUEST_ENV: development
+      PETQUEST_DEV_MODE: "1"
+      PETQUEST_SEED_DEMO_DATA: "1"
+      PETQUEST_HOST: 0.0.0.0
+      PORT: "8080"
+      PETQUEST_REQUIRE_POSTGRES_IN_PRODUCTION: "0"
+      PETQUEST_REQUIRE_SMTP_IN_PRODUCTION: "0"
+      PETQUEST_REQUIRE_HTTPS_IN_PRODUCTION: "0"
+    ports:
+      - "8080:8080"
+    volumes:
+      - petquest_local_data:/data
+volumes:
+  petquest_local_data:

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#5b5bd6" />
+  <meta name="description" content="PET Quest V46.30 PET Mastery: B1 Preliminary for Schools y B1 Preliminary Adult; bancos y Full Mocks separados por contexto, Error DNA™, diagnóstico pedagógico, progreso individual y audio funcional." />
+  <title>PET Quest — B1 Preliminary</title>
+  <link rel="manifest" href="manifest.webmanifest?v=46.33-cleanaudio1" />
+  <link rel="stylesheet" href="styles.css?v=46.33-cleanaudio1" />
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+  (()=>{
+    const BUILD='46.30-contentdb1';
+    const localHost=['127.0.0.1','localhost'].includes(location.hostname);
+    if(!localHost)return;
+    const k='petquestLocalBuild';
+    if(localStorage.getItem(k)===BUILD)return;
+    localStorage.setItem(k,BUILD);
+    // Local Windows/dev safety: remove old PET Quest caches/workers so mixed-version JS cannot execute.
+    window.PETQUEST_PWA_RESET=Promise.all([
+      navigator.serviceWorker?navigator.serviceWorker.getRegistrations().then(rs=>Promise.all(rs.map(r=>r.unregister()))):Promise.resolve(),
+      window.caches?caches.keys().then(ks=>Promise.all(ks.filter(x=>x.startsWith('petquest-')).map(x=>caches.delete(x)))):Promise.resolve()
+    ]).catch(()=>{});
+  })();
+  </script>
+  <script src="app.js?v=46.33-cleanaudio1"></script>
+  <script src="v46_30_windows_runtime_guard.js?v=46.33-cleanaudio1"></script>
+  <script src="v5_enhancements.js?v=46.33-cleanaudio1"></script>
+  <script src="v6_enhancements.js?v=46.33-cleanaudio1"></script>
+  <script src="v7_enhancements.js?v=46.33-cleanaudio1"></script>
+  <script src="v8_enhancements.js?v=46.33-cleanaudio1"></script>
+  <script src="v9_enhancements.js?v=46.33-cleanaudio1"></script>
+  <script src="v10_ux.js?v=46.33-cleanaudio1"></script>
+  <script src="v11_ux.js?v=46.33-cleanaudio1"></script>
+  <script src="v12_ux.js?v=46.33-cleanaudio1"></script>
+  <script src="v13_adaptive.js?v=46.33-cleanaudio1"></script>
+  <script src="v14_tutor.js?v=46.33-cleanaudio1"></script>
+  <script src="v15_autonomy.js?v=46.33-cleanaudio1"></script>
+  <script src="v16_speaking_writing.js?v=46.33-cleanaudio1"></script>
+  <script src="v17_conversation.js?v=46.33-cleanaudio1"></script>
+  <script src="v46_32_audio_safe_engine.js?v=46.33-cleanaudio1"></script>
+  <script src="v18_listening.js?v=46.33-cleanaudio1"></script>
+  <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>Promise.resolve(window.PETQUEST_PWA_RESET).finally(()=>navigator.serviceWorker.register('./sw.js?v=46.33-cleanaudio1',{updateViaCache:'none'}).catch(()=>{})))}</script>
+<script src="v19_reading.js?v=46.33-cleanaudio1"></script>
+<script src="v20_full_journey.js?v=46.33-cleanaudio1"></script>
+<script src="v21_weekly_evolution.js?v=46.33-cleanaudio1"></script>
+<script src="v22_adult_intelligence.js?v=46.33-cleanaudio1"></script>
+<script src="v23_retention.js?v=46.33-cleanaudio1"></script>
+<script src="v24_portfolio.js?v=46.33-cleanaudio1"></script>
+<script src="v25_personal_path.js?v=46.33-cleanaudio1"></script>
+<script src="v26_school_ops.js?v=46.33-cleanaudio1"></script>
+<script src="v27_classroom_intelligence.js?v=46.33-cleanaudio1"></script>
+<script src="v28_intervention_engine.js?v=46.33-cleanaudio1"></script>
+<script src="v29_intervention_outcomes.js?v=46.33-cleanaudio1"></script>
+<script src="v30_school_impact.js?v=46.33-cleanaudio1"></script>
+<script src="v31_executive_review.js?v=46.33-cleanaudio1"></script>
+<script src="v32_governance.js?v=46.33-cleanaudio1"></script>
+<script src="v33_strategy_forecast.js?v=46.33-cleanaudio1"></script>
+<script src="v34_decision_simulator.js?v=46.33-cleanaudio1"></script>
+<script src="v35_budget_optimizer.js?v=46.33-cleanaudio1"></script>
+<script src="v36_portfolio_optimizer.js?v=46.33-cleanaudio1"></script>
+<script src="v37_schedule_capacity.js?v=46.33-cleanaudio1"></script>
+<script src="v38_production_hardening.js?v=46.33-cleanaudio1"></script>
+<script src="v39_commercial_onboarding.js?v=46.33-cleanaudio1"></script>
+<script src="v40_release_readiness.js?v=46.33-cleanaudio1"></script>
+<script src="v40_2_exam_fidelity.js?v=46.33-cleanaudio1"></script>
+<script src="v41_academic_intelligence.js?v=46.33-cleanaudio1"></script>
+<script src="v42_exam_calibration.js?v=46.33-cleanaudio1"></script>
+<script src="v43_full_mock_bank.js?v=46.33-cleanaudio1"></script>
+<script src="v46_11_mock_listening.js?v=46.33-cleanaudio1"></script>
+<script src="v46_20_full_mock_mastery.js?v=46.33-cleanaudio1"></script>
+<script src="v44_mock_quality.js?v=46.33-cleanaudio1"></script>
+<script src="v46_operational_release_gate.js?v=46.33-cleanaudio1"></script>
+<script src="v46_8_user_progress.js?v=46.33-cleanaudio1"></script>
+<script src="v46_13_writing_mastery.js?v=46.33-cleanaudio1"></script>
+<script src="v46_14_speaking_ai_examiner.js?v=46.33-cleanaudio1"></script>
+<script src="v46_15_part3_ai_candidate.js?v=46.33-cleanaudio1"></script>
+<script src="v46_16_readiness_calibration.js?v=46.33-cleanaudio1"></script>
+<script src="v46_17_scale_equivalence.js?v=46.33-cleanaudio1"></script>
+<script src="v46_18_audio_bank.js?v=46.33-cleanaudio1"></script>
+<script src="v46_22_practice_diagnostic.js?v=46.33-cleanaudio1"></script>
+<script src="v46_23_child_experience.js?v=46.33-cleanaudio1"></script>
+<script src="v46_24_error_dna.js?v=46.33-cleanaudio1"></script>
+<script src="v46_26_exam_profiles.js?v=46.33-cleanaudio1"></script>
+<script src="v46_27_mastery_orchestrator.js?v=46.33-cleanaudio1"></script>
+<script src="v46_30_registration_ux.js?v=46.33-cleanaudio1"></script>
+</body>
+</html>

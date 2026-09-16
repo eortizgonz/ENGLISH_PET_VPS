@@ -1,0 +1,32 @@
+PET Quest V46.30 Windows Safe Login Validation
+
+Root cause fixed:
+- Unauthenticated/unauthorized V34-V40 auto-loads could enter request/render loops after 401 responses.
+- Student sessions could trigger irrelevant privileged endpoint calls on render.
+- Login bootstrap could be invoked redundantly.
+- Global helper name `top` could collide with browser global `window.top`.
+- Progress used perpetual 20-second polling.
+- Localhost service worker/cache could mix assets from different builds.
+
+Implemented:
+- Anonymous 401 no longer forces render/auth reset.
+- GET request single-flight deduplication.
+- 12 second API timeout.
+- Single-flight apiBootstrap.
+- Role/view/token guards for V34-V40.
+- API circuit breaker at >24 calls/second.
+- No perpetual progress polling.
+- Localhost cache/service-worker cleanup on build change.
+- Network-first JS/JSON/CSS in service worker.
+- Global top() helper renamed.
+
+Validation:
+- Windows safe-login QA: 27/27 PASS
+- Login HTTP smoke: 8/8 PASS
+- Full Mock structural regression: 272/272 PASS
+- Practice Bank/B1 Matrix regression: 18/18 PASS
+- Audio Bank regression: 28/28 PASS
+- JavaScript syntax: 61/61 PASS
+- Python compileall: PASS
+
+Note: browser execution on the user's actual Windows PC must still be confirmed there. This package removes the identified loop/collision conditions; it does not claim external device certification.

@@ -1,0 +1,34 @@
+PET Quest V46.14 — Speaking AI Examiner — Final Validation
+
+Specific Speaking AI: 40/40 PASS
+UI integrity: 121/121 PASS
+Startup: 9/9 PASS
+Security: 8/8 PASS
+Student E2E: 76/76 PASS
+Academic regression: 20/20 PASS
+Psychometrics: 14/14 PASS
+User isolation: 11/11 PASS
+Writing Mastery: 10/10 PASS
+Full persistence: 45/45 PASS
+Backup/restore: PASS
+Mock bank: PASS
+UI actions: orphan buttons 0; unaddressed fields 0
+Audio library: 434/434 PASS
+Python compilation: 115 files PASS
+JavaScript syntax: 49 files PASS
+
+Speaking persistence chain validated:
+UI -> POST /api/speaking-attempts -> speaking_attempts -> GET readback -> /api/my-preparation.
+
+Automatic metrics covered:
+fluency, WPM, long pauses, total/max pause time, hesitations, restarts,
+appropriate fillers, grammar proxy, vocabulary range, discourse markers,
+pronunciation proxy, intelligibility proxy, stress variation, intonation variation,
+response length and interaction markers.
+
+Practice rubric 0-5:
+Grammar & Vocabulary, Discourse Management, Pronunciation,
+Interactive Communication, Global Achievement.
+
+Important: automatic practice evaluation is formative and is NOT an official
+Cambridge English grade. Acoustic and interaction measures are proxies.

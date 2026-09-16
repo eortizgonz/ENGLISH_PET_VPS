@@ -1,0 +1,77 @@
+--- STARTUP ---
+PET Quest V46.8 Startup QA: PASS 9/9 []
+--- AUTH ---
+PASS initial view requires login
+PASS render protects unauthenticated routes
+PASS global logout visible
+PASS clear auth helper
+PASS 401 returns to login
+PASS session expiry persisted
+PASS session expiry checked on startup
+PASS login saves expiry
+PASS logout calls backend
+PASS logout clears session
+PASS enter submits login
+PASS backend login route
+PASS backend logout route
+PASS backend invalidates token
+PASS backend version 46.8
+AUTH SESSION V46.8: 15/15 PASS
+--- SECURITY ---
+{
+  "checks": [
+    [
+      "auth_required",
+      true
+    ],
+    [
+      "bad_login_rejected",
+      true
+    ],
+    [
+      "frame_denied",
+      true
+    ],
+    [
+      "nosniff",
+      true
+    ],
+    [
+      "csp_present",
+      true
+    ],
+    [
+      "permissions_policy",
+      true
+    ],
+    [
+      "referrer_policy",
+      true
+    ],
+    [
+      "version_header",
+      true
+    ]
+  ],
+  "failed": []
+}
+--- SCREENS ---
+PET Quest V46.8 Screen Integrity QA: 174/174 PASS
+--- USER PROGRESS ---
+PASS backend version 46.8
+PASS preparation endpoint
+PASS per user snapshot
+PASS question error corrections
+PASS academic remediation corrections
+PASS four skill score
+PASS remaining percentage
+PASS internal not official
+PASS user isolation bootstrap
+PASS login no stale save
+PASS progress ui layer
+PASS errors ui
+PASS per exam table
+PASS script loaded
+PASS pwa cache 46.8
+PASS teacher report metrics
+PASS 16/16 V46.8 user progress

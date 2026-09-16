@@ -1,0 +1,357 @@
+{
+  "pack_id": "petquest-v42-sample-structure",
+  "version": "1.0",
+  "license": "original-petquest-content",
+  "reading": [
+    {
+      "id": "v42-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R1.1"
+    },
+    {
+      "id": "v42-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R1.2"
+    },
+    {
+      "id": "v42-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R1.3"
+    },
+    {
+      "id": "v42-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R1.4"
+    },
+    {
+      "id": "v42-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R1.5"
+    },
+    {
+      "id": "v42-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Original PET Quest sample item R2.1"
+    },
+    {
+      "id": "v42-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Original PET Quest sample item R2.2"
+    },
+    {
+      "id": "v42-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Original PET Quest sample item R2.3"
+    },
+    {
+      "id": "v42-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Original PET Quest sample item R2.4"
+    },
+    {
+      "id": "v42-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Original PET Quest sample item R2.5"
+    },
+    {
+      "id": "v42-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R3.1"
+    },
+    {
+      "id": "v42-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R3.2"
+    },
+    {
+      "id": "v42-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R3.3"
+    },
+    {
+      "id": "v42-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R3.4"
+    },
+    {
+      "id": "v42-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item R3.5"
+    },
+    {
+      "id": "v42-r4-1",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Original PET Quest sample item R4.1"
+    },
+    {
+      "id": "v42-r4-2",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Original PET Quest sample item R4.2"
+    },
+    {
+      "id": "v42-r4-3",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Original PET Quest sample item R4.3"
+    },
+    {
+      "id": "v42-r4-4",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Original PET Quest sample item R4.4"
+    },
+    {
+      "id": "v42-r4-5",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Original PET Quest sample item R4.5"
+    },
+    {
+      "id": "v42-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.1"
+    },
+    {
+      "id": "v42-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.2"
+    },
+    {
+      "id": "v42-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.3"
+    },
+    {
+      "id": "v42-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.4"
+    },
+    {
+      "id": "v42-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.5"
+    },
+    {
+      "id": "v42-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Original PET Quest sample item R5.6"
+    },
+    {
+      "id": "v42-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.1",
+      "answer": "in"
+    },
+    {
+      "id": "v42-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.2",
+      "answer": "an"
+    },
+    {
+      "id": "v42-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.3",
+      "answer": "but"
+    },
+    {
+      "id": "v42-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.4",
+      "answer": "which"
+    },
+    {
+      "id": "v42-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.5",
+      "answer": "many"
+    },
+    {
+      "id": "v42-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "Original PET Quest sample item R6.6",
+      "answer": "at"
+    }
+  ],
+  "listening": [
+    {
+      "id": "v42-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.1"
+    },
+    {
+      "id": "v42-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.2"
+    },
+    {
+      "id": "v42-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.3"
+    },
+    {
+      "id": "v42-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.4"
+    },
+    {
+      "id": "v42-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.5"
+    },
+    {
+      "id": "v42-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.6"
+    },
+    {
+      "id": "v42-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L1.7"
+    },
+    {
+      "id": "v42-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.1"
+    },
+    {
+      "id": "v42-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.2"
+    },
+    {
+      "id": "v42-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.3"
+    },
+    {
+      "id": "v42-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.4"
+    },
+    {
+      "id": "v42-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.5"
+    },
+    {
+      "id": "v42-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L2.6"
+    },
+    {
+      "id": "v42-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.1"
+    },
+    {
+      "id": "v42-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.2"
+    },
+    {
+      "id": "v42-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.3"
+    },
+    {
+      "id": "v42-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.4"
+    },
+    {
+      "id": "v42-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.5"
+    },
+    {
+      "id": "v42-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Original PET Quest sample item L3.6"
+    },
+    {
+      "id": "v42-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.1"
+    },
+    {
+      "id": "v42-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.2"
+    },
+    {
+      "id": "v42-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.3"
+    },
+    {
+      "id": "v42-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.4"
+    },
+    {
+      "id": "v42-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.5"
+    },
+    {
+      "id": "v42-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Original PET Quest sample item L4.6"
+    }
+  ]
+}

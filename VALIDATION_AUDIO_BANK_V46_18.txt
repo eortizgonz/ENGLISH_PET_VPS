@@ -1,0 +1,30 @@
+PET QUEST V46.18 PET AUDIO BANK VALIDATION
+
+AUDIO BANK SPECIFIC QA: 28/28 PASS
+- 500/500 files present
+- 500 unique IDs
+- 500 unique transcripts
+- Part 1 = 180
+- Part 2 = 160
+- Part 3 = 80
+- Part 4 = 80
+- Training speeds = 0.75 / 0.85 / 1.00 / 1.10
+- Exam speed = 1.00
+- Exam maximum plays = 2
+- 17 voice profiles
+- British-predominant distribution = 394/500 clips
+- International exposure = 106/500 clips
+- 48 kHz / mono / >=140 kbps manifest checks = PASS
+- representative decode = PASS
+- SHA-256 sample integrity = PASS
+- per-user local state namespace = implemented
+- learning_events tracking = implemented
+
+REGRESSION
+- Startup V46.18 = 9/9 PASS
+- Academic V41 = 20/20 PASS
+- Student E2E = 80/80 PASS
+- JavaScript syntax including new bank module = PASS
+
+IMPORTANT
+Synthetic voice simulation is not labelled as human studio recording. Human-recorded studio audio and external academic sign-off remain separate external gates.

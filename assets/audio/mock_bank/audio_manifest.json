@@ -1,0 +1,268 @@
+{
+  "version": "46.12",
+  "source": "generated_synthetic_reference",
+  "format": "mp3",
+  "sample_rate_hz": 44100,
+  "bitrate_kbps": 128,
+  "channels": 1,
+  "packs": {
+    "pq-mock-a": {
+      "questions": 25,
+      "recordings": 15,
+      "recordings_detail": [
+        {
+          "audio_id": "pq-mock-a-l1-1",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-1.mp3",
+          "transcript_chars": 115
+        },
+        {
+          "audio_id": "pq-mock-a-l1-2",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-2.mp3",
+          "transcript_chars": 94
+        },
+        {
+          "audio_id": "pq-mock-a-l1-3",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-3.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-a-l1-4",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-4.mp3",
+          "transcript_chars": 88
+        },
+        {
+          "audio_id": "pq-mock-a-l1-5",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-5.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-a-l1-6",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-6.mp3",
+          "transcript_chars": 86
+        },
+        {
+          "audio_id": "pq-mock-a-l1-7",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-7.mp3",
+          "transcript_chars": 92
+        },
+        {
+          "audio_id": "pq-mock-a-l2-1",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-1.mp3",
+          "transcript_chars": 80
+        },
+        {
+          "audio_id": "pq-mock-a-l2-2",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-2.mp3",
+          "transcript_chars": 118
+        },
+        {
+          "audio_id": "pq-mock-a-l2-3",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-3.mp3",
+          "transcript_chars": 121
+        },
+        {
+          "audio_id": "pq-mock-a-l2-4",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-4.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-a-l2-5",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-5.mp3",
+          "transcript_chars": 100
+        },
+        {
+          "audio_id": "pq-mock-a-l2-6",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-6.mp3",
+          "transcript_chars": 122
+        },
+        {
+          "audio_id": "pq-mock-a-l3-shared",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l3-shared.mp3",
+          "transcript_chars": 309
+        },
+        {
+          "audio_id": "pq-mock-a-l4-shared",
+          "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l4-shared.mp3",
+          "transcript_chars": 598
+        }
+      ],
+      "studio_audio_ready": false,
+      "external_academic_signoff": false
+    },
+    "pq-mock-b": {
+      "questions": 25,
+      "recordings": 15,
+      "recordings_detail": [
+        {
+          "audio_id": "pq-mock-b-l1-1",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-1.mp3",
+          "transcript_chars": 115
+        },
+        {
+          "audio_id": "pq-mock-b-l1-2",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-2.mp3",
+          "transcript_chars": 94
+        },
+        {
+          "audio_id": "pq-mock-b-l1-3",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-3.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-b-l1-4",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-4.mp3",
+          "transcript_chars": 88
+        },
+        {
+          "audio_id": "pq-mock-b-l1-5",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-5.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-b-l1-6",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-6.mp3",
+          "transcript_chars": 86
+        },
+        {
+          "audio_id": "pq-mock-b-l1-7",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-7.mp3",
+          "transcript_chars": 92
+        },
+        {
+          "audio_id": "pq-mock-b-l2-1",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-1.mp3",
+          "transcript_chars": 80
+        },
+        {
+          "audio_id": "pq-mock-b-l2-2",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-2.mp3",
+          "transcript_chars": 118
+        },
+        {
+          "audio_id": "pq-mock-b-l2-3",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-3.mp3",
+          "transcript_chars": 121
+        },
+        {
+          "audio_id": "pq-mock-b-l2-4",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-4.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-b-l2-5",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-5.mp3",
+          "transcript_chars": 100
+        },
+        {
+          "audio_id": "pq-mock-b-l2-6",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-6.mp3",
+          "transcript_chars": 122
+        },
+        {
+          "audio_id": "pq-mock-b-l3-shared",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l3-shared.mp3",
+          "transcript_chars": 309
+        },
+        {
+          "audio_id": "pq-mock-b-l4-shared",
+          "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l4-shared.mp3",
+          "transcript_chars": 598
+        }
+      ],
+      "studio_audio_ready": false,
+      "external_academic_signoff": false
+    },
+    "pq-mock-c": {
+      "questions": 25,
+      "recordings": 15,
+      "recordings_detail": [
+        {
+          "audio_id": "pq-mock-c-l1-1",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-1.mp3",
+          "transcript_chars": 115
+        },
+        {
+          "audio_id": "pq-mock-c-l1-2",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-2.mp3",
+          "transcript_chars": 94
+        },
+        {
+          "audio_id": "pq-mock-c-l1-3",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-3.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-c-l1-4",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-4.mp3",
+          "transcript_chars": 88
+        },
+        {
+          "audio_id": "pq-mock-c-l1-5",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-5.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-c-l1-6",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-6.mp3",
+          "transcript_chars": 86
+        },
+        {
+          "audio_id": "pq-mock-c-l1-7",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-7.mp3",
+          "transcript_chars": 92
+        },
+        {
+          "audio_id": "pq-mock-c-l2-1",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-1.mp3",
+          "transcript_chars": 80
+        },
+        {
+          "audio_id": "pq-mock-c-l2-2",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-2.mp3",
+          "transcript_chars": 118
+        },
+        {
+          "audio_id": "pq-mock-c-l2-3",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-3.mp3",
+          "transcript_chars": 121
+        },
+        {
+          "audio_id": "pq-mock-c-l2-4",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-4.mp3",
+          "transcript_chars": 91
+        },
+        {
+          "audio_id": "pq-mock-c-l2-5",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-5.mp3",
+          "transcript_chars": 100
+        },
+        {
+          "audio_id": "pq-mock-c-l2-6",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-6.mp3",
+          "transcript_chars": 122
+        },
+        {
+          "audio_id": "pq-mock-c-l3-shared",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l3-shared.mp3",
+          "transcript_chars": 309
+        },
+        {
+          "audio_id": "pq-mock-c-l4-shared",
+          "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l4-shared.mp3",
+          "transcript_chars": 598
+        }
+      ],
+      "studio_audio_ready": false,
+      "external_academic_signoff": false
+    }
+  },
+  "voice_simulation_ready": true,
+  "voice_engine": "offline synthetic multi-voice simulation",
+  "mastering": {
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "bitrate_kbps": 192,
+    "loudness_target_lufs": -16,
+    "true_peak_target_dbfs": -1.5
+  }
+}

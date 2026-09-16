@@ -1,0 +1,22 @@
+PET Quest V46.17 Anonymous Cambridge Scale Calibration
+======================================================
+QA scale equivalence: 16/16 PASS
+Startup: 9/9 PASS
+Screen integrity: 188/188 PASS
+Student E2E: 79/79 PASS
+Speaking AI: 40/40 PASS
+Part 3 AI Candidate: 24/24 PASS
+Writing Mastery: 10/10 PASS
+Persistence: 45/45 PASS
+User isolation: 11/11 PASS
+Academic fidelity: 20/20 PASS
+Psychometric structural QA: 14/14 PASS
+Backup/restore: PASS
+
+Scientific safety:
+- 40 candidates => equivalence OFF.
+- >=300 + band balance + holdout quality => statistical gate can pass.
+- Independent psychometric review remains mandatory.
+- 500+ marked robust target; 1000+ marked mature target.
+- No direct name/email/phone columns exist in anonymous_calibration_candidates.
+- Cambridge scale mapping remains OFF until all gates pass.

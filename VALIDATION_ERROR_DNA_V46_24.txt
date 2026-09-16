@@ -1,0 +1,35 @@
+PET Quest V46.24 — Error DNA™ Validation
+==========================================
+
+Specific Error DNA runtime: 16/16 PASS
+Specific Error DNA UI/contract: 35/35 PASS
+Startup: 10/10 PASS
+Child Experience regression: 30/30 PASS
+Practice Bank B1 Matrix regression: 18/18 PASS
+Pedagogical Diagnostic regression: 25/25 PASS
+Pedagogical Diagnostic runtime: 9/9 PASS
+Writing Mastery: 10/10 PASS
+Speaking AI Examiner regression: 40/40 PASS
+Part 3 AI Candidate regression: 24/24 PASS
+20 Full Mocks: 272/272 PASS
+Audio Bank 500: 28/28 PASS
+User isolation: 11/11 PASS
+Academic Fidelity: 20/20 PASS
+Psychometric structural QA: 14/14 PASS
+Auth/session: 15/15 PASS
+Security: 8/8 PASS
+Student end-to-end: 85/85 PASS
+Service Worker assets: 159/159 present
+JavaScript syntax: 58/58 PASS
+Python compileall: PASS
+
+Error DNA rules validated:
+- 5 domains: Grammar, Listening, Reading, Writing, Speaking.
+- 18 named nodes.
+- Minimum 3 observations before red/orange/green claim.
+- Critical <60%; progress 60–79.9%; mastered >=80%.
+- Academic remediation honours 3 recent correct attempts as a mastery signal.
+- Contradictory new practice evidence can prevent a stale historical mastery from hiding a current weakness.
+- Primary issue is selected from evidence-backed nodes only.
+- Pronunciation remains an automatic practice proxy and not an official examiner score.
+- Error DNA connects to a 10-item Practice Bank remediation route when metadata support exists.

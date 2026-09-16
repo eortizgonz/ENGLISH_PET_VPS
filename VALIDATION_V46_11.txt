@@ -1,0 +1,105 @@
+PET Quest V46.11 Final Validation
+UTC 2026-09-02 19:36:43
+PET Quest V46.11 Mock Audio QA: PASS | 218/218
+PET Quest V46.11 Runtime Audio QA: PASS | audio_http=45/45 mock_attempt_items=25 version=46.11
+PET Quest V46.11 Startup QA: PASS 9/9 []
+PASS initial view requires login
+PASS render protects unauthenticated routes
+PASS global logout visible
+PASS clear auth helper
+PASS 401 returns to login
+PASS session expiry persisted
+PASS session expiry checked on startup
+PASS login saves expiry
+PASS logout calls backend
+PASS logout clears session
+PASS enter submits login
+PASS backend login route
+PASS backend logout route
+PASS backend invalidates token
+PASS backend version 46.11
+AUTH SESSION V46.11: 15/15 PASS
+{
+  "checks": [
+    [
+      "auth_required",
+      true
+    ],
+    [
+      "bad_login_rejected",
+      true
+    ],
+    [
+      "frame_denied",
+      true
+    ],
+    [
+      "nosniff",
+      true
+    ],
+    [
+      "csp_present",
+      true
+    ],
+    [
+      "permissions_policy",
+      true
+    ],
+    [
+      "referrer_policy",
+      true
+    ],
+    [
+      "version_header",
+      true
+    ]
+  ],
+  "failed": []
+}
+PASS Reading Part 6 open cloze
+PASS Reading 5/5/5/5/6/6
+PASS Reading total 32
+PASS Listening Part 3 gap fill
+PASS Listening 7/6/6/6
+PASS Listening replay modes
+PASS No browser TTS in exact mock
+PASS Audio honesty gate
+PASS Writing error intelligence
+PASS Given writing example detected
+PASS Speaking text does not fake pronunciation
+PASS Speaking human rubric preserved
+PASS Speaking Part 3 pair simulator
+PASS Writing exact mock 45 min
+PASS Speaking mock routes to exam
+PASS Speaking Part 3 exam is interactive
+PASS QA readiness polling
+PASS Privacy lifecycle in current API
+PASS Production SQLite blocked when Postgres required
+PASS V41 script cached
+20/20 PASS
+PET Quest V43 UI QA: PASS 10/10
+PET Quest V43 Mock Bank QA: PASS | version=43.0 remediation_mastery=3/3
+PASS version44
+PASS attempt_table
+PASS item_table
+PASS post_attempts
+PASS get_quality
+PASS facility
+PASS discrimination
+PASS sample_gate10
+PASS sample_gate20
+PASS form_equivalence
+PASS frontend
+PASS capture_from_mock
+PASS postgres
+PASS pwa
+PET Quest V44 UI/Code QA: PASS 14/14
+pq-mock-c.json: PASS (2 warnings)
+ WARN : external academic sign-off pending
+ WARN : studio audio pending; Listening must not be released as exact mock
+pq-mock-b.json: PASS (2 warnings)
+ WARN : external academic sign-off pending
+ WARN : studio audio pending; Listening must not be released as exact mock
+pq-mock-a.json: PASS (2 warnings)
+ WARN : external academic sign-off pending
+ WARN : studio audio pending; Listening must not be released as exact mock

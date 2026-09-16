@@ -1,0 +1,1710 @@
+{
+  "version": "46.12",
+  "engine": "offline eSpeak NG-compatible voice simulation + FFmpeg mastering",
+  "synthetic": true,
+  "human_recording": false,
+  "quality_target": {
+    "sample_rate_hz": 48000,
+    "bitrate_kbps": 192,
+    "channels": 1,
+    "loudness_lufs": -16,
+    "true_peak_db": -1.5
+  },
+  "targets": [
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-1",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-1.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_a",
+          "voice": "en-gb+m3",
+          "speed": 156,
+          "pitch": 47
+        }
+      ],
+      "sha256": "6911ac3f49bdd28f4f00ef2aa779d1d0f4013c3e162d1799ad8c0f6cdcbecd00",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.248000",
+          "bit_rate": "192684"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-2",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-2.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_a",
+          "voice": "en-gb+m3",
+          "speed": 156,
+          "pitch": 47
+        },
+        {
+          "speaker": "Girl",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        }
+      ],
+      "sha256": "becc2369dab79bfb367a11df208cee76b964a3f96c3bd81af3eda3213246b61f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.096000",
+          "bit_rate": "192813"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-3",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_a",
+          "voice": "en-uk-rp+f4",
+          "speed": 150,
+          "pitch": 52
+        }
+      ],
+      "sha256": "edbf96f3898bdf979e7565061d945d22e7ed32d9a539227fd0457642629b30dc",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.568000",
+          "bit_rate": "192890"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-4",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Mum",
+          "profile": "woman_a",
+          "voice": "en-uk-rp+f4",
+          "speed": 150,
+          "pitch": 52
+        }
+      ],
+      "sha256": "102bdfceb1f35bf1d17b42a153a0f2d7e1fbf97351442315fd7afc78a99d5170",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.592000",
+          "bit_rate": "192886"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-5",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-5.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_a",
+          "voice": "en-gb+m3",
+          "speed": 156,
+          "pitch": 47
+        }
+      ],
+      "sha256": "97fe495adbd4d0db54bbca9e12e37f97a7b81bfdcfc90c69905e0c69285f7e7d",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.592000",
+          "bit_rate": "192886"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-6",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_a",
+          "voice": "en-gb+m3",
+          "speed": 156,
+          "pitch": 47
+        }
+      ],
+      "sha256": "e28e60e9b745b9c190231beae8818d6ec8e0aa1a58c79c009436bdf82b423c23",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.136000",
+          "bit_rate": "192965"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 1,
+      "audio_id": "pq-mock-a-l1-7",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l1-7.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Teacher",
+          "profile": "woman_a",
+          "voice": "en-uk-rp+f4",
+          "speed": 150,
+          "pitch": 52
+        }
+      ],
+      "sha256": "556ecf42093a8f62619d6f6a99a872c0e8492ff8849427ecf282440916f301d9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.024000",
+          "bit_rate": "192823"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-1",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-1.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Emma",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        }
+      ],
+      "sha256": "56598f6bbaf47a605f9dd98d2c66ef6c4597fbb9a5681cf8619bc5ad1dba1bad",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "4.728000",
+          "bit_rate": "193049"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-2",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-2.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Josh",
+          "profile": "boy_a",
+          "voice": "en-gb+m3",
+          "speed": 156,
+          "pitch": 47
+        }
+      ],
+      "sha256": "f0517110cfec2e309a2d08712320a8a541b636c49ed8d65118aa780806e853fa",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.464000",
+          "bit_rate": "192664"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-3",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1",
+          "speed": 151,
+          "pitch": 46
+        }
+      ],
+      "sha256": "41000bfbcba67246e773e53e18214e6cea8633ea4e005ce3af8ed3259d9dc4ff",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.864000",
+          "bit_rate": "192722"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-4",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_a",
+          "voice": "en-uk-rp+f4",
+          "speed": 150,
+          "pitch": 52
+        }
+      ],
+      "sha256": "6823cab2ad9b2b72f2df3bcacb517df766758c3c61dcbbd8240cfb621ed62ee4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.760000",
+          "bit_rate": "192861"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-5",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-5.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Student",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        }
+      ],
+      "sha256": "05865af848faaaa213e85b4e3a72461a5669527c919fdc17649485e6c99eb362",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.096000",
+          "bit_rate": "192813"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 2,
+      "audio_id": "pq-mock-a-l2-6",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l2-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1",
+          "speed": 151,
+          "pitch": 46
+        }
+      ],
+      "sha256": "5853e46ab178e8335f56aa6850172bce1b3d226ee589c9016bdd2d3bd751c96a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "8.136000",
+          "bit_rate": "192609"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 3,
+      "audio_id": "pq-mock-a-l3-shared",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l3-shared.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_a",
+          "voice": "en-uk-rp+m1",
+          "speed": 151,
+          "pitch": 46
+        }
+      ],
+      "sha256": "224519994507293917990bb2f3e28efd9c6ad35d4b26ade6bff94741c67c6bdf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "20.832000",
+          "bit_rate": "192238"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-a",
+      "part": 4,
+      "audio_id": "pq-mock-a-l4-shared",
+      "file": "assets/audio/mock_bank/pq-mock-a/pq-mock-a-l4-shared.mp3",
+      "segments": 8,
+      "voices": [
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2",
+          "speed": 149,
+          "pitch": 44
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2",
+          "speed": 149,
+          "pitch": 44
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2",
+          "speed": 149,
+          "pitch": 44
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_a",
+          "voice": "en-uk-rp+m2",
+          "speed": 149,
+          "pitch": 44
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_a",
+          "voice": "en-gb+f3",
+          "speed": 158,
+          "pitch": 53
+        }
+      ],
+      "sha256": "49a9c1a10306719d40fe5f49e6e858e0745f7e77e501576fe62891f030bff508",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "36.864000",
+          "bit_rate": "192134"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-1",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-1.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        }
+      ],
+      "sha256": "1188f5766f92ee7b554a1e97559a84330f033d46a77ece5d20efa0751f0029f0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.464000",
+          "bit_rate": "192664"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-2",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-2.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        },
+        {
+          "speaker": "Girl",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        }
+      ],
+      "sha256": "bebe26a5d8b1131773ca10eb1ccbbcd931c13f320abe03eea3b20ad214d60872",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.240000",
+          "bit_rate": "192794"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-3",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_b",
+          "voice": "en-gb+f2",
+          "speed": 153,
+          "pitch": 50
+        }
+      ],
+      "sha256": "7431c5e24d33630c290f5f4f7a9b62e8fe2b254cb395749f200f9937f94a7f60",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.448000",
+          "bit_rate": "192910"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-4",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Mum",
+          "profile": "woman_b",
+          "voice": "en-gb+f2",
+          "speed": 153,
+          "pitch": 50
+        }
+      ],
+      "sha256": "5e8631c846d9ecae603314c2490ec52a8a470b88b760667d67aef337c4481445",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.520000",
+          "bit_rate": "192898"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-5",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-5.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        }
+      ],
+      "sha256": "c23802f38312525c2b642e54166e20ea4b187e02b3f2ef30bb4292ef1005597e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.736000",
+          "bit_rate": "192864"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-6",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        }
+      ],
+      "sha256": "326148652d7cdd6a46d8aac8aec2ceb2816bdf2e02fe68831ec5f8ee613cb8f3",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.280000",
+          "bit_rate": "192939"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 1,
+      "audio_id": "pq-mock-b-l1-7",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l1-7.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Teacher",
+          "profile": "woman_b",
+          "voice": "en-gb+f2",
+          "speed": 153,
+          "pitch": 50
+        }
+      ],
+      "sha256": "b0b383a2b87c8e16be5c40881f691b416dceae206224f8fded70aee7cf4ab26e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.880000",
+          "bit_rate": "192843"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-1",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-1.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Emma",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        }
+      ],
+      "sha256": "788ded2a6e83e103222432770df3c9379658edd54e8d4b5f63137ac62ec1df35",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "4.872000",
+          "bit_rate": "193018"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-2",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-2.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Josh",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        }
+      ],
+      "sha256": "3d8cfaa4c7f16ee8a34a04924f56e38da4f357376d28bbfeef97fe6efea79b35",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.680000",
+          "bit_rate": "192645"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-3",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_b",
+          "voice": "en-gb+f4",
+          "speed": 152,
+          "pitch": 51
+        }
+      ],
+      "sha256": "28c3fbd3ed9a9c9a698742514a06aed69195da72de7058a45a6a4dd17f5f73bf",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.792000",
+          "bit_rate": "192730"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-4",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_b",
+          "voice": "en-gb+f2",
+          "speed": 153,
+          "pitch": 50
+        }
+      ],
+      "sha256": "6df9c96248561d3cb7ac44f50fafb66391707eda4a56bf6577d6bc3cf981e36f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.664000",
+          "bit_rate": "192875"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-5",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-5.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Student",
+          "profile": "boy_b",
+          "voice": "en-uk-rp+m2",
+          "speed": 152,
+          "pitch": 45
+        }
+      ],
+      "sha256": "f4f4c014b241fe1169c29d19ec4e5f27b074c6a31801c5ab2978acce95421821",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.384000",
+          "bit_rate": "192776"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 2,
+      "audio_id": "pq-mock-b-l2-6",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l2-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_b",
+          "voice": "en-gb+f4",
+          "speed": 152,
+          "pitch": 51
+        }
+      ],
+      "sha256": "8e0586688f001662925257e0768ae95cb57a20387fccbb5d244c368c08362719",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "8.112000",
+          "bit_rate": "192611"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 3,
+      "audio_id": "pq-mock-b-l3-shared",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l3-shared.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_b",
+          "voice": "en-gb+f4",
+          "speed": 152,
+          "pitch": 51
+        }
+      ],
+      "sha256": "11a3175752b2eb9621459f9743bf64297c2bc84e960d14ad96806396dde91e42",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "20.616000",
+          "bit_rate": "192240"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-b",
+      "part": 4,
+      "audio_id": "pq-mock-b-l4-shared",
+      "file": "assets/audio/mock_bank/pq-mock-b/pq-mock-b-l4-shared.mp3",
+      "segments": 8,
+      "voices": [
+        {
+          "speaker": "Interviewer",
+          "profile": "man_b",
+          "voice": "en-gb+m4",
+          "speed": 151,
+          "pitch": 42
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_b",
+          "voice": "en-gb+m4",
+          "speed": 151,
+          "pitch": 42
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_b",
+          "voice": "en-gb+m4",
+          "speed": 151,
+          "pitch": 42
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_b",
+          "voice": "en-gb+m4",
+          "speed": 151,
+          "pitch": 42
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_b",
+          "voice": "en-uk-rp+f2",
+          "speed": 154,
+          "pitch": 56
+        }
+      ],
+      "sha256": "46f9c5788300dcce3eb581ac5a44f2dbf2dec017616fe20f2d5044540a7e242b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "37.248000",
+          "bit_rate": "192133"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-1",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-1.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_c",
+          "voice": "en-uk-north+m3",
+          "speed": 157,
+          "pitch": 46
+        }
+      ],
+      "sha256": "ac70cfa1ebc4286be6eb9b9ad4387a3bf34758996630a817bec883661716dfe1",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.176000",
+          "bit_rate": "192691"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-2",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-2.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_c",
+          "voice": "en-uk-north+m3",
+          "speed": 157,
+          "pitch": 46
+        },
+        {
+          "speaker": "Girl",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        }
+      ],
+      "sha256": "f7163f40f377f529a9e8481a8cbef2e4c0e8a3aeb454295e78e1948d6a5ce71e",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.048000",
+          "bit_rate": "192820"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-3",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_c",
+          "voice": "en-uk-wmids+f3",
+          "speed": 151,
+          "pitch": 54
+        }
+      ],
+      "sha256": "0690ae450c8a9ce2351d7dc20150dae7b85a842557d47244d5bee6e0cd4df71f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.544000",
+          "bit_rate": "192894"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-4",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Mum",
+          "profile": "woman_c",
+          "voice": "en-uk-wmids+f3",
+          "speed": 151,
+          "pitch": 54
+        }
+      ],
+      "sha256": "b37efea7d8044de3edbdfbb89ee6b07bf2f57f1bdbc0163287dfd992bd5480ea",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.568000",
+          "bit_rate": "192890"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-5",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-5.mp3",
+      "segments": 2,
+      "voices": [
+        {
+          "speaker": "Girl",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        },
+        {
+          "speaker": "Boy",
+          "profile": "boy_c",
+          "voice": "en-uk-north+m3",
+          "speed": 157,
+          "pitch": 46
+        }
+      ],
+      "sha256": "3fce5171efa823f327d2596c10c98c39de7649b6feb9400a5df112a5760db815",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.568000",
+          "bit_rate": "192890"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-6",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Boy",
+          "profile": "boy_c",
+          "voice": "en-uk-north+m3",
+          "speed": 157,
+          "pitch": 46
+        }
+      ],
+      "sha256": "b9331f9b73b3293ead04ebb4eda13504f6c53b1f88af6f58f36297afb1820966",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.088000",
+          "bit_rate": "192974"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 1,
+      "audio_id": "pq-mock-c-l1-7",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l1-7.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Teacher",
+          "profile": "woman_c",
+          "voice": "en-uk-wmids+f3",
+          "speed": 151,
+          "pitch": 54
+        }
+      ],
+      "sha256": "639f5ca231a9f29c9ac0a85064b369abb2457e04bfd1236b2d0e067fcd979aeb",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.952000",
+          "bit_rate": "192833"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-1",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-1.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Emma",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        }
+      ],
+      "sha256": "3a4983b1d51aff3baa0928a9ec2bc4d34b38ceb145aac4d6ee9406eebdfda93b",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "4.704000",
+          "bit_rate": "193054"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-2",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-2.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Josh",
+          "profile": "boy_c",
+          "voice": "en-uk-north+m3",
+          "speed": 157,
+          "pitch": 46
+        }
+      ],
+      "sha256": "b8a4d36e008b5e4d39ce1ae4b720d2d45ab276c303548b1e6fa919e8b4de9ad5",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "7.392000",
+          "bit_rate": "192670"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-3",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-3.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_c",
+          "voice": "en-uk-north+m2",
+          "speed": 150,
+          "pitch": 44
+        }
+      ],
+      "sha256": "83a6dc68e76195466382ef9890900906752f64ce58d7556ee9f7f8db406927bd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.864000",
+          "bit_rate": "192722"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-4",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-4.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Woman",
+          "profile": "woman_c",
+          "voice": "en-uk-wmids+f3",
+          "speed": 151,
+          "pitch": 54
+        }
+      ],
+      "sha256": "135325310816aefecb4e83895870fa5d78e55783ac5d864fd2f10b8895420ab0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "5.712000",
+          "bit_rate": "192868"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-5",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-5.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Student",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        }
+      ],
+      "sha256": "9f96d640a1a96a1cd288ef3be36a96d09b5c564cea5abd5ebc13de5f7a323c70",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "6.024000",
+          "bit_rate": "192823"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 2,
+      "audio_id": "pq-mock-c-l2-6",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l2-6.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_c",
+          "voice": "en-uk-north+m2",
+          "speed": 150,
+          "pitch": 44
+        }
+      ],
+      "sha256": "4f01ee21377aa9fbb7cc8262896cf51478124e9b0acf1e5c7395152155d9d90f",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "8.208000",
+          "bit_rate": "192604"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 3,
+      "audio_id": "pq-mock-c-l3-shared",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l3-shared.mp3",
+      "segments": 1,
+      "voices": [
+        {
+          "speaker": "Speaker",
+          "profile": "neutral_c",
+          "voice": "en-uk-north+m2",
+          "speed": 150,
+          "pitch": 44
+        }
+      ],
+      "sha256": "96f5143c11ebabf238ef11b4c1a411e1077adc922470ba08d70c2f126d7535b9",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "20.952000",
+          "bit_rate": "192236"
+        }
+      }
+    },
+    {
+      "pack_id": "pq-mock-c",
+      "part": 4,
+      "audio_id": "pq-mock-c-l4-shared",
+      "file": "assets/audio/mock_bank/pq-mock-c/pq-mock-c-l4-shared.mp3",
+      "segments": 8,
+      "voices": [
+        {
+          "speaker": "Interviewer",
+          "profile": "man_c",
+          "voice": "en-sc+m3",
+          "speed": 150,
+          "pitch": 45
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_c",
+          "voice": "en-sc+m3",
+          "speed": 150,
+          "pitch": 45
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_c",
+          "voice": "en-sc+m3",
+          "speed": 150,
+          "pitch": 45
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        },
+        {
+          "speaker": "Interviewer",
+          "profile": "man_c",
+          "voice": "en-sc+m3",
+          "speed": 150,
+          "pitch": 45
+        },
+        {
+          "speaker": "Maya",
+          "profile": "girl_c",
+          "voice": "en-uk-north+f3",
+          "speed": 160,
+          "pitch": 55
+        }
+      ],
+      "sha256": "efb38652d91485090da08dfd1547cdf1a7cc0a334066c51a2c70d33fbf0dcc1a",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "mp3",
+            "sample_rate": "48000",
+            "channels": 1,
+            "bit_rate": "192000"
+          }
+        ],
+        "format": {
+          "duration": "35.784000",
+          "bit_rate": "192138"
+        }
+      }
+    }
+  ]
+}

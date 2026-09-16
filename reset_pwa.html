@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PET Quest — Reset PWA V46.30</title>
+<style>body{font-family:system-ui,sans-serif;background:#f5f7fb;margin:0;display:grid;place-items:center;min-height:100vh;color:#152238}.box{background:#fff;padding:32px;border-radius:18px;box-shadow:0 10px 35px #0001;max-width:560px}h1{margin-top:0}.ok{color:#08783e}.bad{color:#b42318}</style>
+</head>
+<body><div class="box"><h1>Actualizando PET Quest V46.30</h1><p id="msg">Eliminando cachés y Service Workers antiguos…</p></div>
+<script>
+(async()=>{
+  const msg=document.getElementById('msg');
+  try{
+    if('serviceWorker' in navigator){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r=>r.unregister()));
+    }
+    if('caches' in window){
+      const keys=await caches.keys();
+      await Promise.all(keys.filter(k=>k.startsWith('petquest-')).map(k=>caches.delete(k)));
+    }
+    msg.className='ok'; msg.textContent='Limpieza completada. Abriendo PET Quest V46.30…';
+    setTimeout(()=>location.replace('./index.html?v=46.30&fresh=1'),500);
+  }catch(e){
+    msg.className='bad'; msg.textContent='No se pudo limpiar automáticamente. Cierra esta pestaña y limpia los datos del sitio desde Chrome.';
+  }
+})();
+</script></body></html>

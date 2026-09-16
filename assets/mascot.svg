@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" role="img" aria-labelledby="t d">
+<title id="t">Milo, el guía de PET Quest</title><desc id="d">Un búho amistoso con mochila y libro para acompañar el aprendizaje.</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#6d5dfc"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+<rect width="360" height="300" rx="36" fill="#f4f0ff"/>
+<circle cx="182" cy="131" r="90" fill="url(#g)"/>
+<path d="M110 75 133 25l30 48M255 76l-25-51-29 49" fill="#6d5dfc"/>
+<circle cx="150" cy="121" r="29" fill="white"/><circle cx="214" cy="121" r="29" fill="white"/>
+<circle cx="154" cy="124" r="12" fill="#172033"/><circle cx="210" cy="124" r="12" fill="#172033"/>
+<circle cx="158" cy="120" r="4" fill="white"/><circle cx="214" cy="120" r="4" fill="white"/>
+<path d="M182 141l-14 12h28z" fill="#ffbd4a"/>
+<path d="M145 171q37 31 75 0" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+<path d="M104 210q78-29 156 0v54H104z" fill="#172033"/>
+<rect x="124" y="207" width="116" height="70" rx="10" fill="#fff" stroke="#d8dbea" stroke-width="4"/>
+<path d="M182 210v64" stroke="#d8dbea" stroke-width="4"/>
+<path d="M137 225h31M137 237h31M197 225h31M197 237h31" stroke="#8b5cf6" stroke-width="4" stroke-linecap="round"/>
+</svg>

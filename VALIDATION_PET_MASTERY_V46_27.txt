@@ -1,0 +1,23 @@
+PET Quest V46.27 validation summary
+
+Mastery Orchestrator contract: 30/30 PASS
+Mastery runtime summary: 8/8 PASS
+Startup: 11/11 PASS
+Adult profile: 66/66 PASS
+Adult audio: PASS (300 manifest items)
+Child Experience: 30/30 PASS
+Practice Bank / B1 Matrix: 18/18 PASS
+Pedagogical Diagnostic: 25/25 PASS
+Speaking AI: 40/40 PASS
+Part 3 AI Candidate: 24/24 PASS
+For Schools 20 Full Mocks: 272/272 PASS
+Audio Bank Learn/Real Exam: 28/28 PASS
+500-audio deep decode: PASS
+Error DNA UI: 35/35 PASS
+Error DNA runtime: 16/16 PASS
+User isolation: 11/11 PASS
+Writing Mastery: 10/10 PASS
+Student end-to-end: 87/87 PASS
+UI action integrity: 418 buttons / 123 fields / 0 orphan buttons / 0 unaddressed fields
+
+Important: pass-probability remains gated by external calibration. Speaking pronunciation automation remains a practice proxy. Synthetic audio is not human studio audio.

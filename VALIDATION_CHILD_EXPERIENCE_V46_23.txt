@@ -1,0 +1,653 @@
+===== child_contract =====
+PASS version api 46.23
+PASS server version 46.23
+PASS script loaded
+PASS age 9 present
+PASS age 10-12 present
+PASS age 13-14 present
+PASS learn stage
+PASS practice stage
+PASS master stage
+PASS mock stage
+PASS no entiendo prominent
+PASS manual break
+PASS break auto threshold
+PASS mood ready
+PASS mood help
+PASS mastery requires evidence
+PASS mastery not single lucky answer
+PASS per user storage
+PASS server events
+PASS diagnostic integrated
+PASS 10 item remediation integrated
+PASS progress route
+PASS daily micro goals
+PASS retry after error
+PASS no peer competition
+PASS writing help
+PASS speaking help
+PASS practice help delegates Milo
+PASS child experience global object
+PASS external validation boundary documented
+30/30 PASS
+===== practice_matrix =====
+PASS total_5000
+PASS unique_ids
+PASS unique_prompts
+PASS matrix_5000_5000
+PASS difficulty_numeric
+PASS levels_6
+PASS competencies_13
+PASS answer_valid
+PASS explanations
+PASS skill_valid
+PASS part_valid
+PASS listening_metadata
+PASS adaptive_mode
+PASS backend_tracking
+PASS matrix_visible
+PASS matrix_weakness_engine
+PASS version_api
+PASS index_module
+18/18 PASS
+===== diagnostic_static =====
+PASS total_5000
+PASS all_have_patterns
+PASS pattern_gist
+PASS pattern_numbers
+PASS pattern_times
+PASS pattern_opinion
+PASS pattern_corrected_information
+PASS pattern_spelling
+PASS pattern_detail
+PASS pattern_inference
+PASS pattern_cohesion
+PASS pattern_pronunciation
+PASS js_Diagnóstico_pedagógico
+PASS js_Problema_principal
+PASS js_Generar_10_ejercicios
+PASS js_corrected_information
+PASS js_min_evidence
+PASS js_practice_remediation_answer
+PASS js_practice_remediation_complete
+PASS js_diagnostic_patterns
+PASS api_endpoint
+PASS api_min_evidence
+PASS api_user_scope
+PASS version
+PASS index_module
+25/25 PASS
+===== diagnostic_runtime =====
+PASS listening_62
+PASS gist_88_9
+PASS numbers_41_7
+PASS times_37_5
+PASS opinion_71_4
+PASS corrected_35
+PASS spelling_58_3
+PASS primary_corrected
+PASS min_evidence_3
+9/9 PASS
+===== startup =====
+PET Quest V46.23 Startup QA: PASS 9/9 []
+===== security =====
+{
+  "checks": [
+    [
+      "auth_required",
+      true
+    ],
+    [
+      "bad_login_rejected",
+      true
+    ],
+    [
+      "frame_denied",
+      true
+    ],
+    [
+      "nosniff",
+      true
+    ],
+    [
+      "csp_present",
+      true
+    ],
+    [
+      "permissions_policy",
+      true
+    ],
+    [
+      "referrer_policy",
+      true
+    ],
+    [
+      "version_header",
+      true
+    ]
+  ],
+  "failed": []
+}
+===== auth =====
+PASS initial view requires login
+PASS render protects unauthenticated routes
+PASS global logout visible
+PASS clear auth helper
+PASS 401 returns to login
+PASS session expiry persisted
+PASS session expiry checked on startup
+PASS login saves expiry
+PASS logout calls backend
+PASS logout clears session
+PASS enter submits login
+PASS backend login route
+PASS backend logout route
+PASS backend invalidates token
+PASS backend version 46.23
+AUTH SESSION V46.12: 15/15 PASS
+===== writing =====
+WRITING MASTERY V46.13: 10/10 PASS
+PASS writing snapshot exact
+PASS rubric exact 5+3+3+2
+PASS four weaknesses persisted
+PASS remediation writing-content
+PASS remediation writing-communication
+PASS remediation writing-organisation
+PASS remediation past-go
+PASS writing preparation from 13/20 = 65% :: {'reading': 0.0, 'writing': 65.0, 'listening': 0.0, 'speaking': 0.0}
+PASS remediation readback 4
+PASS foreign keys :: []
+===== speaking_ai =====
+PET Quest V46.14 Speaking AI QA: 40/40 PASS
+===== speaking_part3 =====
+PET Quest V46.15 Part 3 AI Candidate QA: 24/24 PASS
+===== audio_bank =====
+PASS manifest version 46.18 
+PASS 500 total 500
+PASS part1 180 
+PASS part2 160 
+PASS part3 80 
+PASS part4 80 
+PASS unique ids 
+PASS unique transcripts 500/500
+PASS unique audio paths 
+PASS training speeds exact [0.75, 0.85, 1.0, 1.1]
+PASS exam speed 1.0 
+PASS exam 2 plays 
+PASS synthetic truth flag 
+PASS voice profile diversity >= 15 17
+PASS British predominance >= 75% 394/500
+PASS international exposure >= 15% 106/500
+PASS 500 audio files exist []
+PASS 500 manifest audio specs valid []
+PASS representative decode across parts 8
+PASS sample SHA256 integrity 
+PASS UI 0.75 
+PASS UI 0.85 
+PASS UI 1.10 
+PASS UI REAL EXAM MODE 
+PASS UI n>=2 
+PASS UI /events 
+PASS UI audio_bank_answer 
+PASS UI PET_AUDIO_BANK_V46_18.json 
+AUDIO BANK V46.18: 28/28 PASS
+===== full_mocks =====
+PASS index version 46.20 
+PASS 20 mock packs 20
+PASS index totals {'reading_questions': 640, 'listening_questions': 500, 'writing_tasks': 40, 'speaking_parts': 80}
+PASS pq-mock-a file exists 
+PASS pq-mock-a reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-a reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-a listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-a listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-a writing 2 
+PASS pq-mock-a speaking 4 
+PASS pq-mock-a external signoff false 
+PASS pq-mock-a psychometric equivalence false 
+PASS pq-mock-a 15 unique recordings 15
+PASS pq-mock-a audio files exist 0
+PASS pq-mock-b file exists 
+PASS pq-mock-b reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-b reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-b listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-b listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-b writing 2 
+PASS pq-mock-b speaking 4 
+PASS pq-mock-b external signoff false 
+PASS pq-mock-b psychometric equivalence false 
+PASS pq-mock-b 15 unique recordings 15
+PASS pq-mock-b audio files exist 0
+PASS pq-mock-c file exists 
+PASS pq-mock-c reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-c reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-c listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-c listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-c writing 2 
+PASS pq-mock-c speaking 4 
+PASS pq-mock-c external signoff false 
+PASS pq-mock-c psychometric equivalence false 
+PASS pq-mock-c 15 unique recordings 15
+PASS pq-mock-c audio files exist 0
+PASS pq-mock-d file exists 
+PASS pq-mock-d reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-d reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-d listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-d listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-d writing 2 
+PASS pq-mock-d speaking 4 
+PASS pq-mock-d external signoff false 
+PASS pq-mock-d psychometric equivalence false 
+PASS pq-mock-d 15 unique recordings 15
+PASS pq-mock-d audio files exist 0
+PASS pq-mock-e file exists 
+PASS pq-mock-e reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-e reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-e listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-e listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-e writing 2 
+PASS pq-mock-e speaking 4 
+PASS pq-mock-e external signoff false 
+PASS pq-mock-e psychometric equivalence false 
+PASS pq-mock-e 15 unique recordings 15
+PASS pq-mock-e audio files exist 0
+PASS pq-mock-f file exists 
+PASS pq-mock-f reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-f reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-f listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-f listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-f writing 2 
+PASS pq-mock-f speaking 4 
+PASS pq-mock-f external signoff false 
+PASS pq-mock-f psychometric equivalence false 
+PASS pq-mock-f 15 unique recordings 15
+PASS pq-mock-f audio files exist 0
+PASS pq-mock-g file exists 
+PASS pq-mock-g reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-g reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-g listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-g listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-g writing 2 
+PASS pq-mock-g speaking 4 
+PASS pq-mock-g external signoff false 
+PASS pq-mock-g psychometric equivalence false 
+PASS pq-mock-g 15 unique recordings 15
+PASS pq-mock-g audio files exist 0
+PASS pq-mock-h file exists 
+PASS pq-mock-h reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-h reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-h listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-h listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-h writing 2 
+PASS pq-mock-h speaking 4 
+PASS pq-mock-h external signoff false 
+PASS pq-mock-h psychometric equivalence false 
+PASS pq-mock-h 15 unique recordings 15
+PASS pq-mock-h audio files exist 0
+PASS pq-mock-i file exists 
+PASS pq-mock-i reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-i reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-i listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-i listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-i writing 2 
+PASS pq-mock-i speaking 4 
+PASS pq-mock-i external signoff false 
+PASS pq-mock-i psychometric equivalence false 
+PASS pq-mock-i 15 unique recordings 15
+PASS pq-mock-i audio files exist 0
+PASS pq-mock-j file exists 
+PASS pq-mock-j reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-j reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-j listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-j listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-j writing 2 
+PASS pq-mock-j speaking 4 
+PASS pq-mock-j external signoff false 
+PASS pq-mock-j psychometric equivalence false 
+PASS pq-mock-j 15 unique recordings 15
+PASS pq-mock-j audio files exist 0
+PASS pq-mock-k file exists 
+PASS pq-mock-k reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-k reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-k listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-k listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-k writing 2 
+PASS pq-mock-k speaking 4 
+PASS pq-mock-k external signoff false 
+PASS pq-mock-k psychometric equivalence false 
+PASS pq-mock-k 15 unique recordings 15
+PASS pq-mock-k audio files exist 0
+PASS pq-mock-l file exists 
+PASS pq-mock-l reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-l reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-l listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-l listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-l writing 2 
+PASS pq-mock-l speaking 4 
+PASS pq-mock-l external signoff false 
+PASS pq-mock-l psychometric equivalence false 
+PASS pq-mock-l 15 unique recordings 15
+PASS pq-mock-l audio files exist 0
+PASS pq-mock-m file exists 
+PASS pq-mock-m reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-m reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-m listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-m listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-m writing 2 
+PASS pq-mock-m speaking 4 
+PASS pq-mock-m external signoff false 
+PASS pq-mock-m psychometric equivalence false 
+PASS pq-mock-m 15 unique recordings 15
+PASS pq-mock-m audio files exist 0
+PASS pq-mock-n file exists 
+PASS pq-mock-n reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-n reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-n listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-n listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-n writing 2 
+PASS pq-mock-n speaking 4 
+PASS pq-mock-n external signoff false 
+PASS pq-mock-n psychometric equivalence false 
+PASS pq-mock-n 15 unique recordings 15
+PASS pq-mock-n audio files exist 0
+PASS pq-mock-o file exists 
+PASS pq-mock-o reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-o reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-o listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-o listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-o writing 2 
+PASS pq-mock-o speaking 4 
+PASS pq-mock-o external signoff false 
+PASS pq-mock-o psychometric equivalence false 
+PASS pq-mock-o 15 unique recordings 15
+PASS pq-mock-o audio files exist 0
+PASS pq-mock-p file exists 
+PASS pq-mock-p reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-p reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-p listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-p listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-p writing 2 
+PASS pq-mock-p speaking 4 
+PASS pq-mock-p external signoff false 
+PASS pq-mock-p psychometric equivalence false 
+PASS pq-mock-p 15 unique recordings 15
+PASS pq-mock-p audio files exist 0
+PASS pq-mock-q file exists 
+PASS pq-mock-q reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-q reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-q listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-q listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-q writing 2 
+PASS pq-mock-q speaking 4 
+PASS pq-mock-q external signoff false 
+PASS pq-mock-q psychometric equivalence false 
+PASS pq-mock-q 15 unique recordings 15
+PASS pq-mock-q audio files exist 0
+PASS pq-mock-r file exists 
+PASS pq-mock-r reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-r reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-r listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-r listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-r writing 2 
+PASS pq-mock-r speaking 4 
+PASS pq-mock-r external signoff false 
+PASS pq-mock-r psychometric equivalence false 
+PASS pq-mock-r 15 unique recordings 15
+PASS pq-mock-r audio files exist 0
+PASS pq-mock-s file exists 
+PASS pq-mock-s reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-s reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-s listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-s listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-s writing 2 
+PASS pq-mock-s speaking 4 
+PASS pq-mock-s external signoff false 
+PASS pq-mock-s psychometric equivalence false 
+PASS pq-mock-s 15 unique recordings 15
+PASS pq-mock-s audio files exist 0
+PASS pq-mock-t file exists 
+PASS pq-mock-t reading 32 Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-t reading contract Counter({5: 6, 6: 6, 1: 5, 2: 5, 3: 5, 4: 5})
+PASS pq-mock-t listening 25 Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-t listening contract Counter({1: 7, 2: 6, 3: 6, 4: 6})
+PASS pq-mock-t writing 2 
+PASS pq-mock-t speaking 4 
+PASS pq-mock-t external signoff false 
+PASS pq-mock-t psychometric equivalence false 
+PASS pq-mock-t 15 unique recordings 15
+PASS pq-mock-t audio files exist 0
+PASS 1140 item IDs globally unique 1140/1140
+PASS 300 listening recordings globally unique 300/300
+PASS 20 full form payloads distinct 20
+PASS 20 source-content forms distinct 20
+PASS pq-mock-a L3 shared recording {'pqbank-p3-001'}
+PASS pq-mock-a L4 shared recording {'pqbank-p4-001'}
+PASS pq-mock-b L3 shared recording {'pqbank-p3-002'}
+PASS pq-mock-b L4 shared recording {'pqbank-p4-002'}
+PASS pq-mock-c L3 shared recording {'pqbank-p3-003'}
+PASS pq-mock-c L4 shared recording {'pqbank-p4-003'}
+PASS pq-mock-d L3 shared recording {'pqbank-p3-004'}
+PASS pq-mock-d L4 shared recording {'pqbank-p4-004'}
+PASS pq-mock-e L3 shared recording {'pqbank-p3-005'}
+PASS pq-mock-e L4 shared recording {'pqbank-p4-005'}
+PASS pq-mock-f L3 shared recording {'pqbank-p3-006'}
+PASS pq-mock-f L4 shared recording {'pqbank-p4-006'}
+PASS pq-mock-g L3 shared recording {'pqbank-p3-007'}
+PASS pq-mock-g L4 shared recording {'pqbank-p4-007'}
+PASS pq-mock-h L3 shared recording {'pqbank-p3-008'}
+PASS pq-mock-h L4 shared recording {'pqbank-p4-008'}
+PASS pq-mock-i L3 shared recording {'pqbank-p3-009'}
+PASS pq-mock-i L4 shared recording {'pqbank-p4-009'}
+PASS pq-mock-j L3 shared recording {'pqbank-p3-010'}
+PASS pq-mock-j L4 shared recording {'pqbank-p4-010'}
+PASS pq-mock-k L3 shared recording {'pqbank-p3-011'}
+PASS pq-mock-k L4 shared recording {'pqbank-p4-011'}
+PASS pq-mock-l L3 shared recording {'pqbank-p3-012'}
+PASS pq-mock-l L4 shared recording {'pqbank-p4-012'}
+PASS pq-mock-m L3 shared recording {'pqbank-p3-013'}
+PASS pq-mock-m L4 shared recording {'pqbank-p4-013'}
+PASS pq-mock-n L3 shared recording {'pqbank-p3-014'}
+PASS pq-mock-n L4 shared recording {'pqbank-p4-014'}
+PASS pq-mock-o L3 shared recording {'pqbank-p3-015'}
+PASS pq-mock-o L4 shared recording {'pqbank-p4-015'}
+PASS pq-mock-p L3 shared recording {'pqbank-p3-016'}
+PASS pq-mock-p L4 shared recording {'pqbank-p4-016'}
+PASS pq-mock-q L3 shared recording {'pqbank-p3-017'}
+PASS pq-mock-q L4 shared recording {'pqbank-p4-017'}
+PASS pq-mock-r L3 shared recording {'pqbank-p3-018'}
+PASS pq-mock-r L4 shared recording {'pqbank-p4-018'}
+PASS pq-mock-s L3 shared recording {'pqbank-p3-019'}
+PASS pq-mock-s L4 shared recording {'pqbank-p4-019'}
+PASS pq-mock-t L3 shared recording {'pqbank-p3-020'}
+PASS pq-mock-t L4 shared recording {'pqbank-p4-020'}
+PASS bank advertises 20 Full Mocks 
+PASS generic listening buttons 
+PASS writing paper integrated 
+PASS speaking paper integrated 
+PASS v46.20 script loaded 
+RESULT 272/272 PASS
+===== academic =====
+PASS Reading Part 6 open cloze
+PASS Reading 5/5/5/5/6/6
+PASS Reading total 32
+PASS Listening Part 3 gap fill
+PASS Listening 7/6/6/6
+PASS Listening replay modes
+PASS No browser TTS in exact mock
+PASS Audio honesty gate
+PASS Writing error intelligence
+PASS Given writing example detected
+PASS Speaking text does not fake pronunciation
+PASS Speaking human rubric preserved
+PASS Speaking Part 3 pair simulator
+PASS Writing exact mock 45 min
+PASS Speaking mock routes to exam
+PASS Speaking Part 3 exam is interactive
+PASS QA readiness polling
+PASS Privacy lifecycle in current API
+PASS Production SQLite blocked when Postgres required
+PASS V41 script cached
+20/20 PASS
+===== psychometrics =====
+PASS version44
+PASS attempt_table
+PASS item_table
+PASS post_attempts
+PASS get_quality
+PASS facility
+PASS discrimination
+PASS sample_gate10
+PASS sample_gate20
+PASS form_equivalence
+PASS frontend
+PASS capture_from_mock
+PASS postgres
+PASS pwa
+PET Quest V44 UI/Code QA: PASS 14/14
+===== e2e =====
+
+===== e2e_separate =====
+PASS js:app.js
+PASS js:sw.js
+PASS js:v10_ux.js
+PASS js:v11_ux.js
+PASS js:v12_ux.js
+PASS js:v13_adaptive.js
+PASS js:v14_tutor.js
+PASS js:v15_autonomy.js
+PASS js:v16_speaking_writing.js
+PASS js:v17_conversation.js
+PASS js:v18_listening.js
+PASS js:v19_reading.js
+PASS js:v20_full_journey.js
+PASS js:v21_weekly_evolution.js
+PASS js:v22_adult_intelligence.js
+PASS js:v23_retention.js
+PASS js:v24_portfolio.js
+PASS js:v25_personal_path.js
+PASS js:v26_school_ops.js
+PASS js:v27_classroom_intelligence.js
+PASS js:v28_intervention_engine.js
+PASS js:v29_intervention_outcomes.js
+PASS js:v30_school_impact.js
+PASS js:v31_executive_review.js
+PASS js:v32_governance.js
+PASS js:v33_strategy_forecast.js
+PASS js:v34_decision_simulator.js
+PASS js:v35_budget_optimizer.js
+PASS js:v36_portfolio_optimizer.js
+PASS js:v37_schedule_capacity.js
+PASS js:v38_production_hardening.js
+PASS js:v39_commercial_onboarding.js
+PASS js:v40_2_exam_fidelity.js
+PASS js:v40_release_readiness.js
+PASS js:v41_academic_intelligence.js
+PASS js:v42_exam_calibration.js
+PASS js:v43_full_mock_bank.js
+PASS js:v44_mock_quality.js
+PASS js:v45_production_saas.js
+PASS js:v46_11_mock_listening.js
+PASS js:v46_13_writing_mastery.js
+PASS js:v46_14_speaking_ai_examiner.js
+PASS js:v46_15_part3_ai_candidate.js
+PASS js:v46_16_readiness_calibration.js
+PASS js:v46_17_scale_equivalence.js
+PASS js:v46_18_audio_bank.js
+PASS js:v46_20_full_mock_mastery.js
+PASS js:v46_21_practice_bank.js
+PASS js:v46_22_practice_diagnostic.js
+PASS js:v46_23_child_experience.js
+PASS js:v46_8_user_progress.js
+PASS js:v46_operational_release_gate.js
+PASS js:v5_enhancements.js
+PASS js:v6_enhancements.js
+PASS js:v7_enhancements.js
+PASS js:v8_enhancements.js
+PASS js:v9_enhancements.js
+PASS assignment status reads .done
+PASS assignment starts false
+PASS assignment completes on session end
+PASS final level has terminal CTA
+PASS level3 no self-loop
+PASS course completion persisted
+PASS speaking session completion
+PASS writing two-part completion
+PASS reading bank nonempty
+PASS reading ids unique
+PASS reading levels 1-3
+PASS reading answers count
+PASS reading every item selectable
+PASS listening bank nonempty
+PASS listening ids unique
+PASS listening levels 1-3
+PASS listening answers count
+PASS listening every item selectable
+PASS click actions have handlers
+PASS regression:qa_v41_academic.py
+PASS regression:qa_v43_ui.py
+PASS regression:qa_v44_psychometrics.py
+PASS regression:qa_v46_release_gate.py
+PASS server ready
+PASS student login
+PASS completed journey sync
+PASS completed journey readback
+
+TOTAL 84/84 PASS
+
+===== backup_restore =====
+{
+  "backup_restore_pass": true,
+  "source": "/tmp/tmpn9prjj1x/source.db",
+  "table_counts": {
+    "schools": 1,
+    "users": 4,
+    "sessions": 0,
+    "login_attempts": 0,
+    "account_tokens": 0,
+    "courses": 1,
+    "enrollments": 1,
+    "assignments": 2,
+    "support_groups": 0,
+    "support_group_members": 0,
+    "intervention_runs": 0,
+    "intervention_run_members": 0,
+    "school_quality_snapshots": 0,
+    "academic_review_snapshots": 0,
+    "governance_goals": 0,
+    "governance_actions": 0,
+    "governance_reviews": 0,
+    "teacher_availability": 0,
+    "schedule_sessions": 0,
+    "school_licenses": 0,
+    "onboarding_items": 0,
+    "release_acceptance_runs": 0,
+    "strategic_targets": 0,
+    "questions": 0,
+    "snapshots": 0,
+    "audit_log": 0,
+    "guardian_consents": 0,
+    "privacy_requests": 0,
+    "calibration_outcomes": 0,
+    "anonymous_calibration_candidates": 0,
+    "psychometric_reviews": 0,
+    "academic_error_events": 0,
+    "academic_remediation_attempts": 0,
+    "mock_attempts": 0,
+    "mock_item_responses": 0,
+    "speaking_attempts": 0,
+    "speaking_interaction_sessions": 0,
+    "speaking_interaction_turns": 0,
+    "learning_events": 0,
+    "recovery_checks": 0,
+    "planning_scenarios": 0
+  }
+}
+
+
+===== syntax_all_js =====
+PASS JS syntax: v46_23_child_experience.js; E2E separately syntax-checked all loaded JS (84/84 suite).
+
+===== compileall_python =====
+PASS Python compileall
+
+===== sw_assets =====
+PASS SW resources 157/157

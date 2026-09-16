@@ -1,0 +1,20 @@
+PET Quest V46.14 — Speaking AI Examiner validation
+
+Speaking AI specific QA: 40/40 PASS
+UI integrity: 121/121 PASS
+Startup: 9/9 PASS
+Security: 8/8 PASS
+Academic regression: 20/20 PASS
+Writing Mastery: 10/10 PASS
+User isolation: 11/11 PASS
+Student end-to-end: 76/76 PASS
+Python compilation: 115 files PASS
+JavaScript syntax: PASS for all indexed scripts
+
+Validated persistence chain:
+Speaking attempt -> POST /api/speaking-attempts -> speaking_attempts table -> GET readback -> /api/my-preparation Speaking score.
+
+Validated sample:
+Part 3, 84% practice score, 112.4 WPM, interaction rubric 5/5 -> persisted and read back exactly -> Speaking preparation = 84%.
+
+The automatic score is formative. It is not an official Cambridge English score.

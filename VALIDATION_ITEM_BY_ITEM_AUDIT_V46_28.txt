@@ -1,0 +1,53 @@
+PET Quest V46.28 — Item-by-item Audit Validation
+
+Scope:
+- Mock A, B, C only
+- Reading: 96 objective items
+- Listening: 75 objective items
+- Writing: 6 tasks
+- Speaking: 12 parts/sets
+- Total audit cards: 189
+
+Internal audit results:
+Mock A: 47 approved / 16 rejected
+  Reading 31/32 approved
+  Listening 13/25 approved
+  Writing 1/2 approved
+  Speaking 2/4 approved
+Mock B: 13 approved / 50 rejected
+  Reading 0/32 approved
+  Listening 13/25 approved
+  Writing 0/2 approved
+  Speaking 0/4 approved
+Mock C: 13 approved / 50 rejected
+  Reading 0/32 approved
+  Listening 13/25 approved
+  Writing 0/2 approved
+  Speaking 0/4 approved
+
+Production gate:
+- Mock A: BLOCKED
+- Mock B: BLOCKED
+- Mock C: BLOCKED
+Any REJECTED_FOR_REVISION element prevents productive mock activation.
+
+Key defects identified:
+1. Reading B/C are shallow-template derivatives of A and do not meet independent-form originality.
+2. A-R5-Q6 has unnatural/incorrect word order/syntax.
+3. Listening Part 2 in A/B/C contains mechanically generated and sometimes implausible activity/location combinations, plus answer-position bias.
+4. Listening Part 4 in A/B/C contains weak/illogical causal discourse, plus answer-position bias.
+5. Writing Part 1 lacks the complete email stimulus/notes interaction required for strict exam fidelity.
+6. Speaking Part 2 lacks an attached reviewed photo stimulus.
+7. Speaking Part 3 lacks reviewed visual option stimuli for production fidelity.
+8. B/C Writing and Speaking contain substantial template reuse.
+
+QA executed:
+- qa_item_by_item_audit_v46_28.py: 40/40 PASS
+- qa_full_mock_20_v46_28_regression.py: 272/272 PASS
+- qa_v46_28_startup.py: 10/10 PASS
+- qa_student_end_to_end_v46_2.py: 87/87 PASS
+- JavaScript syntax: 60/60 PASS
+- Python compileall: PASS
+
+Reviewer disclosure:
+"Reviewer 1" and "Reviewer 2" in the audit cards are two internal automated QA passes. They are NOT two human academic reviewers. external_academic_signoff remains false.

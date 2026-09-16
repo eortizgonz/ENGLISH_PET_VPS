@@ -1,0 +1,5 @@
+anon_id,predicted_readiness,actual_scale_score,source,exam_date,cohort_label,notes
+Student-000001,72.0,142,official_exam,2026-12-01,2026-Q4,
+Student-000002,83.0,151,official_exam,2026-12-01,2026-Q4,
+Student-000003,65.0,137,official_exam,2026-12-01,2026-Q4,
+Student-000004,91.0,160,official_exam,2026-12-01,2026-Q4,

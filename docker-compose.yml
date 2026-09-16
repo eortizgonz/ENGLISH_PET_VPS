@@ -1,0 +1,71 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: pet-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${PETQUEST_PG_DB:-PET}
+      POSTGRES_USER: ${PETQUEST_PG_USER:-postgres}
+      POSTGRES_PASSWORD: ${PETQUEST_PG_PASSWORD:-12345}
+    ports:
+      - "${PETQUEST_PG_EXPOSE_PORT:-5432}:5432"
+    volumes:
+      - pet_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PETQUEST_PG_USER:-postgres} -d ${PETQUEST_PG_DB:-PET}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+
+  pet:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pet-quest
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PETQUEST_ENV: docker
+      PETQUEST_DEV_MODE: "0"
+      PETQUEST_SEED_DEMO_DATA: "0"
+      PETQUEST_HOST: 0.0.0.0
+      PORT: "8080"
+      PETQUEST_PUBLIC_BASE_URL: ${PETQUEST_PUBLIC_BASE_URL:-http://localhost:8080}
+
+      PETQUEST_PG_HOST: postgres
+      PETQUEST_PG_PORT: "5432"
+      PETQUEST_PG_DB: ${PETQUEST_PG_DB:-PET}
+      PETQUEST_PG_USER: ${PETQUEST_PG_USER:-postgres}
+      PETQUEST_PG_PASSWORD: ${PETQUEST_PG_PASSWORD:-12345}
+      DATABASE_URL: postgresql://${PETQUEST_PG_USER:-postgres}:${PETQUEST_PG_PASSWORD:-12345}@postgres:5432/${PETQUEST_PG_DB:-PET}
+
+      PETQUEST_REQUIRE_POSTGRES_AUTH: "1"
+      PETQUEST_REQUIRE_POSTGRES_IN_PRODUCTION: "0"
+      PETQUEST_REQUIRE_SMTP_IN_PRODUCTION: "0"
+      PETQUEST_REQUIRE_HTTPS_IN_PRODUCTION: "0"
+
+      PETQUEST_SQLITE_PATH: /data/petquest.db
+      PETQUEST_BACKUP_DIR: /data/backups
+      PETQUEST_SESSION_HOURS: "12"
+      PETQUEST_DATA_RETENTION_DAYS: "365"
+      PETQUEST_BACKUP_RETENTION: "14"
+      PETQUEST_MAX_REQUEST_BYTES: "1048576"
+    ports:
+      - "${PETQUEST_APP_PORT:-8080}:8080"
+    volumes:
+      - pet_runtime_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/ready', timeout=4)"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 45s
+
+volumes:
+  pet_postgres_data:
+    name: pet_postgres_data
+  pet_runtime_data:
+    name: pet_runtime_data

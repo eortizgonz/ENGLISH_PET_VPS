@@ -1,0 +1,27 @@
+PET Quest V46.9 Final Validation Evidence
+Date: 2026-09-02
+
+Executed individually and passed:
+- qa_v46_9_startup.py: 9/9 PASS
+- qa_auth_session_v46_9.py: 15/15 PASS
+- qa_security_v46_9.py: 8/8 PASS
+- qa_all_screens_v46_9.py: 174/174 PASS
+- qa_student_end_to_end_v46_2.py: 73/73 PASS
+- qa_v41_academic.py: 20/20 PASS
+- qa_v41_privacy.py: PASS
+- qa_v42_calibration.py: PASS
+- qa_v43_mock_bank.py: PASS
+- qa_v44_psychometrics.py: 14/14 PASS
+- qa_backup_restore_v46.py: PASS
+- tenant_isolation_check.py: PASS
+- validate_exam_pack_v43.py: A/B/C PASS structurally (external audio/sign-off warnings retained)
+- qa_runtime_http_v46_9.py: PASS
+- qa_full_persistence_v46_9.py: 45/45 PASS
+- qa_privacy_purge_v46_9.py: PASS
+- Python compile: 91 files PASS
+- JavaScript syntax: 46 files PASS
+- Frontend literal API parity: 52 calls, 0 missing backend routes
+- SQLite foreign_key_check: PASS, 0 violations
+- Load smoke: 500/500 HTTP 200, 50 workers
+
+Note: one combined meta-run exceeded the laboratory timeout because it sequentially re-ran multiple server-spawning suites. Each suite above was therefore executed separately; those individual executions are the release evidence.

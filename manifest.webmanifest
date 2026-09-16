@@ -1,0 +1,11 @@
+{
+  "id": "./petquest-v46-28",
+  "name": "PET Quest B1 V46.30",
+  "short_name": "PET Quest V46.30",
+  "start_url": "./index.html?v=46.30&source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#5b5bd6",
+  "description": "PET Quest V46.30 with item-by-item audit gate for Mocks A/B/C, dual Adult/Schools profiles, Error DNA and Mastery Orchestrator."
+}

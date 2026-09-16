@@ -1,0 +1,1228 @@
+{
+  "version": "46.20",
+  "pack_id": "pq-mock-h",
+  "title": "PET Quest Full Mock H",
+  "theme": "Hillcrest",
+  "status": "full_four_skill_content_complete_external_equivalence_pending",
+  "reading": [
+    {
+      "id": "pq-mock-h-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What must students do before using the study room?",
+      "options": [
+        "Reserve a computer",
+        "Collect a key from reception",
+        "Leave before the afternoon"
+      ],
+      "answer": 1,
+      "source_text": "Hillcrest Library: Students using the study room after 4 p.m. must collect a key from reception before entering.",
+      "source_label": "Hillcrest Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-h-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What has changed about the activity?",
+      "options": [
+        "Its day",
+        "Its price",
+        "Its location"
+      ],
+      "answer": 0,
+      "source_text": "Hillcrest Sports Centre: The cycling group has moved from Monday to Wednesday. Your booking is still valid.",
+      "source_label": "Hillcrest Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-h-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What can customers buy after 2 p.m.?",
+      "options": [
+        "Only hot meals",
+        "Snacks and drinks",
+        "Nothing at all"
+      ],
+      "answer": 1,
+      "source_text": "Cafe notice: Please order hot food before 2 p.m. Cold snacks and drinks are available until closing time.",
+      "source_label": "Hillcrest Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-h-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where did Sam leave the project folder?",
+      "options": [
+        "In the classroom",
+        "At reception",
+        "In the library"
+      ],
+      "answer": 1,
+      "source_text": "Message from Sam: I left your project folder with the receptionist because the classroom was locked.",
+      "source_label": "Hillcrest Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-h-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where will route 27 stop today?",
+      "options": [
+        "At the market",
+        "Outside the museum",
+        "At the sports centre"
+      ],
+      "answer": 1,
+      "source_text": "Bus notice: Route 27 will stop outside the museum today instead of the market because of roadworks.",
+      "source_label": "Hillcrest Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-h-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Ella wants a free weekend activity and does not own special equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Hillcrest Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Hillcrest Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Hillcrest Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Hillcrest Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Hillcrest Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Hillcrest Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Hillcrest Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Hillcrest Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "A",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-h-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Will would like to practise English by speaking with people from another school.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Hillcrest Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Hillcrest Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Hillcrest Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Hillcrest Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Hillcrest Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Hillcrest Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Hillcrest Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Hillcrest Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "C",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-h-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Tara enjoys writing and wants to meet members of the local community.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Hillcrest Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Hillcrest Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Hillcrest Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Hillcrest Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Hillcrest Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Hillcrest Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Hillcrest Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Hillcrest Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "D",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-h-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Peter is interested in video and design but cannot attend at weekends.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Hillcrest Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Hillcrest Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Hillcrest Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Hillcrest Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Hillcrest Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Hillcrest Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Hillcrest Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Hillcrest Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "B",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-h-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Olivia wants an outdoor Sunday activity and already owns the necessary equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Hillcrest Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Hillcrest Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Hillcrest Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Hillcrest Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Hillcrest Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Hillcrest Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Hillcrest Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Hillcrest Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "E",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-h-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the project begin?",
+      "options": [
+        "A teacher ordered it",
+        "Students wanted a practical project",
+        "The school received new equipment",
+        "Families requested daily meetings"
+      ],
+      "answer": 1,
+      "passage": "At Hillcrest Academy, students recently created a new art class. The idea began after Tara noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the train station and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-h-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Where did the group borrow equipment from?",
+      "options": [
+        "train station",
+        "a supermarket",
+        "a private company",
+        "the bus station"
+      ],
+      "answer": 0,
+      "passage": "At Hillcrest Academy, students recently created a new art class. The idea began after Tara noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the train station and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-h-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What changed about the meeting schedule?",
+      "options": [
+        "They stopped meeting completely",
+        "They met every day",
+        "They chose two longer weekly sessions",
+        "They moved all work online"
+      ],
+      "answer": 2,
+      "passage": "At Hillcrest Academy, students recently created a new art class. The idea began after Tara noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the train station and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-h-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What did teachers mainly provide?",
+      "options": [
+        "All project decisions",
+        "Safety guidance",
+        "Money for equipment",
+        "Friday reports"
+      ],
+      "answer": 1,
+      "passage": "At Hillcrest Academy, students recently created a new art class. The idea began after Tara noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the train station and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-h-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What happens every Friday?",
+      "options": [
+        "A short update is published",
+        "Younger pupils lead the group",
+        "Families collect materials",
+        "The project closes"
+      ],
+      "answer": 0,
+      "passage": "At Hillcrest Academy, students recently created a new art class. The idea began after Tara noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the train station and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-h-r4-1",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 1.",
+      "passage": "A group of students at Hillcrest School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "C",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-h-r4-2",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 2.",
+      "passage": "A group of students at Hillcrest School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "D",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-h-r4-3",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 3.",
+      "passage": "A group of students at Hillcrest School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "A",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-h-r4-4",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 4.",
+      "passage": "A group of students at Hillcrest School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "F",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-h-r4-5",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 5.",
+      "passage": "A group of students at Hillcrest School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "H",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-h-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our class decided to ___ a weekly book review.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "bring"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We wanted everyone to ___ part, even students who were shy.",
+      "options": [
+        "make",
+        "take",
+        "do",
+        "get"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "The first meeting was ___ than we expected.",
+      "options": [
+        "busy",
+        "busier",
+        "busiest",
+        "more busy"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our teacher suggested ___ a clear plan before recording.",
+      "options": [
+        "write",
+        "to writing",
+        "writing",
+        "wrote"
+      ],
+      "answer": 2,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We learned how to work ___ a team and share jobs fairly.",
+      "options": [
+        "as",
+        "at",
+        "by",
+        "for"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "By the end of the month, the project had become very ___ with students.",
+      "options": [
+        "popular",
+        "ordinary",
+        "private",
+        "empty"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-h-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "My cousin has been interested ___ sport since she was ten.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-h-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "We arrived early ___ we could choose good seats.",
+      "answer": "so",
+      "focus": "linker",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-h-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "There were not ___ chairs for everyone at first.",
+      "answer": "enough",
+      "focus": "quantifier",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-h-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "The teacher asked us ___ bring our notebooks.",
+      "answer": "to",
+      "focus": "infinitive",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-h-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "I have never taken part ___ an event like this before.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-h-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "If the weather is good, we ___ meet outside tomorrow.",
+      "answer": "will",
+      "focus": "future",
+      "answer_words": 1
+    }
+  ],
+  "listening": [
+    {
+      "id": "pq-mock-h-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Amy and Grace meet?",
+      "options": [
+        "six fifteen",
+        "ten thirty",
+        "nine fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-050",
+      "transcript": "Amy: Are we still meeting at the train station at six fifteen? Grace: Not now. Let's meet at ten thirty because it is cheaper. Amy: Great. Then we can buy a birthday present.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-050.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Amy and Peter meet?",
+      "options": [
+        "half past one",
+        "seven forty",
+        "ten thirty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-051",
+      "transcript": "Amy: Are we still meeting at the school hall at half past one? Peter: Not now. Let's meet at seven forty because it is cheaper. Amy: Great. Then we can meet at the library.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-051.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Will and Ella meet?",
+      "options": [
+        "nine fifteen",
+        "eleven forty-five",
+        "five thirty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-052",
+      "transcript": "Will: Are we still meeting at the cafe at nine fifteen? Ella: Not now. Let's meet at eleven forty-five because the teacher recommended it. Will: Great. Then we can visit the museum.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-052.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Sam and Amy meet?",
+      "options": [
+        "half past one",
+        "two twenty",
+        "quarter to four"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-053",
+      "transcript": "Sam: Are we still meeting at the museum at half past one? Amy: Not now. Let's meet at two twenty because the buses run more often. Sam: Great. Then we can play basketball.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-053.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Amy and Harry meet?",
+      "options": [
+        "nine fifteen",
+        "half past one",
+        "seven forty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-054",
+      "transcript": "Amy: Are we still meeting at the museum at nine fifteen? Harry: Not now. Let's meet at half past one because we already have the equipment. Amy: Great. Then we can have a picnic.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-054.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Sam and Peter meet?",
+      "options": [
+        "ten thirty",
+        "nine fifteen",
+        "eleven forty-five"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-055",
+      "transcript": "Sam: Are we still meeting at the museum at ten thirty? Peter: Not now. Let's meet at nine fifteen because we can invite more friends. Sam: Great. Then we can practise music.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-055.mp3"
+    },
+    {
+      "id": "pq-mock-h-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Jack and Daniel meet?",
+      "options": [
+        "two twenty",
+        "six fifteen",
+        "seven forty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-056",
+      "transcript": "Jack: Are we still meeting at the sports centre at two twenty? Daniel: Not now. Let's meet at six fifteen because we need more time to prepare. Jack: Great. Then we can buy a birthday present.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-056.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "visit the museum",
+        "buy a birthday present",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-043",
+      "transcript": "Ella: I thought we could visit the museum at the cinema. Jack: I'd rather buy a birthday present at the school hall. It costs ten pounds, but the buses run more often. Ella: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-043.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "have a picnic",
+        "practise music",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-044",
+      "transcript": "Ruby: I thought we could have a picnic at the park. Sam: I'd rather practise music at the shopping centre. It costs six pounds, but we already have the equipment. Ruby: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-044.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "study together",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-045",
+      "transcript": "Daniel: I thought we could study together at the school hall. Jack: I'd rather have a picnic at the museum. It costs five pounds fifty, but the buses run more often. Daniel: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-045.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "join a photography club",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-046",
+      "transcript": "Leo: I thought we could join a photography club at the cafe. Tara: I'd rather have a picnic at the swimming pool. It costs four pounds, but the buses run more often. Leo: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-046.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "go swimming",
+        "buy a birthday present",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-047",
+      "transcript": "Daniel: I thought we could go swimming at the science club. Maya: I'd rather buy a birthday present at the cafe. It costs six pounds, but the buses run more often. Daniel: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-047.mp3"
+    },
+    {
+      "id": "pq-mock-h-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "study together",
+        "meet at the library",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-048",
+      "transcript": "Finn: I thought we could study together at the cafe. Leo: I'd rather meet at the library at the school hall. It costs eight pounds, but we can invite more friends. Finn: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-048.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The activity takes place on ___.",
+      "answer": "Saturday",
+      "accepted_answers": [
+        "Saturday"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The first activity begins at ___.",
+      "answer": "nine fifteen",
+      "accepted_answers": [
+        "nine fifteen"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The ticket costs ___.",
+      "answer": "five pounds fifty",
+      "accepted_answers": [
+        "five pounds fifty"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Students should bring a ___.",
+      "answer": "notebook",
+      "accepted_answers": [
+        "notebook"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "After the main activity, they will ___.",
+      "answer": "join a photography club",
+      "accepted_answers": [
+        "join a photography club"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Questions should be asked before ___.",
+      "answer": "Friday",
+      "accepted_answers": [
+        "Friday"
+      ],
+      "audio_id": "pqbank-p3-008",
+      "transcript": "Hello, I'm Will, and I'd like to tell you about our family visit. It will take place at the shopping centre on Saturday. The first activity begins at nine fifteen, so please arrive about fifteen minutes earlier. The ticket costs five pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will join a photography club. We changed the original plan because it is cheaper. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What did Chloe especially enjoy?",
+      "options": [
+        "prepare a class project",
+        "join a photography club",
+        "park"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "How did Chloe feel later?",
+      "options": [
+        "More confident",
+        "More worried",
+        "Completely bored"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Would Chloe take part again?",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What would Chloe like to do next time?",
+      "options": [
+        "join a photography club",
+        "prepare a class project",
+        "stay at home"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Which place would Chloe use instead?",
+      "options": [
+        "park",
+        "the same place",
+        "the train station"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    },
+    {
+      "id": "pq-mock-h-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What is Chloe's overall attitude?",
+      "options": [
+        "Mostly positive",
+        "Mostly negative",
+        "Completely uncertain"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-008",
+      "transcript": "Interviewer: Chloe, what did you think about the weekend plan? Chloe: I enjoyed it, especially when we could prepare a class project. Interviewer: Was anything difficult? Chloe: At first, yes, because we need more time to prepare. But later I felt more confident. Interviewer: Would you take part again? Chloe: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Chloe: I'd use the park because the weather should be better. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-008.mp3"
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "interaction": "email",
+      "prompt": "You received an email from your English-speaking friend Olivia, who is thinking about joining a new activity. Write an email to Olivia. Recommend an activity in Hillcrest, explain why it would suit them, and suggest when you could go together.",
+      "target_words": 100
+    },
+    {
+      "part": 2,
+      "interaction": "choice",
+      "options": [
+        {
+          "type": "article",
+          "prompt": "Write an article about a place or activity in Hillcrest that teenagers would enjoy. Explain what people can do there and why you recommend it."
+        },
+        {
+          "type": "story",
+          "prompt": "Your story must begin: \"As soon as we arrived in Hillcrest, I realised the plan had changed.\""
+        }
+      ],
+      "target_words": 100
+    }
+  ],
+  "speaking": {
+    "parts": [
+      {
+        "part": 1,
+        "type": "interview",
+        "prompts": [
+          "What do you usually do after school?",
+          "Tell us about a place you enjoy visiting.",
+          "What would you like to improve in your English?"
+        ]
+      },
+      {
+        "part": 2,
+        "type": "extended_turn_photo",
+        "prompt": "Describe a picture of young people taking part in a science fair in Hillcrest. Say what you can see, what the people are doing and how they might feel.",
+        "photo_asset_required": true
+      },
+      {
+        "part": 3,
+        "type": "collaborative_task",
+        "prompt": "Two students, Ella and Jack, want to organise a class activity in Hillcrest. Discuss these options: drama rehearsal, music workshop, a picnic, a museum visit and a film afternoon. Make suggestions, respond, compare alternatives and agree on the best choice.",
+        "mode": "interactive_candidate_simulator"
+      },
+      {
+        "part": 4,
+        "type": "discussion",
+        "prompts": [
+          "Do you prefer activities with friends or with family? Why?",
+          "What makes a school activity successful?",
+          "Should young people try new activities even if they are difficult at first? Why?"
+        ]
+      }
+    ],
+    "part3_mode": "interactive_candidate_simulator",
+    "external_human_pair_validation_required": true
+  },
+  "authoring": {
+    "cefr_target": "B1",
+    "created_for": "PET Quest",
+    "content_originality": "distinct_form_content",
+    "external_academic_signoff": false,
+    "psychometric_equivalence_validated": false,
+    "studio_audio_ready": false,
+    "generated_audio_ready": true,
+    "generated_audio_source": "PET Audio Bank V46.18 synthetic multi-voice",
+    "generated_audio_count": 15,
+    "voice_simulation_ready": true,
+    "voice_simulation_version": "46.18",
+    "listening_exam_mode": "1.00x_max_2_plays",
+    "writing_tasks": 2,
+    "speaking_parts": 4
+  },
+  "license": "original-petquest-content"
+}

@@ -1,0 +1,39 @@
+{
+  "version": "46.20",
+  "total_mocks": 20,
+  "structure_per_mock": {
+    "reading": 32,
+    "listening": 25,
+    "writing": 2,
+    "speaking_parts": 4
+  },
+  "totals": {
+    "reading_questions": 640,
+    "listening_questions": 500,
+    "writing_tasks": 40,
+    "speaking_parts": 80
+  },
+  "pack_ids": [
+    "pq-mock-a",
+    "pq-mock-b",
+    "pq-mock-c",
+    "pq-mock-d",
+    "pq-mock-e",
+    "pq-mock-f",
+    "pq-mock-g",
+    "pq-mock-h",
+    "pq-mock-i",
+    "pq-mock-j",
+    "pq-mock-k",
+    "pq-mock-l",
+    "pq-mock-m",
+    "pq-mock-n",
+    "pq-mock-o",
+    "pq-mock-p",
+    "pq-mock-q",
+    "pq-mock-r",
+    "pq-mock-s",
+    "pq-mock-t"
+  ],
+  "external_equivalence_pending": true
+}

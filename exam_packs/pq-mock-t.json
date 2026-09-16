@@ -1,0 +1,1228 @@
+{
+  "version": "46.20",
+  "pack_id": "pq-mock-t",
+  "title": "PET Quest Full Mock T",
+  "theme": "Clearwater",
+  "status": "full_four_skill_content_complete_external_equivalence_pending",
+  "reading": [
+    {
+      "id": "pq-mock-t-r1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What must students do before using the study room?",
+      "options": [
+        "Reserve a computer",
+        "Collect a key from reception",
+        "Leave before the afternoon"
+      ],
+      "answer": 1,
+      "source_text": "Clearwater Library: Students using the study room after 4 p.m. must collect a key from reception before entering.",
+      "source_label": "Clearwater Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-t-r1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What has changed about the activity?",
+      "options": [
+        "Its day",
+        "Its price",
+        "Its location"
+      ],
+      "answer": 0,
+      "source_text": "Clearwater Sports Centre: The film club has moved from Saturday to Monday. Your booking is still valid.",
+      "source_label": "Clearwater Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-t-r1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What can customers buy after 2 p.m.?",
+      "options": [
+        "Only hot meals",
+        "Snacks and drinks",
+        "Nothing at all"
+      ],
+      "answer": 1,
+      "source_text": "Cafe notice: Please order hot food before 2 p.m. Cold snacks and drinks are available until closing time.",
+      "source_label": "Clearwater Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-t-r1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where did Max leave the project folder?",
+      "options": [
+        "In the classroom",
+        "At reception",
+        "In the library"
+      ],
+      "answer": 1,
+      "source_text": "Message from Max: I left your project folder with the receptionist because the classroom was locked.",
+      "source_label": "Clearwater Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-t-r1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "Where will route 39 stop today?",
+      "options": [
+        "At the market",
+        "Outside the museum",
+        "At the sports centre"
+      ],
+      "answer": 1,
+      "source_text": "Bus notice: Route 39 will stop outside the museum today instead of the market because of roadworks.",
+      "source_label": "Clearwater Notice",
+      "focus": "short-message"
+    },
+    {
+      "id": "pq-mock-t-r2-1",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Maya wants a free weekend activity and does not own special equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Clearwater Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Clearwater Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Clearwater Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Clearwater Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Clearwater Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Clearwater Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Clearwater Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Clearwater Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "A",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-t-r2-2",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Leo would like to practise English by speaking with people from another school.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Clearwater Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Clearwater Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Clearwater Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Clearwater Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Clearwater Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Clearwater Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Clearwater Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Clearwater Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "C",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-t-r2-3",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Amelia enjoys writing and wants to meet members of the local community.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Clearwater Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Clearwater Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Clearwater Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Clearwater Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Clearwater Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Clearwater Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Clearwater Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Clearwater Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "D",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-t-r2-4",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Noah is interested in video and design but cannot attend at weekends.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Clearwater Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Clearwater Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Clearwater Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Clearwater Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Clearwater Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Clearwater Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Clearwater Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Clearwater Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "B",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-t-r2-5",
+      "part": 2,
+      "interaction": "matching",
+      "prompt": "Sofia wants an outdoor Sunday activity and already owns the necessary equipment.",
+      "options": [
+        {
+          "key": "A",
+          "title": "Clearwater Weekend Makers",
+          "text": "Saturday morning; practical projects; all equipment supplied; free."
+        },
+        {
+          "key": "B",
+          "title": "Clearwater Digital Creators",
+          "text": "Tuesday after school; design posters and short videos; tablets provided."
+        },
+        {
+          "key": "C",
+          "title": "Clearwater Conversation Circle",
+          "text": "Wednesday evening; informal English practice with visiting teenagers."
+        },
+        {
+          "key": "D",
+          "title": "Clearwater Young Journalists",
+          "text": "Thursday afternoon; interview local people and write short reports."
+        },
+        {
+          "key": "E",
+          "title": "Clearwater Family Cycle",
+          "text": "Sunday morning guided bike ride; participants must bring a bicycle."
+        },
+        {
+          "key": "F",
+          "title": "Clearwater Stage Crew",
+          "text": "Friday evening; learn lighting and sound; small materials fee."
+        },
+        {
+          "key": "G",
+          "title": "Clearwater Strategy Games",
+          "text": "Monday online; suitable for experienced players who enjoy competition."
+        },
+        {
+          "key": "H",
+          "title": "Clearwater Animal Helpers",
+          "text": "Saturday afternoon; volunteer with animals; minimum age fourteen."
+        }
+      ],
+      "answer": "E",
+      "focus": "matching-needs"
+    },
+    {
+      "id": "pq-mock-t-r3-1",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Why did the project begin?",
+      "options": [
+        "A teacher ordered it",
+        "Students wanted a practical project",
+        "The school received new equipment",
+        "Families requested daily meetings"
+      ],
+      "answer": 1,
+      "passage": "At Clearwater Academy, students recently created a new cycling group. The idea began after Amelia noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the arts centre and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-t-r3-2",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "Where did the group borrow equipment from?",
+      "options": [
+        "arts centre",
+        "a supermarket",
+        "a private company",
+        "the bus station"
+      ],
+      "answer": 0,
+      "passage": "At Clearwater Academy, students recently created a new cycling group. The idea began after Amelia noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the arts centre and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-t-r3-3",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What changed about the meeting schedule?",
+      "options": [
+        "They stopped meeting completely",
+        "They met every day",
+        "They chose two longer weekly sessions",
+        "They moved all work online"
+      ],
+      "answer": 2,
+      "passage": "At Clearwater Academy, students recently created a new cycling group. The idea began after Amelia noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the arts centre and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-t-r3-4",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What did teachers mainly provide?",
+      "options": [
+        "All project decisions",
+        "Safety guidance",
+        "Money for equipment",
+        "Friday reports"
+      ],
+      "answer": 1,
+      "passage": "At Clearwater Academy, students recently created a new cycling group. The idea began after Amelia noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the arts centre and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-t-r3-5",
+      "part": 3,
+      "interaction": "multiple_choice",
+      "prompt": "What happens every Friday?",
+      "options": [
+        "A short update is published",
+        "Younger pupils lead the group",
+        "Families collect materials",
+        "The project closes"
+      ],
+      "answer": 0,
+      "passage": "At Clearwater Academy, students recently created a new cycling group. The idea began after Amelia noticed that many classmates wanted a practical project they could manage themselves. Instead of asking the school to buy everything, the group borrowed equipment from the arts centre and collected reusable materials from families. At first, the team planned to meet every day, but they soon discovered that two longer sessions each week worked better. Teachers helped with safety rules but allowed students to make most decisions. The group now publishes a short update every Friday, and next term it hopes to invite younger pupils to join selected activities.",
+      "focus": "detail"
+    },
+    {
+      "id": "pq-mock-t-r4-1",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 1.",
+      "passage": "A group of students at Clearwater School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "C",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-t-r4-2",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 2.",
+      "passage": "A group of students at Clearwater School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "D",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-t-r4-3",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 3.",
+      "passage": "A group of students at Clearwater School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "A",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-t-r4-4",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 4.",
+      "passage": "A group of students at Clearwater School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "F",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-t-r4-5",
+      "part": 4,
+      "interaction": "gapped_text",
+      "prompt": "Choose the sentence for gap 5.",
+      "passage": "A group of students at Clearwater School decided to organise a one-day community showcase. [1] They first asked classmates which activities would attract both teenagers and families. [2] Next, they contacted local volunteers who could demonstrate useful skills. [3] The organisers then produced a timetable so that the most popular sessions would not all happen at the same time. [4] On the day, more visitors arrived than expected, but student guides helped everyone find the correct rooms. [5] Afterwards, the team collected comments and agreed on changes for the following year.",
+      "options": [
+        {
+          "key": "A",
+          "text": "One local expert agreed to demonstrate a simple practical activity."
+        },
+        {
+          "key": "B",
+          "text": "The school canteen normally closes before the afternoon."
+        },
+        {
+          "key": "C",
+          "text": "Their first challenge was deciding what the event should contain."
+        },
+        {
+          "key": "D",
+          "text": "The answers showed that hands-on activities were the most popular."
+        },
+        {
+          "key": "E",
+          "text": "Several students preferred to stay at home that weekend."
+        },
+        {
+          "key": "F",
+          "text": "This reduced queues and allowed visitors to choose more easily."
+        },
+        {
+          "key": "G",
+          "text": "The final poster used four different colours."
+        },
+        {
+          "key": "H",
+          "text": "This support was especially useful when the entrance became busy."
+        }
+      ],
+      "answer": "H",
+      "focus": "cohesion"
+    },
+    {
+      "id": "pq-mock-t-r5-1",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our class decided to ___ a weekly book review.",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "bring"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r5-2",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We wanted everyone to ___ part, even students who were shy.",
+      "options": [
+        "make",
+        "take",
+        "do",
+        "get"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r5-3",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "The first meeting was ___ than we expected.",
+      "options": [
+        "busy",
+        "busier",
+        "busiest",
+        "more busy"
+      ],
+      "answer": 1,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r5-4",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "Our teacher suggested ___ a clear plan before recording.",
+      "options": [
+        "write",
+        "to writing",
+        "writing",
+        "wrote"
+      ],
+      "answer": 2,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r5-5",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "We learned how to work ___ a team and share jobs fairly.",
+      "options": [
+        "as",
+        "at",
+        "by",
+        "for"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r5-6",
+      "part": 5,
+      "interaction": "multiple_choice_cloze",
+      "prompt": "By the end of the month, the project had become very ___ with students.",
+      "options": [
+        "popular",
+        "ordinary",
+        "private",
+        "empty"
+      ],
+      "answer": 0,
+      "focus": "lexico-grammar"
+    },
+    {
+      "id": "pq-mock-t-r6-1",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "My cousin has been interested ___ sport since she was ten.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-t-r6-2",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "We arrived early ___ we could choose good seats.",
+      "answer": "so",
+      "focus": "linker",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-t-r6-3",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "There were not ___ chairs for everyone at first.",
+      "answer": "enough",
+      "focus": "quantifier",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-t-r6-4",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "The teacher asked us ___ bring our notebooks.",
+      "answer": "to",
+      "focus": "infinitive",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-t-r6-5",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "I have never taken part ___ an event like this before.",
+      "answer": "in",
+      "focus": "preposition",
+      "answer_words": 1
+    },
+    {
+      "id": "pq-mock-t-r6-6",
+      "part": 6,
+      "interaction": "open_cloze",
+      "prompt": "If the weather is good, we ___ meet outside tomorrow.",
+      "answer": "will",
+      "focus": "future",
+      "answer_words": 1
+    }
+  ],
+  "listening": [
+    {
+      "id": "pq-mock-t-l1-1",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Peter and Maya meet?",
+      "options": [
+        "ten thirty",
+        "five thirty",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-134",
+      "transcript": "Peter: Are we still meeting at the music room at ten thirty? Maya: Not now. Let's meet at five thirty because we can invite more friends. Peter: Great. Then we can study together.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-134.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-2",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Isla and Grace meet?",
+      "options": [
+        "seven forty",
+        "eleven forty-five",
+        "nine fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-135",
+      "transcript": "Isla: Are we still meeting at the sports centre at seven forty? Grace: Not now. Let's meet at eleven forty-five because the buses run more often. Isla: Great. Then we can watch a film.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-135.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-3",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Daniel and Katie meet?",
+      "options": [
+        "six fifteen",
+        "quarter to four",
+        "eleven forty-five"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-136",
+      "transcript": "Daniel: Are we still meeting at the science club at six fifteen? Katie: Not now. Let's meet at quarter to four because we need more time to prepare. Daniel: Great. Then we can have a picnic.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-136.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-4",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Maya and Chloe meet?",
+      "options": [
+        "six fifteen",
+        "eleven forty-five",
+        "quarter to four"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-137",
+      "transcript": "Maya: Are we still meeting at the museum at six fifteen? Chloe: Not now. Let's meet at eleven forty-five because we already have the equipment. Maya: Great. Then we can join a photography club.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-137.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-5",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Peter and Jack meet?",
+      "options": [
+        "half past one",
+        "five thirty",
+        "nine fifteen"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-138",
+      "transcript": "Peter: Are we still meeting at the school hall at half past one? Jack: Not now. Let's meet at five thirty because it will be less crowded. Peter: Great. Then we can go swimming.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-138.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-6",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Amy and Jack meet?",
+      "options": [
+        "quarter to four",
+        "eleven forty-five",
+        "seven forty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-139",
+      "transcript": "Amy: Are we still meeting at the cinema at quarter to four? Jack: Not now. Let's meet at eleven forty-five because it will be less crowded. Amy: Great. Then we can prepare a class project.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-139.mp3"
+    },
+    {
+      "id": "pq-mock-t-l1-7",
+      "part": 1,
+      "interaction": "multiple_choice",
+      "prompt": "What time will Ruby and Harry meet?",
+      "options": [
+        "quarter to four",
+        "nine fifteen",
+        "two twenty"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p1-140",
+      "transcript": "Ruby: Are we still meeting at the train station at quarter to four? Harry: Not now. Let's meet at nine fifteen because the other place is closed. Ruby: Great. Then we can play basketball.",
+      "focus": "time and plan",
+      "audio_file": "assets/audio/pet_bank/part1/pqbank-p1-140.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-1",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "watch a film",
+        "buy a birthday present",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-115",
+      "transcript": "Finn: I thought we could watch a film at the music room. Grace: I'd rather buy a birthday present at the cafe. It costs ten pounds, but the other place is closed. Finn: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-115.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-2",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "go cycling",
+        "visit the museum",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-116",
+      "transcript": "Chloe: I thought we could go cycling at the swimming pool. Tara: I'd rather visit the museum at the train station. It costs six pounds, but we need more time to prepare. Chloe: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-116.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-3",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "study together",
+        "prepare a class project",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-117",
+      "transcript": "Sam: I thought we could study together at the sports centre. Ben: I'd rather prepare a class project at the shopping centre. It costs six pounds, but the weather should be better. Sam: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-117.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-4",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "practise music",
+        "have a picnic",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-118",
+      "transcript": "Ben: I thought we could practise music at the cafe. Harry: I'd rather have a picnic at the sports centre. It costs eight pounds, but we can invite more friends. Ben: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-118.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-5",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "practise music",
+        "go swimming",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-119",
+      "transcript": "Will: I thought we could practise music at the library. Leo: I'd rather go swimming at the sports centre. It costs four pounds, but it will be less crowded. Will: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-119.mp3"
+    },
+    {
+      "id": "pq-mock-t-l2-6",
+      "part": 2,
+      "interaction": "multiple_choice",
+      "prompt": "What do they finally decide to do?",
+      "options": [
+        "go swimming",
+        "watch a film",
+        "stay at home"
+      ],
+      "answer": 1,
+      "audio_id": "pqbank-p2-120",
+      "transcript": "Harry: I thought we could go swimming at the park. Daniel: I'd rather watch a film at the train station. It costs six pounds, but we need more time to prepare. Harry: That sounds more practical. Let's do that.",
+      "focus": "opinion and decision",
+      "audio_file": "assets/audio/pet_bank/part2/pqbank-p2-120.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-1",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The activity takes place on ___.",
+      "answer": "Friday",
+      "accepted_answers": [
+        "Friday"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-2",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The first activity begins at ___.",
+      "answer": "quarter to four",
+      "accepted_answers": [
+        "quarter to four"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-3",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "The ticket costs ___.",
+      "answer": "nine pounds fifty",
+      "accepted_answers": [
+        "nine pounds fifty"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-4",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Students should bring a ___.",
+      "answer": "notebook",
+      "accepted_answers": [
+        "notebook"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-5",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "After the main activity, they will ___.",
+      "answer": "go cycling",
+      "accepted_answers": [
+        "go cycling"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l3-6",
+      "part": 3,
+      "interaction": "gap_fill",
+      "prompt": "Questions should be asked before ___.",
+      "answer": "Friday",
+      "accepted_answers": [
+        "Friday"
+      ],
+      "audio_id": "pqbank-p3-020",
+      "transcript": "Hello, I'm Chloe, and I'd like to tell you about our science project. It will take place at the science club on Friday. The first activity begins at quarter to four, so please arrive about fifteen minutes earlier. The ticket costs nine pounds fifty. You should bring a notebook and a bottle of water. After the main activity, we will go cycling. We changed the original plan because the other place is closed. If you have any questions, ask your teacher before Friday.",
+      "focus": "extended-monologue-detail",
+      "audio_file": "assets/audio/pet_bank/part3/pqbank-p3-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-1",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What did Grace especially enjoy?",
+      "options": [
+        "go swimming",
+        "join a photography club",
+        "school hall"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-2",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "How did Grace feel later?",
+      "options": [
+        "More confident",
+        "More worried",
+        "Completely bored"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-3",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Would Grace take part again?",
+      "options": [
+        "Yes",
+        "No",
+        "Not sure"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-4",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What would Grace like to do next time?",
+      "options": [
+        "join a photography club",
+        "go swimming",
+        "stay at home"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-5",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "Which place would Grace use instead?",
+      "options": [
+        "school hall",
+        "the same place",
+        "the train station"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    },
+    {
+      "id": "pq-mock-t-l4-6",
+      "part": 4,
+      "interaction": "multiple_choice",
+      "prompt": "What is Grace's overall attitude?",
+      "options": [
+        "Mostly positive",
+        "Mostly negative",
+        "Completely uncertain"
+      ],
+      "answer": 0,
+      "audio_id": "pqbank-p4-020",
+      "transcript": "Interviewer: Grace, what did you think about the holiday course? Grace: I enjoyed it, especially when we could go swimming. Interviewer: Was anything difficult? Grace: At first, yes, because it is cheaper. But later I felt more confident. Interviewer: Would you take part again? Grace: Definitely, although next time I'd like to join a photography club. Interviewer: And what would you change? Grace: I'd use the school hall because the teacher recommended it. That would make the day easier for everyone.",
+      "focus": "interview-attitude-detail",
+      "audio_file": "assets/audio/pet_bank/part4/pqbank-p4-020.mp3"
+    }
+  ],
+  "writing": [
+    {
+      "part": 1,
+      "interaction": "email",
+      "prompt": "You received an email from your English-speaking friend Sofia, who is thinking about joining a new activity. Write an email to Sofia. Recommend an activity in Clearwater, explain why it would suit them, and suggest when you could go together.",
+      "target_words": 100
+    },
+    {
+      "part": 2,
+      "interaction": "choice",
+      "options": [
+        {
+          "type": "article",
+          "prompt": "Write an article about a place or activity in Clearwater that teenagers would enjoy. Explain what people can do there and why you recommend it."
+        },
+        {
+          "type": "story",
+          "prompt": "Your story must begin: \"As soon as we arrived in Clearwater, I realised the plan had changed.\""
+        }
+      ],
+      "target_words": 100
+    }
+  ],
+  "speaking": {
+    "parts": [
+      {
+        "part": 1,
+        "type": "interview",
+        "prompts": [
+          "What do you usually do after school?",
+          "Tell us about a place you enjoy visiting.",
+          "What would you like to improve in your English?"
+        ]
+      },
+      {
+        "part": 2,
+        "type": "extended_turn_photo",
+        "prompt": "Describe a picture of young people taking part in a drama rehearsal in Clearwater. Say what you can see, what the people are doing and how they might feel.",
+        "photo_asset_required": true
+      },
+      {
+        "part": 3,
+        "type": "collaborative_task",
+        "prompt": "Two students, Maya and Sam, want to organise a class activity in Clearwater. Discuss these options: community garden, coding lab, a picnic, a museum visit and a film afternoon. Make suggestions, respond, compare alternatives and agree on the best choice.",
+        "mode": "interactive_candidate_simulator"
+      },
+      {
+        "part": 4,
+        "type": "discussion",
+        "prompts": [
+          "Do you prefer activities with friends or with family? Why?",
+          "What makes a school activity successful?",
+          "Should young people try new activities even if they are difficult at first? Why?"
+        ]
+      }
+    ],
+    "part3_mode": "interactive_candidate_simulator",
+    "external_human_pair_validation_required": true
+  },
+  "authoring": {
+    "cefr_target": "B1",
+    "created_for": "PET Quest",
+    "content_originality": "distinct_form_content",
+    "external_academic_signoff": false,
+    "psychometric_equivalence_validated": false,
+    "studio_audio_ready": false,
+    "generated_audio_ready": true,
+    "generated_audio_source": "PET Audio Bank V46.18 synthetic multi-voice",
+    "generated_audio_count": 15,
+    "voice_simulation_ready": true,
+    "voice_simulation_version": "46.18",
+    "listening_exam_mode": "1.00x_max_2_plays",
+    "writing_tasks": 2,
+    "speaking_parts": 4
+  },
+  "license": "original-petquest-content"
+}

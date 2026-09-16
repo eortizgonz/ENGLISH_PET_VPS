@@ -1,0 +1,21 @@
+PASS 15 audio files
+PASS lp1_1.mp3
+PASS lp1_2.mp3
+PASS lp1_3.mp3
+PASS lp1_4.mp3
+PASS lp1_5.mp3
+PASS lp1_6.mp3
+PASS lp1_7.mp3
+PASS lp2_1.mp3
+PASS lp2_2.mp3
+PASS lp2_3.mp3
+PASS lp2_4.mp3
+PASS lp2_5.mp3
+PASS lp2_6.mp3
+PASS lp3_monologue.mp3
+PASS lp4_interview.mp3
+PASS unlimited v40 default
+PASS optional strict v40
+PASS pause restart volume
+PASS unlimited v18 default
+AUDIO V46.10: 20/20 PASS

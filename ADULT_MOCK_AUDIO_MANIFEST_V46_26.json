@@ -1,0 +1,3008 @@
+{
+  "version": "46.26",
+  "count": 300,
+  "synthetic": true,
+  "human_recording": false,
+  "items": [
+    {
+      "audio_id": "pq-adult-a-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-a-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-2.mp3",
+      "text": "Announcement: The Bristol service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-a-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-a-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-a-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-a-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-a-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-a-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-a-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-a-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-a-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-a-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-a-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-a-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l3-shared.mp3",
+      "text": "Here are the final details for the Bristol weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-a-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-a/pq-adult-a-l4-shared.mp3",
+      "text": "Interviewer: Alex, you recently started working four days a week. Why did you make the change? Alex: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Alex: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Alex: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Alex: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Alex: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-a",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-b-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-b-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-2.mp3",
+      "text": "Announcement: The Manchester service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-b-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-b-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-b-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-b-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-b-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-b-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-b-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-b-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-b-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-b-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-b-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-b-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l3-shared.mp3",
+      "text": "Here are the final details for the Manchester weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-b-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-b/pq-adult-b-l4-shared.mp3",
+      "text": "Interviewer: Priya, you recently started working four days a week. Why did you make the change? Priya: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Priya: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Priya: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Priya: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Priya: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-b",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-c-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-c-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-2.mp3",
+      "text": "Announcement: The Leeds service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-c-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-c-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-c-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-c-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-c-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-c-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-c-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-c-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-c-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-c-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-c-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-c-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l3-shared.mp3",
+      "text": "Here are the final details for the Leeds weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-c-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-c/pq-adult-c-l4-shared.mp3",
+      "text": "Interviewer: Daniel, you recently started working four days a week. Why did you make the change? Daniel: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Daniel: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Daniel: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Daniel: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Daniel: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-c",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-d-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-d-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-2.mp3",
+      "text": "Announcement: The York service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-d-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-d-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-d-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-d-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-d-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-d-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-d-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-d-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-d-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-d-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-d-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-d-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l3-shared.mp3",
+      "text": "Here are the final details for the York weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-d-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-d/pq-adult-d-l4-shared.mp3",
+      "text": "Interviewer: Sofia, you recently started working four days a week. Why did you make the change? Sofia: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Sofia: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Sofia: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Sofia: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Sofia: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-d",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-e-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-e-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-2.mp3",
+      "text": "Announcement: The Brighton service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-e-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-e-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-e-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-e-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-e-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-e-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-e-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-e-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-e-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-e-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-e-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-e-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l3-shared.mp3",
+      "text": "Here are the final details for the Brighton weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-e-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-e/pq-adult-e-l4-shared.mp3",
+      "text": "Interviewer: Martin, you recently started working four days a week. Why did you make the change? Martin: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Martin: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Martin: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Martin: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Martin: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-e",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-f-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-f-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-2.mp3",
+      "text": "Announcement: The Cardiff service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-f-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-f-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-f-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-f-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-f-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-f-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-f-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-f-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-f-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-f-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-f-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-f-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l3-shared.mp3",
+      "text": "Here are the final details for the Cardiff weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-f-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-f/pq-adult-f-l4-shared.mp3",
+      "text": "Interviewer: Leila, you recently started working four days a week. Why did you make the change? Leila: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Leila: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Leila: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Leila: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Leila: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-f",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-g-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-g-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-2.mp3",
+      "text": "Announcement: The Edinburgh service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-g-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-g-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-g-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-g-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-g-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-g-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-g-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-g-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-g-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-g-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-g-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-g-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l3-shared.mp3",
+      "text": "Here are the final details for the Edinburgh weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-g-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-g/pq-adult-g-l4-shared.mp3",
+      "text": "Interviewer: James, you recently started working four days a week. Why did you make the change? James: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? James: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? James: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? James: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? James: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-g",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-h-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-h-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-2.mp3",
+      "text": "Announcement: The Oxford service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-h-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-h-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-h-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-h-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-h-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-h-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-h-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-h-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-h-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-h-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-h-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-h-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l3-shared.mp3",
+      "text": "Here are the final details for the Oxford weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-h-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-h/pq-adult-h-l4-shared.mp3",
+      "text": "Interviewer: Nina, you recently started working four days a week. Why did you make the change? Nina: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Nina: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Nina: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Nina: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Nina: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-h",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-i-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-i-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-2.mp3",
+      "text": "Announcement: The Bath service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-i-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-i-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-i-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-i-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-i-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-i-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-i-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-i-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-i-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-i-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-i-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-i-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l3-shared.mp3",
+      "text": "Here are the final details for the Bath weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-i-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-i/pq-adult-i-l4-shared.mp3",
+      "text": "Interviewer: Omar, you recently started working four days a week. Why did you make the change? Omar: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Omar: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Omar: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Omar: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Omar: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-i",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-j-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-j-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-2.mp3",
+      "text": "Announcement: The Liverpool service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-j-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-j-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-j-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-j-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-j-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-j-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-j-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-j-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-j-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-j-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-j-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-j-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l3-shared.mp3",
+      "text": "Here are the final details for the Liverpool weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-j-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-j/pq-adult-j-l4-shared.mp3",
+      "text": "Interviewer: Helen, you recently started working four days a week. Why did you make the change? Helen: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Helen: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Helen: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Helen: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Helen: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-j",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-k-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-k-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-2.mp3",
+      "text": "Announcement: The Glasgow service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-k-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-k-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-k-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-k-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-k-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-k-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-k-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-k-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-k-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-k-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-k-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-k-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l3-shared.mp3",
+      "text": "Here are the final details for the Glasgow weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-k-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-k/pq-adult-k-l4-shared.mp3",
+      "text": "Interviewer: Victor, you recently started working four days a week. Why did you make the change? Victor: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Victor: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Victor: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Victor: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Victor: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-k",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-l-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-l-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-2.mp3",
+      "text": "Announcement: The Cambridge service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-l-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-l-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-l-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-l-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-l-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-l-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-l-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-l-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-l-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-l-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-l-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-l-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l3-shared.mp3",
+      "text": "Here are the final details for the Cambridge weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-l-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-l/pq-adult-l-l4-shared.mp3",
+      "text": "Interviewer: Maya, you recently started working four days a week. Why did you make the change? Maya: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Maya: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Maya: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Maya: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Maya: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-l",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-m-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-m-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-2.mp3",
+      "text": "Announcement: The Norwich service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-m-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-m-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-m-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-m-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-m-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-m-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-m-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-m-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-m-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-m-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-m-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-m-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l3-shared.mp3",
+      "text": "Here are the final details for the Norwich weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-m-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-m/pq-adult-m-l4-shared.mp3",
+      "text": "Interviewer: Sam, you recently started working four days a week. Why did you make the change? Sam: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Sam: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Sam: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Sam: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Sam: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-m",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-n-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-n-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-2.mp3",
+      "text": "Announcement: The Exeter service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-n-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-n-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-n-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-n-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-n-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-n-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-n-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-gb",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-n-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-n-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152
+    },
+    {
+      "audio_id": "pq-adult-n-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-sc",
+      "speed_wpm": 158
+    },
+    {
+      "audio_id": "pq-adult-n-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-us",
+      "speed_wpm": 165
+    },
+    {
+      "audio_id": "pq-adult-n-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l3-shared.mp3",
+      "text": "Here are the final details for the Exeter weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-n",
+      "synthetic": true,
+      "human_recording": false,
+      "voice_profile": "en-wi",
+      "speed_wpm": 145
+    },
+    {
+      "audio_id": "pq-adult-n-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-n/pq-adult-n-l4-shared.mp3",
+      "text": "Interviewer: Clara, you recently started working four days a week. Why did you make the change? Clara: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Clara: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Clara: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Clara: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Clara: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-n",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-gb",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-2.mp3",
+      "text": "Announcement: The Birmingham service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-sc",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-us",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-wi",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-gb",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-sc",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-us",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-wi",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l3-shared.mp3",
+      "text": "Here are the final details for the Birmingham weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-o-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-o/pq-adult-o-l4-shared.mp3",
+      "text": "Interviewer: Peter, you recently started working four days a week. Why did you make the change? Peter: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Peter: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Peter: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Peter: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Peter: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-o",
+      "voice_profile": "en-gb",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-2.mp3",
+      "text": "Announcement: The Newcastle service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-sc",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-us",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-wi",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-gb",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-sc",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-us",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-wi",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l3-shared.mp3",
+      "text": "Here are the final details for the Newcastle weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-gb",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-p-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-p/pq-adult-p-l4-shared.mp3",
+      "text": "Interviewer: Aisha, you recently started working four days a week. Why did you make the change? Aisha: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Aisha: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Aisha: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Aisha: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Aisha: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-p",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-2.mp3",
+      "text": "Announcement: The Reading service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-sc",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-us",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-wi",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-gb",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-sc",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-us",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-wi",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-gb",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l3-shared.mp3",
+      "text": "Here are the final details for the Reading weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-q-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-q/pq-adult-q-l4-shared.mp3",
+      "text": "Interviewer: Luis, you recently started working four days a week. Why did you make the change? Luis: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Luis: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Luis: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Luis: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Luis: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-q",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-sc",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-2.mp3",
+      "text": "Announcement: The Sheffield service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-us",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-wi",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-gb",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-sc",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-us",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-wi",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-gb",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l3-shared.mp3",
+      "text": "Here are the final details for the Sheffield weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-r-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-r/pq-adult-r-l4-shared.mp3",
+      "text": "Interviewer: Emma, you recently started working four days a week. Why did you make the change? Emma: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Emma: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Emma: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Emma: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Emma: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-r",
+      "voice_profile": "en-sc",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-us",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-2.mp3",
+      "text": "Announcement: The Nottingham service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-wi",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-gb",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-sc",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-us",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-wi",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-gb",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l3-shared.mp3",
+      "text": "Here are the final details for the Nottingham weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-sc",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-s-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-s/pq-adult-s-l4-shared.mp3",
+      "text": "Interviewer: Jon, you recently started working four days a week. Why did you make the change? Jon: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Jon: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Jon: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Jon: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Jon: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-s",
+      "voice_profile": "en-us",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-1.mp3",
+      "text": "Receptionist: Your appointment was at quarter past nine, but the doctor is unavailable then. Can you come at quarter past ten instead? Patient: Yes, ten fifteen is fine.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-wi",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-2.mp3",
+      "text": "Announcement: The Plymouth service will not leave from platform two today. Please go to platform seven.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-3.mp3",
+      "text": "Bank adviser: The international transfer used to cost two pounds fifty, but the online fee is now one pound fifty.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-gb",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-4.mp3",
+      "text": "Caller: I asked for Friday, but there were no tables left. We booked Saturday evening instead.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-5.mp3",
+      "text": "Tenant: The heating is fine now. The problem is the kitchen tap; it keeps leaking.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-6.mp3",
+      "text": "Manager: We planned to use Room Eight, but two colleagues are travelling, so the meeting will be online.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-sc",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l1-7",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l1-7.mp3",
+      "text": "Courier message: Your parcel was expected Tuesday. Because of the holiday, delivery is now Wednesday.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-us",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-1",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-1.mp3",
+      "text": "I liked my old team, but I spent nearly two hours travelling each day. The new role pays about the same, but the office is fifteen minutes from home.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-wi",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-2",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-2.mp3",
+      "text": "The staff were helpful and breakfast was included. My room, however, faced a busy road and I found it difficult to sleep.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-wmids",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-3",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-3.mp3",
+      "text": "My internet connection was fine and the laptop screen worked normally. I called because the password reset link kept expiring.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-gb",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-4",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-4.mp3",
+      "text": "The nurse said I did not need an urgent appointment. She suggested resting, drinking plenty of water and calling again if I felt worse.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-rp",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-5",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-5.mp3",
+      "text": "I enjoy the neighbourhood food festival because I can walk there and there is no entrance fee. It is busy, but that is part of the atmosphere.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-uk-north",
+      "speed_wpm": 145,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l2-6",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l2-6.mp3",
+      "text": "Another company offered a slightly lower price, but this one could send an engineer the next morning, which mattered more to me.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-sc",
+      "speed_wpm": 152,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l3-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l3-shared.mp3",
+      "text": "Here are the final details for the Plymouth weekend travel workshop. It starts at nine thirty on Saturday in the Market Hall. Please use the side entrance because the main doors are being repaired. The morning session covers booking cheaper rail tickets, and after lunch we will discuss travel insurance. Bring a phone or tablet if you want to try the booking exercise. Lunch is not provided, but there is a café downstairs. The workshop finishes at four fifteen.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-us",
+      "speed_wpm": 158,
+      "synthetic": true,
+      "human_recording": false
+    },
+    {
+      "audio_id": "pq-adult-t-l4-shared",
+      "audio_file": "assets/audio/adult_mock_bank/pq-adult-t/pq-adult-t-l4-shared.mp3",
+      "text": "Interviewer: Fatima, you recently started working four days a week. Why did you make the change? Fatima: I wanted more time for family and a professional course. Interviewer: Was the lower salary difficult? Fatima: At first I worried about it, but I reduced commuting and lunch costs, so the difference was smaller than expected. Interviewer: What has surprised you most? Fatima: I am more focused on the days I work. I also plan my week more carefully. Interviewer: Would you recommend the arrangement to everyone? Fatima: Not automatically. It depends on income, responsibilities and whether the employer can offer flexibility. Interviewer: What will you do after the course? Fatima: I hope to apply for a role with more responsibility, but I want to keep one weekday free if possible.",
+      "pack_id": "pq-adult-t",
+      "voice_profile": "en-wi",
+      "speed_wpm": 165,
+      "synthetic": true,
+      "human_recording": false
+    }
+  ]
+}
