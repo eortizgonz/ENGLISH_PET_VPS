@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import os, json, sqlite3, hashlib, hmac, secrets, datetime, time, csv, io, re, shutil, threading, smtplib, ssl, math
+import os, json, hashlib, hmac, secrets, datetime, time, csv, io, re, shutil, threading, smtplib, ssl, math, subprocess
 from email.message import EmailMessage
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
@@ -8,7 +8,6 @@ import postgres_auth
 import postgres_content
 
 ROOT=Path(__file__).resolve().parent
-DB=Path(os.environ.get('PETQUEST_SQLITE_PATH', str(ROOT/'petquest.db')))
 BACKUP_DIR=Path(os.environ.get('PETQUEST_BACKUP_DIR', str(ROOT/'backups')))
 HOST=os.environ.get('PETQUEST_HOST','127.0.0.1')
 PORT=int(os.environ.get('PORT','8080'))
@@ -26,7 +25,7 @@ REQUIRE_SMTP_PRODUCTION=os.environ.get('PETQUEST_REQUIRE_SMTP_IN_PRODUCTION','1'
 REQUIRE_HTTPS_PRODUCTION=os.environ.get('PETQUEST_REQUIRE_HTTPS_IN_PRODUCTION','1')=='1'
 MAX_REQUEST_BYTES=int(os.environ.get('PETQUEST_MAX_REQUEST_BYTES','1048576'))
 STRICT_CORS_ORIGINS=[x.strip() for x in os.environ.get('PETQUEST_CORS_ORIGINS','').split(',') if x.strip()]
-DATABASE_ENGINE='sqlite'  # academic/runtime store remains SQLite in V46.30
+DATABASE_ENGINE='postgres'
 AUTH_DATABASE_ENGINE='postgres'
 REQUIRE_POSTGRES_AUTH=os.environ.get('PETQUEST_REQUIRE_POSTGRES_AUTH','1')=='1'
 RATE_LIMIT_WINDOW=60
@@ -46,7 +45,7 @@ VERIFY_HOURS=24
 PBKDF2_ITERS=310000
 ALLOWED_ROLES={'student','guardian','teacher','school','platform_support','admin','academic_reviewer','content_author'}
 ALLOWED_SKILLS={'reading','writing','listening','speaking'}
-APP_VERSION='46.30'
+APP_VERSION='46.31-pg'
 LICENSE_PLANS={'pilot':30,'school':500,'enterprise':5000}
 
 
@@ -60,8 +59,6 @@ def production_startup_checks():
         if DEV_MODE: errors.append('PETQUEST_DEV_MODE must be 0 in production')
         if REQUIRE_POSTGRES_PRODUCTION and not DATABASE_URL.lower().startswith(('postgresql://','postgres://')):
             errors.append('DATABASE_URL must be PostgreSQL in production')
-        if REQUIRE_POSTGRES_PRODUCTION and DATABASE_ENGINE!='postgres':
-            errors.append('runtime database engine is SQLite; PostgreSQL runtime migration is required before production')
         if SEED_DEMO_DATA: errors.append('PETQUEST_SEED_DEMO_DATA must be false in production')
         if REQUIRE_HTTPS_PRODUCTION and not PUBLIC_BASE_URL.lower().startswith('https://'):
             errors.append('PETQUEST_PUBLIC_BASE_URL must use HTTPS in production')
@@ -70,7 +67,6 @@ def production_startup_checks():
     return errors
 
 def known_demo_accounts_present():
-    if not DB.exists(): return False
     try:
         c=conn(); q=','.join('?' for _ in DEMO_EMAILS)
         n=c.execute(f'SELECT COUNT(*) FROM users WHERE lower(email) IN ({q})',tuple(sorted(DEMO_EMAILS))).fetchone()[0]
@@ -138,7 +134,7 @@ def send_email(to, subject, text):
     except Exception as exc:
         print('[PETQuest] email error:',exc); return False
 def cleanup_backups():
-    items=sorted(BACKUP_DIR.glob('*.db'), key=lambda x:x.stat().st_mtime, reverse=True)
+    items=sorted(BACKUP_DIR.glob('*.dump'), key=lambda x:x.stat().st_mtime, reverse=True)
     for old in items[max(1,BACKUP_RETENTION):]:
         try: old.unlink()
         except OSError: pass
@@ -263,152 +259,165 @@ def student_preparation_summary(student_id, school_id):
     }
 
 
-def conn():
-    c=sqlite3.connect(DB,timeout=10); c.row_factory=sqlite3.Row
-    c.execute('PRAGMA foreign_keys=ON'); c.execute('PRAGMA journal_mode=WAL'); c.execute('PRAGMA synchronous=NORMAL')
-    return c
+class CompatRow:
+    """SQLite-row compatible wrapper around a PostgreSQL tuple."""
+    __slots__=('columns','values','index')
+    def __init__(self, columns, values):
+        self.columns=tuple(columns or ())
+        self.values=tuple(values or ())
+        self.index={name:i for i,name in enumerate(self.columns)}
+    def __getitem__(self, key):
+        if isinstance(key,int): return self.values[key]
+        return self.values[self.index[key]]
+    def __iter__(self): return iter(self.values)
+    def __len__(self): return len(self.values)
+    def keys(self): return self.columns
+    def get(self,key,default=None):
+        try:return self[key]
+        except (KeyError,IndexError):return default
+    def items(self): return [(k,self[k]) for k in self.columns]
+    def __repr__(self): return repr(dict(self.items()))
+
+
+def _translate_sql(sql):
+    """Translate the small SQLite dialect used by the legacy runtime to PostgreSQL."""
+    q=str(sql)
+    q=re.sub(r'(?P<op>=|<>|!=)\s*"([^"\\]*)"', lambda m: m.group('op')+"'"+m.group(2).replace("'","''")+"'", q)
+    q=q.replace("date(created_at)=date('now')", "created_at::timestamptz::date=CURRENT_DATE")
+    q=q.replace("datetime('now','-24 hours')", "(CURRENT_TIMESTAMP - INTERVAL '24 hours')")
+    q=q.replace("datetime('now')", "CURRENT_TIMESTAMP")
+    ignore=False
+    if re.search(r'\bINSERT\s+OR\s+IGNORE\s+INTO\b',q,re.I):
+        q=re.sub(r'\bINSERT\s+OR\s+IGNORE\s+INTO\b','INSERT INTO',q,flags=re.I)
+        ignore=True
+    out=[]; single=False; double=False; i=0
+    while i<len(q):
+        ch=q[i]
+        if ch=="'" and not double:
+            out.append(ch)
+            if single and i+1<len(q) and q[i+1]=="'":
+                out.append(q[i+1]); i+=2; continue
+            single=not single; i+=1; continue
+        if ch=='"' and not single:
+            double=not double; out.append(ch); i+=1; continue
+        if ch=='?' and not single and not double: out.append('%s')
+        else: out.append(ch)
+        i+=1
+    q=''.join(out)
+    if ignore and ' ON CONFLICT ' not in q.upper(): q=q.rstrip().rstrip(';')+' ON CONFLICT DO NOTHING'
+    q=re.sub(r'ROUND\(AVG\(([^)]+)\),\s*1\)', r'ROUND(AVG(\1)::numeric,1)', q, flags=re.I)
+    return q
+
+
+_ID_TABLES={
+    'schools','users','courses','assignments','support_groups','intervention_runs',
+    'school_quality_snapshots','academic_review_snapshots','governance_goals','governance_actions',
+    'governance_reviews','teacher_availability','schedule_sessions','school_licenses','onboarding_items',
+    'release_acceptance_runs','strategic_targets','questions','audit_log','guardian_consents','privacy_requests',
+    'calibration_outcomes','anonymous_calibration_candidates','psychometric_reviews','academic_error_events',
+    'academic_remediation_attempts','mock_attempts','mock_item_responses','speaking_attempts',
+    'speaking_interaction_sessions','speaking_interaction_turns','learning_events','recovery_checks','planning_scenarios'
+}
+
+class PgResult:
+    def __init__(self, cursor, lastrowid=None):
+        self.cursor=cursor; self.lastrowid=lastrowid; self.rowcount=cursor.rowcount
+        self.columns=[d.name if hasattr(d,'name') else d[0] for d in (cursor.description or [])]
+    def _wrap(self,row): return None if row is None else CompatRow(self.columns,row)
+    def fetchone(self): return self._wrap(self.cursor.fetchone())
+    def fetchall(self): return [self._wrap(x) for x in self.cursor.fetchall()]
+
+class PgCompatConnection:
+    def __init__(self): self.raw=postgres_auth.connect()
+    def execute(self, sql, params=()):
+        q=_translate_sql(sql); cur=self.raw.cursor(); cur.execute(q,tuple(params or ()))
+        last_id=None
+        m=re.match(r'\s*INSERT\s+INTO\s+(?:public\.)?([a-zA-Z_][a-zA-Z0-9_]*)',q,re.I)
+        if m and m.group(1).lower() in _ID_TABLES:
+            try:
+                x=self.raw.cursor(); x.execute('SELECT LASTVAL()'); last_id=int(x.fetchone()[0]); x.close()
+            except Exception: last_id=None
+        return PgResult(cur,last_id)
+    def commit(self): self.raw.commit()
+    def rollback(self): self.raw.rollback()
+    def close(self): self.raw.close()
+
+
+def conn(): return PgCompatConnection()
+
 
 def audit(c,user_id,action,entity='',entity_id='',meta=None):
     c.execute('INSERT INTO audit_log(user_id,action,entity,entity_id,meta_json,created_at) VALUES(?,?,?,?,?,?)',
               (user_id,action,entity,str(entity_id or ''),json.dumps(meta or {},ensure_ascii=False),now()))
 
-def add_column_if_missing(c, table, column, ddl):
-    cols={r['name'] for r in c.execute(f'PRAGMA table_info({table})').fetchall()}
-    if column not in cols:c.execute(f'ALTER TABLE {table} ADD COLUMN {column} {ddl}')
+
+def _ensure_postgres_id_sequences():
+    """Give legacy BIGINT primary-key columns sequence defaults without dropping data."""
+    sql=r'''DO $$
+    DECLARE r record; seq text; mx bigint;
+    BEGIN
+      FOR r IN
+        SELECT c.table_name
+        FROM information_schema.columns c
+        JOIN information_schema.tables t ON t.table_schema=c.table_schema AND t.table_name=c.table_name
+        WHERE c.table_schema='public' AND c.column_name='id'
+          AND c.data_type IN ('smallint','integer','bigint')
+          AND c.column_default IS NULL AND t.table_type='BASE TABLE'
+      LOOP
+        seq := r.table_name || '_id_seq';
+        EXECUTE format('CREATE SEQUENCE IF NOT EXISTS public.%I',seq);
+        EXECUTE format('ALTER TABLE public.%I ALTER COLUMN id SET DEFAULT nextval(%L::regclass)',r.table_name,'public.'||seq);
+        EXECUTE format('SELECT COALESCE(MAX(id),0) FROM public.%I',r.table_name) INTO mx;
+        IF mx>0 THEN EXECUTE format('SELECT setval(%L::regclass,%s,true)','public.'||seq,mx);
+        ELSE EXECUTE format('SELECT setval(%L::regclass,1,false)','public.'||seq); END IF;
+      END LOOP;
+    END $$;'''
+    with postgres_auth.connect() as pg:
+        with pg.cursor() as cur: cur.execute(sql)
+        pg.commit()
+
+
+def runtime_health():
+    try:
+        c=conn(); r=c.execute('SELECT current_database() database,current_user db_user,(SELECT COUNT(*) FROM users) registered_users').fetchone(); c.close()
+        return {'ok':True,'database':r['database'],'user':r['db_user'],'registered_users':int(r['registered_users'] or 0),'identity_table':'users'}
+    except Exception as exc:
+        return {'ok':False,'database':postgres_auth.PG_DB,'user':postgres_auth.PG_USER,'error':str(exc)[:240]}
+
 
 def init_db():
-    if REQUIRE_POSTGRES_AUTH:
-        postgres_auth.ensure_database_exists()
-        postgres_auth.init_schema()
-    BACKUP_DIR.mkdir(parents=True,exist_ok=True)
-    c=conn()
-    c.executescript('''
-    CREATE TABLE IF NOT EXISTS schools(id INTEGER PRIMARY KEY,name TEXT NOT NULL,created_at TEXT);
-    CREATE TABLE IF NOT EXISTS users(id INTEGER PRIMARY KEY,email TEXT UNIQUE NOT NULL,password_hash TEXT NOT NULL,name TEXT NOT NULL,role TEXT NOT NULL CHECK(role IN ('student','guardian','teacher','school','platform_support','admin','academic_reviewer','content_author')),school_id INTEGER,created_at TEXT NOT NULL,disabled INTEGER DEFAULT 0,verified_at TEXT,last_login_at TEXT,username TEXT,profile_mode TEXT DEFAULT 'schools',FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS sessions(token TEXT PRIMARY KEY,user_id INTEGER NOT NULL,created_at TEXT NOT NULL,expires_at TEXT NOT NULL,last_seen_at TEXT NOT NULL,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS login_attempts(email TEXT PRIMARY KEY,failures INTEGER NOT NULL DEFAULT 0,locked_until TEXT,updated_at TEXT NOT NULL);
-    CREATE TABLE IF NOT EXISTS account_tokens(token TEXT PRIMARY KEY,user_id INTEGER NOT NULL,kind TEXT NOT NULL CHECK(kind IN ('reset','verify')),created_at TEXT NOT NULL,expires_at TEXT NOT NULL,used_at TEXT,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS courses(id INTEGER PRIMARY KEY,school_id INTEGER NOT NULL,name TEXT NOT NULL,teacher_id INTEGER,created_at TEXT,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(teacher_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS enrollments(course_id INTEGER NOT NULL,user_id INTEGER NOT NULL,PRIMARY KEY(course_id,user_id),FOREIGN KEY(course_id) REFERENCES courses(id),FOREIGN KEY(user_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS assignments(id INTEGER PRIMARY KEY,course_id INTEGER NOT NULL,title TEXT NOT NULL,skill TEXT NOT NULL,due_date TEXT,status TEXT DEFAULT 'active',created_at TEXT NOT NULL,FOREIGN KEY(course_id) REFERENCES courses(id));
-    CREATE TABLE IF NOT EXISTS support_groups(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,course_id INTEGER,name TEXT NOT NULL,skill TEXT NOT NULL,focus TEXT,status TEXT DEFAULT 'active',created_by INTEGER,created_at TEXT NOT NULL,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(course_id) REFERENCES courses(id),FOREIGN KEY(created_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS support_group_members(group_id INTEGER NOT NULL,user_id INTEGER NOT NULL,PRIMARY KEY(group_id,user_id),FOREIGN KEY(group_id) REFERENCES support_groups(id) ON DELETE CASCADE,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS intervention_runs(id INTEGER PRIMARY KEY AUTOINCREMENT,group_id INTEGER NOT NULL UNIQUE,course_id INTEGER NOT NULL,school_id INTEGER NOT NULL,skill TEXT NOT NULL,status TEXT DEFAULT 'active',baseline_average REAL DEFAULT 0,current_average REAL DEFAULT 0,delta REAL DEFAULT 0,recommendation TEXT DEFAULT 'collect_more_data',success_criteria TEXT,created_at TEXT NOT NULL,last_evaluated_at TEXT,closed_at TEXT,created_by INTEGER,FOREIGN KEY(group_id) REFERENCES support_groups(id) ON DELETE CASCADE,FOREIGN KEY(course_id) REFERENCES courses(id),FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS intervention_run_members(run_id INTEGER NOT NULL,user_id INTEGER NOT NULL,baseline_score REAL DEFAULT 0,current_score REAL DEFAULT 0,delta REAL DEFAULT 0,PRIMARY KEY(run_id,user_id),FOREIGN KEY(run_id) REFERENCES intervention_runs(id) ON DELETE CASCADE,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS school_quality_snapshots(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,period_label TEXT NOT NULL,metrics_json TEXT NOT NULL,created_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(created_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS academic_review_snapshots(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,period_label TEXT NOT NULL,window_type TEXT NOT NULL DEFAULT 'monthly',payload_json TEXT NOT NULL,created_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(created_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS governance_goals(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,title TEXT NOT NULL,metric TEXT NOT NULL,target_value REAL NOT NULL,baseline_value REAL DEFAULT 0,current_value REAL DEFAULT 0,owner_user_id INTEGER,due_date TEXT,status TEXT DEFAULT 'active',created_at TEXT NOT NULL,updated_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS governance_actions(id INTEGER PRIMARY KEY AUTOINCREMENT,goal_id INTEGER NOT NULL,school_id INTEGER NOT NULL,title TEXT NOT NULL,owner_user_id INTEGER,due_date TEXT,status TEXT DEFAULT 'open',expected_impact TEXT,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(goal_id) REFERENCES governance_goals(id) ON DELETE CASCADE,FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS governance_reviews(id INTEGER PRIMARY KEY AUTOINCREMENT,goal_id INTEGER NOT NULL,school_id INTEGER NOT NULL,observed_value REAL NOT NULL,decision TEXT NOT NULL,note TEXT,created_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(goal_id) REFERENCES governance_goals(id) ON DELETE CASCADE,FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS teacher_availability(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,teacher_id INTEGER NOT NULL,weekday INTEGER NOT NULL,start_min INTEGER NOT NULL,end_min INTEGER NOT NULL,created_at TEXT NOT NULL,UNIQUE(teacher_id,weekday,start_min,end_min),FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(teacher_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS schedule_sessions(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,course_id INTEGER,support_group_id INTEGER,teacher_id INTEGER NOT NULL,weekday INTEGER NOT NULL,start_min INTEGER NOT NULL,duration_min INTEGER NOT NULL,status TEXT DEFAULT 'planned',label TEXT,created_at TEXT NOT NULL,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(course_id) REFERENCES courses(id),FOREIGN KEY(support_group_id) REFERENCES support_groups(id),FOREIGN KEY(teacher_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS school_licenses(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,plan TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'active',student_seats INTEGER NOT NULL,teacher_seats INTEGER NOT NULL DEFAULT 25,starts_at TEXT NOT NULL,expires_at TEXT,created_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS onboarding_items(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,item_key TEXT NOT NULL,status TEXT NOT NULL DEFAULT 'pending',completed_at TEXT,updated_by INTEGER,updated_at TEXT NOT NULL,UNIQUE(school_id,item_key),FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS release_acceptance_runs(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER,score REAL NOT NULL,blockers_json TEXT NOT NULL,warnings_json TEXT NOT NULL,checks_json TEXT NOT NULL,created_at TEXT NOT NULL,created_by INTEGER);
-    CREATE TABLE IF NOT EXISTS strategic_targets(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,year INTEGER NOT NULL,metric TEXT NOT NULL,target_value REAL NOT NULL,owner_user_id INTEGER,status TEXT DEFAULT 'active',note TEXT,created_at TEXT NOT NULL,updated_at TEXT NOT NULL,created_by INTEGER,FOREIGN KEY(school_id) REFERENCES schools(id));
-    CREATE TABLE IF NOT EXISTS questions(id INTEGER PRIMARY KEY AUTOINCREMENT,external_id TEXT UNIQUE,skill TEXT NOT NULL,part INTEGER,level INTEGER,focus TEXT,prompt TEXT NOT NULL,options_json TEXT,answer_index INTEGER,explanation TEXT,tip TEXT,status TEXT DEFAULT 'draft',created_by INTEGER,created_at TEXT NOT NULL,FOREIGN KEY(created_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS snapshots(user_id INTEGER PRIMARY KEY,payload TEXT NOT NULL,updated_at TEXT NOT NULL,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS audit_log(id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER,action TEXT NOT NULL,entity TEXT,entity_id TEXT,meta_json TEXT,created_at TEXT NOT NULL,FOREIGN KEY(user_id) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS guardian_consents(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,guardian_name TEXT NOT NULL,guardian_email TEXT NOT NULL,consent_version TEXT NOT NULL,accepted_at TEXT NOT NULL,revoked_at TEXT,recorded_by INTEGER,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE,FOREIGN KEY(recorded_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS privacy_requests(id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER NOT NULL,request_type TEXT NOT NULL CHECK(request_type IN ('delete','export','rectify')),status TEXT NOT NULL DEFAULT 'open',note TEXT,requested_at TEXT NOT NULL,resolved_at TEXT,resolved_by INTEGER,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE,FOREIGN KEY(resolved_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS calibration_outcomes(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,student_id INTEGER NOT NULL,source TEXT NOT NULL,predicted_readiness REAL NOT NULL,actual_scale_score REAL,actual_pass INTEGER,exam_date TEXT,recorded_at TEXT NOT NULL,recorded_by INTEGER,notes TEXT,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE,FOREIGN KEY(recorded_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS anonymous_calibration_candidates(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,anon_id TEXT NOT NULL,predicted_readiness REAL NOT NULL,actual_scale_score REAL NOT NULL,cambridge_band TEXT NOT NULL,source TEXT NOT NULL,exam_date TEXT,cohort_label TEXT,recorded_at TEXT NOT NULL,recorded_by INTEGER,notes TEXT,UNIQUE(school_id,anon_id),FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(recorded_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS psychometric_reviews(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,reviewer_name TEXT NOT NULL,organization TEXT NOT NULL,credentials TEXT NOT NULL,independent INTEGER NOT NULL DEFAULT 0,decision TEXT NOT NULL,evidence_ref TEXT NOT NULL,reviewed_at TEXT NOT NULL,recorded_by INTEGER NOT NULL,notes TEXT,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(recorded_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS academic_error_events(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,skill TEXT NOT NULL,part INTEGER,competence TEXT,subcompetence TEXT,error_code TEXT,severity TEXT,original_text TEXT,correction TEXT,mastery_proxy REAL,occurred_at TEXT NOT NULL,source TEXT,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS academic_remediation_attempts(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,error_code TEXT NOT NULL,prompt TEXT,answer TEXT,correct INTEGER NOT NULL DEFAULT 0,attempted_at TEXT NOT NULL,source TEXT,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS mock_attempts(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,pack_id TEXT NOT NULL,skill TEXT NOT NULL,total_items INTEGER NOT NULL,correct_items INTEGER NOT NULL,pct REAL NOT NULL,started_at TEXT,finished_at TEXT NOT NULL,source TEXT,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS mock_item_responses(id INTEGER PRIMARY KEY AUTOINCREMENT,attempt_id INTEGER NOT NULL,student_id INTEGER NOT NULL,pack_id TEXT NOT NULL,skill TEXT NOT NULL,part INTEGER NOT NULL,item_id TEXT NOT NULL,answer_text TEXT,answer_option INTEGER,is_correct INTEGER NOT NULL,response_ms INTEGER,created_at TEXT NOT NULL,FOREIGN KEY(attempt_id) REFERENCES mock_attempts(id) ON DELETE CASCADE,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS speaking_attempts(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,part INTEGER NOT NULL,mode TEXT NOT NULL,transcript TEXT,duration_ms INTEGER NOT NULL DEFAULT 0,metrics_json TEXT NOT NULL,rubric_json TEXT NOT NULL,score_pct REAL NOT NULL DEFAULT 0,audio_local_key TEXT,created_at TEXT NOT NULL,source TEXT,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS speaking_interaction_sessions(id INTEGER PRIMARY KEY AUTOINCREMENT,student_id INTEGER NOT NULL,scenario_id TEXT NOT NULL,scenario_title TEXT,metrics_json TEXT NOT NULL,rubric_json TEXT NOT NULL,score_pct REAL NOT NULL DEFAULT 0,created_at TEXT NOT NULL,source TEXT,FOREIGN KEY(student_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS speaking_interaction_turns(id INTEGER PRIMARY KEY AUTOINCREMENT,session_id INTEGER NOT NULL,turn_no INTEGER NOT NULL,role TEXT NOT NULL CHECK(role IN ('ai','student')),text TEXT NOT NULL,functions_json TEXT NOT NULL DEFAULT '{}',created_at TEXT NOT NULL,FOREIGN KEY(session_id) REFERENCES speaking_interaction_sessions(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS learning_events(id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER NOT NULL,event_type TEXT NOT NULL,skill TEXT,item_id TEXT,success INTEGER,minutes REAL DEFAULT 0,meta_json TEXT,created_at TEXT NOT NULL,FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE);
-    CREATE TABLE IF NOT EXISTS recovery_checks(id INTEGER PRIMARY KEY AUTOINCREMENT,backup_name TEXT NOT NULL,ok INTEGER NOT NULL,integrity_result TEXT,checked_at TEXT NOT NULL,checked_by INTEGER,FOREIGN KEY(checked_by) REFERENCES users(id));
-    CREATE TABLE IF NOT EXISTS planning_scenarios(id INTEGER PRIMARY KEY AUTOINCREMENT,school_id INTEGER NOT NULL,scenario_type TEXT NOT NULL,inputs_json TEXT NOT NULL,result_json TEXT NOT NULL,created_at TEXT NOT NULL,created_by INTEGER NOT NULL,FOREIGN KEY(school_id) REFERENCES schools(id),FOREIGN KEY(created_by) REFERENCES users(id));
-    CREATE INDEX IF NOT EXISTS idx_learning_events_user ON learning_events(user_id,created_at);
-    CREATE INDEX IF NOT EXISTS idx_recovery_checks_time ON recovery_checks(checked_at);
-    CREATE INDEX IF NOT EXISTS idx_planning_scenarios_school ON planning_scenarios(school_id,scenario_type,created_at);
-    CREATE INDEX IF NOT EXISTS idx_mock_item_pack ON mock_item_responses(pack_id,item_id);
-    CREATE INDEX IF NOT EXISTS idx_mock_attempt_pack ON mock_attempts(pack_id,skill,finished_at);
-    CREATE INDEX IF NOT EXISTS idx_speaking_attempts_student ON speaking_attempts(student_id,created_at);
-    CREATE INDEX IF NOT EXISTS idx_speaking_interactions_student ON speaking_interaction_sessions(student_id,created_at);
-    CREATE INDEX IF NOT EXISTS idx_speaking_interaction_turns_session ON speaking_interaction_turns(session_id,turn_no);
-    CREATE INDEX IF NOT EXISTS idx_calibration_school ON calibration_outcomes(school_id,exam_date,recorded_at);
-    CREATE INDEX IF NOT EXISTS idx_anon_calibration_school ON anonymous_calibration_candidates(school_id,actual_scale_score,recorded_at);
-    CREATE INDEX IF NOT EXISTS idx_error_events_student ON academic_error_events(student_id,skill,error_code,occurred_at);
-    CREATE INDEX IF NOT EXISTS idx_remediation_student ON academic_remediation_attempts(student_id,error_code,attempted_at);
-    CREATE INDEX IF NOT EXISTS idx_consents_student ON guardian_consents(student_id,accepted_at);
-    CREATE INDEX IF NOT EXISTS idx_privacy_requests_status ON privacy_requests(status,requested_at);
-    CREATE INDEX IF NOT EXISTS idx_audit_created ON audit_log(created_at);
-    CREATE INDEX IF NOT EXISTS idx_assignments_course ON assignments(course_id,due_date);
-    CREATE INDEX IF NOT EXISTS idx_support_groups_school ON support_groups(school_id,course_id,status);
-    CREATE INDEX IF NOT EXISTS idx_intervention_runs_school ON intervention_runs(school_id,course_id,status);
-    CREATE INDEX IF NOT EXISTS idx_quality_snapshots_school ON school_quality_snapshots(school_id,created_at);
-    CREATE INDEX IF NOT EXISTS idx_academic_review_school ON academic_review_snapshots(school_id,window_type,created_at);
-    CREATE INDEX IF NOT EXISTS idx_strategic_targets_school ON strategic_targets(school_id,year,status);
-    CREATE INDEX IF NOT EXISTS idx_tokens_user_kind ON account_tokens(user_id,kind,expires_at);
-    ''')
-    add_column_if_missing(c,'schools','created_at','TEXT')
-    add_column_if_missing(c,'users','verified_at','TEXT')
-    add_column_if_missing(c,'users','last_login_at','TEXT')
-    add_column_if_missing(c,'users','username','TEXT')
-    add_column_if_missing(c,'users','profile_mode',"TEXT DEFAULT 'schools'")
-    add_column_if_missing(c,'courses','created_at','TEXT')
-    if SEED_DEMO_DATA and c.execute('SELECT COUNT(*) FROM schools').fetchone()[0]==0:
-        cur=c.execute('INSERT INTO schools(name,created_at) VALUES(?,?)',('PET Quest Demo School',now())); sid=cur.lastrowid
-        demos=[('student@petquest.local','Student123!','Mia Student','student'),('teacher@petquest.local','Teacher123!','Alex Teacher','teacher'),('school@petquest.local','School123!','School Coordinator','school'),('admin@petquest.local','Admin123!','Platform Admin','admin')]
-        ids={}
-        for email,pw,name,role in demos:
-            cur=c.execute('INSERT INTO users(email,password_hash,name,role,school_id,created_at,verified_at) VALUES(?,?,?,?,?,?,?)',(email,hash_pw(pw),name,role,sid,now(),now())); ids[role]=cur.lastrowid
-        cur=c.execute('INSERT INTO courses(school_id,name,teacher_id,created_at) VALUES(?,?,?,?)',(sid,'B1 PET - Year 6',ids['teacher'],now())); cid=cur.lastrowid
-        c.execute('INSERT INTO enrollments(course_id,user_id) VALUES(?,?)',(cid,ids['student']))
-        c.execute('INSERT INTO assignments(course_id,title,skill,due_date,created_at) VALUES(?,?,?,?,?)',(cid,'Reading Parts 1-3','reading',(datetime.date.today()+datetime.timedelta(days=5)).isoformat(),now()))
-        c.execute('INSERT INTO assignments(course_id,title,skill,due_date,created_at) VALUES(?,?,?,?,?)',(cid,'Listening confidence','listening',(datetime.date.today()+datetime.timedelta(days=8)).isoformat(),now()))
-    c.commit(); c.close()
-
+    postgres_auth.ensure_database_exists(); postgres_auth.init_schema(); _ensure_postgres_id_sequences(); BACKUP_DIR.mkdir(parents=True,exist_ok=True)
+    if SEED_DEMO_DATA:
+        c=conn()
+        if c.execute('SELECT COUNT(*) FROM schools').fetchone()[0]==0:
+            sid=c.execute('INSERT INTO schools(name,created_at) VALUES(?,?)',('PET Quest Demo School',now())).lastrowid
+            demos=[('student@petquest.local','Student123!','Mia Student','student'),('teacher@petquest.local','Teacher123!','Alex Teacher','teacher'),('school@petquest.local','School123!','School Coordinator','school'),('admin@petquest.local','Admin123!','Platform Admin','admin')]
+            ids={}
+            for email,pw,name,role in demos:
+                ids[role]=c.execute('INSERT INTO users(email,password_hash,name,role,school_id,created_at,verified_at,username,profile_mode) VALUES(?,?,?,?,?,?,?,?,?)',(email,hash_pw(pw),name,role,sid,now(),now(),email.split('@')[0],'schools')).lastrowid
+            cid=c.execute('INSERT INTO courses(school_id,name,teacher_id,created_at) VALUES(?,?,?,?)',(sid,'B1 PET - Year 6',ids['teacher'],now())).lastrowid
+            c.execute('INSERT INTO enrollments(course_id,user_id) VALUES(?,?)',(cid,ids['student']))
+            c.execute('INSERT INTO assignments(course_id,title,skill,due_date,created_at) VALUES(?,?,?,?,?)',(cid,'Reading Parts 1-3','reading',(datetime.date.today()+datetime.timedelta(days=5)).isoformat(),now()))
+            c.execute('INSERT INTO assignments(course_id,title,skill,due_date,created_at) VALUES(?,?,?,?,?)',(cid,'Listening confidence','listening',(datetime.date.today()+datetime.timedelta(days=8)).isoformat(),now()))
+            c.commit()
+        c.close()
 
 
 def ensure_individual_school(c):
     row=c.execute("SELECT id FROM schools WHERE name=? ORDER BY id LIMIT 1",('PET Quest Individual Learners',)).fetchone()
     if row:return row['id']
-    cur=c.execute('INSERT INTO schools(name,created_at) VALUES(?,?)',('PET Quest Individual Learners',now()))
-    sid=cur.lastrowid
+    sid=c.execute('INSERT INTO schools(name,created_at) VALUES(?,?)',('PET Quest Individual Learners',now())).lastrowid
     c.execute('INSERT INTO school_licenses(school_id,plan,status,student_seats,teacher_seats,starts_at,expires_at,created_at,created_by) VALUES(?,?,?,?,?,?,?,?,?)',(sid,'individual','active',100000,5,now(),None,now(),None))
     return sid
 
-def ensure_local_user_for_identity(c, ident):
-    """Restore/relink the SQLite academic shadow for a PostgreSQL identity.
-
-    PostgreSQL persists independently of the extracted Windows folder, while petquest.db
-    is folder-local. Installing a new ZIP can therefore leave a valid pet_users row whose
-    local_user_id no longer exists. This helper rebuilds that academic shadow safely.
-    """
-    if not ident:return None
-    local_id=int(ident['local_user_id'])
-    row=c.execute('SELECT * FROM users WHERE id=?',(local_id,)).fetchone()
-    if row:return row
-    # If the same identity already exists locally under another id, relink PostgreSQL.
-    row=c.execute('SELECT * FROM users WHERE lower(email)=lower(?) OR lower(username)=lower(?) ORDER BY id LIMIT 1',(ident.get('email',''),ident.get('username',''))).fetchone()
-    if row:
-        postgres_auth.update_local_user_id(ident['id'],row['id'])
-        ident['local_user_id']=row['id']
-        return row
-    # Refuse to overwrite an unrelated local id collision.
-    collision=c.execute('SELECT id,email,username FROM users WHERE id=?',(local_id,)).fetchone()
-    if collision:
-        raise RuntimeError('local_user_id_conflict')
-    sid=ensure_individual_school(c)
-    created=ident.get('created_at')
-    if hasattr(created,'isoformat'):created=created.isoformat()
-    created=str(created or now())
-    c.execute('INSERT INTO users(id,email,password_hash,name,role,school_id,created_at,username,profile_mode,disabled) VALUES(?,?,?,?,?,?,?,?,?,?)',
-              (local_id,str(ident.get('email') or '').lower(),str(ident.get('password_hash') or ''),clean_text(ident.get('display_name') or ident.get('username') or 'Student',120),
-               clean_text(ident.get('role') or 'student',32),sid,created,clean_text(ident.get('username') or '',32),clean_text(ident.get('profile_mode') or 'schools',16),1 if ident.get('disabled') else 0))
-    c.commit()
-    return c.execute('SELECT * FROM users WHERE id=?',(local_id,)).fetchone()
 
 def create_backup():
-    stamp=now_dt().strftime('%Y%m%dT%H%M%SZ'); out=BACKUP_DIR/f'petquest-{stamp}.db'
-    src=conn(); dst=sqlite3.connect(out); src.backup(dst); dst.close(); src.close(); cleanup_backups(); return out
+    stamp=now_dt().strftime('%Y%m%dT%H%M%SZ'); out=BACKUP_DIR/f'petquest-{stamp}.dump'
+    env=os.environ.copy(); env['PGPASSWORD']=postgres_auth.PG_PASSWORD
+    cmd=['pg_dump','-h',postgres_auth.PG_HOST,'-p',str(postgres_auth.PG_PORT),'-U',postgres_auth.PG_USER,'-d',postgres_auth.PG_DB,'-Fc','-f',str(out)]
+    try: subprocess.run(cmd,check=True,env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,timeout=180)
+    except FileNotFoundError as exc: raise RuntimeError('pg_dump_not_installed: instala postgresql-client en la imagen PET') from exc
+    cleanup_backups(); return out
 
 def db_stats():
     c=conn(); tables=['schools','users','courses','assignments','questions','snapshots','audit_log','guardian_consents','privacy_requests','support_groups','support_group_members','intervention_runs','intervention_run_members']; result={}
@@ -630,7 +639,7 @@ def build_scale_equivalence_report(school_id):
     return {'status':status,'maturity':maturity,'sample_size':len(rows),'train_size':len(train),'holdout_size':len(hold),'distribution':groups,'official_band_distribution':bands,'progress':progress,'training_metrics':train_m,'holdout_metrics':hold_m,'gates':gates,'statistical_gate_passed':statistical,'external_review':dict(review) if review else None,'scale_equivalence_enabled':enabled,'model':model if enabled else None,'note':'PET Quest ↔ Cambridge English Scale equivalence remains OFF until the anonymous external cohort, band-balance, holdout quality, and independent psychometric review gates all pass.'}
 
 class Handler(SimpleHTTPRequestHandler):
-    server_version='PETQuest/46.30'
+    server_version='PETQuest/46.31-pg'
     def __init__(self,*a,**kw):super().__init__(*a,directory=str(ROOT),**kw)
     def log_message(self,fmt,*args):print('[PETQuest]',fmt%args)
     def copyfile(self, source, outputfile):
@@ -678,14 +687,14 @@ class Handler(SimpleHTTPRequestHandler):
         if p in ('/favicon.ico','/.well-known/appspecific/com.chrome.devtools.json'):
             self.send_response(204); self.send_header('Content-Length','0'); self.end_headers(); return
         if p=='/api/health':
-            pg_health=postgres_auth.health() if REQUIRE_POSTGRES_AUTH else {'ok':False,'disabled':True,'database':postgres_auth.PG_DB,'user':postgres_auth.PG_USER}
+            pg_health=runtime_health()
             content_health=postgres_content.health() if REQUIRE_POSTGRES_AUTH and pg_health.get('ok') else {'ok':False,'reason':'postgres_unavailable'}
             return self.json({'ok':True,'master_content':content_health,'version':APP_VERSION,'environment':APP_ENV,'database':DATABASE_ENGINE,'academic_database_engine':DATABASE_ENGINE,'auth_database_engine':AUTH_DATABASE_ENGINE,'database_url_configured':bool(DATABASE_URL),'production_database_ok':(APP_ENV!='production' or (DATABASE_URL.lower().startswith(('postgresql://','postgres://')) and DATABASE_ENGINE=='postgres')),'postgres_schema_available':(ROOT/'postgres_schema.sql').exists(),'postgres_runtime_active':bool(pg_health.get('ok')),'postgres_auth':pg_health,'time':now(),'stats':db_stats(),'security':{'pbkdf2_iterations':PBKDF2_ITERS,'session_hours':SESSION_HOURS,'login_lockout':True,'audit_log':True,'account_recovery':True,'csp':True,'guardian_consent_required':REQUIRE_GUARDIAN_CONSENT,'privacy_lifecycle':True,'max_request_bytes':MAX_REQUEST_BYTES,'strict_cors_origins':STRICT_CORS_ORIGINS},'multi_tenant':{'tenant_key':'school_id','backend_scope_enforced':True,'demo_seed_enabled':SEED_DEMO_DATA,'demo_accounts_available':known_demo_accounts_present()},'privacy':{'export':True,'delete_request':True,'rectification':True,'consent_revocation':True,'retention_days':DATA_RETENTION_DAYS},'academic_fidelity':{'audio':audio_quality_status()},'email_configured':email_configured(),'production_ready':APP_ENV=='production' and not DEV_MODE and email_configured() and PUBLIC_BASE_URL.lower().startswith('https://') and (not REQUIRE_POSTGRES_AUTH or pg_health.get('ok')) and (not REQUIRE_POSTGRES_PRODUCTION or DATABASE_ENGINE=='postgres')})
         if p=='/api/ready':
             try:
                 c=conn(); c.execute('SELECT 1').fetchone(); c.close(); db_ok=True
             except Exception: db_ok=False
-            pg_health=postgres_auth.health() if REQUIRE_POSTGRES_AUTH else {'ok':True,'disabled':True}; pg_ok=bool(pg_health.get('ok')); content_health=postgres_content.health() if pg_ok else {'ok':False}; content_ok=bool(content_health.get('ok')); prod_db_ok=(APP_ENV!='production' or (not REQUIRE_POSTGRES_PRODUCTION or DATABASE_ENGINE=='postgres')); demo_ok=(APP_ENV!='production' or (not SEED_DEMO_DATA and not known_demo_accounts_present())); smtp_ok=(APP_ENV!='production' or not REQUIRE_SMTP_PRODUCTION or email_configured()); https_ok=(APP_ENV!='production' or not REQUIRE_HTTPS_PRODUCTION or PUBLIC_BASE_URL.lower().startswith('https://')); base_ok=db_ok and pg_ok and content_ok; ready_ok=(base_ok and prod_db_ok and demo_ok and smtp_ok and https_ok and not DEV_MODE) if APP_ENV=='production' else base_ok; return self.json({'ok':ready_ok,'version':APP_VERSION,'database':db_ok,'database_engine':DATABASE_ENGINE,'auth_database_engine':AUTH_DATABASE_ENGINE,'postgres_auth_ok':pg_ok,'postgres_auth':pg_health,'master_content_ok':content_ok,'master_content':content_health,'production_database_ok':prod_db_ok,'demo_accounts_ok':demo_ok,'smtp_ok':smtp_ok,'https_ok':https_ok,'postgres_required_in_production':REQUIRE_POSTGRES_PRODUCTION,'backup_dir_writable':os.access(BACKUP_DIR,os.W_OK),'dev_mode':DEV_MODE,'environment':APP_ENV,'public_base_url':PUBLIC_BASE_URL,'email_configured':email_configured()},200 if ready_ok else 503)
+            pg_health=runtime_health(); pg_ok=bool(pg_health.get('ok')); content_health=postgres_content.health() if pg_ok else {'ok':False}; content_ok=bool(content_health.get('ok')); prod_db_ok=(APP_ENV!='production' or (not REQUIRE_POSTGRES_PRODUCTION or DATABASE_ENGINE=='postgres')); demo_ok=(APP_ENV!='production' or (not SEED_DEMO_DATA and not known_demo_accounts_present())); smtp_ok=(APP_ENV!='production' or not REQUIRE_SMTP_PRODUCTION or email_configured()); https_ok=(APP_ENV!='production' or not REQUIRE_HTTPS_PRODUCTION or PUBLIC_BASE_URL.lower().startswith('https://')); base_ok=db_ok and pg_ok and content_ok; ready_ok=(base_ok and prod_db_ok and demo_ok and smtp_ok and https_ok and not DEV_MODE) if APP_ENV=='production' else base_ok; return self.json({'ok':ready_ok,'version':APP_VERSION,'database':db_ok,'database_engine':DATABASE_ENGINE,'auth_database_engine':AUTH_DATABASE_ENGINE,'postgres_auth_ok':pg_ok,'postgres_auth':pg_health,'master_content_ok':content_ok,'master_content':content_health,'production_database_ok':prod_db_ok,'demo_accounts_ok':demo_ok,'smtp_ok':smtp_ok,'https_ok':https_ok,'postgres_required_in_production':REQUIRE_POSTGRES_PRODUCTION,'backup_dir_writable':os.access(BACKUP_DIR,os.W_OK),'dev_mode':DEV_MODE,'environment':APP_ENV,'public_base_url':PUBLIC_BASE_URL,'email_configured':email_configured()},200 if ready_ok else 503)
         if p=='/api/me':
             u=self.auth();return self.json({'user':u}) if u else self.json({'error':'unauthorized'},401)
         u=self.auth()
@@ -1103,14 +1112,14 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/ops/status':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
             c=conn(); sessions=c.execute('SELECT COUNT(*) n FROM sessions').fetchone()['n']; audits=c.execute('SELECT COUNT(*) n FROM audit_log').fetchone()['n']; tokens=c.execute('SELECT COUNT(*) n FROM account_tokens WHERE used_at IS NULL').fetchone()['n']; c.close()
-            backups=sorted(BACKUP_DIR.glob('*.db'),key=lambda x:x.stat().st_mtime,reverse=True); latest=backups[0] if backups else None; age_hours=round((time.time()-latest.stat().st_mtime)/3600,1) if latest else None
+            backups=sorted(BACKUP_DIR.glob('*.dump'),key=lambda x:x.stat().st_mtime,reverse=True); latest=backups[0] if backups else None; age_hours=round((time.time()-latest.stat().st_mtime)/3600,1) if latest else None
             blockers=[]; warnings=[]
             if APP_ENV=='production' and DEV_MODE:blockers.append('PETQUEST_DEV_MODE debe ser 0 en producción.')
             if APP_ENV=='production' and not PUBLIC_BASE_URL.lower().startswith('https://'):blockers.append('La URL pública de producción debe usar HTTPS.')
             if APP_ENV=='production' and not email_configured():blockers.append('SMTP debe estar configurado para recuperación/verificación de cuentas.')
             if age_hours is None or age_hours>48:warnings.append('No existe backup reciente de menos de 48 horas.')
             if "'unsafe-inline'" in "script-src 'self' 'unsafe-inline'":warnings.append('La CSP todavía permite script inline por compatibilidad; endurecer en despliegue final.')
-            return self.json({'version':APP_VERSION,'environment':APP_ENV,'dev_mode':DEV_MODE,'public_base_url':PUBLIC_BASE_URL,'email_configured':email_configured(),'database_bytes':DB.stat().st_size if DB.exists() else 0,'active_sessions':sessions,'audit_events':audits,'unused_account_tokens':tokens,'latest_backup':latest.name if latest else None,'latest_backup_age_hours':age_hours,'blockers':blockers,'warnings':warnings,'operational_ready':not blockers})
+            return self.json({'version':APP_VERSION,'environment':APP_ENV,'dev_mode':DEV_MODE,'public_base_url':PUBLIC_BASE_URL,'email_configured':email_configured(),'database_bytes':(lambda cc: (lambda rr: (cc.close(),int(rr['bytes']))[1])(cc.execute("SELECT pg_database_size(current_database()) bytes").fetchone()))(conn()),'active_sessions':sessions,'audit_events':audits,'unused_account_tokens':tokens,'latest_backup':latest.name if latest else None,'latest_backup_age_hours':age_hours,'blockers':blockers,'warnings':warnings,'operational_ready':not blockers})
         if p=='/api/calibration/scale-equivalence':
             if not self.require_roles(u,'teacher','school','academic_reviewer','admin'):return self.json({'error':'forbidden'},403)
             report=build_scale_equivalence_report(u['school_id']); report['generated_at']=now(); return self.json(report)
@@ -1205,7 +1214,7 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/release-readiness':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
             c=conn(); sid=u['school_id']; lic=c.execute("SELECT * FROM school_licenses WHERE school_id=? AND status='active' ORDER BY id DESC LIMIT 1",(sid,)).fetchone(); teachers=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='teacher' AND disabled=0",(sid,)).fetchone()['n']; students=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='student' AND disabled=0",(sid,)).fetchone()['n']; courses=c.execute('SELECT COUNT(*) n FROM courses WHERE school_id=?',(sid,)).fetchone()['n']; consents=c.execute("SELECT COUNT(DISTINCT gc.student_id) n FROM guardian_consents gc JOIN users su ON su.id=gc.student_id WHERE su.school_id=? AND gc.revoked_at IS NULL",(sid,)).fetchone()['n']; snaps=c.execute("SELECT COUNT(*) n FROM snapshots s JOIN users su ON su.id=s.user_id WHERE su.school_id=?",(sid,)).fetchone()['n']; c.close()
-            backups=sorted(BACKUP_DIR.glob('*.db'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
+            backups=sorted(BACKUP_DIR.glob('*.dump'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
             checks=[
               {'key':'license','ok':bool(lic),'weight':15,'label':'Licencia activa'},
               {'key':'teacher','ok':teachers>0,'weight':8,'label':'Profesor activo'},
@@ -1217,7 +1226,7 @@ class Handler(SimpleHTTPRequestHandler):
               {'key':'email','ok':email_configured() or APP_ENV!='production','weight':8,'label':'Correo transaccional'},
               {'key':'https','ok':PUBLIC_BASE_URL.lower().startswith('https://') or APP_ENV!='production','weight':10,'label':'HTTPS público'},
               {'key':'devmode','ok':not DEV_MODE or APP_ENV!='production','weight':10,'label':'Modo desarrollo desactivado'},
-              {'key':'db','ok':DB.exists(),'weight':7,'label':'Base de datos operativa'}]
+              {'key':'db','ok':bool(runtime_health().get('ok')),'weight':7,'label':'Base de datos operativa'}]
             score=round(sum(x['weight'] for x in checks if x['ok'])*100/sum(x['weight'] for x in checks),1); blockers=[x['label'] for x in checks if not x['ok'] and x['weight']>=10]; warnings=[x['label'] for x in checks if not x['ok'] and x['weight']<10]
             return self.json({'score':score,'commercial_candidate':score>=95 and not blockers,'checks':checks,'blockers':blockers,'warnings':warnings,'external_validation_required':['Piloto con niños reales','Revisión legal local de privacidad infantil','Prueba cloud con dominio/HTTPS','Pentest independiente'],'generated_at':now()})
         if p=='/api/governance':
@@ -1381,7 +1390,7 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/release-readiness/snapshot':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
             # recompute through local checks without HTTP call
-            c=conn(); sid=u['school_id']; lic=c.execute("SELECT * FROM school_licenses WHERE school_id=? AND status='active' ORDER BY id DESC LIMIT 1",(sid,)).fetchone(); teachers=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='teacher' AND disabled=0",(sid,)).fetchone()['n']; students=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='student' AND disabled=0",(sid,)).fetchone()['n']; courses=c.execute('SELECT COUNT(*) n FROM courses WHERE school_id=?',(sid,)).fetchone()['n']; consents=c.execute("SELECT COUNT(DISTINCT gc.student_id) n FROM guardian_consents gc JOIN users su ON su.id=gc.student_id WHERE su.school_id=? AND gc.revoked_at IS NULL",(sid,)).fetchone()['n']; c.close(); backups=sorted(BACKUP_DIR.glob('*.db'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
+            c=conn(); sid=u['school_id']; lic=c.execute("SELECT * FROM school_licenses WHERE school_id=? AND status='active' ORDER BY id DESC LIMIT 1",(sid,)).fetchone(); teachers=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='teacher' AND disabled=0",(sid,)).fetchone()['n']; students=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='student' AND disabled=0",(sid,)).fetchone()['n']; courses=c.execute('SELECT COUNT(*) n FROM courses WHERE school_id=?',(sid,)).fetchone()['n']; consents=c.execute("SELECT COUNT(DISTINCT gc.student_id) n FROM guardian_consents gc JOIN users su ON su.id=gc.student_id WHERE su.school_id=? AND gc.revoked_at IS NULL",(sid,)).fetchone()['n']; c.close(); backups=sorted(BACKUP_DIR.glob('*.dump'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
             checks=[('license',bool(lic),15),('teacher',teachers>0,8),('student',students>0,8),('course',courses>0,8),('consent',students==0 or consents>=students,10),('backup',backup_recent,8),('email',email_configured() or APP_ENV!='production',8),('https',PUBLIC_BASE_URL.lower().startswith('https://') or APP_ENV!='production',10),('devmode',not DEV_MODE or APP_ENV!='production',10),('database_runtime',(APP_ENV!='production' or not REQUIRE_POSTGRES_PRODUCTION or DATABASE_ENGINE=='postgres'),15),('studio_audio',(APP_ENV!='production' or audio_quality_status()['production_ready']),12)]; score=round(sum(w for _,ok,w in checks if ok)*100/sum(w for _,_,w in checks),1); blockers=[k for k,ok,w in checks if not ok and w>=10]; warnings=[k for k,ok,w in checks if not ok and w<10]
             c=conn();cur=c.execute('INSERT INTO release_acceptance_runs(school_id,score,blockers_json,warnings_json,checks_json,created_at,created_by) VALUES(?,?,?,?,?,?,?)',(sid,score,json.dumps(blockers),json.dumps(warnings),json.dumps(checks),now(),u['id']));c.commit();rid=cur.lastrowid;c.close();return self.json({'ok':True,'id':rid,'score':score,'blockers':blockers,'warnings':warnings},201)
         if p=='/api/privacy/export':
@@ -1443,10 +1452,10 @@ class Handler(SimpleHTTPRequestHandler):
             c=conn(); rows=c.execute('SELECT s.*,COUNT(u.id) users FROM schools s LEFT JOIN users u ON u.school_id=s.id GROUP BY s.id ORDER BY s.name').fetchall() if u['role']=='admin' else c.execute('SELECT s.*,COUNT(u.id) users FROM schools s LEFT JOIN users u ON u.school_id=s.id WHERE s.id=? GROUP BY s.id',(u['school_id'],)).fetchall(); c.close(); return self.json({'schools':[dict(x) for x in rows]})
         if p=='/api/metrics':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
-            return self.json({'stats':db_stats(),'db_bytes':DB.stat().st_size if DB.exists() else 0,'backup_count':len(list(BACKUP_DIR.glob('*.db')))})
+            cc=conn(); rr=cc.execute('SELECT pg_database_size(current_database()) bytes').fetchone(); cc.close(); return self.json({'stats':db_stats(),'db_bytes':int(rr['bytes'] or 0),'backup_count':len(list(BACKUP_DIR.glob('*.dump')))})
         if p=='/api/backups':
             if not self.require_roles(u,'admin'):return self.json({'error':'forbidden'},403)
-            items=[{'name':x.name,'bytes':x.stat().st_size,'modified':datetime.datetime.fromtimestamp(x.stat().st_mtime,datetime.timezone.utc).isoformat()} for x in sorted(BACKUP_DIR.glob('*.db'),key=lambda x:x.stat().st_mtime,reverse=True)[:30]]
+            items=[{'name':x.name,'bytes':x.stat().st_size,'modified':datetime.datetime.fromtimestamp(x.stat().st_mtime,datetime.timezone.utc).isoformat()} for x in sorted(BACKUP_DIR.glob('*.dump'),key=lambda x:x.stat().st_mtime,reverse=True)[:30]]
             return self.json({'backups':items,'retention':BACKUP_RETENTION})
         if p=='/api/consents':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
@@ -1483,23 +1492,21 @@ class Handler(SimpleHTTPRequestHandler):
             if not permission:return self.json({'error':'permission_required'},400)
             if password!=confirm:return self.json({'error':'password_mismatch'},400)
             if not strong_password(password):return self.json({'error':'weak_password'},400)
-            try:
-                if postgres_auth.identity_exists(username,email):return self.json({'error':'username_or_email_exists'},409)
-            except Exception as exc:return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
             c=conn()
-            if c.execute('SELECT id FROM users WHERE lower(email)=? OR lower(username)=lower(?)',(email,username)).fetchone():c.close();return self.json({'error':'username_or_email_exists'},409)
-            sid=ensure_individual_school(c); pw_hash=hash_pw(password)
             try:
-                cur=c.execute('INSERT INTO users(email,password_hash,name,role,school_id,created_at,username,profile_mode) VALUES(?,?,?,?,?,?,?,?)',(email,pw_hash,name,'student',sid,now(),username,profile_mode)); uid=cur.lastrowid; c.commit()
-                try:pg=postgres_auth.create_identity(uid,username,email,pw_hash,name,'student',profile_mode)
-                except Exception:
-                    c.execute('DELETE FROM users WHERE id=?',(uid,));c.commit();raise
+                if c.execute('SELECT id FROM users WHERE lower(email)=? OR lower(username)=lower(?)',(email,username)).fetchone():c.close();return self.json({'error':'username_or_email_exists'},409)
+                sid=ensure_individual_school(c); pw_hash=hash_pw(password)
+                uid=c.execute('INSERT INTO users(email,password_hash,name,role,school_id,created_at,username,profile_mode) VALUES(?,?,?,?,?,?,?,?)',(email,pw_hash,name,'student',sid,now(),username,profile_mode)).lastrowid
+                vtoken=secrets.token_urlsafe(32); c.execute('INSERT INTO account_tokens(token,user_id,kind,created_at,expires_at) VALUES(?,?,?,?,?)',(vtoken,uid,'verify',now(),iso_after(hours=VERIFY_HOURS)))
+                token=secrets.token_urlsafe(48); expires=iso_after(hours=SESSION_HOURS); c.execute('INSERT INTO sessions(token,user_id,created_at,expires_at,last_seen_at) VALUES(?,?,?,?,?)',(token,uid,now(),expires,now()))
+                audit(c,uid,'self_register','user',uid,{'role':'student','username':username,'auth_store':'postgres','permission_confirmed':True}); c.commit()
+                user=dict(c.execute('SELECT * FROM users WHERE id=?',(uid,)).fetchone()); user.pop('password_hash',None); c.close()
             except Exception as exc:
-                c.close();return self.json({'error':'registration_failed','detail':str(exc)[:180]},500)
-            vtoken=secrets.token_urlsafe(32); c.execute('INSERT INTO account_tokens(token,user_id,kind,created_at,expires_at) VALUES(?,?,?,?,?)',(vtoken,uid,'verify',now(),iso_after(hours=VERIFY_HOURS)))
-            token=secrets.token_urlsafe(48); expires=iso_after(hours=SESSION_HOURS); c.execute('INSERT INTO sessions(token,user_id,created_at,expires_at,last_seen_at) VALUES(?,?,?,?,?)',(token,uid,now(),expires,now()))
-            audit(c,uid,'self_register','user',uid,{'role':'student','username':username,'auth_store':'postgres','permission_confirmed':True});c.commit();user=dict(c.execute('SELECT * FROM users WHERE id=?',(uid,)).fetchone());user.pop('password_hash',None);c.close()
-            resp={'ok':True,'token':token,'user':user,'expires_at':expires,'postgres_identity_id':pg['id'],'verification_required':bool(email_configured())}
+                try:c.rollback();c.close()
+                except Exception:pass
+                if getattr(exc,'sqlstate',None)=='23505':return self.json({'error':'username_or_email_exists'},409)
+                return self.json({'error':'registration_failed','detail':str(exc)[:180]},500)
+            resp={'ok':True,'token':token,'user':user,'expires_at':expires,'verification_required':bool(email_configured())}
             if email_configured():
                 link=PUBLIC_BASE_URL.rstrip('/')+'/?verify_token='+vtoken;resp['email_sent']=send_email(email,'PET Quest — Verifica tu cuenta',f'Verifica tu cuenta PET Quest usando este enlace (válido {VERIFY_HOURS} horas):\n\n{link}')
             if DEV_MODE:resp['dev_verification_token']=vtoken
@@ -1512,53 +1519,25 @@ class Handler(SimpleHTTPRequestHandler):
             c=conn(); a=c.execute('SELECT * FROM login_attempts WHERE email=?',(identifier,)).fetchone()
             if a and a['locked_until']:
                 try:
-                    if datetime.datetime.fromisoformat(a['locked_until'])>now_dt():c.close();return self.json({'error':'temporarily_locked'},429)
+                    if datetime.datetime.fromisoformat(str(a['locked_until']))>now_dt():c.close();return self.json({'error':'temporarily_locked'},429)
                 except Exception:pass
-            try:ident=postgres_auth.find_identity(identifier)
-            except Exception as exc:c.close();return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
-            
-            try:ur=ensure_local_user_for_identity(c,ident) if ident else None
-            except Exception as exc:c.close();return self.json({'error':'identity_sync_failed','detail':str(exc)[:180]},503)
-            pg_valid=bool(ident and not ident.get('disabled') and verify_pw(password,ident.get('password_hash','')))
-            local_valid=bool(ur and verify_pw(password,ur['password_hash']))
-            valid=bool(ur and (pg_valid or local_valid))
-            # Self-heal stale/legacy credential rows. PostgreSQL remains authoritative, but an
-            # existing linked SQLite credential can repair a PG row created by older V46.30 builds.
-            if valid:
-                pg_scheme=password_hash_scheme(ident.get('password_hash','')) if ident else 'unknown'
-                local_scheme=password_hash_scheme(ur['password_hash']) if ur else 'unknown'
-                needs_upgrade=(pg_scheme!='pbkdf2_sha256' or local_scheme!='pbkdf2_sha256' or not pg_valid or not local_valid)
-                if needs_upgrade:
-                    migrated_hash=hash_pw(password)
-                    try:
-                        postgres_auth.update_password_by_local_user(ur['id'],migrated_hash)
-                        c.execute('UPDATE users SET password_hash=? WHERE id=?',(migrated_hash,ur['id']))
-                        audit(c,ur['id'],'password_hash_migrated','user',ur['id'],{
-                            'from_postgres':pg_scheme,'from_sqlite':local_scheme,
-                            'postgres_was_valid':pg_valid,'sqlite_was_valid':local_valid
-                        })
-                        c.commit()
-                        if ident: ident['password_hash']=migrated_hash
-                    except Exception as exc:
-                        c.close();return self.json({'error':'credential_sync_failed','detail':str(exc)[:180]},503)
-            if not valid or not ur:
+            ur=c.execute('SELECT * FROM users WHERE lower(username)=lower(?) OR lower(email)=lower(?) LIMIT 1',(identifier,identifier)).fetchone()
+            valid=bool(ur and not ur['disabled'] and verify_pw(password,ur['password_hash']))
+            if not valid:
                 failures=(a['failures'] if a else 0)+1; locked=(now_dt()+datetime.timedelta(minutes=LOCK_MINUTES)).isoformat() if failures>=MAX_LOGIN_ATTEMPTS else None
                 c.execute('INSERT INTO login_attempts(email,failures,locked_until,updated_at) VALUES(?,?,?,?) ON CONFLICT(email) DO UPDATE SET failures=excluded.failures,locked_until=excluded.locked_until,updated_at=excluded.updated_at',(identifier,failures,locked,now()));c.commit();c.close();time.sleep(.12);return self.json({'error':'invalid_credentials' if not locked else 'temporarily_locked'},401 if not locked else 429)
             if ur['disabled']:c.close();return self.json({'error':'account_disabled'},403)
-            c.execute('DELETE FROM login_attempts WHERE email=?',(identifier,));token=secrets.token_urlsafe(48);expires=iso_after(hours=SESSION_HOURS);c.execute('INSERT INTO sessions(token,user_id,created_at,expires_at,last_seen_at) VALUES(?,?,?,?,?)',(token,ur['id'],now(),expires,now()));c.execute('UPDATE users SET last_login_at=? WHERE id=?',(now(),ur['id']));audit(c,ur['id'],'login','user',ur['id'],{'auth_store':'postgres'});c.commit();user=dict(ur);user.pop('password_hash',None);c.close()
-            try:postgres_auth.update_last_login(ident['id'])
-            except Exception:pass
+            if password_hash_scheme(ur['password_hash'])!='pbkdf2_sha256':
+                migrated_hash=hash_pw(password); c.execute('UPDATE users SET password_hash=? WHERE id=?',(migrated_hash,ur['id'])); audit(c,ur['id'],'password_hash_migrated','user',ur['id'],{'from':password_hash_scheme(ur['password_hash']),'to':'pbkdf2_sha256'})
+            c.execute('DELETE FROM login_attempts WHERE lower(email) IN (?,?)',(str(ur['email'] or '').lower(),str(ur['username'] or '').lower()))
+            token=secrets.token_urlsafe(48);expires=iso_after(hours=SESSION_HOURS);c.execute('INSERT INTO sessions(token,user_id,created_at,expires_at,last_seen_at) VALUES(?,?,?,?,?)',(token,ur['id'],now(),expires,now()));c.execute('UPDATE users SET last_login_at=? WHERE id=?',(now(),ur['id']));audit(c,ur['id'],'login','user',ur['id'],{'auth_store':'postgres'});c.commit();user=dict(c.execute('SELECT * FROM users WHERE id=?',(ur['id'],)).fetchone());user.pop('password_hash',None);c.close()
             return self.json({'token':token,'user':user,'expires_at':expires})
         if p=='/api/forgot-password':
             ip=self.client_address[0] if self.client_address else 'unknown'
             if not rate_ok('reset:'+ip,8,300):return self.json({'error':'rate_limited'},429)
             email=clean_text(b.get('email',''),180).lower(); c=conn(); ur=None;token=None
             if valid_email(email):
-                try:
-                    ident=postgres_auth.find_identity(email)
-                    ur=ensure_local_user_for_identity(c,ident) if ident else c.execute('SELECT * FROM users WHERE lower(email)=?',(email,)).fetchone()
-                except Exception:
-                    ur=c.execute('SELECT * FROM users WHERE lower(email)=?',(email,)).fetchone()
+                ur=c.execute('SELECT * FROM users WHERE lower(email)=?',(email,)).fetchone()
             if ur:
                 token=secrets.token_urlsafe(40);c.execute('DELETE FROM account_tokens WHERE user_id=? AND kind="reset"',(ur['id'],));c.execute('INSERT INTO account_tokens(token,user_id,kind,created_at,expires_at) VALUES(?,?,?,?,?)',(token,ur['id'],'reset',now(),iso_after(minutes=RESET_MINUTES)));audit(c,ur['id'],'password_reset_requested')
             c.commit();c.close();resp={'ok':True,'message':'If the account exists, a recovery instruction was generated.'}
@@ -1575,8 +1554,6 @@ class Handler(SimpleHTTPRequestHandler):
             except Exception:expired=True
             if expired:c.close();return self.json({'error':'expired_token'},400)
             new_hash=hash_pw(password)
-            try:postgres_auth.update_password_by_local_user(r['user_id'],new_hash)
-            except Exception as exc:c.close();return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
             c.execute('UPDATE users SET password_hash=? WHERE id=?',(new_hash,r['user_id']));ur2=c.execute('SELECT email,username FROM users WHERE id=?',(r['user_id'],)).fetchone();c.execute('UPDATE account_tokens SET used_at=? WHERE token=?',(now(),token));c.execute('DELETE FROM sessions WHERE user_id=?',(r['user_id'],));
             if ur2:
                 c.execute('DELETE FROM login_attempts WHERE lower(email) IN (?,?)',(str(ur2['email'] or '').lower(),str(ur2['username'] or '').lower()))
@@ -1598,12 +1575,8 @@ class Handler(SimpleHTTPRequestHandler):
             old=str(b.get('current_password',''))[:256]; new=str(b.get('new_password',''))[:256]
             if not strong_password(new):return self.json({'error':'weak_password'},400)
             c=conn(); ur=c.execute('SELECT password_hash,email,username FROM users WHERE id=?',(u['id'],)).fetchone()
-            try: ident=postgres_auth.find_identity((ur['username'] if ur and ur['username'] else ur['email']) if ur else '')
-            except Exception as exc:c.close();return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
-            if not ident or not verify_pw(old,ident['password_hash']):c.close();return self.json({'error':'invalid_current_password'},400)
+            if not ur or not verify_pw(old,ur['password_hash']):c.close();return self.json({'error':'invalid_current_password'},400)
             new_hash=hash_pw(new)
-            try:postgres_auth.update_password_by_local_user(u['id'],new_hash)
-            except Exception as exc:c.close();return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
             c.execute('UPDATE users SET password_hash=? WHERE id=?',(new_hash,u['id'])); c.execute('DELETE FROM sessions WHERE user_id=? AND token<>?',(u['id'],self.bearer())); audit(c,u['id'],'password_changed','user',u['id'],{'auth_store':'postgres'}); c.commit(); c.close(); return self.json({'ok':True})
         if p=='/api/speaking-interactions':
             if u.get('role')!='student' and not self.require_roles(u,'teacher','school','admin'): return self.json({'error':'forbidden'},403)
@@ -1706,12 +1679,13 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/recovery/verify':
             if not self.require_roles(u,'admin'):return self.json({'error':'forbidden'},403)
             name=clean_text(b.get('name'),220)
-            if not name or Path(name).name!=name or not name.endswith('.db'):return self.json({'error':'invalid_backup'},400)
+            if not name or Path(name).name!=name or not name.endswith('.dump'):return self.json({'error':'invalid_backup'},400)
             target=BACKUP_DIR/name
             if not target.exists():return self.json({'error':'not_found'},404)
             integrity='error'; ok=False
             try:
-                cc=sqlite3.connect(target); integrity=str(cc.execute('PRAGMA integrity_check').fetchone()[0]); cc.close(); ok=(integrity.lower()=='ok')
+                cp=subprocess.run(['pg_restore','--list',str(target)],stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,timeout=60)
+                ok=(cp.returncode==0); integrity='ok' if ok else ('error:'+cp.stderr[:120])
             except Exception as exc: integrity='error:'+str(exc)[:120]
             c=conn(); cur=c.execute('INSERT INTO recovery_checks(backup_name,ok,integrity_result,checked_at,checked_by) VALUES(?,?,?,?,?)',(name,1 if ok else 0,integrity,now(),u['id'])); audit(c,u['id'],'verify','backup',cur.lastrowid,{'name':name,'integrity':integrity}); c.commit(); cid=cur.lastrowid; c.close(); return self.json({'ok':ok,'id':cid,'name':name,'integrity':integrity},200 if ok else 422)
         if p=='/api/decision-simulator/run':
@@ -2079,7 +2053,7 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/release-readiness/snapshot':
             if not self.require_roles(u,'school','admin'):return self.json({'error':'forbidden'},403)
             # recompute through local checks without HTTP call
-            c=conn(); sid=u['school_id']; lic=c.execute("SELECT * FROM school_licenses WHERE school_id=? AND status='active' ORDER BY id DESC LIMIT 1",(sid,)).fetchone(); teachers=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='teacher' AND disabled=0",(sid,)).fetchone()['n']; students=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='student' AND disabled=0",(sid,)).fetchone()['n']; courses=c.execute('SELECT COUNT(*) n FROM courses WHERE school_id=?',(sid,)).fetchone()['n']; consents=c.execute("SELECT COUNT(DISTINCT gc.student_id) n FROM guardian_consents gc JOIN users su ON su.id=gc.student_id WHERE su.school_id=? AND gc.revoked_at IS NULL",(sid,)).fetchone()['n']; c.close(); backups=sorted(BACKUP_DIR.glob('*.db'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
+            c=conn(); sid=u['school_id']; lic=c.execute("SELECT * FROM school_licenses WHERE school_id=? AND status='active' ORDER BY id DESC LIMIT 1",(sid,)).fetchone(); teachers=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='teacher' AND disabled=0",(sid,)).fetchone()['n']; students=c.execute("SELECT COUNT(*) n FROM users WHERE school_id=? AND role='student' AND disabled=0",(sid,)).fetchone()['n']; courses=c.execute('SELECT COUNT(*) n FROM courses WHERE school_id=?',(sid,)).fetchone()['n']; consents=c.execute("SELECT COUNT(DISTINCT gc.student_id) n FROM guardian_consents gc JOIN users su ON su.id=gc.student_id WHERE su.school_id=? AND gc.revoked_at IS NULL",(sid,)).fetchone()['n']; c.close(); backups=sorted(BACKUP_DIR.glob('*.dump'),key=lambda x:x.stat().st_mtime,reverse=True); backup_recent=bool(backups and time.time()-backups[0].stat().st_mtime<48*3600)
             checks=[('license',bool(lic),15),('teacher',teachers>0,8),('student',students>0,8),('course',courses>0,8),('consent',students==0 or consents>=students,10),('backup',backup_recent,8),('email',email_configured() or APP_ENV!='production',8),('https',PUBLIC_BASE_URL.lower().startswith('https://') or APP_ENV!='production',10),('devmode',not DEV_MODE or APP_ENV!='production',10),('database_runtime',(APP_ENV!='production' or not REQUIRE_POSTGRES_PRODUCTION or DATABASE_ENGINE=='postgres'),15),('studio_audio',(APP_ENV!='production' or audio_quality_status()['production_ready']),12)]; score=round(sum(w for _,ok,w in checks if ok)*100/sum(w for _,_,w in checks),1); blockers=[k for k,ok,w in checks if not ok and w>=10]; warnings=[k for k,ok,w in checks if not ok and w<10]
             c=conn();cur=c.execute('INSERT INTO release_acceptance_runs(school_id,score,blockers_json,warnings_json,checks_json,created_at,created_by) VALUES(?,?,?,?,?,?,?)',(sid,score,json.dumps(blockers),json.dumps(warnings),json.dumps(checks),now(),u['id']));c.commit();rid=cur.lastrowid;c.close();return self.json({'ok':True,'id':rid,'score':score,'blockers':blockers,'warnings':warnings},201)
         if p=='/api/assignments':
@@ -2117,7 +2091,7 @@ class Handler(SimpleHTTPRequestHandler):
                 if current>=limit:c.close();return self.json({'error':'license_seat_limit','role':role,'limit':limit},409)
             try:
                 cur=c.execute('INSERT INTO users(email,password_hash,name,role,school_id,created_at) VALUES(?,?,?,?,?,?)',(email,hash_pw(password),name,role,school_id,now())); uid=cur.lastrowid
-            except sqlite3.IntegrityError:c.close();return self.json({'error':'email_exists'},409)
+            except Exception as exc:c.rollback();c.close();return self.json({'error':'email_exists' if getattr(exc,'sqlstate',None)=='23505' else 'create_user_failed','detail':str(exc)[:180]},409 if getattr(exc,'sqlstate',None)=='23505' else 500)
             vtoken=secrets.token_urlsafe(32); c.execute('INSERT INTO account_tokens(token,user_id,kind,created_at,expires_at) VALUES(?,?,?,?,?)',(vtoken,uid,'verify',now(),iso_after(hours=VERIFY_HOURS))); audit(c,u['id'],'create','user',uid,{'role':role}); c.commit(); c.close(); resp={'ok':True,'id':uid};
             if email_configured():
                 link=PUBLIC_BASE_URL.rstrip('/')+'/?verify_token='+vtoken
@@ -2163,8 +2137,6 @@ class Handler(SimpleHTTPRequestHandler):
             if r['status']!='open':c.close();return self.json({'error':'already_resolved'},409)
             if action=='approve_delete':
                 uid=r['user_id'];
-                try:postgres_auth.delete_identity_by_local_user(uid)
-                except Exception as exc:c.close();return self.json({'error':'postgres_unavailable','detail':str(exc)[:180]},503)
                 c.execute('DELETE FROM snapshots WHERE user_id=?',(uid,)); c.execute('DELETE FROM guardian_consents WHERE student_id=?',(uid,)); c.execute('DELETE FROM sessions WHERE user_id=?',(uid,)); c.execute('DELETE FROM account_tokens WHERE user_id=?',(uid,)); c.execute('DELETE FROM enrollments WHERE user_id=?',(uid,)); c.execute('DELETE FROM support_group_members WHERE user_id=?',(uid,)); c.execute('DELETE FROM intervention_run_members WHERE user_id=?',(uid,)); c.execute('DELETE FROM academic_remediation_attempts WHERE student_id=?',(uid,)); c.execute('DELETE FROM academic_error_events WHERE student_id=?',(uid,)); c.execute('DELETE FROM mock_item_responses WHERE student_id=?',(uid,)); c.execute('DELETE FROM mock_attempts WHERE student_id=?',(uid,)); c.execute('DELETE FROM speaking_attempts WHERE student_id=?',(uid,)); c.execute('DELETE FROM speaking_interaction_sessions WHERE student_id=?',(uid,)); c.execute('DELETE FROM calibration_outcomes WHERE student_id=?',(uid,)); c.execute('DELETE FROM learning_events WHERE user_id=?',(uid,)); c.execute('DELETE FROM planning_scenarios WHERE created_by=?',(uid,)); c.execute("UPDATE users SET name='Deleted User',email='deleted-'||id||'@invalid.local',disabled=1,verified_at=NULL,last_login_at=NULL WHERE id=?",(uid,)); status='resolved'; note='Approved deletion/anonymization with educational evidence purge'
             elif action=='reject': status='rejected'; note='Deletion request rejected with documented reason'
             else:c.close();return self.json({'error':'invalid_action'},400)
@@ -2207,12 +2179,7 @@ def main():
     if errors:
         raise SystemExit('PET Quest production startup blocked: '+ ' | '.join(errors))
     init_db()
-    try:
-        import postgres_full_sync
-        postgres_full_sync.start_background(10)
-        print('PostgreSQL academic mirror: enabled (10s)')
-    except Exception as exc:
-        print('PostgreSQL academic mirror warning:', str(exc)[:240])
+    print('PostgreSQL runtime: primary/only database')
     if APP_ENV=='production' and known_demo_accounts_present():
         raise SystemExit('PET Quest production startup blocked: known demo account detected')
     print(f'PET Quest V{APP_VERSION} server on http://{HOST}:{PORT} [{APP_ENV}]'); ThreadingHTTPServer((HOST,PORT),Handler).serve_forever()

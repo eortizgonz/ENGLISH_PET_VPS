@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""PostgreSQL-backed identity store for PET Quest local Windows use.
+"""PostgreSQL-only database/auth helpers for PET Quest.
 
-The educational runtime can keep its existing SQLite persistence while user identity,
-unique usernames and account credentials are authoritative in PostgreSQL.
+The public.users table is the single source of truth for identity and credentials.
+The legacy public.pet_users table is not used by this module.
 """
 import os
 import re
@@ -36,7 +36,6 @@ def connect(dbname=None, autocommit=False):
 
 
 def ensure_database_exists():
-    # CREATE DATABASE cannot run in a transaction. Connect to the maintenance DB.
     with connect('postgres', autocommit=True) as c:
         with c.cursor() as cur:
             cur.execute('SELECT 1 FROM pg_database WHERE datname=%s', (PG_DB,))
@@ -60,9 +59,9 @@ def health():
     try:
         with connect() as c:
             with c.cursor() as cur:
-                cur.execute('SELECT current_database(), current_user, COUNT(*) FROM pet_users')
+                cur.execute('SELECT current_database(), current_user, COUNT(*) FROM public.users')
                 db, user, count = cur.fetchone()
-        return {'ok': True, 'database': db, 'user': user, 'registered_users': int(count)}
+        return {'ok': True, 'database': db, 'user': user, 'registered_users': int(count), 'identity_table': 'users'}
     except Exception as exc:
         return {'ok': False, 'database': PG_DB, 'user': PG_USER, 'error': str(exc)[:240]}
 
@@ -73,8 +72,11 @@ def find_identity(identifier):
         return None
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('''SELECT id,local_user_id,username,email,password_hash,display_name,role,profile_mode,disabled,created_at,last_login_at
-                           FROM pet_users WHERE lower(username)=%s OR lower(email)=%s LIMIT 1''', (ident, ident))
+            cur.execute('''SELECT id,id AS local_user_id,username,email,password_hash,name AS display_name,
+                                  role,profile_mode,disabled,created_at,last_login_at
+                           FROM public.users
+                           WHERE lower(username)=%s OR lower(email)=%s
+                           LIMIT 1''', (ident, ident))
             row = cur.fetchone()
     if not row:
         return None
@@ -85,18 +87,22 @@ def find_identity(identifier):
 def identity_exists(username, email):
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('SELECT username,email FROM pet_users WHERE lower(username)=lower(%s) OR lower(email)=lower(%s) LIMIT 1', (username, email))
+            cur.execute('''SELECT username,email FROM public.users
+                           WHERE lower(username)=lower(%s) OR lower(email)=lower(%s)
+                           LIMIT 1''', (username, email))
             row = cur.fetchone()
-    if not row:
-        return None
-    return {'username': row[0], 'email': row[1]}
+    return None if not row else {'username': row[0], 'email': row[1]}
 
 
 def create_identity(local_user_id, username, email, password_hash, display_name, role='student', profile_mode='schools'):
+    """Compatibility helper for older maintenance scripts; public.users remains authoritative."""
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('''INSERT INTO pet_users(local_user_id,username,email,password_hash,display_name,role,profile_mode)
-                           VALUES(%s,%s,%s,%s,%s,%s,%s)
+            cur.execute('''INSERT INTO public.users(id,username,email,password_hash,name,role,profile_mode,created_at)
+                           VALUES(%s,%s,%s,%s,%s,%s,%s,CURRENT_TIMESTAMP::text)
+                           ON CONFLICT(id) DO UPDATE SET username=EXCLUDED.username,email=EXCLUDED.email,
+                             password_hash=EXCLUDED.password_hash,name=EXCLUDED.name,role=EXCLUDED.role,
+                             profile_mode=EXCLUDED.profile_mode
                            RETURNING id,created_at''',
                         (int(local_user_id), username, email, password_hash, display_name, role, profile_mode))
             row = cur.fetchone()
@@ -107,35 +113,32 @@ def create_identity(local_user_id, username, email, password_hash, display_name,
 def update_last_login(identity_id):
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('UPDATE pet_users SET last_login_at=CURRENT_TIMESTAMP WHERE id=%s', (int(identity_id),))
+            cur.execute('UPDATE public.users SET last_login_at=CURRENT_TIMESTAMP::text WHERE id=%s', (int(identity_id),))
         c.commit()
 
+
 def update_local_user_id(identity_id, local_user_id):
-    with connect() as c:
-        with c.cursor() as cur:
-            cur.execute('UPDATE pet_users SET local_user_id=%s WHERE id=%s', (int(local_user_id), int(identity_id)))
-            if cur.rowcount != 1:
-                raise RuntimeError('postgres_identity_not_found')
-        c.commit()
+    if int(identity_id) != int(local_user_id):
+        raise RuntimeError('postgres_only_identity_id_is_user_id')
     return True
 
 
 def delete_identity_by_local_user(local_user_id):
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('DELETE FROM pet_users WHERE local_user_id=%s', (int(local_user_id),))
+            cur.execute('UPDATE public.users SET disabled=1 WHERE id=%s', (int(local_user_id),))
         c.commit()
-
 
 
 def update_password_by_local_user(local_user_id, password_hash):
     with connect() as c:
         with c.cursor() as cur:
-            cur.execute('UPDATE pet_users SET password_hash=%s WHERE local_user_id=%s', (password_hash, int(local_user_id)))
+            cur.execute('UPDATE public.users SET password_hash=%s WHERE id=%s', (password_hash, int(local_user_id)))
             if cur.rowcount != 1:
                 raise RuntimeError('postgres_identity_not_found')
         c.commit()
     return True
+
 
 def username_valid(value):
     return bool(re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{2,31}', str(value or '').strip()))

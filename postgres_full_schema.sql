@@ -14,21 +14,8 @@ CREATE TABLE IF NOT EXISTS public.users(
 CREATE UNIQUE INDEX IF NOT EXISTS uq_users_username_ci ON public.users(lower(username)) WHERE username IS NOT NULL;
 CREATE UNIQUE INDEX IF NOT EXISTS uq_users_email_ci ON public.users(lower(email));
 
-CREATE TABLE IF NOT EXISTS public.pet_users(
- id BIGSERIAL PRIMARY KEY,
- local_user_id BIGINT NOT NULL UNIQUE,
- username VARCHAR(32) NOT NULL,
- email VARCHAR(180) NOT NULL,
- password_hash TEXT NOT NULL,
- display_name VARCHAR(120) NOT NULL,
- role VARCHAR(32) NOT NULL DEFAULT 'student',
- profile_mode VARCHAR(16) NOT NULL DEFAULT 'schools',
- disabled BOOLEAN NOT NULL DEFAULT FALSE,
- created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
- last_login_at TIMESTAMPTZ NULL
-);
-CREATE UNIQUE INDEX IF NOT EXISTS uq_pet_users_username_ci ON public.pet_users(lower(username));
-CREATE UNIQUE INDEX IF NOT EXISTS uq_pet_users_email_ci ON public.pet_users(lower(email));
+-- Legacy public.pet_users is intentionally not created in PostgreSQL-only mode.
+-- public.users is the single identity/credential table.
 
 CREATE TABLE IF NOT EXISTS public.sessions(token TEXT PRIMARY KEY,user_id BIGINT NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,created_at TEXT NOT NULL,expires_at TEXT NOT NULL,last_seen_at TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS public.login_attempts(email TEXT PRIMARY KEY,failures INTEGER NOT NULL DEFAULT 0,locked_until TEXT,updated_at TEXT NOT NULL);
@@ -109,7 +96,7 @@ CREATE TABLE IF NOT EXISTS public.practice_bank_items(
  item_type TEXT,
  prompt TEXT NOT NULL,
  options_json JSONB,
- answer_index INTEGER,
+ answer_index TEXT,
  explanation TEXT,
  audio_text TEXT,
  source TEXT,
@@ -119,6 +106,32 @@ CREATE TABLE IF NOT EXISTS public.practice_bank_items(
  loaded_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
  UNIQUE(profile,item_id)
 );
+
+-- ---------------------------------------------------------------------------
+-- Docker/upgrade migration for existing PostgreSQL volumes:
+-- practice_bank_items.answer_index can contain mixed values.
+-- ---------------------------------------------------------------------------
+DO $$
+DECLARE
+    current_type TEXT;
+BEGIN
+    SELECT data_type
+      INTO current_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'practice_bank_items'
+       AND column_name = 'answer_index';
+
+    IF current_type IN ('smallint', 'integer', 'bigint') THEN
+        ALTER TABLE public.practice_bank_items
+            ALTER COLUMN answer_index TYPE TEXT
+            USING answer_index::TEXT;
+    ELSIF current_type IS NULL THEN
+        ALTER TABLE public.practice_bank_items
+            ADD COLUMN answer_index TEXT;
+    END IF;
+END $$;
+
 CREATE INDEX IF NOT EXISTS idx_practice_items_profile_skill ON public.practice_bank_items(profile,skill,part,cefr);
 CREATE INDEX IF NOT EXISTS idx_practice_items_competency ON public.practice_bank_items(profile,competency);
 
@@ -153,7 +166,10 @@ CREATE TABLE IF NOT EXISTS public.audio_assets(
  transcript TEXT,
  question TEXT,
  options_json JSONB,
- answer_index INTEGER,
+ -- IMPORTANT: this field is intentionally TEXT. PET Listening answers are mixed:
+ -- numeric option indexes (0/1/2/...) and literal answers such as '9:30'.
+ -- Keeping the historical column name preserves compatibility with postgres_content.py.
+ answer_index TEXT,
  focus TEXT,
  voice_profiles_json JSONB,
  training_speeds_json JSONB,
@@ -171,6 +187,42 @@ CREATE TABLE IF NOT EXISTS public.audio_assets(
  metadata_json JSONB NOT NULL DEFAULT '{}'::jsonb,
  loaded_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
+-- ---------------------------------------------------------------------------
+-- Docker/upgrade migration for existing PostgreSQL volumes
+-- ---------------------------------------------------------------------------
+-- CREATE TABLE IF NOT EXISTS does not alter a table that already exists.
+-- Previous PET builds created audio_assets.answer_index as INTEGER, which fails
+-- when the seed contains literal Listening answers such as "9:30".
+DO $$
+DECLARE
+    current_type TEXT;
+BEGIN
+    SELECT data_type
+      INTO current_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'audio_assets'
+       AND column_name = 'answer_index';
+
+    IF current_type IN ('smallint', 'integer', 'bigint') THEN
+        ALTER TABLE public.audio_assets
+            ALTER COLUMN answer_index TYPE TEXT
+            USING answer_index::TEXT;
+    ELSIF current_type IS NULL THEN
+        ALTER TABLE public.audio_assets
+            ADD COLUMN answer_index TEXT;
+    END IF;
+END $$;
+
+-- Optional forward-compatible columns. The current loader can ignore these;
+-- they allow a later release to store the semantic answer separately without
+-- changing the legacy answer_index field again.
+ALTER TABLE public.audio_assets
+    ADD COLUMN IF NOT EXISTS answer_text TEXT;
+
+ALTER TABLE public.audio_assets
+    ADD COLUMN IF NOT EXISTS answer_value JSONB;
+
 CREATE INDEX IF NOT EXISTS idx_audio_assets_id ON public.audio_assets(audio_id);
 CREATE INDEX IF NOT EXISTS idx_audio_assets_profile_part ON public.audio_assets(profile,part);
 CREATE INDEX IF NOT EXISTS idx_audio_assets_human ON public.audio_assets(human_recording,synthetic);
@@ -203,7 +255,7 @@ CREATE TABLE IF NOT EXISTS public.exam_items(
  source_text TEXT,
  source_label TEXT,
  options_json JSONB,
- answer_index INTEGER,
+ answer_index TEXT,
  audio_id TEXT,
  audio_file TEXT,
  transcript TEXT,
@@ -214,6 +266,32 @@ CREATE TABLE IF NOT EXISTS public.exam_items(
  loaded_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
  PRIMARY KEY(pack_id,item_id)
 );
+
+-- ---------------------------------------------------------------------------
+-- Docker/upgrade migration for existing PostgreSQL volumes:
+-- exam_items.answer_index can contain A/B/C/D as well as numeric values.
+-- ---------------------------------------------------------------------------
+DO $$
+DECLARE
+    current_type TEXT;
+BEGIN
+    SELECT data_type
+      INTO current_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'exam_items'
+       AND column_name = 'answer_index';
+
+    IF current_type IN ('smallint', 'integer', 'bigint') THEN
+        ALTER TABLE public.exam_items
+            ALTER COLUMN answer_index TYPE TEXT
+            USING answer_index::TEXT;
+    ELSIF current_type IS NULL THEN
+        ALTER TABLE public.exam_items
+            ADD COLUMN answer_index TEXT;
+    END IF;
+END $$;
+
 CREATE INDEX IF NOT EXISTS idx_exam_items_pack_skill ON public.exam_items(pack_id,skill,part,item_order);
 CREATE INDEX IF NOT EXISTS idx_exam_items_audio ON public.exam_items(audio_id) WHERE audio_id IS NOT NULL;
 
@@ -234,5 +312,98 @@ UNION ALL SELECT 'audio_assets', COUNT(*) FROM public.audio_assets
 UNION ALL SELECT 'exam_packs', COUNT(*) FROM public.exam_packs
 UNION ALL SELECT 'exam_items', COUNT(*) FROM public.exam_items
 UNION ALL SELECT 'content_packages', COUNT(*) FROM public.content_packages;
+
+-- ---------------------------------------------------------------------------
+-- Schema sanity checks
+-- ---------------------------------------------------------------------------
+-- Fail early during Docker startup if an old PostgreSQL volume still has an
+-- incompatible answer_index type. This prevents confusing seed errors such as:
+--   invalid input syntax for type integer: "9:30"
+--   invalid input syntax for type integer: "A"
+-- ---------------------------------------------------------------------------
+DO $$
+DECLARE
+    practice_type TEXT;
+    audio_type TEXT;
+    exam_type TEXT;
+BEGIN
+    SELECT data_type
+      INTO practice_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'practice_bank_items'
+       AND column_name = 'answer_index';
+
+    SELECT data_type
+      INTO audio_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'audio_assets'
+       AND column_name = 'answer_index';
+
+    SELECT data_type
+      INTO exam_type
+      FROM information_schema.columns
+     WHERE table_schema = 'public'
+       AND table_name = 'exam_items'
+       AND column_name = 'answer_index';
+
+    IF practice_type <> 'text' THEN
+        RAISE EXCEPTION
+            'PET schema error: practice_bank_items.answer_index must be TEXT, got %',
+            practice_type;
+    END IF;
+
+    IF audio_type <> 'text' THEN
+        RAISE EXCEPTION
+            'PET schema error: audio_assets.answer_index must be TEXT, got %',
+            audio_type;
+    END IF;
+
+    IF exam_type <> 'text' THEN
+        RAISE EXCEPTION
+            'PET schema error: exam_items.answer_index must be TEXT, got %',
+            exam_type;
+    END IF;
+END $$;
+
+
+-- ============================================================
+-- PostgreSQL-only runtime: auto-increment compatibility
+-- ============================================================
+-- Earlier PET schemas mirrored SQLite IDs into BIGINT PRIMARY KEY columns
+-- without sequence defaults. The PostgreSQL-only runtime inserts directly,
+-- so every numeric `id` primary-key table needs an automatic sequence.
+DO $$
+DECLARE
+    r record;
+    seq text;
+    mx bigint;
+BEGIN
+    FOR r IN
+        SELECT c.table_name
+        FROM information_schema.columns c
+        JOIN information_schema.tables t
+          ON t.table_schema=c.table_schema AND t.table_name=c.table_name
+        WHERE c.table_schema='public'
+          AND c.column_name='id'
+          AND c.data_type IN ('smallint','integer','bigint')
+          AND c.column_default IS NULL
+          AND t.table_type='BASE TABLE'
+    LOOP
+        seq := r.table_name || '_id_seq';
+        EXECUTE format('CREATE SEQUENCE IF NOT EXISTS public.%I', seq);
+        EXECUTE format(
+            'ALTER TABLE public.%I ALTER COLUMN id SET DEFAULT nextval(%L::regclass)',
+            r.table_name, 'public.' || seq
+        );
+        EXECUTE format('SELECT COALESCE(MAX(id),0) FROM public.%I', r.table_name) INTO mx;
+        IF mx > 0 THEN
+            EXECUTE format('SELECT setval(%L::regclass,%s,true)', 'public.' || seq, mx);
+        ELSE
+            EXECUTE format('SELECT setval(%L::regclass,1,false)', 'public.' || seq);
+        END IF;
+    END LOOP;
+END $$;
 
 COMMIT;
