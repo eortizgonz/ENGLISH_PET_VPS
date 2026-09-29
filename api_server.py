@@ -45,7 +45,7 @@ VERIFY_HOURS=24
 PBKDF2_ITERS=310000
 ALLOWED_ROLES={'student','guardian','teacher','school','platform_support','admin','academic_reviewer','content_author'}
 ALLOWED_SKILLS={'reading','writing','listening','speaking'}
-APP_VERSION='46.31-pg'
+APP_VERSION='46.32-pg'
 LICENSE_PLANS={'pilot':30,'school':500,'enterprise':5000}
 
 
@@ -386,7 +386,7 @@ def runtime_health():
 
 
 def init_db():
-    postgres_auth.ensure_database_exists(); postgres_auth.init_schema(); _ensure_postgres_id_sequences(); BACKUP_DIR.mkdir(parents=True,exist_ok=True)
+    postgres_auth.ensure_database_exists(); postgres_auth.init_schema(); postgres_auth.migrate_legacy_pet_users(); _ensure_postgres_id_sequences(); BACKUP_DIR.mkdir(parents=True,exist_ok=True)
     if SEED_DEMO_DATA:
         c=conn()
         if c.execute('SELECT COUNT(*) FROM schools').fetchone()[0]==0:
@@ -1621,9 +1621,9 @@ class Handler(SimpleHTTPRequestHandler):
             cur=c.execute('INSERT INTO speaking_attempts(student_id,part,mode,transcript,duration_ms,metrics_json,rubric_json,score_pct,audio_local_key,created_at,source) VALUES(?,?,?,?,?,?,?,?,?,?,?)',(student_id,part,mode,transcript,duration_ms,raw_metrics,raw_rubric,score_pct,clean_text(b.get('audio_local_key'),180),now(),clean_text(b.get('source'),60) or 'v46.14-speaking-ai'))
             audit(c,u['id'],'create','speaking_attempt',cur.lastrowid,{'student_id':student_id,'part':part,'score_pct':score_pct}); c.commit(); rid=cur.lastrowid;c.close();return self.json({'ok':True,'id':rid,'score_pct':score_pct},201)
         if p=='/api/snapshot':
-            if u.get('role')=='student' and REQUIRE_GUARDIAN_CONSENT:
-                c=conn(); ok=c.execute('SELECT 1 FROM guardian_consents WHERE student_id=? AND revoked_at IS NULL ORDER BY id DESC LIMIT 1',(u['id'],)).fetchone(); c.close()
-                if not ok:return self.json({'error':'guardian_consent_required'},403)
+            # Core authenticated progress persistence must remain available for every user.
+            # Guardian consent still protects sensitive features such as speaking/audio capture,
+            # but must not prevent saving ordinary exercise progress and resume state.
             payload=b.get('snapshot',{}); raw=json.dumps(payload,ensure_ascii=False)
             if len(raw)>750000:return self.json({'error':'snapshot_too_large'},413)
             c=conn();c.execute('INSERT INTO snapshots(user_id,payload,updated_at) VALUES(?,?,?) ON CONFLICT(user_id) DO UPDATE SET payload=excluded.payload,updated_at=excluded.updated_at',(u['id'],raw,now()));audit(c,u['id'],'sync','snapshot',u['id'],{'bytes':len(raw)});c.commit();c.close();return self.json({'ok':True,'synced_at':now()})

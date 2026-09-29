@@ -55,6 +55,37 @@ def init_schema():
     return True
 
 
+
+def migrate_legacy_pet_users():
+    """Merge legacy public.pet_users into public.users, then drop it safely."""
+    with connect() as c:
+        with c.cursor() as cur:
+            cur.execute("SELECT to_regclass('public.pet_users')")
+            if not cur.fetchone()[0]:
+                return {'ok': True, 'legacy_table_found': False, 'dropped': False}
+            cur.execute("""SELECT COUNT(*)
+                           FROM public.pet_users p
+                           LEFT JOIN public.users u ON u.id=p.local_user_id
+                           WHERE u.id IS NULL""")
+            orphan_count=int(cur.fetchone()[0])
+            if orphan_count:
+                raise RuntimeError(f'pet_users_orphans_detected:{orphan_count}')
+            cur.execute("""UPDATE public.users u
+                           SET username=p.username,
+                               email=p.email,
+                               password_hash=p.password_hash,
+                               name=p.display_name,
+                               role=p.role,
+                               profile_mode=p.profile_mode,
+                               disabled=CASE WHEN p.disabled THEN 1 ELSE 0 END,
+                               last_login_at=COALESCE(p.last_login_at::text,u.last_login_at)
+                           FROM public.pet_users p
+                           WHERE u.id=p.local_user_id""")
+            merged=int(cur.rowcount or 0)
+            cur.execute('DROP TABLE public.pet_users')
+        c.commit()
+    return {'ok': True, 'legacy_table_found': True, 'merged_users': merged, 'dropped': True}
+
 def health():
     try:
         with connect() as c:

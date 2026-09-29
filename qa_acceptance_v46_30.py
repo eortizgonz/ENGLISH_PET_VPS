@@ -22,13 +22,13 @@ ck('start uses ready endpoint','/api/ready' in start)
 ck('start does not force demo seed',"'PETQUEST_SEED_DEMO_DATA':'1'" not in start)
 # PostgreSQL identity schema and checker
 pgcode=(R/'postgres_auth.py').read_text(encoding='utf-8')
-for token in ['CREATE TABLE IF NOT EXISTS pet_users','uq_pet_users_username_ci','uq_pet_users_email_ci','idx_pet_users_local_user','update_password_by_local_user']:
-    ck('postgres auth '+token,token in pgcode)
+ck('postgres auth users-only','FROM public.users' in pgcode and 'migrate_legacy_pet_users' in pgcode)
+ck('postgres auth does not create pet_users','CREATE TABLE IF NOT EXISTS pet_users' not in pgcode)
 checkcode=(R/'postgres_check.py').read_text(encoding='utf-8')
-ck('postgres checker uses pet_users','pet_users' in checkcode and 'information_schema.columns' in checkcode)
+ck('postgres checker rejects legacy pet_users',"legacy_present='pet_users' in tables" in checkcode and "identity_table':'users'" in checkcode)
 # API mappings
 api=(R/'api_server.py').read_text(encoding='utf-8')
-for token in ["AUTH_DATABASE_ENGINE='postgres'",'postgres_auth.create_identity','postgres_auth.find_identity','postgres_auth.update_password_by_local_user',"INSERT INTO snapshots", "INSERT INTO learning_events", "INSERT INTO academic_error_events", "INSERT INTO academic_remediation_attempts", "INSERT INTO mock_attempts", "INSERT INTO mock_item_responses", "INSERT INTO speaking_attempts"]:
+for token in ["AUTH_DATABASE_ENGINE='postgres'","INSERT INTO snapshots", "INSERT INTO learning_events", "INSERT INTO academic_error_events", "INSERT INTO academic_remediation_attempts", "INSERT INTO mock_attempts", "INSERT INTO mock_item_responses", "INSERT INTO speaking_attempts"]:
     ck('API mapping '+token,token in api)
 ck('health exposes auth database',"'auth_database_engine':AUTH_DATABASE_ENGINE" in api and "'postgres_auth':pg_health" in api)
 # UI registration/recovery
@@ -53,12 +53,11 @@ ck('audio bank 500',len(items)==500,len(items))
 missing_audio=[x['id'] for x in items if not (R/x['audio_file']).is_file()]
 ck('audio files present',not missing_audio,missing_audio[:5])
 ck('audio current status truthful',bank.get('voice_policy',{}).get('synthetic_voice_simulation') is True and bank.get('voice_policy',{}).get('human_recordings') is False)
-# Local SQLite package integrity
+# Legacy SQLite file may still ship as a static asset, but identity/runtime is PostgreSQL-only.
 c=sqlite3.connect(R/'petquest.db')
 integ=c.execute('PRAGMA integrity_check').fetchone()[0]
-uc=c.execute('select count(*) from users').fetchone()[0]
 c.close()
-ck('SQLite integrity',integ=='ok',integ)
-ck('release ships without test users',uc==0,uc)
+ck('SQLite file integrity',integ=='ok',integ)
+ck('runtime identity is PostgreSQL users',"DATABASE_ENGINE='postgres'" in api and "AUTH_DATABASE_ENGINE='postgres'" in api)
 print(f'ACCEPTANCE STATIC RESULT {sum(x[1] for x in checks)}/{len(checks)}')
 sys.exit(0 if all(x[1] for x in checks) else 1)

@@ -9,7 +9,7 @@ const UX_TOURS={
   kid:[
     ['¡Hola! Soy Milo 👋','Voy contigo paso a paso. No tienes que saber dónde empezar: yo te mostraré una misión cada vez.','assets/mascot.svg'],
     ['1. Mira tu misión','En Inicio verás una sola recomendación principal. Empieza por ahí y deja el resto para después.','assets/reading.svg'],
-    ['2. Practica sin miedo','Lee o escucha, elige una respuesta y toca “Comprobar”. Si fallas, te explicamos por qué y puedes volver a intentarlo.','assets/listening.svg'],
+    ['2. Practica sin miedo','Lee o escucha, elige una respuesta y toca “Siguiente”. Si fallas, la opción se marcará en rojo y podrás volver a intentarlo.','assets/listening.svg'],
     ['3. Reparamos los errores','Tus errores no desaparecen: se convierten en ejercicios de repaso hasta que los domines.','assets/writing.svg'],
     ['4. Mira cómo creces','Ganas XP, logros y progreso. Cuando estés listo, podrás probar un Mock Exam.','assets/speaking.svg']
   ],
@@ -36,7 +36,7 @@ function uxStepState(){
   if(state.checked)return 4;if(state.selected!==null)return 3;return state.skill==='listening'?1:2;
 }
 function uxStepper(){const cur=uxStepState();const names=state.skill==='listening'?['1 Escucha','2 Lee','3 Elige','4 Aprende']:['1 Lee','2 Piensa','3 Elige','4 Aprende'];return `<div class="v10-stepper">${names.map((n,i)=>`<div class="v10-step ${i+1<cur?'done':i+1===cur?'active':''}">${n}</div>`).join('')}</div>`}
-function uxCoachText(){if(state.checked)return state.selected===currentQuestions()[state.idx]?.a?'¡Muy bien! Lee la explicación para recordar por qué funciona.':'Equivocarse sirve para aprender. Mira la explicación y guarda el foco para repasarlo.';if(state.selected!==null)return 'Ya elegiste. Ahora toca “Comprobar” y vemos juntos qué pasó.';if(state.skill==='listening')return 'Primero escucha el audio. Puedes volver a escucharlo antes de responder.';return 'Lee con calma. Busca primero qué te pide la pregunta y después compara las opciones.'}
+function uxCoachText(){if(state.checked)return state.selected===currentQuestions()[state.idx]?.a?'¡Muy bien! Lee la explicación para recordar por qué funciona.':'Equivocarse sirve para aprender. Mira la explicación y guarda el foco para repasarlo.';if(state.selected!==null)return 'Ya elegiste. Toca “Siguiente” para validar tu respuesta.';if(state.skill==='listening')return 'Primero escucha el audio. Puedes volver a escucharlo antes de responder.';return 'Lee con calma. Busca primero qué te pide la pregunta y después compara las opciones.'}
 function uxCoachBlock(text){return `<div class="v10-coach"><img src="assets/mascot.svg" alt="Milo, guía de PET Quest"><div><b>Milo te guía</b><p>${esc(text)}</p></div></div>`}
 
 function enhanceHomeV10(){

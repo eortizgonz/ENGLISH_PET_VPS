@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 """PET Quest V46.30 credential repair utility.
 
-Repairs a single linked user by writing one fresh PBKDF2-SHA256 hash to both
-PostgreSQL pet_users and the local SQLite users table. The password is entered
-interactively and is never printed or stored in plaintext.
+Repairs a single user in PostgreSQL public.users, the single source of truth.
+The password is entered interactively and is never printed or stored in plaintext.
 """
-import getpass, hashlib, secrets, sqlite3, re, sys
+import getpass, hashlib, secrets, re, sys
 from pathlib import Path
 import postgres_auth
 
-ROOT=Path(__file__).resolve().parent
-DB=ROOT/'petquest.db'
 PBKDF2_ITERS=310000
 
 def strong(v):
@@ -28,7 +25,7 @@ def main():
         print('ERROR: usuario/correo requerido'); return 2
     pg=postgres_auth.find_identity(ident)
     if not pg:
-        print('ERROR: usuario no existe en PostgreSQL pet_users'); return 3
+        print('ERROR: usuario no existe en PostgreSQL users'); return 3
     pw1=getpass.getpass('Nueva contraseña: ')
     pw2=getpass.getpass('Repetir nueva contraseña: ')
     if pw1!=pw2:
@@ -36,15 +33,13 @@ def main():
     if not strong(pw1):
         print('ERROR: use mínimo 10 caracteres, mayúscula, minúscula y número'); return 5
     new_hash=hash_pw(pw1)
-    postgres_auth.update_password_by_local_user(pg['local_user_id'],new_hash)
-    with sqlite3.connect(DB) as c:
-        cur=c.execute('UPDATE users SET password_hash=? WHERE id=?',(new_hash,int(pg['local_user_id'])))
-        if cur.rowcount!=1:
-            raise RuntimeError('sqlite_user_not_found')
-        c.execute('DELETE FROM sessions WHERE user_id=?',(int(pg['local_user_id']),))
-        c.execute('DELETE FROM login_attempts WHERE lower(email) IN (?,?)',(str(pg.get('email') or '').lower(),str(pg.get('username') or '').lower()))
+    postgres_auth.update_password_by_local_user(pg['id'],new_hash)
+    with postgres_auth.connect() as c:
+        with c.cursor() as cur:
+            cur.execute('DELETE FROM public.sessions WHERE user_id=%s',(int(pg['id']),))
+            cur.execute('DELETE FROM public.login_attempts WHERE lower(email) IN (%s,%s)',(str(pg.get('email') or '').lower(),str(pg.get('username') or '').lower()))
         c.commit()
-    print('OK: contraseña sincronizada en PostgreSQL y SQLite. Inicie sesión nuevamente.')
+    print('OK: contraseña actualizada en PostgreSQL public.users. Inicie sesión nuevamente.')
     return 0
 
 if __name__=='__main__':

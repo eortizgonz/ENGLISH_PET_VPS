@@ -14,21 +14,7 @@ CREATE TABLE IF NOT EXISTS public.users(
 CREATE UNIQUE INDEX IF NOT EXISTS uq_users_username_ci ON public.users(lower(username)) WHERE username IS NOT NULL;
 CREATE UNIQUE INDEX IF NOT EXISTS uq_users_email_ci ON public.users(lower(email));
 
-CREATE TABLE IF NOT EXISTS public.pet_users(
- id BIGSERIAL PRIMARY KEY,
- local_user_id BIGINT NOT NULL UNIQUE,
- username VARCHAR(32) NOT NULL,
- email VARCHAR(180) NOT NULL,
- password_hash TEXT NOT NULL,
- display_name VARCHAR(120) NOT NULL,
- role VARCHAR(32) NOT NULL DEFAULT 'student',
- profile_mode VARCHAR(16) NOT NULL DEFAULT 'schools',
- disabled BOOLEAN NOT NULL DEFAULT FALSE,
- created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
- last_login_at TIMESTAMPTZ NULL
-);
-CREATE UNIQUE INDEX IF NOT EXISTS uq_pet_users_username_ci ON public.pet_users(lower(username));
-CREATE UNIQUE INDEX IF NOT EXISTS uq_pet_users_email_ci ON public.pet_users(lower(email));
+-- Legacy public.pet_users removed. public.users is the single identity/credential table.
 
 CREATE TABLE IF NOT EXISTS public.sessions(token TEXT PRIMARY KEY,user_id BIGINT NOT NULL REFERENCES public.users(id) ON DELETE CASCADE,created_at TEXT NOT NULL,expires_at TEXT NOT NULL,last_seen_at TEXT NOT NULL);
 CREATE TABLE IF NOT EXISTS public.login_attempts(email TEXT PRIMARY KEY,failures INTEGER NOT NULL DEFAULT 0,locked_until TEXT,updated_at TEXT NOT NULL);

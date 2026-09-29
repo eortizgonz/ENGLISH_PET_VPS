@@ -33,8 +33,9 @@ function sceneFor(q){const icons={time:'🕒',places:'📍',numbers:'🔢',opini
 function learningScreen(){
  const qs=currentQuestions();const q=qs[state.idx];if(!q)return basePractice();
  const segments=splitAudio(q.audio),seg=Math.min(V18.segment,segments.length-1),plays=V18.replays[q.id]||0;
- const opts=q.opts.map((o,i)=>`<button class="option ${state.selected===i?'selected':''} ${state.checked?(i===q.a?'correct':state.selected===i?'wrong':''):''}" data-opt="${i}"><span>${String.fromCharCode(65+i)}</span>${E(o)}</button>`).join('');
- const fb=state.checked?`<div class="feedback ${state.selected===q.a?'ok':'bad'}"><b>${state.selected===q.a?'🌟 ¡Muy bien!':'🌱 Vamos a repararlo'}</b><p>${E(q.why)}</p><p class="small"><b>Clave de escucha:</b> ${E(q.tip)}</p></div>`:'';
+ const solved=state.checked&&state.selected===q.a;
+ const opts=q.opts.map((o,i)=>`<button class="option ${state.selected===i?'selected':''} ${solved&&i===q.a?'correct':state.checked&&!solved&&state.selected===i?'wrong':''}" data-opt="${i}" ${solved?'disabled':''}><span class="option-key">${String.fromCharCode(65+i)}</span><span class="option-text">${E(o)}</span></button>`).join('');
+ const fb=state.checked?`<div class="feedback ${solved?'ok':'bad'}"><b>${solved?'🌟 ¡Muy bien!':'❌ Esa respuesta no es correcta.'}</b>${solved?`<p>${E(q.why)}</p><p class="small"><b>Clave de escucha:</b> ${E(q.tip)}</p>`:'<p>Inténtalo nuevamente. La respuesta correcta no se mostrará.</p>'}</div>`:'';
  el(`<div class="app-shell">${topBar()}<main class="container">${screenHead('Listening Lab · Nivel '+state.level,`Parte ${q.part} · ${state.idx+1} de ${qs.length}`)}${modeBar()}
  <section class="card v18-listen-hero"><div class="v18-listen-scene">${sceneFor(q)}</div><div><span class="mission-label">Escena de escucha</span><h2>${E(q.focus)}</h2><p>Milo te ayuda a escuchar por intención, no palabra por palabra.</p></div><div class="v18-play-count"><b>${plays}</b><small>escuchas</small></div></section>
  <div class="exercise-layout"><section class="card question-card">
@@ -44,7 +45,7 @@ function learningScreen(){
  <div class="row"><button class="btn btn-primary" data-v18-play-full>▶ Escuchar completo</button><button class="btn btn-soft" data-v18-play-segment>🔹 Escuchar parte ${seg+1}/${segments.length}</button><button class="btn btn-ghost" data-v18-next-segment>Parte siguiente →</button></div>
  <div class="v18-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
  <div class="prompt">${E(q.q)}</div><div class="options">${opts}</div>${fb}
- <div class="row action-row"><button class="btn btn-primary" data-check ${state.selected===null||state.checked?'disabled':''}>Comprobar</button><button class="btn btn-soft" data-next ${!state.checked?'disabled':''}>${state.idx===qs.length-1?'Finalizar':'Siguiente →'}</button></div>
+ <div class="row action-row"><button class="btn btn-primary" data-next ${state.selected===null?'disabled':''}>${state.idx===qs.length-1?'Finalizar':'Siguiente →'}</button></div>
  </section><aside class="card side"><h3>🎯 Escucha con intención</h3><p class="small">Foco: <b>${E(q.focus)}</b></p><p>Primera escucha: idea general.</p><p>Segunda escucha: busca el detalle que responde la pregunta.</p><hr><div class="metric"><span>Precisión Listening</span><b>${pct('listening')}%</b></div><button class="btn btn-ghost mini" data-v18-mode="exam">Probar modo examen</button></aside></div></main></div>`);
 }
 function examQuestions(){return listeningBank().slice(0,25)}
