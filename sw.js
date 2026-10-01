@@ -1,4 +1,4 @@
-const CACHE='petquest-v46-33-clean-audio-1';
+const CACHE='petquest-v46-34-reset-link-1';
 const OFFLINE_INDEX='./index.html?v=46.33-cleanaudio1&source=offline&pathfix=1&contentdb=1&audiofix=1';
 const ASSETS=[
   './v46_32_audio_safe_engine.js',
@@ -10,14 +10,14 @@ const ASSETS=[
   './EXAM_PROFILES_V46_26.json',
   './exam_packs/adult_index.json',
   './v46_26_exam_profiles.js?v=46.33-cleanaudio1',
-  './v46_27_mastery_orchestrator.js?v=46.33-cleanaudio1',
+  './v46_27_mastery_orchestrator.js?v=46.34-no-goal-popup1',
   './PET_LEARN_CURRICULUM_V46_27.json',
   './index.html?v=46.33-cleanaudio1&source=offline&pathfix=1&contentdb=1',
   './styles.css?v=46.33-cleanaudio1',
   './v46_14_speaking_ai_examiner.js',
   './v46_15_part3_ai_candidate.js',
   './v46_16_readiness_calibration.js',
-  './app.js?v=46.33-cleanaudio1',
+  './app.js?v=46.34-reset-link1',
   './v46_30_windows_runtime_guard.js?v=46.33-cleanaudio1',
   './v5_enhancements.js',
   './v6_enhancements.js',
@@ -55,7 +55,8 @@ const ASSETS=[
   './v38_production_hardening.js',
   './v39_commercial_onboarding.js',
   './v40_release_readiness.js',
-  './v40_2_exam_fidelity.js',
+  './v40_2_exam_fidelity.js?v=46.34-part3audio1',
+  './assets/audio/fidelity/lp3_monologue_clean.wav',
   './v41_academic_intelligence.js',
   './v42_exam_calibration.js',
   './v43_full_mock_bank.js',

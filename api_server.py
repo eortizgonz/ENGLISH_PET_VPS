@@ -5,6 +5,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs
 from pathlib import Path
 import postgres_auth
+import password_recovery
 import postgres_content
 
 ROOT=Path(__file__).resolve().parent
@@ -121,7 +122,7 @@ def rate_ok(key, limit=RATE_LIMIT_MAX, window=RATE_LIMIT_WINDOW):
         if len(arr)>=limit:
             _RATE[key]=arr; return False
         arr.append(t); _RATE[key]=arr; return True
-def email_configured(): return bool(SMTP_HOST and SMTP_FROM)
+def email_configured(): return bool(SMTP_HOST and SMTP_FROM and (not SMTP_USER or SMTP_PASSWORD))
 def send_email(to, subject, text):
     if not email_configured(): return False
     msg=EmailMessage(); msg['From']=SMTP_FROM; msg['To']=to; msg['Subject']=subject; msg.set_content(text)
@@ -132,7 +133,7 @@ def send_email(to, subject, text):
             smtp.send_message(msg)
         return True
     except Exception as exc:
-        print('[PETQuest] email error:',exc); return False
+        print('[PETQuest] email delivery failed:',type(exc).__name__); return False
 def cleanup_backups():
     items=sorted(BACKUP_DIR.glob('*.dump'), key=lambda x:x.stat().st_mtime, reverse=True)
     for old in items[max(1,BACKUP_RETENTION):]:
@@ -641,7 +642,9 @@ def build_scale_equivalence_report(school_id):
 class Handler(SimpleHTTPRequestHandler):
     server_version='PETQuest/46.31-pg'
     def __init__(self,*a,**kw):super().__init__(*a,directory=str(ROOT),**kw)
-    def log_message(self,fmt,*args):print('[PETQuest]',fmt%args)
+    def log_message(self,fmt,*args):
+        message=re.sub(r'([?&](?:reset_token|verify_token)=)[^&\s\"]+',r'\1[REDACTED]',fmt%args)
+        print('[PETQuest]',message)
     def copyfile(self, source, outputfile):
         try:
             return super().copyfile(source, outputfile)
@@ -1535,29 +1538,22 @@ class Handler(SimpleHTTPRequestHandler):
         if p=='/api/forgot-password':
             ip=self.client_address[0] if self.client_address else 'unknown'
             if not rate_ok('reset:'+ip,8,300):return self.json({'error':'rate_limited'},429)
-            email=clean_text(b.get('email',''),180).lower(); c=conn(); ur=None;token=None
+            if not email_configured():return self.json({'error':'email_unavailable'},503)
+            email=clean_text(b.get('email',''),180).lower()
+            token=None
             if valid_email(email):
-                ur=c.execute('SELECT * FROM users WHERE lower(email)=?',(email,)).fetchone()
-            if ur:
-                token=secrets.token_urlsafe(40);c.execute('DELETE FROM account_tokens WHERE user_id=? AND kind="reset"',(ur['id'],));c.execute('INSERT INTO account_tokens(token,user_id,kind,created_at,expires_at) VALUES(?,?,?,?,?)',(token,ur['id'],'reset',now(),iso_after(minutes=RESET_MINUTES)));audit(c,ur['id'],'password_reset_requested')
-            c.commit();c.close();resp={'ok':True,'message':'If the account exists, a recovery instruction was generated.'}
-            if token and email_configured():
-                link=PUBLIC_BASE_URL.rstrip('/')+'/?reset_token='+token;resp['email_sent']=send_email(email,'PET Quest — Restablecer contraseña',f'Usa este enlace para restablecer tu contraseña (válido {RESET_MINUTES} minutos):\n\n{link}')
-            if DEV_MODE and token:resp['dev_reset_token']=token
-            return self.json(resp)
+                token=password_recovery.issue_token(conn,email,now(),iso_after(minutes=RESET_MINUTES),audit)
+            if token:
+                link=PUBLIC_BASE_URL.rstrip('/')+'/?reset_token='+token
+                send_email(email,'PET Quest - Restablecer contraseña',f'Usa este enlace para crear una contraseña nueva (válido {RESET_MINUTES} minutos):\n\n{link}\n\nSi no solicitaste este cambio, ignora este mensaje.')
+            return self.json({'ok':True,'message':'Si la cuenta está activa, recibirás un enlace de recuperación. Revisa también la carpeta de spam.'})
         if p=='/api/reset-password':
-            token=clean_text(b.get('token'),180); password=str(b.get('password',''))[:256]
-            if not strong_password(password):return self.json({'error':'weak_password'},400)
-            c=conn();r=c.execute('SELECT * FROM account_tokens WHERE token=? AND kind="reset" AND used_at IS NULL',(token,)).fetchone()
-            if not r:c.close();return self.json({'error':'invalid_token'},400)
-            try:expired=datetime.datetime.fromisoformat(r['expires_at'])<=now_dt()
-            except Exception:expired=True
-            if expired:c.close();return self.json({'error':'expired_token'},400)
-            new_hash=hash_pw(password)
-            c.execute('UPDATE users SET password_hash=? WHERE id=?',(new_hash,r['user_id']));ur2=c.execute('SELECT email,username FROM users WHERE id=?',(r['user_id'],)).fetchone();c.execute('UPDATE account_tokens SET used_at=? WHERE token=?',(now(),token));c.execute('DELETE FROM sessions WHERE user_id=?',(r['user_id'],));
-            if ur2:
-                c.execute('DELETE FROM login_attempts WHERE lower(email) IN (?,?)',(str(ur2['email'] or '').lower(),str(ur2['username'] or '').lower()))
-            audit(c,r['user_id'],'password_reset_completed','user',r['user_id'],{'auth_store':'postgres'});c.commit();c.close();return self.json({'ok':True})
+            ip=self.client_address[0] if self.client_address else 'unknown'
+            if not rate_ok('reset-submit:'+ip,15,300):return self.json({'error':'rate_limited'},429)
+            token=clean_text(b.get('token'),180); password=str(b.get('password',''))
+            if not strong_password(password) or len(password)>128:return self.json({'error':'weak_password'},400)
+            error=password_recovery.redeem_token(conn,token,hash_pw(password),now(),audit)
+            return self.json({'error':error},400) if error else self.json({'ok':True})
         if p=='/api/logout':
             token=self.bearer(); c=conn(); row=c.execute('SELECT user_id FROM sessions WHERE token=?',(token,)).fetchone(); c.execute('DELETE FROM sessions WHERE token=?',(token,));
             if row:audit(c,row['user_id'],'logout')

@@ -1,0 +1,15 @@
+{
+  "file": "lp3_monologue_clean.wav",
+  "replaces": "lp3_monologue.mp3",
+  "engine": "Windows System.Speech",
+  "voice": "Microsoft Zira Desktop",
+  "locale": "en-US",
+  "synthetic": true,
+  "human_recording": false,
+  "sample_rate_hz": 24000,
+  "bits_per_sample": 16,
+  "channels": 1,
+  "duration_seconds": 19.9445,
+  "transcript": "Here is the information for Friday's school visit. Please meet at eight thirty in the school car park. The coach will leave from there shortly afterwards. Everyone should bring a light jacket. Lunch will be provided in the cafe, and we expect to return at about five fifteen.",
+  "regenerate": "powershell -NoProfile -ExecutionPolicy Bypass -File ./regenerate_part3_audio.ps1"
+}

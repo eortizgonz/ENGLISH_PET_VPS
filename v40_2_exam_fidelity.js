@@ -86,7 +86,7 @@ function readingExactScreen(){if(!F.reading.active){el(`<div class="app-shell">$
 
 const LP1=(BANK.listening||[]).filter(q=>q.part===1).slice(0,7).map((q,i)=>({...q,audioFile:`assets/audio/fidelity/lp1_${i+1}.mp3`}));
 const LP2=(BANK.listening||[]).filter(q=>q.part===2).slice(0,6).map((q,i)=>({...q,audioFile:`assets/audio/fidelity/lp2_${i+1}.mp3`}));
-const LP3={audioFile:'assets/audio/fidelity/lp3_monologue.mp3',script:'',items:[
+const LP3={audioFile:'assets/audio/fidelity/lp3_monologue_clean.wav',script:'',items:[
  ['The visit takes place on', 'Friday', ['friday']],
  ['Students should meet at', '8:30', ['8:30','eight thirty','half past eight']],
  ['The coach will leave from the school', 'car park', ['car park','carpark']],

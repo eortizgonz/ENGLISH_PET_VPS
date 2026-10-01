@@ -132,10 +132,10 @@
     const lg=document.querySelector('[data-login]');if(lg){const inherited=lg.onclick;lg.onclick=async()=>{const remember=document.getElementById('rememberEmail');const email=document.getElementById('loginEmail')?.value.trim()||'';if(remember?.checked)localStorage.setItem('petQuestRememberedEmail',email);else localStorage.removeItem('petQuestRememberedEmail');return inherited?.()}}
     const rc=document.querySelector('[data-recover]');if(rc)rc.onclick=async()=>{
       const m=document.getElementById('recoverMsg');const email=document.getElementById('recoverEmail').value.trim();if(!/^\S+@\S+\.\S+$/.test(email)){m.innerHTML='<div class="feedback bad">Escribe un correo válido.</div>';return}
-      rc.disabled=true;try{const r=await apiRequest('/forgot-password',{method:'POST',body:{email}});m.innerHTML='<div class="feedback ok"><b>Solicitud procesada.</b> Revisa tu correo para crear una contraseña nueva.</div>';
+      rc.disabled=true;try{const r=await apiRequest('/forgot-password',{method:'POST',body:{email}});m.innerHTML='<div class="feedback ok"><b>Solicitud procesada.</b> Si la cuenta está activa, recibirás un enlace. Revisa también la carpeta de spam.</div>';
         if(r.dev_reset_token){sessionStorage.setItem('petQuestResetToken',r.dev_reset_token);m.innerHTML+='<button class="btn btn-soft" data-open-reset>Continuar en modo local</button>';document.querySelector('[data-open-reset]').onclick=()=>{state.view='resetPassword';render()}}
       }catch(e){
-        const msg=e?.message==='api_html_response'
+        const msg=e?.message==='email_unavailable' ? 'El envío de correos no está configurado. Contacta al administrador.' : e?.message==='rate_limited' ? 'Has realizado varias solicitudes. Espera unos minutos antes de intentarlo de nuevo.' : e?.message==='api_html_response'
           ? 'La aplicación estaba usando una copia antigua o un servidor incorrecto. Actualiza la página con Ctrl+F5 y vuelve a intentarlo.'
           : (e?.message==='api_timeout' ? 'El servidor tardó demasiado en responder. Verifica que PET Quest siga abierto e intenta nuevamente.' : 'No pudimos procesar la solicitud. Intenta nuevamente.');
         m.innerHTML=`<div class="feedback bad">${esc(msg)}</div>`

@@ -101,7 +101,14 @@ async function _apiBootstrapOnce(){
     API.online=!!h.ok;API.environment=h.environment||'unknown';API.demoSeedEnabled=!!h.multi_tenant?.demo_seed_enabled;API.demoAccountsAvailable=!!h.multi_tenant?.demo_accounts_available;
   }catch(e){
     API.online=false;
-    if(!API.token) state.view='login';
+    if(new URLSearchParams(location.search).get('reset_token')) state.view='resetPassword';
+    else if(!API.token) state.view='login';
+    render();
+    return;
+  }
+  // Email recovery is public and takes priority over automatic session routing.
+  if(new URLSearchParams(location.search).get('reset_token')){
+    state.view='resetPassword';
     render();
     return;
   }
