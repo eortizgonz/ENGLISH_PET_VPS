@@ -36,6 +36,12 @@ def _answer_text(value):
         return str(value)
     return _j(value)
 
+def _answer_index_value(value):
+    """Return numeric database answer indexes as integers in API responses."""
+    if isinstance(value, str) and value.strip().isdigit():
+        return int(value.strip())
+    return value
+
 def _section_items(data, skill):
     """Normalize an exam section to a list.
 
@@ -286,7 +292,7 @@ def audio_bank():
             cur.execute("SELECT metadata_json,asset_path,audio_id,part,item_index,transcript,question,options_json,answer_index,focus,voice_profiles_json,training_speeds_json,exam_speed,exam_max_plays,synthetic,human_recording,duration_seconds,bit_rate,sample_rate,channels,sha256 FROM audio_assets WHERE profile='schools' AND audio_id LIKE 'pqbank-%' ORDER BY part,item_index,audio_id")
             items=[]
             for r in cur.fetchall():
-                md=dict(r[0] or {}); md.update({'audio_file':r[1],'id':r[2],'part':r[3],'index':r[4],'transcript':r[5],'question':r[6],'options':r[7],'answer':r[8],'focus':r[9],'voice_profiles':r[10],'training_speeds':r[11],'exam_speed':r[12],'exam_max_plays':r[13],'synthetic':r[14],'human_recording':r[15],'duration_seconds':r[16],'bit_rate':r[17],'sample_rate':r[18],'channels':r[19],'sha256':r[20]}); items.append(md)
+                md=dict(r[0] or {}); md.update({'audio_file':r[1],'id':r[2],'part':r[3],'index':r[4],'transcript':r[5],'question':r[6],'options':r[7],'answer':_answer_index_value(r[8]),'focus':r[9],'voice_profiles':r[10],'training_speeds':r[11],'exam_speed':r[12],'exam_max_plays':r[13],'synthetic':r[14],'human_recording':r[15],'duration_seconds':r[16],'bit_rate':r[17],'sample_rate':r[18],'channels':r[19],'sha256':r[20]}); items.append(md)
     out=dict(base); out['items']=items; out['total']=len(items); return out
 
 def exam_index(profile='schools'):

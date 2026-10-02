@@ -1,6 +1,5 @@
 // PET Quest V10 — child-first guided UX layer.
 const V10UX={
-  mode:localStorage.getItem('petQuestUxMode') || ((API.user?.role && API.user.role!=='student')?'adult':'kid'),
   tourStep:0,
   tourOpen:false
 };
@@ -21,9 +20,8 @@ const UX_TOURS={
   ]
 };
 
-function uxRoleIsAdult(){return ['parent','teacher','school','admin'].includes(API.user?.role||data.profile.role)}
-function uxMode(){return V10UX.mode==='adult'?'adult':'kid'}
-function setUxMode(mode){V10UX.mode=mode;localStorage.setItem('petQuestUxMode',mode);document.documentElement.classList.toggle('kid-mode',mode==='kid');document.documentElement.classList.toggle('adult-mode',mode==='adult');render()}
+function uxRoleIsAdult(){return ['parent','teacher','school','admin'].includes(API.user?.role||data.profile.role)||data.profile?.examProfile==='adult'}
+function uxMode(){return uxRoleIsAdult()?'adult':'kid'}
 function uxMission(){
   const due=dueWords().length,bad=data.history.filter(x=>!x.correct).length,r=readiness();
   if(due)return {title:'Tu misión de hoy: recordar',text:`Tienes ${due} repaso${due===1?'':'s'} listo${due===1?'':'s'}. Son cortos y te ayudarán a recordar mejor.`,action:'review',label:'Hacer mi repaso →'};
@@ -53,7 +51,6 @@ function enhancePracticeV10(){const qcard=document.querySelector('.question-card
 function enhanceStudioV10(){const qcard=document.querySelector('.question-card');if(!qcard)return;const txt=state.view==='writing'?'Primero entiende la tarea. Después escribe una idea por vez. Al final revisaremos contenido, organización y lenguaje.':'No necesitas sonar perfecto. Responde, da una razón y añade un ejemplo. Puedes escucharte después.';qcard.insertAdjacentHTML('afterbegin',uxCoachBlock(txt))}
 function enhanceV10(){
   document.documentElement.classList.toggle('kid-mode',uxMode()==='kid');document.documentElement.classList.toggle('adult-mode',uxMode()==='adult');
-  const topbar=document.querySelector('.topbar-inner');if(topbar&&!topbar.querySelector('.ux-mode-switch')){const sw=document.createElement('div');sw.className='ux-mode-switch';sw.innerHTML=`<button class="${uxMode()==='kid'?'active':''}" data-ux-mode="kid">🧒 Niño</button><button class="${uxMode()==='adult'?'active':''}" data-ux-mode="adult">🧑 Adulto</button>`;topbar.insertBefore(sw,topbar.querySelector('.spacer').nextSibling)}
   if(state.view==='home')enhanceHomeV10();if(state.view==='practice')enhancePracticeV10();if(['writing','speaking'].includes(state.view))enhanceStudioV10();
   if(!document.querySelector('.v10-guide-btn'))document.body.insertAdjacentHTML('beforeend','<button class="v10-guide-btn" data-open-tour><span>🦉</span> Guía</button>');
   bindV10();
@@ -62,7 +59,7 @@ function enhanceV10(){
 function showTourV10(){document.querySelector('.v10-overlay')?.remove();const arr=UX_TOURS[uxMode()],s=arr[V10UX.tourStep];document.body.insertAdjacentHTML('beforeend',`<div class="v10-overlay" role="dialog" aria-modal="true" aria-label="Guía paso a paso"><div class="v10-tour"><div class="v10-tour-head"><img src="assets/mascot.svg" alt="Milo"><button class="tour-close" data-tour-close aria-label="Cerrar guía">×</button></div><img class="v10-tour-art" src="${s[2]}" alt="Ilustración del paso"><h2>${s[0]}</h2><p>${s[1]}</p><div class="tour-progress">${arr.map((_,i)=>`<span class="${i<=V10UX.tourStep?'active':''}"></span>`).join('')}</div><div class="tour-actions"><button class="btn btn-ghost" data-tour-prev ${V10UX.tourStep===0?'disabled':''}>← Anterior</button><button class="btn btn-primary" data-tour-next>${V10UX.tourStep===arr.length-1?(uxMode()==='kid'?'¡Empezar!':'Ir al panel'):'Siguiente →'}</button></div></div></div>`);bindTourV10()}
 function closeTourV10(done=false){document.querySelector('.v10-overlay')?.remove();V10UX.tourOpen=false;if(done)localStorage.setItem('petQuestV10TourDone_'+uxMode(),'1')}
 function bindTourV10(){document.querySelector('[data-tour-close]')?.addEventListener('click',()=>closeTourV10(true));document.querySelector('[data-tour-prev]')?.addEventListener('click',()=>{V10UX.tourStep=Math.max(0,V10UX.tourStep-1);showTourV10()});document.querySelector('[data-tour-next]')?.addEventListener('click',()=>{const arr=UX_TOURS[uxMode()];if(V10UX.tourStep<arr.length-1){V10UX.tourStep++;showTourV10()}else{closeTourV10(true);if(uxMode()==='kid')startSkill('reading',1);else{state.view='dashboard';render()}}})}
-function bindV10(){document.querySelectorAll('[data-ux-mode]').forEach(b=>b.onclick=()=>setUxMode(b.dataset.uxMode));document.querySelectorAll('[data-open-tour]').forEach(b=>b.onclick=()=>{V10UX.tourOpen=true;V10UX.tourStep=0;showTourV10()});document.querySelectorAll('[data-ux-go]').forEach(b=>b.onclick=()=>startSkill(b.dataset.uxGo,1));document.querySelectorAll('[data-ux-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.uxView;render()})}
+function bindV10(){document.querySelectorAll('[data-open-tour]').forEach(b=>b.onclick=()=>{V10UX.tourOpen=true;V10UX.tourStep=0;showTourV10()});document.querySelectorAll('[data-ux-go]').forEach(b=>b.onclick=()=>startSkill(b.dataset.uxGo,1));document.querySelectorAll('[data-ux-view]').forEach(b=>b.onclick=()=>{state.view=b.dataset.uxView;render()})}
 
 const v10RenderBase=render;
 render=function(){v10RenderBase();requestAnimationFrame(enhanceV10)};

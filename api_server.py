@@ -152,18 +152,31 @@ def student_preparation_summary(student_id, school_id):
     snap=c.execute('SELECT payload,updated_at FROM snapshots WHERE user_id=?',(student_id,)).fetchone()
     payload=safe_json(snap['payload'],{}) if snap and snap['payload'] else {}
     hist=payload.get('history',[]) if isinstance(payload.get('history',[]),list) else []
+    hist=[x for x in hist if isinstance(x,dict)]
     writing=payload.get('writing',[]) if isinstance(payload.get('writing',[]),list) else []
     speaking=payload.get('speaking',[]) if isinstance(payload.get('speaking',[]),list) else []
     local_mocks=payload.get('mockAttempts',[]) if isinstance(payload.get('mockAttempts',[]),list) else []
 
-    attempts=len(hist)
-    correct=sum(1 for x in hist if bool(x.get('correct')))
+    # Modern practice modules persist directly to learning_events instead of the
+    # legacy snapshot history. Merge only non-duplicated event families here;
+    # practice_answer/mock_answer are mirrors of snapshot entries and are omitted.
+    event_rows=[dict(r) for r in c.execute(
+        "SELECT id,event_type,skill,item_id,success,created_at FROM learning_events "
+        "WHERE user_id=? AND event_type IN ('practice_bank_answer','practice_remediation_answer','audio_bank_answer') "
+        "AND success IS NOT NULL ORDER BY id",(student_id,)).fetchall()]
+    event_hist=[{'qid':str(x.get('item_id') or ('event-'+str(x.get('id')))),
+                 'skill':str(x.get('skill') or '').lower(),'correct':bool(x.get('success')),
+                 'date':x.get('created_at'),'source':x.get('event_type')} for x in event_rows]
+    evidence=hist+event_hist
+
+    attempts=len(evidence)
+    correct=sum(1 for x in evidence if bool(x.get('correct')))
     wrong=max(0,attempts-correct)
     accuracy=round(correct*100/attempts,1) if attempts else 0.0
 
     # A question-level mistake is considered corrected only if a later attempt for the same qid is correct.
     q_events={}
-    for i,x in enumerate(hist):
+    for i,x in enumerate(evidence):
         qid=str(x.get('qid') or '').strip()
         if qid: q_events.setdefault(qid,[]).append((i,bool(x.get('correct'))))
     mistake_qids={qid for qid,events in q_events.items() if any(not ok for _,ok in events)}
@@ -199,7 +212,7 @@ def student_preparation_summary(student_id, school_id):
     correction_rate=round(corrected_targets*100/total_error_targets,1) if total_error_targets else 100.0
 
     def skill_pct(skill):
-        vals=[x for x in hist if str(x.get('skill','')).lower()==skill and 'correct' in x]
+        vals=[x for x in evidence if str(x.get('skill','')).lower()==skill and 'correct' in x]
         if vals: return round(sum(1 for x in vals if x.get('correct'))*100/len(vals),1)
         return 0.0
     reading=skill_pct('reading')
@@ -248,9 +261,13 @@ def student_preparation_summary(student_id, school_id):
     elif preparation>=60: band='En progreso'
     elif preparation>0: band='Requiere refuerzo'
     else: band='Sin evidencia suficiente'
+    snapshot_xp=max(0,int(float((payload.get('profile') or {}).get('xp') or 0)))
+    event_xp=sum(10 if x.get('correct') else 3 for x in event_hist)
+    evidence_dates=[str(x.get('date') or '') for x in evidence if x.get('date')]
+    updated_at=max(([str(snap['updated_at'])] if snap and snap['updated_at'] else [])+evidence_dates,default=None)
     return {
-        'student':dict(st),'updated_at':snap['updated_at'] if snap else None,
-        'activity':{'attempts':attempts,'correct_answers':correct,'wrong_answers':wrong,'accuracy':accuracy,'today_minutes':today_minutes},
+        'student':dict(st),'updated_at':updated_at,
+        'activity':{'attempts':attempts,'snapshot_attempts':len(hist),'event_attempts':len(event_hist),'correct_answers':correct,'wrong_answers':wrong,'accuracy':accuracy,'today_minutes':today_minutes,'xp':snapshot_xp+event_xp},
         'errors':{'total_error_targets':total_error_targets,'corrected':corrected_targets,'pending':pending_targets,'recurrent':recurrent_targets,'correction_rate':correction_rate,'question_errors':len(mistake_qids),'academic_error_patterns':len(error_codes)},
         'learner_target':{'exam_profile':str((payload.get('profile') or {}).get('examProfile') or 'schools'),'mastery_goal':str((payload.get('profile') or {}).get('masteryGoal') or 'solid'),'exam_date':str((payload.get('profile') or {}).get('examDate') or '')},
         'skills':skill_scores,
