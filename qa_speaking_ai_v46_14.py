@@ -5,9 +5,9 @@ checks=[]
 def ck(name,cond,detail=''):
     checks.append((name,bool(cond),detail))
     if not cond: print('FAIL',name,detail)
-js=(ROOT/'v46_14_speaking_ai_examiner.js').read_text()
-api=(ROOT/'api_server.py').read_text()
-idx=(ROOT/'index.html').read_text()
+js=(ROOT/'v46_14_speaking_ai_examiner.js').read_text(encoding='utf-8')
+api=(ROOT/'api_server.py').read_text(encoding='utf-8')
+idx=(ROOT/'index.html').read_text(encoding='utf-8')
 for term in ['MediaRecorder','getUserMedia','SpeechRecognition','long_pauses','hesitations','restarts','grammar','vocabulary_range','discourse_markers','pronunciation_proxy','intelligibility','stress_variation','intonation_variation','response_length','interaction','appropriate_fillers','words per minute' if False else 'wpm']:
     ck('js_metric:'+term,term in js)
 for crit in ['grammar_vocabulary','discourse_management','pronunciation','interactive_communication','global_achievement']:
@@ -20,7 +20,7 @@ ck('server_get','SELECT id,part,mode,transcript,duration_ms,metrics_json,rubric_
 ck('privacy_purge',"DELETE FROM speaking_attempts WHERE student_id=?" in api)
 ck('privacy_export',"'speaking_attempts':[dict(x) for x in speaking]" in api)
 ck('guardian_consent','guardian_consent_required' in api and "if p=='/api/speaking-attempts'" in api)
-ck('loaded', 'v46_14_speaking_ai_examiner.js?v=46.14' in idx)
+ck('loaded', 'v46_14_speaking_ai_examiner.js?v=46.37-autopron1' in idx)
 r=subprocess.run(['node','--check',str(ROOT/'v46_14_speaking_ai_examiner.js')],capture_output=True,text=True)
 ck('node_syntax',r.returncode==0,r.stderr)
 # Runtime persistence with consent disabled in isolated DB.
@@ -48,7 +48,7 @@ try:
     payload={'part':3,'mode':'exam','transcript':'Well, I think we could have a picnic because everyone can join. What about the sports hall if it rains? I agree, so let us choose that in the end.','duration_ms':42000,'metrics':{'fluency':84,'wpm':112.4,'long_pauses':1,'hesitations':1,'restarts':0,'grammar':86,'vocabulary_range':80,'discourse_markers':5,'pronunciation_proxy':82,'intelligibility':88,'stress_variation':70,'intonation_variation':75,'response_length':90,'interaction':92,'appropriate_fillers':1},'rubric':{'grammar_vocabulary':4,'discourse_management':4,'pronunciation':4,'interactive_communication':5,'global_achievement':4},'score_pct':84,'audio_local_key':'u1-p3-qa','source':'v46.14-speaking-ai'}
     st,p=request('/api/speaking-attempts',payload,token);ck('post_attempt',st==201 and p.get('id'),str(p))
     st,g=request('/api/speaking-attempts',None,token); a=(g.get('attempts') or [{}])[0];ck('readback',a.get('score_pct')==84.0 and a.get('metrics',{}).get('wpm')==112.4 and a.get('rubric',{}).get('interactive_communication')==5,str(a))
-    st,prep=request('/api/my-preparation',None,token);ck('preparation_speaking',prep.get('skills',{}).get('speaking')==84.0,str(prep.get('skills')))
+    st,prep=request('/api/my-preparation',None,token);ck('preparation_speaking_uses_pronunciation',prep.get('skills',{}).get('speaking')==82.0,str(prep.get('skills')))
     con=sqlite3.connect(db); con.row_factory=sqlite3.Row; row=con.execute('select student_id,part,score_pct,source from speaking_attempts order by id desc limit 1').fetchone(); fk=con.execute('pragma foreign_key_check').fetchall(); con.close();ck('db_row',row and row['part']==3 and row['score_pct']==84.0 and row['source']=='v46.14-speaking-ai',str(dict(row) if row else None));ck('foreign_keys',not fk,str(fk))
 finally:
     proc.terminate()

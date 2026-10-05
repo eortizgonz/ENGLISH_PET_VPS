@@ -17,7 +17,7 @@ class UnifiedProgressTests(unittest.TestCase):
             'CREATE TEMP TABLE academic_error_events(id bigint,student_id bigint,error_code text,skill text,subcompetence text,occurred_at text)',
             'CREATE TEMP TABLE academic_remediation_attempts(id bigint,student_id bigint,error_code text,correct integer,attempted_at text)',
             'CREATE TEMP TABLE mock_attempts(id bigint,student_id bigint,pack_id text,skill text,total_items integer,correct_items integer,pct real,started_at text,finished_at text,source text)',
-            'CREATE TEMP TABLE speaking_attempts(id bigint,student_id bigint,score_pct real,part integer,created_at text)',
+            'CREATE TEMP TABLE speaking_attempts(id bigint,student_id bigint,score_pct real,part integer,metrics_json text,created_at text)',
             'CREATE TEMP TABLE learning_events(id bigint PRIMARY KEY,user_id bigint,event_type text,skill text,item_id text,success integer,minutes real,meta_json text,created_at text)',
         ]:
             self.db.execute(sql)
@@ -71,6 +71,23 @@ class UnifiedProgressTests(unittest.TestCase):
         self.assertEqual(out['activity']['xp'], 0)
         self.assertEqual(out['preparation']['score'], 0.0)
         self.assertEqual(out['skills'], {'reading': 0.0, 'writing': 0.0, 'listening': 0.0, 'speaking': 0.0})
+
+    def test_speaking_uses_highest_pronunciation_proxy(self):
+        rows = [
+            (1, 1, 91.0, 1, json.dumps({'pronunciation_proxy': 72}), '2026-10-01T10:00:00+00:00'),
+            (2, 1, 68.0, 1, json.dumps({'pronunciation_proxy': 88}), '2026-10-01T10:01:00+00:00'),
+            (3, 1, 95.0, 2, json.dumps({'pronunciation_proxy': 79}), '2026-10-01T10:02:00+00:00'),
+        ]
+        with self.db.raw.cursor() as cursor:
+            cursor.executemany('INSERT INTO speaking_attempts VALUES(%s,%s,%s,%s,%s,%s)', rows)
+        self.db.commit()
+        self.assertEqual(self.summary()['skills']['speaking'], 88.0)
+
+    def test_speaking_legacy_rows_keep_overall_score_fallback(self):
+        with self.db.raw.cursor() as cursor:
+            cursor.execute('INSERT INTO speaking_attempts VALUES(%s,%s,%s,%s,%s,%s)', (1, 1, 80.0, 1, '{}', '2026-10-01T10:00:00+00:00'))
+        self.db.commit()
+        self.assertEqual(self.summary()['skills']['speaking'], 80.0)
 
 
 if __name__ == '__main__':

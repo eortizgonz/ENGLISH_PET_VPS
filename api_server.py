@@ -219,20 +219,36 @@ def student_preparation_summary(student_id, school_id):
     listening=skill_pct('listening')
     wvals=[float(x.get('score')) for x in writing if isinstance(x,dict) and isinstance(x.get('score'),(int,float))]
     svals=[float(x.get('score')) for x in speaking if isinstance(x,dict) and isinstance(x.get('score'),(int,float))]
+    pronunciation_scores=[]
+    for x in speaking:
+        if not isinstance(x,dict): continue
+        metrics=x.get('metrics') if isinstance(x.get('metrics'),dict) else {}
+        value=metrics.get('pronunciation_proxy')
+        if isinstance(value,(int,float)): pronunciation_scores.append(max(0.0,min(100.0,float(value))))
     wscore=round(max(0.0,min(100.0,(sum(wvals)/len(wvals))*5)),1) if wvals else 0.0
-    sscore=round(max(0.0,min(100.0,(sum(svals)/len(svals))*5)),1) if svals else 0.0
+    sscore=round(max(pronunciation_scores),1) if pronunciation_scores else (round(max(0.0,min(100.0,(sum(svals)/len(svals))*5)),1) if svals else 0.0)
 
     db_mocks=[dict(r) for r in c.execute('SELECT id,pack_id,skill,total_items,correct_items,pct,started_at,finished_at,source FROM mock_attempts WHERE student_id=? ORDER BY id DESC',(student_id,)).fetchall()]
-    db_speaking=[dict(r) for r in c.execute('SELECT score_pct,part,created_at FROM speaking_attempts WHERE student_id=? ORDER BY id DESC LIMIT 40',(student_id,)).fetchall()]
+    db_speaking=[dict(r) for r in c.execute('SELECT score_pct,part,metrics_json,created_at FROM speaking_attempts WHERE student_id=? ORDER BY id DESC LIMIT 40',(student_id,)).fetchall()]
     today_minutes_row=c.execute("SELECT COALESCE(SUM(minutes),0) m FROM learning_events WHERE user_id=? AND date(created_at)=date('now')",(student_id,)).fetchone()
     today_minutes=round(float(today_minutes_row['m'] or 0),1) if today_minutes_row else 0.0
     if db_speaking:
-        # Use the latest evidence per Speaking part, then average the available parts.
-        latest_by_part={}
         for r in db_speaking:
-            latest_by_part.setdefault(int(r.get('part') or 0),float(r.get('score_pct') or 0))
-        vals=[v for k,v in latest_by_part.items() if 1<=k<=4]
-        if vals: sscore=round(sum(vals)/len(vals),1)
+            metrics=safe_json(r.get('metrics_json'),{}) if r.get('metrics_json') else {}
+            value=metrics.get('pronunciation_proxy') if isinstance(metrics,dict) else None
+            if isinstance(value,(int,float)): pronunciation_scores.append(max(0.0,min(100.0,float(value))))
+        if pronunciation_scores:
+            # Pronunciation is a personal-best practice indicator: a later lower
+            # attempt must not erase the learner's highest demonstrated result.
+            sscore=round(max(pronunciation_scores),1)
+        else:
+            # Preserve legacy records that predate the pronunciation metric.
+            # For those, use the latest overall Speaking score per part.
+            latest_by_part={}
+            for r in db_speaking:
+                latest_by_part.setdefault(int(r.get('part') or 0),float(r.get('score_pct') or 0))
+            vals=[v for k,v in latest_by_part.items() if 1<=k<=4]
+            if vals: sscore=round(sum(vals)/len(vals),1)
     c.close()
 
     # Combine persisted exact mocks with local mock attempts, retaining latest by exam/skill label.
