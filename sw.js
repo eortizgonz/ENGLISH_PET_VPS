@@ -1,4 +1,4 @@
-const CACHE='petquest-v46-37-clean-fidelity-1';
+const CACHE='petquest-v46-37-listening-progress-2';
 const OFFLINE_INDEX='./index.html?v=46.33-cleanaudio1&source=offline&pathfix=1&contentdb=1&audiofix=1';
 const ASSETS=[
   './v46_32_audio_safe_engine.js',
@@ -10,7 +10,7 @@ const ASSETS=[
   './EXAM_PROFILES_V46_26.json',
   './exam_packs/adult_index.json',
   './v46_26_exam_profiles.js?v=46.35-clean-modes1',
-  './v46_27_mastery_orchestrator.js?v=46.35-progress-sync4',
+  './v46_27_mastery_orchestrator.js?v=46.35-progress-sync5',
   './PET_LEARN_CURRICULUM_V46_27.json',
   './index.html?v=46.33-cleanaudio1&source=offline&pathfix=1&contentdb=1',
   './styles.css?v=46.33-cleanaudio1',

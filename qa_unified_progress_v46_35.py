@@ -72,6 +72,25 @@ class UnifiedProgressTests(unittest.TestCase):
         self.assertEqual(out['preparation']['score'], 0.0)
         self.assertEqual(out['skills'], {'reading': 0.0, 'writing': 0.0, 'listening': 0.0, 'speaking': 0.0})
 
+    def test_snapshot_recalculates_all_four_skill_percentages(self):
+        payload = {
+            'profile': {'xp': 40},
+            'history': [
+                {'qid': 'r1', 'skill': 'reading', 'correct': True},
+                {'qid': 'r2', 'skill': 'reading', 'correct': False},
+                {'qid': 'l1', 'skill': 'listening', 'correct': True},
+                {'qid': 'l2', 'skill': 'listening', 'correct': True},
+            ],
+            'writing': [{'score': 16}],
+            'speaking': [{'score': 14, 'score_pct': 70}],
+            'mockAttempts': [],
+        }
+        self.db.execute('INSERT INTO snapshots VALUES(?,?,?)', (1, json.dumps(payload), '2026-10-01T10:00:00+00:00'))
+        self.db.commit()
+        out = self.summary()
+        self.assertEqual(out['skills'], {'reading': 50.0, 'writing': 80.0, 'listening': 100.0, 'speaking': 70.0})
+        self.assertEqual(out['preparation']['score'], 75.0)
+
     def test_speaking_uses_highest_pronunciation_proxy(self):
         rows = [
             (1, 1, 91.0, 1, json.dumps({'pronunciation_proxy': 72}), '2026-10-01T10:00:00+00:00'),

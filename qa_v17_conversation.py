@@ -17,6 +17,7 @@ checks={
 'no hints exam':'sin pistas' in js.lower(),
 'official limitation':'otro candidato' in js,
 'exam review':'Speaking Exam Review' in js,
+'exam unified progress':all(x in js for x in ["source:'v17-speaking-exam'",'data.speaking.push','data.mockAttempts.push','PETQUEST_V468?.refresh']),
 'adult insight':'Conversation V17' in js,
 'v17 css':'.v17-modebar' in css and '.v17-dialog-card' in css,
 'v17 sw':any(f'petquest-v{i}-shell' in sw for i in range(17,40)) and 'v17_conversation.js' in sw,

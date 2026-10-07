@@ -119,6 +119,7 @@ html.v15-kid .v20-plan-item{min-height:64px}html.v15-kid .v20-plan-item b{font-s
 
 /* V41 academic fidelity */
 .v41-error{border:1px solid var(--border,#d9d9e6);border-radius:14px;padding:14px;margin:10px 0;background:var(--card,#fff)}
+.v41-dialogue-history{margin:14px 0;padding:14px;border-radius:14px;background:#f8fafc;border:1px solid var(--line)}.v41-dialogue-history h3{margin:0 0 10px}.v41-dialogue-turn{padding:9px 0;border-bottom:1px solid var(--line)}.v41-dialogue-turn:last-child{border-bottom:0}.v41-dialogue-turn p{margin:3px 0}
 .v41-error del{opacity:.7}.v41-pair article{margin:14px 0}.v41-errors h3{margin-top:18px}
 /* V46.14 Speaking AI Examiner */
 .v4614-examiner{border:1px solid rgba(91,91,214,.22);box-shadow:0 18px 50px rgba(57,65,140,.08)}
@@ -144,3 +145,18 @@ html.v15-kid .v20-plan-item{min-height:64px}html.v15-kid .v20-plan-item b{font-s
 @media(max-width:560px){.pq-auth-card{padding:20px;border-radius:18px}.pq-password-rules{grid-template-columns:1fr}.pq-login-actions{align-items:flex-start;flex-direction:column}.pq-auth-title{font-size:23px}}
 
 .success-celebration{position:fixed;z-index:260;left:50%;top:18%;transform:translate(-50%,-18px) scale(.92);opacity:0;min-width:280px;max-width:calc(100vw - 32px);display:flex;align-items:center;gap:14px;padding:18px 22px;border-radius:20px;background:#fff;border:2px solid #86efac;box-shadow:0 24px 70px rgba(15,23,42,.22);transition:opacity .22s ease,transform .28s cubic-bezier(.2,.8,.2,1)}.success-celebration.show{opacity:1;transform:translate(-50%,0) scale(1)}.success-celebration.hide{opacity:0;transform:translate(-50%,-10px) scale(.96)}.success-celebration-icon{font-size:38px;animation:successPop .5s ease}.success-celebration b{display:block;font-size:22px;color:#166534}.success-celebration span{display:block;margin-top:2px;color:#64748b;font-weight:700}@keyframes successPop{0%{transform:scale(.6) rotate(-12deg)}55%{transform:scale(1.22) rotate(8deg)}100%{transform:scale(1) rotate(0)}}@media(prefers-reduced-motion:reduce){.success-celebration,.success-celebration-icon{animation:none!important;transition:none!important}}
+
+/* Navegacion de retorno visible y accesible */
+.screen-head .back{width:auto;min-width:104px;height:48px;padding:0 16px;display:inline-flex;align-items:center;justify-content:center;gap:9px;flex:0 0 auto;border:2px solid #4338ca;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;font-size:15px;font-weight:900;line-height:1;box-shadow:0 8px 20px rgba(79,70,229,.25);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.screen-head .back-icon{font-size:24px;line-height:1;transform:translateY(-1px)}
+.screen-head .back:hover{transform:translateY(-2px);box-shadow:0 11px 25px rgba(79,70,229,.34);filter:brightness(1.04)}
+.screen-head .back:active{transform:translateY(0);box-shadow:0 5px 12px rgba(79,70,229,.24)}
+.screen-head .back:focus-visible{outline:4px solid #facc15;outline-offset:3px}
+.v402-exam-head{margin-bottom:0}.mock-top .v402-exam-head{min-width:0}.mock-top .v402-exam-head>div{min-width:0}
+@media(max-width:560px){.screen-head{align-items:flex-start}.screen-head .back{min-width:96px;height:46px;padding:0 13px}}
+
+/* Navegacion hacia el paso anterior en ejercicios, guias y simulacros */
+.btn.nav-back{min-height:44px;padding:10px 16px;border:2px solid #6366f1;background:#eef2ff;color:#312e81;font-weight:900;box-shadow:0 4px 12px rgba(79,70,229,.13)}
+.btn.nav-back:hover:not(:disabled){border-color:#4338ca;background:#e0e7ff;color:#1e1b4b;box-shadow:0 7px 17px rgba(79,70,229,.2)}
+.btn.nav-back:focus-visible{outline:4px solid #facc15;outline-offset:3px}
+.btn.nav-back:disabled{border-color:#cbd5e1;background:#f1f5f9;color:#64748b;opacity:.62;box-shadow:none}

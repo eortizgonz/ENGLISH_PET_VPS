@@ -14,6 +14,7 @@ ck('learn_four_skills',{'reading','listening','writing','speaking'}.issubset({x[
 ck('learn_closed_loop',all(all(k in x for k in ['teach','examples','strategy','check','recheck','mastery']) for x in cur['items']))
 ck('six_modules',all(x in js for x in ['1. PET Learn','2. PET Practice','3. PET Exam','4. PET Error DNA','5. PET AI Tutor','6. PET Readiness']))
 ck('dashboard_readiness','PET Readiness:' in js and all(x in js for x in ['Reading','Listening','Writing','Speaking']))
+ck('skill_score_visible_precision','function scoreLabel' in js and '${scoreLabel(s[k])}%' in js and 'Rendimiento actualizado' in js)
 ck('dashboard_errors',all(x in js for x in ['Errores detectados','Corregidos','Pendientes','Reincidentes']))
 ck('dashboard_exam_today',all(x in js for x in ['Examen','Hoy','today_minutes']))
 ck('continue_button','CONTINUAR MI ENTRENAMIENTO' in js and 'continueTraining' in js)
